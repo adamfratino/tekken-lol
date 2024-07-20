@@ -3,6 +3,7 @@ import type { Preview } from "@storybook/react"
 import "../styles/tailwind.css"
 
 const preview: Preview = {
+  tags: ["autodocs"],
   parameters: {
     actions: {},
     controls: {
