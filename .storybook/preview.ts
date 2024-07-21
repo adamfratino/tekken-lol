@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react"
-
-import "../styles/tailwind.css"
+import "@radix-ui/themes/styles.css"
+import "../styles/globals.css"
 
 const preview: Preview = {
   tags: ["autodocs"],
