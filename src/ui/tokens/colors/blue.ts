@@ -1,8 +1,8 @@
 import { generateColorPalette } from "../../lib/utils"
 
-const DEFAULT = "#FF521B" as const
+const DEFAULT = "#226CE0" as const
 
-export const orange = {
+export const blue = {
   DEFAULT,
   ...generateColorPalette(DEFAULT),
 }
