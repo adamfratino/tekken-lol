@@ -1,5 +1,11 @@
 {
   "tailwindCSS.experimental.classRegex": [
-    ["cva(?:<[^>]*>)?(([^)]*))", "[\"'`]([^\"'`]*).*?[\"'`]", "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]"]
-  ]
+    [
+      "cva(?:<[^>]*>)?(([^)]*))",
+      "[\"'`]([^\"'`]*).*?[\"'`]",
+      "(?:twMerge|twJoin)\\(([^\\);]*)[\\);]",
+      ["tw\\s*(?::\\s*[^=]+)?\\s*=\\s*([^;]*);", "['\"`]([^'\"`]*)['\"`]"]
+    ]
+  ],
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "tw.*"]
 }

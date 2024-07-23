@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react"
 import "@radix-ui/themes/styles.css"
-import "../styles/globals.css"
+import "@/ui/styles/globals.css"
 
 const preview: Preview = {
   tags: ["autodocs"],
