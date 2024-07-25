@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  /**
+   * @todo update to `selector` when tailwind is bumped
+   * @see https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
+   * */
+  darkMode: ["class", '[data-theme="dark"]'],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {

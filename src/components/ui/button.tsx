@@ -21,8 +21,6 @@ const buttonVariants = cva(styles, {
   },
 })
 
-console.log(variants)
-
 const Button = ({
   className,
   variant,
