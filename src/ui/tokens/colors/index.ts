@@ -1,13 +1,13 @@
 /**
  * Palettes
  */
-export * from "./blue"
-export * from "./orange"
-export * from "./red"
-export * from "./teal"
-export * from "./yellow"
+export * from "./palettes/blue"
+export * from "./palettes/orange"
+export * from "./palettes/red"
+export * from "./palettes/teal"
+export * from "./palettes/yellow"
 
 /**
- * Aliases
+ * Semantic
  */
-// export * from "./buttons"
+// export * from "./semantic/button"

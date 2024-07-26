@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import { hexToHsl } from "../../../lib/utils"
 import * as colors from "../../colors"
 import { Text } from "@/ui/primitives"
@@ -7,19 +8,19 @@ const Swatch = ({ color }: { color: string }) => (
 )
 
 const Bold = ({ text }: { text: string }) => (
-  <Text variant="h3" className="text-md m-0 font-semibold">
+  <Text variant="h4" className="m-0 font-semibold">
     {text}
   </Text>
 )
 
 export const ColorGrid = () => (
-  <div className="w-full bg-background">
+  <div className="bg-background w-full">
     {Object.entries(colors).map(([colorName, colorValue]) => (
-      <>
+      <Fragment key={colorName + colorValue}>
         <h2 className="font-bold">{colorName}</h2>
         <div
           key={colorName + colorValue}
-          className="mb-3 flex w-full items-center gap-3"
+          className="bg-card mb-3 flex w-full items-center gap-3"
         >
           {Object.entries(colorValue).map(([shade, shadeValue]) => (
             <div
@@ -35,7 +36,7 @@ export const ColorGrid = () => (
             </div>
           ))}
         </div>
-      </>
+      </Fragment>
     ))}
   </div>
 )

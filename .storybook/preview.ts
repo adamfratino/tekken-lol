@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react"
-import { withThemeByDataAttribute } from "@storybook/addon-themes"
+import { withThemeByClassName } from "@storybook/addon-themes"
 import "@radix-ui/themes/styles.css"
 import "@/ui/styles/globals.css"
 
@@ -17,13 +17,12 @@ const preview: Preview = {
   },
 
   decorators: [
-    withThemeByDataAttribute({
+    withThemeByClassName({
       themes: {
         light: "",
         dark: "dark",
       },
       defaultTheme: "light",
-      attributeName: "data-theme",
     }),
   ],
 }
