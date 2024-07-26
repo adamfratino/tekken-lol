@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { Button } from "@/components/ui/button"
+import { Sidebar } from "./components/Sidebar"
 
 export const metadata: Metadata = {
   title: "Tekken.lol",
@@ -29,7 +30,9 @@ export default function Web() {
           test
         </Button>
       </main>
-      <aside>aside</aside>
+      <aside>
+        <Sidebar />
+      </aside>
       <footer>footer</footer>
     </>
   )
