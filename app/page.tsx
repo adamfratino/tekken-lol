@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import { Button } from "@/components/ui/button"
 import { Sidebar } from "./components/Sidebar"
 
 export const metadata: Metadata = {
@@ -25,11 +24,7 @@ export default function Web() {
       <header>
         <nav>nav</nav>
       </header>
-      <main>
-        <Button variant="default" size="sm">
-          test
-        </Button>
-      </main>
+      <main>main</main>
       <aside>
         <Sidebar />
       </aside>
