@@ -2,8 +2,8 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import * as React from "react"
 import { cn } from "@/ui/lib/utils"
-import { styles } from "./button.styles"
-import * as variants from "./button.variants"
+import { styles } from "./Button.styles"
+import * as variants from "./Button.variants"
 
 type CustomProps = {
   asChild?: boolean

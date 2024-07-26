@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/ui/primitives"
 import { Drawer } from "@/ui/components"
 
 export const Sidebar = () => (
