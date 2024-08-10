@@ -1,14 +1,13 @@
 import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
 import { cn } from "@/ui/lib/utils"
-import { DrawerOverlay } from "./DrawerOverlay"
 
 export const DrawerContent = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
   <DrawerPrimitive.Portal>
-    <DrawerOverlay />
+    <DrawerPrimitive.Overlay className="bg-black/40 fixed inset-0" />
     <DrawerPrimitive.Content
       ref={ref}
       className={cn(

@@ -8,19 +8,17 @@ const Swatch = ({ color }: { color: string }) => (
 )
 
 const Bold = ({ text }: { text: string }) => (
-  <Text variant="h4" className="m-0 font-semibold">
-    {text}
-  </Text>
+  <Text className="m-0 text-lg font-semibold">{text}</Text>
 )
 
 export const ColorGrid = () => (
-  <div className="bg-background w-full">
+  <div className="w-full bg-background">
     {Object.entries(colors).map(([colorName, colorValue]) => (
       <Fragment key={colorName + colorValue}>
         <h2 className="font-bold">{colorName}</h2>
         <div
           key={colorName + colorValue}
-          className="bg-card mb-3 flex w-full items-center gap-3"
+          className="mb-3 flex w-full items-center gap-3 bg-card"
         >
           {Object.entries(colorValue).map(([shade, shadeValue]) => (
             <div

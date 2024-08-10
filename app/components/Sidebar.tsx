@@ -6,15 +6,15 @@ import { Drawer } from "@/ui/components"
 import { PunishersAccordion } from "./PunishersAccordion"
 
 export const Sidebar = () => (
-  <Drawer direction="left">
+  <Drawer direction="right">
     <Drawer.Trigger asChild>
-      <Button variant="outline">Open Drawer.</Button>
+      <Button>Open Drawer</Button>
     </Drawer.Trigger>
-    <Drawer.Content className="w-[400px]">
-      <div className="mx-auto h-screen w-full">
+    <Drawer.Content className="ml-auto h-screen w-[400px]">
+      <div className="h-full">
         <PunishersAccordion />
         <Drawer.Close asChild>
-          <Button variant="outline">Cancel</Button>
+          <Button>Cancel</Button>
         </Drawer.Close>
       </div>
     </Drawer.Content>

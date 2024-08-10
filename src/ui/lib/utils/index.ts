@@ -1,4 +1,5 @@
 export * from "./cn"
+export * from "./generateArgTypes"
 export * from "./generateColorPalette"
 export * from "./hslToHex"
 export * from "./hexToHsl"

@@ -1,4 +1,2 @@
-import Text, { TextProps } from "./Text"
-
-export { Text }
-export type { TextProps }
+export * from "./Text"
+export * from "./Text.types"

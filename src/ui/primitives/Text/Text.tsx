@@ -1,50 +1,49 @@
-import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-import { cn } from "../../lib/utils"
-import { styles } from "./Text.styles"
-import * as variants from "./Text.variants"
+import React, { forwardRef } from "react"
+import { Slot } from "@radix-ui/react-slot"
+import { cn } from "@/ui/lib/utils"
+import { variants } from "./Text.variants"
+import type { TextProps } from "./Text.types"
 
-type BaseProps = React.PropsWithChildren<{
-  className?: string
-}>
-
-type AsChildProps = BaseProps & {
-  asChild: true
-  as?: never
-}
-
-type AsElementProps<T extends React.ElementType> = BaseProps & {
-  asChild?: false
-  as?: T
-}
-
-export type TextProps<T extends React.ElementType> = VariantProps<
-  typeof textVariants
-> &
-  (AsChildProps | AsElementProps<T>)
-
-const textVariants = cva(styles, {
+const textVariants = cva("font-sans font-normal", {
   variants,
-  defaultVariants: {
-    variant: "default",
-  },
+  defaultVariants: {},
 })
 
-const Text = <T extends React.ElementType = "span">({
-  as,
-  asChild,
-  variant,
-  children,
-  className,
-  ...props
-}: TextProps<T>) => {
-  const Component = asChild ? Slot : as ?? "span"
+export type TextVariantProps = VariantProps<typeof textVariants>
 
-  return (
-    <Component className={cn(textVariants({ variant, className }))} {...props}>
-      {children}
-    </Component>
-  )
-}
+export type TextWithVariantProps<T extends React.ElementType> =
+  TextVariantProps & TextProps<T>
 
-export default Text
+export const Text = forwardRef(
+  <T extends React.ElementType = "span">(
+    {
+      as,
+      asChild,
+      children,
+      className,
+      shade,
+      weight,
+      ...props
+    }: TextWithVariantProps<T>,
+    ref: React.Ref<
+      T extends React.ElementType
+        ? React.ComponentPropsWithoutRef<T>["ref"]
+        : never
+    >
+  ) => {
+    const Component = asChild ? Slot : as ?? "span"
+
+    return (
+      <Component
+        ref={ref}
+        className={cn(textVariants({ shade, weight, className }))}
+        {...props}
+      >
+        {children}
+      </Component>
+    )
+  }
+)
+
+Text.displayName = "Text"
