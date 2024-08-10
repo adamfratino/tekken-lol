@@ -1,2 +1,2 @@
 export * from "./Box"
-export * from "./Box.variants"
+export * from "./Box.types"

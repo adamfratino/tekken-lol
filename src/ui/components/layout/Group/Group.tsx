@@ -2,7 +2,7 @@ import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import React, { forwardRef } from "react"
 
-import { cn } from "@/ui/lib/utils"
+import { cn, generateTailwindScale } from "@/ui/lib/utils"
 import { Box, type BoxProps } from "@/ui/primitives"
 
 import type { GroupProps } from "./Group.types"
@@ -35,14 +35,10 @@ export const Group = forwardRef(
     return (
       <Component
         ref={ref}
-        className={cn(groupVariants({ className }), {
-          "gap-1": gap === 1,
-          "gap-2": gap === 2,
-          "gap-3": gap === 3,
-          "gap-4": gap === 4,
-          "gap-5": gap === 5,
-          "gap-6": gap === 6,
-        })}
+        className={cn(
+          groupVariants({ className }),
+          generateTailwindScale("gap", gap as number, 6)
+        )}
         {...props}
       >
         {children}
