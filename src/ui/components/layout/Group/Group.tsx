@@ -1,50 +1,30 @@
-import { Slot } from "@radix-ui/react-slot"
-import { cva, type VariantProps } from "class-variance-authority"
-import React, { forwardRef } from "react"
-
-import { cn, generateTailwindScale } from "@/ui/lib/utils"
+import { type VariantProps } from "class-variance-authority"
+import { cn } from "@/ui/lib/utils"
 import { Box, type BoxProps } from "@/ui/primitives"
-
-import type { GroupProps } from "./Group.types"
+import { gaps } from "../layout.props"
+import type { LayoutProps } from "../layout.types"
 import { variants } from "./Group.variants"
 
-const groupVariants = cva("inline-flex p-0", {
-  variants,
-  defaultVariants: {},
-})
+export type GroupVariantProps = VariantProps<typeof variants>
+export type GroupLayoutProps = Pick<LayoutProps, "gap">
 
-export type GroupVariantProps = VariantProps<typeof groupVariants>
+export type GroupProps<T extends React.ElementType> = BoxProps<T> &
+  GroupVariantProps &
+  GroupLayoutProps
 
-export type GroupWithVariantProps<T extends React.ElementType> =
-  GroupVariantProps & BoxProps<T> & GroupProps
+export const Group = <T extends React.ElementType = typeof Box>({
+  children,
+  className,
+  gap = "none",
+  ...props
+}: GroupProps<T>) => {
+  const classNames = cn(variants({ className }), gaps[gap])
 
-export const Group = forwardRef(
-  <T extends React.ElementType = typeof Box>(
-    {
-      as,
-      asChild,
-      children,
-      className,
-      gap,
-      ...props
-    }: GroupWithVariantProps<T>,
-    ref: React.Ref<HTMLDivElement>
-  ) => {
-    const Component = asChild ? Slot : as ?? Box
+  return (
+    <Box className={classNames} {...props}>
+      {children}
+    </Box>
+  )
+}
 
-    return (
-      <Component
-        ref={ref}
-        className={cn(
-          groupVariants({ className }),
-          generateTailwindScale("gap", gap as number, 6)
-        )}
-        {...props}
-      >
-        {children}
-      </Component>
-    )
-  }
-)
-
-Box.displayName = "Box"
+Group.displayName = "Group"
