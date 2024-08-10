@@ -1,8 +1,8 @@
 import { Root } from "@radix-ui/react-accordion"
-import { AccordionItem, AccordionTrigger, AccordionContent } from "./components"
+import { AccordionContent, AccordionItem, AccordionTrigger } from "./components"
 
 export const Accordion = Object.assign(Root, {
+  Content: AccordionContent,
   Item: AccordionItem,
   Trigger: AccordionTrigger,
-  Content: AccordionContent,
 })

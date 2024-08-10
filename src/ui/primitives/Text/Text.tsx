@@ -1,9 +1,9 @@
+import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import React, { forwardRef } from "react"
-import { Slot } from "@radix-ui/react-slot"
 import { cn } from "@/ui/lib/utils"
-import { variants } from "./Text.variants"
 import type { TextProps } from "./Text.types"
+import { variants } from "./Text.variants"
 
 const textVariants = cva("font-sans font-normal", {
   variants,

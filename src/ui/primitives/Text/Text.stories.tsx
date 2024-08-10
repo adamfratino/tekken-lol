@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { generateArgTypes, coreArgTypes } from "@/ui/lib/utils"
+import { coreArgTypes, generateArgTypes } from "@/ui/lib/utils"
 import { Text } from "./Text"
 import { variants } from "./Text.variants"
 

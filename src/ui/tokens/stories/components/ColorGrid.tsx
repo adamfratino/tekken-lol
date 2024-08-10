@@ -1,7 +1,7 @@
 import { Fragment } from "react"
-import { hexToHsl } from "../../../lib/utils"
-import * as colors from "../../colors"
+import { hexToHsl } from "@/ui/lib/utils"
 import { Text } from "@/ui/primitives"
+import { colors } from "@/ui/tokens"
 
 const Swatch = ({ color }: { color: string }) => (
   <div className="h-[50px] flex-1" style={{ backgroundColor: color }} />
