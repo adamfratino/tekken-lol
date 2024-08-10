@@ -1,5 +1,6 @@
 export * from "./cn"
 export * from "./generateArgTypes"
 export * from "./generateColorPalette"
+export * from "./generateTailwindScale"
 export * from "./hslToHex"
 export * from "./hexToHsl"

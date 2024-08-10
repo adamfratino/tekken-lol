@@ -1,3 +1,5 @@
+"use client"
+
 import { Root } from "@radix-ui/react-accordion"
 import { AccordionContent, AccordionItem, AccordionTrigger } from "./components"
 

@@ -1,3 +1,5 @@
+import { cva } from "class-variance-authority"
+
 const twVariants = {
   shadow: {
     true: "shadow-lg",
@@ -21,4 +23,7 @@ const twVariants = {
   },
 }
 
-export const variants = twVariants
+export const variants = cva("rounded-md p-2 inline-block", {
+  variants: twVariants,
+  defaultVariants: {},
+})

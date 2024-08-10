@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { Sidebar } from "./components/Sidebar"
+import { Group } from "@/ui/components"
 
 export const metadata: Metadata = {
   title: "Tekken.lol",
@@ -24,10 +25,12 @@ export default function Web() {
       <header>
         <nav>nav</nav>
       </header>
-      <main>main</main>
-      <aside>
-        <Sidebar />
-      </aside>
+      <main>
+        <Group gap={6} className="bg-blue-medium">
+          <div className="bg-red-medium">foo</div>
+          <div className="bg-red-medium">bar</div>
+        </Group>
+      </main>
       <footer>footer</footer>
     </>
   )

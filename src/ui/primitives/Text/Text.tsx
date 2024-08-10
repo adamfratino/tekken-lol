@@ -26,11 +26,7 @@ export const Text = forwardRef(
       weight,
       ...props
     }: TextWithVariantProps<T>,
-    ref: React.Ref<
-      T extends React.ElementType
-        ? React.ComponentPropsWithoutRef<T>["ref"]
-        : never
-    >
+    ref: React.Ref<HTMLSpanElement>
   ) => {
     const Component = asChild ? Slot : as ?? "span"
 
