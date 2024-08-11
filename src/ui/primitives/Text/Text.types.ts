@@ -1,17 +1,8 @@
-type BaseProps = React.PropsWithChildren<{
-  className?: string
-}>
+import type { VariantProps } from "class-variance-authority"
+import type { PrimitiveProps } from "../primitives.types"
+import { variants } from "./Text.variants"
 
-type AsChildProps = BaseProps & {
-  asChild: true
-  as?: never
-}
+export type BoxVariantProps = VariantProps<typeof variants>
 
-type AsElementProps<T extends React.ElementType> = BaseProps & {
-  asChild?: false
-  as?: T
-}
-
-export type TextProps<T extends React.ElementType> =
-  | AsChildProps
-  | AsElementProps<T>
+export type TextProps<T extends React.ElementType> = BoxVariantProps &
+  PrimitiveProps<T>

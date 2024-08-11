@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Group } from "@/ui/components"
+import { Footer, Header, Main } from "./components"
 
 export const metadata: Metadata = {
   title: "Tekken.lol",
@@ -8,16 +8,9 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
-      <header>
-        <nav>nav</nav>
-      </header>
-      <main>
-        <Group gap="sm">
-          <div className="bg-red-medium">foo</div>
-          <div className="bg-red-medium">bar</div>
-        </Group>
-      </main>
-      <footer>footer</footer>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }

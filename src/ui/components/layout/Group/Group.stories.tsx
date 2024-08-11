@@ -1,10 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import { generateArgTypes } from "@/ui/lib/utils"
+import { gaps, padding } from "../layout.props"
 import { Group } from "./Group"
 import { variants } from "./Group.variants"
 
 const meta = {
-  title: "primitives/Group",
+  title: "components/Group",
   component: Group,
   args: {
     children: (
@@ -14,15 +15,25 @@ const meta = {
       </>
     ),
   },
-  argTypes: generateArgTypes(variants, "Variants"),
+  argTypes: {
+    ...generateArgTypes(variants, "Variants"),
+    ...generateArgTypes(
+      [
+        { obj: gaps, name: "gap" },
+        { obj: padding, name: "p" },
+      ],
+      "Props"
+    ),
+  },
 } satisfies Meta<typeof Group>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const WithGap: Story = {
+export const Default: Story = {
   args: {
-    gap: 6,
+    gap: "md",
+    p: "md",
     className: "bg-blue-medium",
   },
 }

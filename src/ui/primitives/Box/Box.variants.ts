@@ -10,20 +10,18 @@ const twVariants = {
   bordered: {
     true: "border",
   },
-  align: {
-    left: "text-left",
-    center: "text-center",
-    right: "text-right",
-  },
   interactive: {
     true: "transform transition duration-50 hover:scale-[1.025] cursor-pointer",
   },
   disabled: {
-    true: "cursor-not-allowed pointer-events-none opacity-50",
+    true: "cursor-not-allowed pointer-events-none opacity-75 grayscale",
   },
 }
 
-export const variants = cva("rounded-md p-2 inline-block", {
-  variants: twVariants,
-  defaultVariants: {},
-})
+export const variants = cva(
+  {},
+  {
+    variants: twVariants,
+    defaultVariants: {},
+  }
+)

@@ -11,3 +11,9 @@ export const padding = {
   md: "p-2",
   lg: "p-3",
 } as const
+
+export const alignments = {
+  left: "justify-left",
+  center: "justify-center",
+  right: "justify-right",
+} as const

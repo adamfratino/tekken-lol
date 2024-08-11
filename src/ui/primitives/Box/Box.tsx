@@ -1,5 +1,5 @@
 import { Slot } from "@radix-ui/react-slot"
-import React, { forwardRef } from "react"
+import { forwardRef } from "react"
 import { cn } from "@/ui/lib/utils"
 import type { BoxProps } from "./Box.types"
 import { variants } from "./Box.variants"
@@ -10,7 +10,6 @@ export const Box = forwardRef(
       shadow,
       fullwidth,
       bordered,
-      align,
       interactive,
       disabled,
       className,
@@ -31,7 +30,6 @@ export const Box = forwardRef(
             shadow,
             fullwidth,
             bordered,
-            align,
             interactive,
             disabled,
             className,

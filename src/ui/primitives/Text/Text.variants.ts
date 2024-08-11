@@ -1,3 +1,5 @@
+import { cva } from "class-variance-authority"
+
 const twVariants = {
   shade: {
     alert: "text-red-medium",
@@ -12,4 +14,7 @@ const twVariants = {
   },
 }
 
-export const variants = twVariants
+export const variants = cva("font-sans font-normal", {
+  variants: twVariants,
+  defaultVariants: {},
+})

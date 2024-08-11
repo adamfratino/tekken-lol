@@ -1,17 +1,33 @@
-export const generateArgTypes = (obj: {}, category?: string) => {
+type ArgTypeInput = {
+  obj: Record<string, any>
+  name?: string
+}
+
+export const generateArgTypes = (
+  inputs: ArgTypeInput[] | Record<string, any>,
+  category?: string
+) => {
+  const inputArray: ArgTypeInput[] = Array.isArray(inputs)
+    ? (inputs as ArgTypeInput[])
+    : [{ obj: inputs }]
+
   return Object.fromEntries(
-    Object.entries(obj).map(([key, value]) => {
-      const keys = Object.keys(value as any)
-      const isBooleanCategory = keys.length === 1 && keys[0] === "true"
-      return [
-        key,
-        {
-          options: isBooleanCategory ? [true, false] : keys,
-          control: { type: isBooleanCategory ? "boolean" : "select" },
-          table: { category },
-        },
-      ]
-    })
+    inputArray.flatMap(({ obj, name }) =>
+      Object.entries(obj).map(([key, value]) => {
+        const keys = Object.keys(value as any)
+        const isBooleanCategory = keys.length === 1 && keys[0] === "true"
+        console.log(keys)
+
+        return [
+          name || key,
+          {
+            options: keys,
+            control: { type: isBooleanCategory ? "boolean" : "select" },
+            table: { category },
+          },
+        ] as const
+      })
+    )
   )
 }
 
