@@ -1,3 +1,9 @@
+export const shadow = {
+  sm: "shadow-sm",
+  md: "shadow-md",
+  lg: "shadow-lg",
+} as const
+
 export const gaps = {
   none: "gap-0",
   sm: "gap-1",

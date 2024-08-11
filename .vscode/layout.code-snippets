@@ -59,5 +59,26 @@
       ""
     ],
     "description": "Long Description"
+  },
+  "Create a new layout storybook file": {
+    "prefix": "newuilayoutstory",
+    "scope": "javascriptreact,typescriptreact",
+    "isFileTemplate": true,
+    "body": [
+      "import type { Meta, StoryObj } from \"@storybook/react\"",
+      "import { $1 } from \"./$1\"",
+      "",
+      "const meta = {",
+      "  title: \"$2/$1\",",
+      "  component: $1,",
+      "} satisfies Meta<typeof $1>",
+      "",
+      "export default meta",
+      "type Story = StoryObj<typeof meta>",
+      "",
+      "export const Default: Story = {}",
+      ""
+    ],
+    "description": "Long Description"
   }
 }

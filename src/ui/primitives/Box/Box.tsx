@@ -10,9 +10,7 @@ export const Box = forwardRef(
       bordered,
       disabled,
       fullwidth,
-      interactive,
       inverted,
-      shadow,
       className,
       as,
       asChild,
@@ -31,9 +29,7 @@ export const Box = forwardRef(
             bordered,
             disabled,
             fullwidth,
-            interactive,
             inverted,
-            shadow,
             className,
           })
         )}

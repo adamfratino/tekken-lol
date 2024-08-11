@@ -8,7 +8,7 @@ const Container = ({ ...props }) => (
 )
 
 const Placeholder = ({ disabled }: { disabled?: boolean }) => (
-  <Card className="flex-1 bg-background" disabled={disabled}>
+  <Card disabled={disabled} interactive className="flex-1 bg-background">
     <Stack align="evenly">
       <Image
         src="/images/placeholder.png"
