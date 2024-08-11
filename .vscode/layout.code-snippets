@@ -1,0 +1,63 @@
+{
+  "Create a new layout component": {
+    "prefix": "newuilayoutcomponent",
+    "scope": "javascriptreact,typescriptreact",
+    "isFileTemplate": true,
+    "body": [
+      "import { cn } from \"@/ui/lib/utils\"",
+      "import { Box } from \"@/ui/primitives\"",
+      "import type { $1Props } from \"./$1.types\"",
+      "import { variants } from \"./$1.variants\"",
+      "",
+      "export const $1 = <T extends React.ElementType = typeof Box>({",
+      "  className,",
+      "  ...props",
+      "}: $1Props<T>) => {",
+      "  const classNames = cn(variants({ className }))",
+      "",
+      "  return <Box className={classNames} {...props} />",
+      "}",
+      "",
+      "$1.displayName = \"$1\"",
+      ""
+    ]
+    // "description": "Long Description"
+  },
+  "Create a new layout types file": {
+    "prefix": "newuilayouttypes",
+    "scope": "javascript,typescript",
+    "isFileTemplate": true,
+    "body": [
+      "import type { VariantProps } from \"class-variance-authority\"",
+      "import type { BoxProps } from \"@/ui/primitives\"",
+      "import type { LayoutProps } from \"../layout.types\"",
+      "import { variants } from \"./$1.variants\"",
+      "",
+      "export type $1VariantProps = VariantProps<typeof variants>",
+      "export type $1LayoutProps = Pick<LayoutProps, \"p\">",
+      "",
+      "export type $1Props<T extends React.ElementType> = BoxProps<T> &",
+      "  $1VariantProps &",
+      "  $1LayoutProps",
+      ""
+    ],
+    "description": "Long Description"
+  },
+  "Create a new layout variants file": {
+    "prefix": "newuilayoutvariants",
+    "scope": "javascript,typescript",
+    "isFileTemplate": true,
+    "body": [
+      "import { cva } from \"class-variance-authority\"",
+      "",
+      "const twVariants = {}",
+      "",
+      "export const variants = cva(\"\", {",
+      "  variants: twVariants,",
+      "  defaultVariants: {},",
+      "})",
+      ""
+    ],
+    "description": "Long Description"
+  }
+}

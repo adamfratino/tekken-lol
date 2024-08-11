@@ -8,12 +8,19 @@ export const gaps = {
 export const padding = {
   none: "p-0",
   sm: "p-1",
-  md: "p-2",
-  lg: "p-3",
+  md: "p-3",
+  lg: "p-5",
 } as const
 
 export const alignments = {
-  left: "justify-left",
+  around: "justify-around",
   center: "justify-center",
-  right: "justify-right",
+  end: "justify-end",
+  evenly: "justify-evenly",
+  start: "justify-start",
+  stretch: "justify-stretch",
 } as const
+
+export const widths = {
+  inner: "w-full max-w-[1260px] mx-auto",
+}

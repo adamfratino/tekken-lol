@@ -1,3 +1,3 @@
 export const Footer = () => (
-  <footer className="flex-1 bg-destructive">footer</footer>
+  <footer className="mt-auto bg-foreground p-6 text-background">footer</footer>
 )

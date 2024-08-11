@@ -7,11 +7,12 @@ import { variants } from "./Box.variants"
 export const Box = forwardRef(
   <T extends React.ElementType = "div">(
     {
-      shadow,
-      fullwidth,
       bordered,
-      interactive,
       disabled,
+      fullwidth,
+      interactive,
+      inverted,
+      shadow,
       className,
       as,
       asChild,
@@ -27,11 +28,12 @@ export const Box = forwardRef(
         ref={ref}
         className={cn(
           variants({
-            shadow,
-            fullwidth,
             bordered,
-            interactive,
             disabled,
+            fullwidth,
+            interactive,
+            inverted,
+            shadow,
             className,
           })
         )}

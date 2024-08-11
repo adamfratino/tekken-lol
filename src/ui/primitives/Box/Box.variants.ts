@@ -16,6 +16,9 @@ const twVariants = {
   disabled: {
     true: "cursor-not-allowed pointer-events-none opacity-75 grayscale",
   },
+  inverted: {
+    true: "bg-foreground text-background",
+  },
 }
 
 export const variants = cva(
