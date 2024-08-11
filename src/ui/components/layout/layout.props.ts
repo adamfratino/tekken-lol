@@ -4,3 +4,10 @@ export const gaps = {
   md: "gap-3",
   lg: "gap-5",
 } as const
+
+export const padding = {
+  none: "p-0",
+  sm: "p-1",
+  md: "p-2",
+  lg: "p-3",
+} as const

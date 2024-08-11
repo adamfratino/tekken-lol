@@ -1,30 +1,20 @@
-import { type VariantProps } from "class-variance-authority"
 import { cn } from "@/ui/lib/utils"
-import { Box, type BoxProps } from "@/ui/primitives"
-import { gaps } from "../layout.props"
-import type { LayoutProps } from "../layout.types"
+
+import { Box } from "@/ui/primitives"
+import { gaps, padding } from "../layout.props"
+
+import type { GroupProps } from "./Group.types"
 import { variants } from "./Group.variants"
 
-export type GroupVariantProps = VariantProps<typeof variants>
-export type GroupLayoutProps = Pick<LayoutProps, "gap">
-
-export type GroupProps<T extends React.ElementType> = BoxProps<T> &
-  GroupVariantProps &
-  GroupLayoutProps
-
 export const Group = <T extends React.ElementType = typeof Box>({
-  children,
   className,
   gap = "none",
+  p = "none",
   ...props
 }: GroupProps<T>) => {
-  const classNames = cn(variants({ className }), gaps[gap])
+  const classNames = cn(variants({ className }), gaps[gap], padding[p])
 
-  return (
-    <Box className={classNames} {...props}>
-      {children}
-    </Box>
-  )
+  return <Box className={classNames} {...props} />
 }
 
 Group.displayName = "Group"
