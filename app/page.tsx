@@ -1,6 +1,5 @@
 import { Metadata } from "next"
-import { Footer, Header, Main } from "./components"
-import Test from "./components/Test"
+import { Sidebar, Header, Main } from "./components"
 
 export const metadata: Metadata = {
   title: "tekken.lol",
@@ -8,11 +7,13 @@ export const metadata: Metadata = {
 
 export default function Web() {
   return (
-    <>
-      <Header />
-      <Test />
-      <Main />
-      <Footer />
-    </>
+    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[320px_1fr]">
+      <Sidebar />
+
+      <div className="flex flex-col">
+        <Header />
+        <Main />
+      </div>
+    </div>
   )
 }

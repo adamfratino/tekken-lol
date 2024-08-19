@@ -20,6 +20,7 @@ export const padding = {
 
 export const alignments = {
   around: "justify-around",
+  between: "justify-between",
   center: "justify-center",
   end: "justify-end",
   evenly: "justify-evenly",

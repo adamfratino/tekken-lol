@@ -1,0 +1,25 @@
+{
+  "Create a new typography component": {
+    "prefix": "newuitypographycomponent",
+    "scope": "javascriptreact,typescriptreact",
+    "isFileTemplate": true,
+    "body": [
+      "import { cn } from \"@/ui/lib/utils\"",
+      "import { Text } from \"@/ui/primitives\"",
+      "import type { $1Props } from \"./$1.types\"",
+      "import { variants } from \"./$1.variants\"",
+      "",
+      "export const $1 = <T extends React.ElementType = typeof Text>({",
+      "  className,",
+      "  ...props",
+      "}: $1Props<T>) => {",
+      "  const classNames = cn(variants({ className }))",
+      "",
+      "  return <Text className={classNames} {...props} />",
+      "}",
+      "",
+      "$1.displayName = \"$1\"",
+      ""
+    ]
+  }
+}

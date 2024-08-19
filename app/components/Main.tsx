@@ -1,49 +1,20 @@
-import Image from "next/image"
-import { Card, Group, Stack } from "@/ui/components"
-
-const SPACING = "lg"
-
-const Container = ({ ...props }) => (
-  <Group w="inner" gap={SPACING} align="center" {...props} />
-)
-
-const Placeholder = ({ disabled }: { disabled?: boolean }) => (
-  <Card disabled={disabled} interactive className="flex-1 bg-background">
-    <Stack align="evenly">
-      <Image
-        src="/images/placeholder.png"
-        width={640}
-        height={360}
-        alt="Looking down a hallway of peach arches"
-      />
-      <div className="p-2">
-        <h2 className="mb-1 text-lg font-semibold">
-          Lorem ipsum dolor sit amet.
-        </h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    </Stack>
-  </Card>
-)
+import { Button } from "@/ui/primitives"
 
 export const Main = () => (
-  <Stack
-    as="main"
-    gap={SPACING}
-    p={SPACING}
-    fullwidth
-    className="flex-1 bg-yellow-medium"
-  >
-    <Container>
-      <Placeholder />
-      <Placeholder disabled />
-      <Placeholder />
-    </Container>
-
-    <Container>
-      <Placeholder />
-      <Placeholder />
-      <Placeholder disabled />
-    </Container>
-  </Stack>
+  <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+    <div
+      className="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm"
+      x-chunk="dashboard-02-chunk-1"
+    >
+      <div className="flex flex-col items-center gap-1 text-center">
+        <h3 className="text-2xl font-bold tracking-tight">
+          You have no products
+        </h3>
+        <p className="text-sm text-muted-foreground">
+          You can start selling as soon as you add a product.
+        </p>
+        <Button className="mt-4">Add Product</Button>
+      </div>
+    </div>
+  </main>
 )
