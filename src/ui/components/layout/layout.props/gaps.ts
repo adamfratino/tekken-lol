@@ -1,0 +1,42 @@
+export const gaps = {
+  base: {
+    none: "gap-0",
+    xs: "gap-1",
+    sm: "gap-2",
+    md: "gap-3",
+    lg: "gap-4",
+    xl: "gap-5",
+  },
+  sm: {
+    none: "sm:gap-0",
+    xs: "sm:gap-1",
+    sm: "sm:gap-2",
+    md: "sm:gap-3",
+    lg: "sm:gap-4",
+    xl: "sm:gap-5",
+  },
+  md: {
+    none: "md:gap-0",
+    xs: "md:gap-1",
+    sm: "md:gap-2",
+    md: "md:gap-3",
+    lg: "md:gap-4",
+    xl: "md:gap-5",
+  },
+  lg: {
+    none: "lg:gap-0",
+    xs: "lg:gap-1",
+    sm: "lg:gap-2",
+    md: "lg:gap-3",
+    lg: "lg:gap-4",
+    xl: "lg:gap-5",
+  },
+  xl: {
+    none: "xl:gap-0",
+    xs: "xl:gap-1",
+    sm: "xl:gap-2",
+    md: "xl:gap-3",
+    lg: "xl:gap-4",
+    xl: "xl:gap-5",
+  },
+} as const

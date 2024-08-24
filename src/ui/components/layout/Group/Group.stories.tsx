@@ -4,7 +4,7 @@ import { Group } from "./Group"
 import { variants } from "./Group.variants"
 
 const meta = {
-  title: "components/Group",
+  title: "components/layout/Group",
   component: Group,
   args: {
     children: (

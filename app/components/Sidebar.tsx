@@ -1,7 +1,8 @@
 import type { PropsWithChildren } from "react"
 import Link from "next/link"
 import { cn } from "@/ui/lib/utils"
-import { Card, Group, Stack, Title } from "@/ui/components"
+import { Button } from "@/ui/primitives"
+import { Group, Stack, Title, Card } from "@/ui/components"
 import { User } from "lucide-react"
 
 type ItemProps = PropsWithChildren<{
@@ -12,7 +13,7 @@ const Item = ({ children, active }: ItemProps) => (
   <Link
     href="#"
     className={cn(
-      "flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:bg-yellow-lighter hover:text-primary",
+      "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:bg-yellow-lighter hover:text-primary",
       {
         "bg-yellow-light text-primary hover:bg-yellow-light": active,
       }
@@ -31,21 +32,16 @@ export const Sidebar = () => (
           <Title>Alisa Bosconovitch</Title>
         </Group>
       </div>
+      <Stack gap="sm" fullwidth className="px-2 lg:px-4">
+        <Item active>All moves</Item>
+        <Item>Stances</Item>
+        <Item>Punishers</Item>
+        <Item>Heat moves</Item>
+        <Item>Launchers</Item>
+        <Item>At the wall</Item>
+      </Stack>
 
-      <div className="flex-1">
-        <Stack gap="sm" className="px-2 text-sm font-medium lg:px-4">
-          <Item active>All moves</Item>
-          <Item>Stances</Item>
-          <Item>Punishers</Item>
-          <Item>Heat moves</Item>
-          <Item>Launchers</Item>
-          <Item>At the wall</Item>
-        </Stack>
-      </div>
-
-      <Card className="m-4 mt-auto p-4" inverted>
-        sidebar footer
-      </Card>
+      <Button className="m-4 mt-auto p-4">Select a character</Button>
     </div>
   </div>
 )

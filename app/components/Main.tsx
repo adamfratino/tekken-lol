@@ -1,3 +1,4 @@
+import { Stack } from "@/ui/components"
 import { Button } from "@/ui/primitives"
 
 export const Main = () => (

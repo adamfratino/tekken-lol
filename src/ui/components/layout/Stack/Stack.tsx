@@ -1,6 +1,5 @@
 import { cn } from "@/ui/lib/utils"
 import { Box } from "@/ui/primitives"
-import { alignments, gaps, padding } from "../layout.props"
 import type { StackProps } from "./Stack.types"
 import { variants } from "./Stack.variants"
 
@@ -11,12 +10,7 @@ export const Stack = <T extends React.ElementType = typeof Box>({
   p,
   ...props
 }: StackProps<T>) => {
-  const classNames = cn(
-    variants({ className }),
-    align && alignments[align],
-    gap && gaps[gap],
-    p && padding[p]
-  )
+  const classNames = cn(variants({ className, align, gap, p }))
 
   return <Box className={classNames} {...props} />
 }
