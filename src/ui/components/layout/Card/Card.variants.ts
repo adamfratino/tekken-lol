@@ -8,7 +8,10 @@ const twVariants = {
     true: "transform transition duration-50 hover:scale-[1.025] cursor-pointer active:scale-[1.005]",
   },
   disabled: {
-    true: "cursor-not-allowed pointer-events-none opacity-60 grayscale",
+    true: "cursor-not-allowed opacity-50 grayscale hover:scale-1",
+  },
+  bordered: {
+    true: "border",
   },
 }
 

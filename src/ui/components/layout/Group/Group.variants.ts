@@ -7,6 +7,9 @@ const twVariants = {
   w: {
     full: "flex w-full",
   },
+  wrap: {
+    true: "flex-wrap",
+  },
 }
 
 export const variants = cva("inline-flex", {
