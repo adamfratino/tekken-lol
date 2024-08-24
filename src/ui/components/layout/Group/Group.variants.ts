@@ -1,10 +1,12 @@
 import { cva } from "class-variance-authority"
 import { getResponsiveClasses } from "@/ui/lib/utils"
 import type { LayoutProps } from "../layout.types"
-import { alignments, gaps, padding, widths } from "../layout.props"
+import { alignments, gaps, padding } from "../layout.props"
 
 const twVariants = {
-  w: widths,
+  w: {
+    full: "flex w-full",
+  },
 }
 
 export const variants = cva("inline-flex", {

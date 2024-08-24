@@ -15,7 +15,37 @@ import { Sheet, SheetContent, SheetTrigger } from "@/ui/primitives/sheet"
 
 export const Header = () => (
   <header className="bg-muted/40 flex h-14 items-center gap-4 border-b px-4 lg:h-[60px] lg:px-6">
-    <Sheet>
+    <Group align="between" w="full">
+      <form className="md:w-2/3 lg:w-1/3">
+        <div className="relative">
+          <Search className="absolute left-2.5 top-3 h-4 w-4 text-muted-foreground" />
+          <Input
+            type="search"
+            placeholder="Search for a move, character, filter..."
+            className="w-full appearance-none bg-background pl-8 shadow-none"
+          />
+        </div>
+      </form>
+    </Group>
+
+    {/* <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="secondary" size="icon" className="rounded-full">
+          <CircleUser className="h-5 w-5" />
+          <span className="sr-only">Toggle user menu</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>Settings</DropdownMenuItem>
+        <DropdownMenuItem>Support</DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>Logout</DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu> */}
+
+    {/* <Sheet>
       <SheetTrigger asChild>
         <Button variant="outline" size="icon" className="shrink-0 md:hidden">
           <Menu className="h-5 w-5" />
@@ -63,34 +93,6 @@ export const Header = () => (
         </nav>
         <div className="mt-auto">advertisement</div>
       </SheetContent>
-    </Sheet>
-    <Group fullwidth align="between" className="flex-1 items-center">
-      <form className="md:w-2/3 lg:w-1/3">
-        <div className="relative">
-          <Search className="absolute left-2.5 top-3 h-4 w-4 text-muted-foreground" />
-          <Input
-            type="search"
-            placeholder="Search for a move, character, filter..."
-            className="w-full appearance-none bg-background pl-8 shadow-none"
-          />
-        </div>
-      </form>
-    </Group>
-    {/* <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="secondary" size="icon" className="rounded-full">
-          <CircleUser className="h-5 w-5" />
-          <span className="sr-only">Toggle user menu</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>Settings</DropdownMenuItem>
-        <DropdownMenuItem>Support</DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>Logout</DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu> */}
+    </Sheet> */}
   </header>
 )

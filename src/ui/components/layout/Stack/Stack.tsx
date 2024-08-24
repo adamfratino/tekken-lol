@@ -8,10 +8,11 @@ export const Stack = <T extends React.ElementType = typeof Box>({
   align,
   gap,
   p,
+  w,
   ...props
 }: StackProps<T>) => {
   const responsiveClasses = responsiveProps({ align, gap, p })
-  const classNames = cn(variants({ className }), ...responsiveClasses)
+  const classNames = cn(variants({ className, w }), ...responsiveClasses)
 
   return <Box className={classNames} {...props} />
 }

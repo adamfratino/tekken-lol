@@ -8,8 +8,6 @@ export const Box = forwardRef(
   <T extends React.ElementType = "div">(
     {
       bordered,
-      disabled,
-      fullwidth,
       inverted,
       className,
       as,
@@ -27,8 +25,6 @@ export const Box = forwardRef(
         className={cn(
           variants({
             bordered,
-            disabled,
-            fullwidth,
             inverted,
             className,
           })

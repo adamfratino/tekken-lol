@@ -33,7 +33,7 @@ export const Sidebar = () => (
         </Group>
       </div>
 
-      <Stack p={{ base: "sm", lg: "lg" }} gap="sm" fullwidth>
+      <Stack p={{ base: "sm", lg: "lg" }} gap="sm" w="full">
         <Item active>All moves</Item>
         <Item>Stances</Item>
         <Item>Punishers</Item>
