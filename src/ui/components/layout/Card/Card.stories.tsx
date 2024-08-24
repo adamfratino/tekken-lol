@@ -6,7 +6,6 @@ const meta = {
   component: Card,
   args: {
     className: "size-24 bg-foreground",
-    interactive: true,
     children: <div className="size-8 bg-orange-medium" />,
     p: { base: "none", sm: "lg" },
   },

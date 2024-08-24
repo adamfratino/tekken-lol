@@ -2,7 +2,7 @@ import type { PropsWithChildren } from "react"
 import Link from "next/link"
 import { cn } from "@/ui/lib/utils"
 import { Button } from "@/ui/primitives"
-import { Group, Stack, Title, Card } from "@/ui/components"
+import { Group, Stack, Title } from "@/ui/components"
 import { User } from "lucide-react"
 
 type ItemProps = PropsWithChildren<{
@@ -33,7 +33,7 @@ export const Sidebar = () => (
         </Group>
       </div>
 
-      <Stack gap="sm" fullwidth className="px-2 lg:px-4">
+      <Stack p={{ base: "sm", lg: "lg" }} gap="sm" fullwidth>
         <Item active>All moves</Item>
         <Item>Stances</Item>
         <Item>Punishers</Item>
