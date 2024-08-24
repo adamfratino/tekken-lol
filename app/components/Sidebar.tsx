@@ -32,6 +32,7 @@ export const Sidebar = () => (
           <Title>Alisa Bosconovitch</Title>
         </Group>
       </div>
+
       <Stack gap="sm" fullwidth className="px-2 lg:px-4">
         <Item active>All moves</Item>
         <Item>Stances</Item>
