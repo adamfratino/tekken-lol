@@ -6,31 +6,14 @@ import { variants } from "./Box.variants"
 
 export const Box = forwardRef(
   <T extends React.ElementType = "div">(
-    {
-      bordered,
-      inverted,
-      className,
-      as,
-      asChild,
-      children,
-      ...props
-    }: BoxProps<T>,
+    { className, as, asChild, children, ...props }: BoxProps<T>,
     ref: React.Ref<HTMLDivElement>
   ) => {
     const Component = asChild ? Slot : as ?? "div"
+    const classNames = cn(variants({ className }))
 
     return (
-      <Component
-        ref={ref}
-        className={cn(
-          variants({
-            bordered,
-            inverted,
-            className,
-          })
-        )}
-        {...props}
-      >
+      <Component ref={ref} className={classNames} {...props}>
         {children}
       </Component>
     )

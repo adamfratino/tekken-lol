@@ -13,6 +13,9 @@ const twVariants = {
   bordered: {
     true: "border",
   },
+  w: {
+    full: "w-full",
+  },
 }
 
 export const variants = cva("rounded-md flex border overflow-hidden", {

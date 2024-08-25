@@ -1,18 +1,8 @@
 import { cva } from "class-variance-authority"
 
-const twVariants = {
-  bordered: {
-    true: "border",
-  },
-  inverted: {
-    true: "bg-foreground text-background",
-  },
-}
+const twVariants = {}
 
-export const variants = cva(
-  {},
-  {
-    variants: twVariants,
-    defaultVariants: {},
-  }
-)
+export const variants = cva("", {
+  variants: twVariants,
+  defaultVariants: {},
+})

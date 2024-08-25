@@ -20,6 +20,6 @@ export const generateColorPalette = (color: string) => {
     light: lighten(0.1, color),
     medium: color,
     dark: darken(0.1, color),
-    derker: darken(0.2, color),
+    darker: darken(0.2, color),
   }
 }

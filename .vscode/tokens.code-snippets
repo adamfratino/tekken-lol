@@ -1,0 +1,19 @@
+{
+  "Create a new color": {
+    "prefix": "newcolortoken",
+    "scope": "javascript,typescript",
+    "isFileTemplate": true,
+    "body": [
+      "import { generateColorPalette } from \"../../../lib/utils\"",
+      "",
+      "const DEFAULT = \"#$1\" as const",
+      "const GENERATED = generateColorPalette(DEFAULT)",
+      "",
+      "export const $2 = {",
+      "  ...GENERATED,",
+      "}",
+      ""
+    ],
+    "description": "Long Description"
+  }
+}
