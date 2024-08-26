@@ -16,11 +16,9 @@ const tags = [
   "Punisher",
 ] as const
 
-type MoveCardSpecialPropertiesProps = Pick<GroupLayoutProps, "gap">
+type MoveCardPropertiesProps = Pick<GroupLayoutProps, "gap">
 
-export const MoveCardSpecialProperties = ({
-  gap,
-}: MoveCardSpecialPropertiesProps) => (
+export const MoveCardProperties = ({ gap }: MoveCardPropertiesProps) => (
   <MoveCardContainer title="Special Properties" className="flex-none">
     <Group gap={gap} wrap>
       {tags.map((tag) => (

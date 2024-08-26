@@ -6,7 +6,7 @@ import {
   MoveCardResultFrames as ResultFrames,
   MoveCardName as Name,
   MoveCardHitLevels as HitLevels,
-  MoveCardSpecialProperties as SpecialProperties,
+  MoveCardProperties as SpecialProperties,
   MoveCardNotes as Notes,
   MoveCardButtons as Buttons,
 } from "./subcomponents"
