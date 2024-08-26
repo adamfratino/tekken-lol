@@ -7,6 +7,7 @@ export const twVariants = {
     primary: "font-bold text-xl md:text-2xl lg:text-[48px] lg:leading-none",
     secondary: "font-bold text-lg mg:text-xl lg:text-2xl",
     tertiary: "font-bold text-base md:text-lg",
+    label: "text-xs",
   },
   shade: shades,
   size: sizes,

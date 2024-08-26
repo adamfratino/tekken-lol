@@ -1,9 +1,7 @@
 import type { PropsWithChildren } from "react"
 import Link from "next/link"
 import { cn } from "@/ui/lib/utils"
-import { Button } from "@/ui/primitives"
-import { Combobox, Group, Stack, Title } from "@/ui/components"
-import { User } from "lucide-react"
+import { Combobox, Stack } from "@/ui/components"
 
 const CHARACTERS = [
   { label: "Kazuya Mishima", value: "kazuya" },
@@ -62,7 +60,7 @@ const Item = ({ children, active }: ItemProps) => (
 )
 
 export const Sidebar = () => (
-  <div className="bg-muted/40 hidden border-r md:block">
+  <div className="bg-muted/40 sticky hidden border-r md:block">
     <div className="flex h-full max-h-screen flex-col gap-2">
       <div className="flex h-14 items-center border-b px-4 lg:h-[60px]">
         <Combobox items={CHARACTERS} buttonClassName="w-full" />
