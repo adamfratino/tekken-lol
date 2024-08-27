@@ -14,6 +14,8 @@ const tags = [
   "High Crush",
   "Wall Crush",
   "Punisher",
+  "Chip Damage",
+  "Spike",
 ] as const
 
 type MoveCardPropertiesProps = Pick<GroupLayoutProps, "gap">

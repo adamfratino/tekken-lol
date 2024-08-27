@@ -28,10 +28,12 @@ const twVariants = {
     "Heat Engager": "bg-orange-light",
     "Homing Move": "bg-pink-medium",
     "Power Crush": "bg-teal-medium",
-    "Tornado Move": "bg-blue-light",
+    "Tornado Move": "bg-blue-lighter",
     "Low Crush": "bg-purple-light",
     "High Crush": "bg-purple-lighter",
     "Wall Crush": "bg-aqua-medium",
+    "Chip Damage": "bg-yellow-medium",
+    Spike: "bg-red-lighter",
     Punisher: "bg-lime-light",
   },
 }
