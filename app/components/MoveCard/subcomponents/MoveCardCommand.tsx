@@ -1,10 +1,14 @@
 import { Property } from "@/ui/components"
 import { MoveCardContainer } from "./MoveCardContainer"
 
-export const MoveCardCommand = () => (
+type MoveCardProps = {
+  command: string
+}
+
+export const MoveCardCommand = ({ command }: MoveCardProps) => (
   <MoveCardContainer title="Command">
     <Property as="p" variant="primary">
-      1, 1, 2
+      {command}
     </Property>
   </MoveCardContainer>
 )

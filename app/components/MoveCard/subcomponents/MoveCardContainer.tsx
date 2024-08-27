@@ -4,7 +4,7 @@ import { Stack, Property } from "@/ui/components"
 import { cn } from "@/ui/lib/utils"
 
 type PropertyContainerProps = PropsWithChildren<{
-  value?: number | string
+  value?: string
   title: string
   className?: string
 }>
@@ -15,14 +15,14 @@ export const MoveCardContainer = ({
   className,
   value,
 }: PropertyContainerProps) => {
-  const valueNum = value && +value
+  const valueNum = value && value.split(" ")[0]!.replace(/[^\d-]/g, "")
 
   return (
     <Stack
       className={cn("w-full rounded-md border shadow-md", className, {
-        "bg-red-light": valueNum && valueNum <= -10,
-        "bg-yellow-light": valueNum && valueNum > -10 && valueNum <= 9,
-        "bg-forest-light": valueNum && valueNum >= 10,
+        "bg-red-light": valueNum && +valueNum <= -10,
+        "bg-yellow-light": valueNum && +valueNum > -10 && +valueNum <= 9,
+        "bg-forest-light": valueNum && +valueNum >= 10,
       })}
     >
       <Property
