@@ -1,10 +1,10 @@
 import { MoveCardContainer } from "./MoveCardContainer"
 import { Property } from "@/ui/components"
 
-export const MoveCardName = () => (
+export const MoveCardName = ({ name }: { name: string }) => (
   <MoveCardContainer title="Name">
     <Property as="p" variant="tertiary">
-      Konshin Seikenzuki (Cancelled)
+      {name}
     </Property>
   </MoveCardContainer>
 )

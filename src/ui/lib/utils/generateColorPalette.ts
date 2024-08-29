@@ -1,4 +1,4 @@
-import { darken, lighten } from "polished"
+import { darken, lighten, shade, tint } from "polished"
 import { hexToHsl } from "./hexToHsl"
 
 /**
@@ -16,10 +16,12 @@ export const generateColorPalette = (color: string) => {
   }
 
   return {
-    lighter: lighten(0.2, color),
-    light: lighten(0.1, color),
+    lightest: tint(0.5, color),
+    lighter: tint(0.35, color),
+    light: tint(0.2, color),
     medium: color,
-    dark: darken(0.1, color),
-    darker: darken(0.2, color),
+    dark: shade(0.2, color),
+    darker: shade(0.35, color),
+    darkest: shade(0.5, color),
   }
 }

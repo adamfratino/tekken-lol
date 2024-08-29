@@ -1,4 +1,5 @@
 import { Group, Modal, Card, Title, type ModalProps } from "@/ui/components"
+import { cn } from "@/ui/lib/utils"
 
 type Character = {
   label: string
@@ -21,9 +22,11 @@ export function CharacterSelectModal({
           <Card
             key={value}
             p="xl"
-            disabled={disabled}
             interactive
-            className="hover:bg-yellow-medium"
+            disabled={disabled}
+            className={cn({
+              "hover:bg-yellow-medium": !disabled,
+            })}
           >
             <Title size="xl">{label}</Title>
           </Card>

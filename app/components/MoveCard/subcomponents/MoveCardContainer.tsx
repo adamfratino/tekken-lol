@@ -28,7 +28,7 @@ export const MoveCardContainer = ({
       <Property
         as="h2"
         variant="title"
-        className="rounded-t-md bg-gray-light/85 px-3 py-2"
+        className="bg-gray-lightest/85 rounded-t-md px-3 py-2"
       >
         {title}
       </Property>

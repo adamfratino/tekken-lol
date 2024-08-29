@@ -31,10 +31,10 @@ export type Move = {
 }
 
 export const MoveCard = ({ move }: { move: Move }) => {
-  const { command, startup, damage, block, hit, counterHit } = move
+  const { command, startup, damage, block, hit, counterHit, name, notes } = move
 
   return (
-    <Card w="full" p="md" className="bg-gray-light/25 shadow-sm">
+    <Card w="full" p="md" className=" bg-gray-lightest/25 shadow-md">
       <Group w="full" gap={OUTER_GAP} className="overflow-hidden rounded-md">
         <Stack gap={OUTER_GAP} className="w-2/3">
           <Command command={command} />
@@ -53,9 +53,9 @@ export const MoveCard = ({ move }: { move: Move }) => {
         </Stack>
 
         <Stack gap={OUTER_GAP} className="w-1/3">
-          <Name />
+          <Name name={name} />
           <SpecialProperties gap={INNER_GAP} />
-          <Notes gap={INNER_GAP} />
+          {notes && <Notes gap={INNER_GAP} notes={notes} />}
           <Buttons gap={INNER_GAP} />
         </Stack>
       </Group>

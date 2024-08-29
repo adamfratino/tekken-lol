@@ -67,10 +67,6 @@ export const Sidebar = () => (
         <Item>Launchers</Item>
         <Item>At the wall</Item>
       </Stack>
-
-      <div className="m-4 mt-auto rounded-md bg-foreground p-4 text-xs text-background">
-        Select a character
-      </div>
     </Stack>
   </div>
 )
