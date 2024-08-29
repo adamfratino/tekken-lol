@@ -22,9 +22,9 @@ const InteractiveIcon = ({ bg, icon }: InteractiveIconProps) => {
 
 export const MoveCardButtons = ({ gap }: MoveCardButtonsProps) => (
   <Group gap={gap}>
-    <InteractiveIcon bg="bg-red-light" icon={Heart} />
     <InteractiveIcon bg="bg-blue-light" icon={Copy} />
-    <InteractiveIcon bg="bg-gray-dark" icon={Video} />
     <InteractiveIcon bg="bg-yellow-medium" icon={TriangleAlert} />
+    <InteractiveIcon bg="bg-red-light" icon={Heart} />
+    <InteractiveIcon bg="bg-gray-dark" icon={Video} />
   </Group>
 )

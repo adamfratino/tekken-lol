@@ -1,6 +1,6 @@
 const twVariants = {
   variant: {
-    default: ["bg-primary", "text-primary-foreground", "hover:bg-primary/90"],
+    default: ["bg-primary", "text-primary-foreground", "hover:bg-[#000]/75"],
     destructive: [
       "bg-destructive",
       "text-destructive-foreground",

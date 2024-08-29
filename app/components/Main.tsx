@@ -1,6 +1,7 @@
 import { promises as fs } from "fs"
 import { Stack } from "@/ui/components"
 import { MoveCard, type Move } from "./MoveCard"
+import { DialogOverlay } from "@/ui/primitives"
 
 type FrameData = {
   characterName?: string
