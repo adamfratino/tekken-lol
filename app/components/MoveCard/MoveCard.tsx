@@ -8,22 +8,34 @@ import {
   MoveCardResultFrames as ResultFrames,
   MoveCardName as Name,
   MoveCardHitLevels as HitLevels,
-  MoveCardProperties as SpecialProperties,
+  MoveCardTags as Tags,
   MoveCardNotes as Notes,
   MoveCardButtons as Buttons,
 } from "./subcomponents"
+import type { TagsShort } from "@/data/types"
 
 const OUTER_GAP = "md"
 const INNER_GAP = "sm"
 
-export const MoveCard = ({
-  move,
-  character,
-}: {
+type MoveCardProps = {
   move: Move
   character: Characters
-}) => {
-  const { command, startup, damage, block, hit, counterHit, name, notes } = move
+}
+
+export const MoveCard = ({ move, character }: MoveCardProps) => {
+  const {
+    command,
+    startup,
+    damage,
+    block,
+    hit,
+    counterHit,
+    name,
+    tags,
+    notes,
+  } = move
+
+  const tagsArray = tags && (Object.keys(tags) as TagsShort[])
 
   return (
     <Card
@@ -53,7 +65,7 @@ export const MoveCard = ({
 
         <Stack gap={OUTER_GAP} className="w-1/3">
           {name && <Name name={name} />}
-          <SpecialProperties gap={INNER_GAP} />
+          {tags && <Tags gap={INNER_GAP} tags={tagsArray} />}
           {notes && <Notes gap={INNER_GAP} notes={notes} />}
           <Buttons gap={INNER_GAP} command={command} character={character} />
         </Stack>

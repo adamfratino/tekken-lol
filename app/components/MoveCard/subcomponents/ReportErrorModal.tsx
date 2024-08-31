@@ -7,7 +7,6 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-  Input,
   Textarea,
 } from "@/ui/primitives"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -41,7 +40,7 @@ export const ReportErrorModal = ({
 
   const onSubmit = async (data: UserType) => {
     const discordWebhookUrl =
-      "https://discord.com/api/webhooks/1279304628491780156/1aJwZmHWohJfb6LSLZc_N6oHDCbDvd-y_wlWODDNycjx7nBuNTkvDFYp0dJWPdfiEgrU" // replace with your webhook URL
+      "https://discord.com/api/webhooks/1279304628491780156/1aJwZmHWohJfb6LSLZc_N6oHDCbDvd-y_wlWODDNycjx7nBuNTkvDFYp0dJWPdfiEgrU"
 
     try {
       const response = await fetch(discordWebhookUrl, {
@@ -52,22 +51,14 @@ export const ReportErrorModal = ({
         body: JSON.stringify({
           embeds: [
             {
+              color: 14177041,
               title: `:exclamation: ${character} needs attention :exclamation:`,
               description: `A user has submitted a report regarding ${character}'s frame data!`,
               timestamp: new Date().toISOString(),
               fields: [
-                {
-                  name: "Command",
-                  value: command,
-                },
-                {
-                  name: "Problem",
-                  value: data.problem,
-                },
-                {
-                  name: "Solution",
-                  value: data.solution,
-                },
+                { name: "Command", value: command },
+                { name: "Problem", value: data.problem },
+                { name: "Solution", value: data.solution },
               ],
             },
           ],
@@ -93,7 +84,7 @@ export const ReportErrorModal = ({
       description={
         <>
           Thanks for letting us know. Your feedback will be posted publically in
-          the <strong>#error-log</strong> channel on our{" "}
+          the <strong>#error-log</strong> channel on our very tiny{" "}
           <a
             href="https://discord.gg/KJd8sMY8w9"
             target="_blank"

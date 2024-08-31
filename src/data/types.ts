@@ -1,4 +1,4 @@
-import { CHARACTERS, TAGS } from "@/data/variables"
+import { CHARACTERS, TAGS, TAGS_DICTIONARY } from "@/data/variables"
 
 export type Character = {
   label: string
@@ -8,6 +8,7 @@ export type Character = {
 
 export type Characters = (typeof CHARACTERS)[number]["value"]
 export type Tags = keyof typeof TAGS
+export type TagsShort = keyof typeof TAGS_DICTIONARY
 
 export type Move = {
   moveNumber: number

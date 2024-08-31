@@ -15,7 +15,31 @@ export const TAGS: string[] = [
   "Punisher",
   "Chip Damage",
   "Spike",
+  "Parry State",
+  "Floating State",
+  "Intangible State",
 ]
+
+export const TAGS_DICTIONARY = {
+  bbr: "Balcony Break",
+  chp: "Chip Damage",
+  cs: "High Crush",
+  elb: "Elbow",
+  fbr: "Floor Break",
+  fs: "Floating State",
+  hb: "Heat Burst",
+  he: "Heat Engager",
+  hs: "Heat Smash",
+  hom: "Homing Attack",
+  js: "Low Crush",
+  kne: "Knee",
+  pc: "Power Crush",
+  ps: "Parry State",
+  spk: "Spike",
+  trn: "Tornado Move",
+  wc: "Wall Crush",
+  wpn: "Weapon",
+} as const
 
 export const CHARACTERS: Character[] = [
   { label: "Alisa Bosconovitch", value: "alisa" },
