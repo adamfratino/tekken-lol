@@ -9,13 +9,23 @@ import {
   FormMessage,
   Textarea,
 } from "@/ui/primitives"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/ui/primitives/select"
+import { toast } from "@/hooks/use-toast"
 import { zodResolver } from "@hookform/resolvers/zod"
 import React from "react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import type { Characters, Move } from "@/data/types"
+import { MOVE_PROPERTIES } from "@/data/variables"
 
 const UserSchema = z.object({
+  property: z.enum(MOVE_PROPERTIES),
   problem: z.string(),
   solution: z.string(),
 })
@@ -52,11 +62,12 @@ export const ReportErrorModal = ({
           embeds: [
             {
               color: 14177041,
-              title: `:exclamation: ${character} needs attention :exclamation:`,
+              title: `${character} needs attention`,
               description: `A user has submitted a report regarding ${character}'s frame data!`,
               timestamp: new Date().toISOString(),
               fields: [
-                { name: "Command", value: command },
+                { name: "Command", value: command, inline: true },
+                { name: "Property", value: data.property, inline: true },
                 { name: "Problem", value: data.problem },
                 { name: "Solution", value: data.solution },
               ],
@@ -100,6 +111,36 @@ export const ReportErrorModal = ({
           className="w-full space-y-6 pt-2"
           onSubmit={form.handleSubmit(onSubmit)}
         >
+          <FormField
+            control={form.control}
+            name="property"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Which property needs to be fixed?</FormLabel>
+                <Select
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                >
+                  <FormControl>
+                    <SelectTrigger>
+                      <SelectValue placeholder="" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    {MOVE_PROPERTIES.map((property, i) => (
+                      <SelectItem
+                        value={property}
+                        className="cursor-pointer capitalize"
+                      >
+                        {property}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
           <FormField
             control={form.control}
             name="problem"

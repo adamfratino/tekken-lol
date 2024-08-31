@@ -20,6 +20,19 @@ export const TAGS: string[] = [
   "Intangible State",
 ]
 
+export const MOVE_PROPERTIES = [
+  "Command",
+  "Button Sequence",
+  "Hit Levels",
+  "On Hit",
+  "On Block",
+  "On Counter-Hit",
+  "Name",
+  "Tags",
+  "Notes",
+  "Buttons",
+] as const
+
 export const HIT_LEVELS = ["h", "m", "l", "th"]
 
 export const TAGS_DICTIONARY = {
