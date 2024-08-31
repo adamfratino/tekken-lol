@@ -1,3 +1,4 @@
+import type { Move } from "@/data/types"
 import { Card, Group, Stack } from "@/ui/components"
 import {
   MoveCardCommand as Command,
@@ -15,21 +16,6 @@ import {
 const OUTER_GAP = "md"
 const INNER_GAP = "sm"
 
-export type Move = {
-  moveNumber: number
-  command: string
-  name: string
-  hitLevel: string
-  damage: string
-  startup: string
-  block: string
-  hit: string
-  counterHit: string
-  notes: string
-  wavuId: string
-  tags: any
-}
-
 export const MoveCard = ({ move }: { move: Move }) => {
   const { command, startup, damage, block, hit, counterHit, name, notes } = move
 
@@ -40,10 +26,12 @@ export const MoveCard = ({ move }: { move: Move }) => {
           <Command command={command} />
           <ButtonSequence />
           <HitLevels gap={INNER_GAP} />
-          <Group gap={INNER_GAP} w="full">
-            <StartupFrames frames={startup} />
-            <Damage damage={damage} />
-          </Group>
+          {(startup || damage) && (
+            <Group gap={INNER_GAP} w="full">
+              {startup && <StartupFrames frames={startup} />}
+              {damage && <Damage damage={damage} />}
+            </Group>
+          )}
           <ResultFrames
             gap={OUTER_GAP}
             block={block}
@@ -53,7 +41,7 @@ export const MoveCard = ({ move }: { move: Move }) => {
         </Stack>
 
         <Stack gap={OUTER_GAP} className="w-1/3">
-          <Name name={name} />
+          {name && <Name name={name} />}
           <SpecialProperties gap={INNER_GAP} />
           {notes && <Notes gap={INNER_GAP} notes={notes} />}
           <Buttons gap={INNER_GAP} />

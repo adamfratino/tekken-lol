@@ -1,15 +1,7 @@
 import { promises as fs } from "fs"
+import type { FrameData } from "@/data/types"
 import { Stack } from "@/ui/components"
-import { MoveCard, type Move } from "./MoveCard"
-import { DialogOverlay } from "@/ui/primitives"
-
-type FrameData = {
-  characterName?: string
-  editUrl?: string
-  game?: string
-  framesNormal: Move[]
-  stances: string[]
-}
+import { MoveCard } from "./MoveCard"
 
 export const Main = async () => {
   const file = await fs.readFile(

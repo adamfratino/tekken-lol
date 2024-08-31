@@ -1,6 +1,6 @@
 import { Badge, Group, type GroupLayoutProps } from "@/ui/components"
 import { MoveCardContainer } from "./MoveCardContainer"
-import { TAGS } from "app/variables"
+import { TAGS } from "@/data/variables"
 
 type MoveCardPropertiesProps = Pick<GroupLayoutProps, "gap">
 

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Group, Modal, Card, Title, type ModalProps } from "@/ui/components"
 import { cn } from "@/ui/lib/utils"
 
@@ -21,6 +22,7 @@ export function CharacterSelectModal({
         {characters.map(({ label, value, disabled }) => (
           <Card
             key={value}
+            asChild
             p="xl"
             interactive
             disabled={disabled}
@@ -28,7 +30,9 @@ export function CharacterSelectModal({
               "hover:bg-yellow-medium": !disabled,
             })}
           >
-            <Title size="xl">{label}</Title>
+            <Link href={`/${value}`}>
+              <Title size="xl">{label}</Title>
+            </Link>
           </Card>
         ))}
       </Group>

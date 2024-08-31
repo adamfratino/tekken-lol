@@ -9,11 +9,11 @@ export const MoveCardNotes = ({ gap, notes }: MoveCardNotesProps) => {
   const notesArray = notes.split("* ")
 
   return (
-    <MoveCardContainer title="Notes" className="h-full">
+    <MoveCardContainer title="Notes">
       <Stack as="ul" gap={gap} className="ml-5 list-disc text-sm">
-        {notesArray.map((note) => (
+        {notesArray.map((note, i) => (
           <li
-            key={note}
+            key={i + note}
             className="empty:hidden"
             aria-hidden={note === "" ? true : undefined}
           >
