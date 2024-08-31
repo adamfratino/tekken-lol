@@ -1,4 +1,3 @@
-import type { PropsWithChildren } from "react"
 import {
   Dialog,
   DialogContent,
@@ -6,15 +5,13 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/ui/primitives/Dialog/Dialog"
-
-export type ModalProps = PropsWithChildren<{
-  trigger: React.ReactNode
-  title?: string
-  description?: string
-}>
+} from "@/ui/primitives"
+import { cn } from "@/ui/lib/utils"
+import type { ModalProps } from "./Modal.types"
+import { variants } from "./Modal.variants"
 
 export const Modal = ({
+  size,
   trigger,
   title,
   description,
@@ -22,10 +19,14 @@ export const Modal = ({
 }: ModalProps) => (
   <Dialog>
     <DialogTrigger asChild>{trigger}</DialogTrigger>
-    <DialogContent className="h-[90dvh] w-[90dvw]">
+    <DialogContent className={cn("h-[90dvh] w-[90dvw]", variants({ size }))}>
       <DialogHeader className="mb-4 min-h-5">
-        {title && <DialogTitle>{title}</DialogTitle>}
-        {description && <DialogDescription>{description}</DialogDescription>}
+        {title && <DialogTitle className="mb-2">{title}</DialogTitle>}
+        {description && (
+          <DialogDescription className="max-w-[460px]">
+            {description}
+          </DialogDescription>
+        )}
       </DialogHeader>
       {children}
     </DialogContent>

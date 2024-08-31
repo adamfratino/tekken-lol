@@ -1,5 +1,6 @@
 export type BaseProps = React.PropsWithChildren<{
   className?: string
+  id?: string
 }>
 
 export type AsChildProps = BaseProps & {

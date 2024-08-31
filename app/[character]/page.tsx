@@ -18,5 +18,5 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
   const data = JSON.parse(file) as FrameData
   const frames = data.framesNormal
 
-  return <MoveTable frames={frames} />
+  return <MoveTable character={character} frames={frames} />
 }

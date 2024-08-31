@@ -16,7 +16,6 @@ export const generateArgTypes = (
       Object.entries(obj).map(([key, value]) => {
         const keys = Object.keys(value as any)
         const isBooleanCategory = keys.length === 1 && keys[0] === "true"
-        console.log(keys)
 
         return [
           name || key,

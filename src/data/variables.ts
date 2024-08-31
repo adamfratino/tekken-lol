@@ -39,7 +39,7 @@ export const CHARACTERS: Character[] = [
   { label: "Leo Kliesen", value: "leo" },
   { label: "Lidia Sobieska", value: "lidia" },
   { label: "Lili Rochefort", value: "lili" },
-  { label: "Ling Xiaoyu", value: "xiayou" },
+  { label: "Ling Xiaoyu", value: "xiaoyu" },
   { label: "Marshall Law", value: "law" },
   { label: "Nina Williams", value: "nina" },
   { label: "Paul Phoenix", value: "paul" },

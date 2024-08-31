@@ -1,4 +1,4 @@
-import type { Move } from "@/data/types"
+import type { Characters, Move } from "@/data/types"
 import { Card, Group, Stack } from "@/ui/components"
 import {
   MoveCardCommand as Command,
@@ -16,11 +16,22 @@ import {
 const OUTER_GAP = "md"
 const INNER_GAP = "sm"
 
-export const MoveCard = ({ move }: { move: Move }) => {
+export const MoveCard = ({
+  move,
+  character,
+}: {
+  move: Move
+  character: Characters
+}) => {
   const { command, startup, damage, block, hit, counterHit, name, notes } = move
 
   return (
-    <Card w="full" p="md" className=" bg-gray-lightest/25 shadow-md">
+    <Card
+      id={command}
+      w="full"
+      p="md"
+      className=" bg-gray-lightest/25 shadow-md"
+    >
       <Group w="full" gap={OUTER_GAP} className="overflow-hidden rounded-md">
         <Stack gap={OUTER_GAP} className="w-2/3">
           <Command command={command} />
@@ -44,7 +55,7 @@ export const MoveCard = ({ move }: { move: Move }) => {
           {name && <Name name={name} />}
           <SpecialProperties gap={INNER_GAP} />
           {notes && <Notes gap={INNER_GAP} notes={notes} />}
-          <Buttons gap={INNER_GAP} />
+          <Buttons gap={INNER_GAP} command={command} character={character} />
         </Stack>
       </Group>
     </Card>
