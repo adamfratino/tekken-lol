@@ -4,10 +4,8 @@ import Link from "next/link"
 import { cn } from "@/ui/lib/utils"
 import { Group, Stack, Title } from "@/ui/components"
 import { cva, type VariantProps } from "class-variance-authority"
-import { CharacterSelectModal } from "./CharacterSelectModal"
 import { Button } from "@/ui/primitives"
 import { CHARACTERS, TAGS } from "@/data/variables"
-import { MoveTagSelectModal } from "./MoveTagSelectModal"
 import { Characters } from "@/data/types"
 
 const itemVariants = cva(
@@ -55,17 +53,6 @@ export const Sidebar = ({ character }: SidebarProps) => {
             <Title as="h2">{characterName?.label}</Title>
           </Group>
         </div>
-
-        <Stack p={{ base: "sm", lg: "lg" }} gap="sm" w="full">
-          <CharacterSelectModal
-            characters={CHARACTERS}
-            trigger={<Button>Select a character</Button>}
-          />
-          <MoveTagSelectModal
-            tags={TAGS}
-            trigger={<Button>Select a filter</Button>}
-          />
-        </Stack>
 
         <Stack p={{ base: "sm", lg: "lg" }} gap="sm" w="full">
           <Item active>All moves</Item>
