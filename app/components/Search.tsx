@@ -31,6 +31,7 @@ export function Search({ moves }: { moves: any[] }) {
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
+
         <CommandGroup heading="Moves">
           {moves.map((move) => (
             <CommandItem
@@ -42,11 +43,13 @@ export function Search({ moves }: { moves: any[] }) {
                 onClick={() => setOpen(false)}
                 className="cursor-pointer"
               >
-                {move.command}
+                {move.command.replaceAll(",", ", ")} /{" "}
+                {move.hitLevel.replaceAll(",", ", ")}
               </Link>
             </CommandItem>
           ))}
         </CommandGroup>
+
         <CommandGroup heading="Characters">
           {CHARACTERS.map((char) => (
             <CommandItem key={`search_${char.value}`} asChild>

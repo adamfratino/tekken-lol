@@ -29,12 +29,14 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
     damage,
     block,
     hit,
+    hitLevel,
     counterHit,
     name,
     tags,
     notes,
   } = move
 
+  const hitLevelsArray = hitLevel.split(",") || ["-"]
   const tagsArray = tags && (Object.keys(tags) as TagsShort[])
 
   return (
@@ -48,7 +50,7 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
         <Stack gap={OUTER_GAP} className="w-2/3">
           <Command command={command} />
           <ButtonSequence />
-          <HitLevels gap={INNER_GAP} />
+          {hitLevel && <HitLevels gap={INNER_GAP} hitLevels={hitLevelsArray} />}
           {(startup || damage) && (
             <Group gap={INNER_GAP} w="full">
               {startup && <StartupFrames frames={startup} />}

@@ -19,9 +19,14 @@ const twVariants = {
   },
   shade: {
     /** Hit Levels */
-    high: "bg-forest-light",
-    mid: "bg-yellow-light",
-    low: "bg-red-light",
+    h: "bg-forest-light",
+    H: "bg-forest-medium",
+    m: "bg-yellow-light",
+    M: "bg-yellow-medium",
+    l: "bg-red-light",
+    L: "bg-red-medium",
+    t: "bg-blue-light",
+    "ub(m)": "bg-aqua-light",
     /** Tags */
     bbr: "bg-green-medium",
     chp: "bg-yellow-medium",

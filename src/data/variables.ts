@@ -20,6 +20,8 @@ export const TAGS: string[] = [
   "Intangible State",
 ]
 
+export const HIT_LEVELS = ["h", "m", "l", "th"]
+
 export const TAGS_DICTIONARY = {
   bbr: "Balcony Break",
   chp: "Chip Damage",

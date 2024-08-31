@@ -11,7 +11,7 @@ export const MoveTable = async ({ frames, character }: MoveTableProps) => {
   return (
     <>
       <main className="h-[calc(100dvh-60px)] overflow-y-scroll">
-        <Stack gap={{ base: "lg", sm: "xl" }} p="lg">
+        <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
           {frames.map((move) => (
             <MoveCard
               key={move.moveNumber + move.command}
