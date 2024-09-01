@@ -1,8 +1,8 @@
 "use client"
 
 import { Search as SearchIcon } from "lucide-react"
-import Link from "next/link"
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { Group } from "@/ui/components"
 import { Button } from "@/ui/primitives"
 import {
@@ -14,16 +14,20 @@ import {
   CommandItem,
 } from "@/ui/primitives/command"
 import { CHARACTERS } from "@/data/variables"
+import { cn } from "@/ui/lib/utils"
 
 /** @todo create store for moves */
 export const SearchButton = ({
   moves,
   text,
+  className,
 }: {
   moves?: any[]
   text: string
+  className?: string
 }) => {
   const [open, setOpen] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -36,13 +40,23 @@ export const SearchButton = ({
     return () => document.removeEventListener("keydown", down)
   }, [])
 
+  const handleSelect = (href: string) => {
+    router.push(href)
+    setOpen(false)
+  }
+
   return (
     <>
-      <Group asChild gap="sm">
+      <Group
+        asChild
+        gap="sm"
+        className={cn("w-full max-w-[640px] cursor-text", className)}
+        align="start"
+      >
         <Button onClick={() => setOpen(true)}>
           <SearchIcon size={18} />
           <p className="text-xs">{text}</p>
-          <kbd className="pointer-events-none ml-2 inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-foreground opacity-100">
+          <kbd className="pointer-events-none ml-auto inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-foreground opacity-100">
             <span className="text-xs">⌘</span>K
           </kbd>
         </Button>
@@ -58,16 +72,11 @@ export const SearchButton = ({
               {moves.map((move) => (
                 <CommandItem
                   key={`search_${move.command + move.moveNumber}`}
-                  asChild
+                  onSelect={() => handleSelect(`#${move.command}`)}
+                  className="cursor-pointer"
                 >
-                  <Link
-                    href={`#${move.command}`}
-                    onClick={() => setOpen(false)}
-                    className="cursor-pointer"
-                  >
-                    {move.command.replaceAll(",", ", ")} /{" "}
-                    {move.hitLevel.replaceAll(",", ", ")}
-                  </Link>
+                  {move.command.replaceAll(",", ", ")} /{" "}
+                  {move.hitLevel.replaceAll(",", ", ")}
                 </CommandItem>
               ))}
             </CommandGroup>
@@ -75,10 +84,12 @@ export const SearchButton = ({
 
           <CommandGroup heading="Characters">
             {CHARACTERS.map((char) => (
-              <CommandItem key={`search_${char.value}`} asChild>
-                <Link href={`/${char.value}`} className="cursor-pointer">
-                  {char.label}
-                </Link>
+              <CommandItem
+                key={`search_${char.value}`}
+                onSelect={() => handleSelect(`/${char.value}`)}
+                className="cursor-pointer"
+              >
+                {char.label}
               </CommandItem>
             ))}
           </CommandGroup>
