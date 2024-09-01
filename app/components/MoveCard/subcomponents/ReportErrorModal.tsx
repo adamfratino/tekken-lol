@@ -16,7 +16,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/ui/primitives/select"
-import { toast } from "@/hooks/use-toast"
 import { zodResolver } from "@hookform/resolvers/zod"
 import React from "react"
 import { useForm } from "react-hook-form"
@@ -123,7 +122,7 @@ export const ReportErrorModal = ({
                 >
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="" />
+                      <SelectValue placeholder="Select a move property" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>

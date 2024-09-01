@@ -4,8 +4,7 @@ import Link from "next/link"
 import { cn } from "@/ui/lib/utils"
 import { Group, Stack, Title } from "@/ui/components"
 import { cva, type VariantProps } from "class-variance-authority"
-import { Button } from "@/ui/primitives"
-import { CHARACTERS, TAGS } from "@/data/variables"
+import { CHARACTERS } from "@/data/variables"
 import { Characters } from "@/data/types"
 
 const itemVariants = cva(

@@ -1,6 +1,6 @@
 import { Stack } from "@/ui/components"
 import type { Characters } from "@/data/types"
-import { MoveCard, Search } from "app/components"
+import { MoveCard } from "app/components"
 
 type MoveTableProps = {
   frames: any[]
@@ -9,19 +9,16 @@ type MoveTableProps = {
 
 export const MoveTable = async ({ frames, character }: MoveTableProps) => {
   return (
-    <>
-      <main className="h-[calc(100dvh-60px)] overflow-y-scroll">
-        <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
-          {frames.map((move) => (
-            <MoveCard
-              key={move.moveNumber + move.command}
-              move={move}
-              character={character}
-            />
-          ))}
-        </Stack>
-      </main>
-      <Search moves={frames} />
-    </>
+    <main className="h-[calc(100dvh-60px)] overflow-y-scroll">
+      <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
+        {frames.map((move) => (
+          <MoveCard
+            key={move.moveNumber + move.command}
+            move={move}
+            character={character}
+          />
+        ))}
+      </Stack>
+    </main>
   )
 }
