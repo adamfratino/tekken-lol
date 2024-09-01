@@ -2,13 +2,23 @@ import { UserIcon } from "lucide-react"
 import { Group, Stack, Title } from "@/ui/components"
 import { CHARACTERS } from "@/data/variables"
 import { Characters } from "@/data/types"
-import { SidebarNavigation } from "./components/SidebarNavigation"
+import {
+  SidebarNavigation,
+  type SidebarNavigationProps,
+} from "./components/SidebarNavigation"
 
 type SidebarProps = {
   character: Characters
-}
+  count?: number
+} & Omit<SidebarNavigationProps, "character">
 
-export const Sidebar = ({ character }: SidebarProps) => {
+export const Sidebar = ({
+  character,
+  count,
+  heatCount,
+  punisherCount,
+  wallCount,
+}: SidebarProps) => {
   const characterName = CHARACTERS.filter((char) => char.value === character)[0]
 
   return (
@@ -21,7 +31,13 @@ export const Sidebar = ({ character }: SidebarProps) => {
           </Group>
         </div>
 
-        <SidebarNavigation character={character} />
+        <SidebarNavigation
+          character={character}
+          count={count}
+          heatCount={heatCount}
+          punisherCount={punisherCount}
+          wallCount={wallCount}
+        />
 
         <div className="mt-auto px-2 font-medium">
           <p className="text-xs">tekken.lol &mdash; v0.0.1</p>

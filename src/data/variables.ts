@@ -4,6 +4,7 @@ export enum PATHS {
   HEAT = "heat",
   STANCES = "stances",
   PUNISHERS = "punishers",
+  WALL = "wall",
 }
 
 export const TAGS: string[] = [

@@ -34,3 +34,8 @@ export type FrameData = {
   framesNormal: Move[]
   stances: string[]
 }
+
+export type PunishersType = {
+  standing?: string[]
+  crouching?: string[]
+}

@@ -15,7 +15,7 @@ export const Header = () => (
           <Group asChild gap="sm">
             <Button>
               <Users size={18} />
-              <p className="text-xs font-semibold">Select a character</p>
+              <p className="text-xs">Select a character</p>
             </Button>
           </Group>
         }

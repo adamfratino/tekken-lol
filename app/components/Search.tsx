@@ -41,7 +41,7 @@ export const SearchButton = ({
       <Group asChild gap="sm">
         <Button onClick={() => setOpen(true)}>
           <SearchIcon size={18} />
-          <p className="text-xs font-semibold">{text}</p>
+          <p className="text-xs">{text}</p>
           <kbd className="pointer-events-none ml-2 inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-foreground opacity-100">
             <span className="text-xs">⌘</span>K
           </kbd>

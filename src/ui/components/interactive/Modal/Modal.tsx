@@ -21,7 +21,7 @@ export const Modal = ({
     <DialogTrigger asChild>{trigger}</DialogTrigger>
     <DialogContent className={cn("h-[90dvh] w-[90dvw]", variants({ size }))}>
       <DialogHeader className="mb-4 min-h-5">
-        {title && <DialogTitle className="mb-2">{title}</DialogTitle>}
+        <DialogTitle className="mb-2">{title}</DialogTitle>
         {description && (
           <DialogDescription className="max-w-[460px]">
             {description}

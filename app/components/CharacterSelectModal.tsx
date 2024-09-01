@@ -19,22 +19,24 @@ export function CharacterSelectModal({
   return (
     <Modal trigger={trigger}>
       <Group gap="md" className="flex-wrap">
-        {characters.map(({ label, value, disabled }) => (
-          <Card
-            key={value}
-            asChild
-            p="xl"
-            interactive
-            disabled={disabled}
-            className={cn({
-              "hover:bg-yellow-medium": !disabled,
-            })}
-          >
-            <Link href={`/${value}`}>
-              <Title size="xl">{label}</Title>
-            </Link>
-          </Card>
-        ))}
+        {characters.map(({ label, value, disabled }) => {
+          return (
+            <Card
+              key={value}
+              asChild
+              p="xl"
+              interactive
+              disabled={disabled}
+              className={cn({
+                "hover:bg-yellow-medium": !disabled,
+              })}
+            >
+              <Link href={`/${value}`}>
+                <Title size="xl">{label}</Title>
+              </Link>
+            </Card>
+          )
+        })}
       </Group>
     </Modal>
   )

@@ -25,7 +25,6 @@ export default async function CharacterHeatPage({
 
   const frames = data.framesNormal
 
-  // Separate arrays for each tag
   const hbFrames = frames.filter((move) => move.tags && "hb" in move.tags)
   const hsFrames = frames.filter((move) => move.tags && "hs" in move.tags)
   const heFrames = frames.filter((move) => move.tags && "he" in move.tags)
