@@ -4,13 +4,13 @@ import {
   Badge,
   type BadgeVariantProps,
 } from "@/ui/components"
-import type { HitLevels } from "@/data/types"
 import { MoveCardContainer } from "./MoveCardContainer"
 
 const HIT_LEVELS_DICTIONARY = {
   h: "High",
   H: "High (hits grounded)",
   m: "Mid",
+  sm: "Special Mid",
   M: "Mid (hits grounded)",
   l: "Low",
   L: "Low (hits grounded)",

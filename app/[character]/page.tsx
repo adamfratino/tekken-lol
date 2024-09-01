@@ -1,10 +1,14 @@
 import { promises as fs } from "fs"
-import type { Characters, FrameData } from "@/data/types"
+import type { FrameData } from "@/data/types"
+import { getCharacterLabel } from "@/utils"
 import { MoveTable } from "./components/MovesTable"
+import type { CharacterPageProps } from "./types"
 
-interface CharacterPageProps {
-  params: {
-    character: Characters
+export async function generateMetadata({ params }: CharacterPageProps) {
+  const { character } = params
+
+  return {
+    title: "tekken.lol : " + getCharacterLabel(character) + " : moves",
   }
 }
 

@@ -1,5 +1,5 @@
 export * from "./Header"
 export * from "./Main"
-export * from "./Sidebar"
+export * from "./Sidebar/Sidebar"
 export * from "./Search"
 export * from "./MoveCard"

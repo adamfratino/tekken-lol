@@ -1,5 +1,11 @@
 import type { Character } from "./types"
 
+export enum PATHS {
+  HEAT = "heat",
+  STANCES = "stances",
+  PUNISHERS = "punishers",
+}
+
 export const TAGS: string[] = [
   "Balcony Break",
   "Floor Break",

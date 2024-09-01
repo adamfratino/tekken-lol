@@ -20,7 +20,8 @@ export const Header = () => (
           </Group>
         }
       />
-      <MoveTagSelectModal
+
+      {/* <MoveTagSelectModal
         tags={TAGS}
         trigger={
           <Group asChild gap="sm">
@@ -30,7 +31,7 @@ export const Header = () => (
             </Button>
           </Group>
         }
-      />
+      /> */}
 
       <SearchButton text="Search moves, characters, etc." />
     </Group>

@@ -24,6 +24,7 @@ export type Move = {
   notes: string
   wavuId: string
   tags: any
+  recovery: string
 }
 
 export type FrameData = {

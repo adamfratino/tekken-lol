@@ -1,24 +1,38 @@
 import { Stack } from "@/ui/components"
 import type { Characters } from "@/data/types"
+import { Title } from "@/ui/components"
 import { MoveCard } from "app/components"
 
 type MoveTableProps = {
   frames: any[]
   character: Characters
+  title?: string
 }
 
-export const MoveTable = async ({ frames, character }: MoveTableProps) => {
-  return (
-    <main className="h-[calc(100dvh-60px)] overflow-y-scroll">
-      <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
-        {frames.map((move) => (
-          <MoveCard
-            key={move.moveNumber + move.command}
-            move={move}
-            character={character}
-          />
-        ))}
-      </Stack>
-    </main>
-  )
-}
+const Headline = ({ text }: { text: string }) => (
+  <Title
+    size="xl"
+    className="border-b-background-muted sticky top-0 border-b bg-background px-6 py-4"
+  >
+    {text}
+  </Title>
+)
+
+export const MoveTable = async ({
+  frames,
+  character,
+  title,
+}: MoveTableProps) => (
+  <>
+    {title && <Headline text={title} />}
+    <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
+      {frames.map((move) => (
+        <MoveCard
+          key={move.moveNumber + move.command}
+          move={move}
+          character={character}
+        />
+      ))}
+    </Stack>
+  </>
+)
