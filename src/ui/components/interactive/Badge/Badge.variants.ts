@@ -23,6 +23,7 @@ const twVariants = {
     h: "bg-forest-light",
     H: "bg-forest-medium",
     m: "bg-yellow-light",
+    mm: "bg-yellow-light",
     sm: "bg-purple-light",
     M: "bg-yellow-medium",
     l: "bg-red-light",

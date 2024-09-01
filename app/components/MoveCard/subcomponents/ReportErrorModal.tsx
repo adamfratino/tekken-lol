@@ -1,6 +1,11 @@
-import { Button } from "@/ui/primitives"
-import { Modal } from "@/ui/components"
+import { usePathname } from "next/navigation"
+import React from "react"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
+
+import { Group, Modal } from "@/ui/components"
 import {
+  Button,
   Form,
   FormControl,
   FormField,
@@ -17,9 +22,8 @@ import {
   SelectValue,
 } from "@/ui/primitives/select"
 import { zodResolver } from "@hookform/resolvers/zod"
-import React from "react"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+import { getCharacterLabel } from "@/utils"
+
 import type { Characters, Move } from "@/data/types"
 import { MOVE_PROPERTIES } from "@/data/variables"
 
@@ -42,6 +46,10 @@ export const ReportErrorModal = ({
   character,
   command,
 }: ReportErrorModalProps) => {
+  const formattedName = getCharacterLabel(character)?.toUpperCase()
+  const pathname = usePathname()
+  const url = "http://localhost:3000" + pathname + "#" + command
+
   const form = useForm<UserType>({
     resolver: zodResolver(UserSchema),
     mode: "onChange",
@@ -61,8 +69,9 @@ export const ReportErrorModal = ({
           embeds: [
             {
               color: 14177041,
-              title: `${character} needs attention`,
-              description: `A user has submitted a report regarding ${character}'s frame data!`,
+              title: `${formattedName} needs attention`,
+              url: url,
+              description: `A user has submitted a report regarding ${formattedName}'s frame data!`,
               timestamp: new Date().toISOString(),
               fields: [
                 { name: "Command", value: command, inline: true },
@@ -128,6 +137,7 @@ export const ReportErrorModal = ({
                   <SelectContent>
                     {MOVE_PROPERTIES.map((property, i) => (
                       <SelectItem
+                        key={property + i}
                         value={property}
                         className="cursor-pointer capitalize"
                       >
@@ -158,7 +168,17 @@ export const ReportErrorModal = ({
             name="solution"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>How can we fix it?</FormLabel>
+                <Group
+                  asChild
+                  align="between"
+                  w="full"
+                  className="items-center"
+                >
+                  <FormLabel>
+                    How can we fix it?{" "}
+                    <span className="text-xs text-gray-dark">(optiona)</span>
+                  </FormLabel>
+                </Group>
                 <FormControl>
                   <Textarea {...field} />
                 </FormControl>

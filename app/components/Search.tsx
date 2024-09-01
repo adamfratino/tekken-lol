@@ -53,10 +53,10 @@ export const SearchButton = ({
         className={cn("w-full max-w-[640px] cursor-text", className)}
         align="start"
       >
-        <Button onClick={() => setOpen(true)}>
+        <Button variant="outline" onClick={() => setOpen(true)}>
           <SearchIcon size={18} />
-          <p className="text-xs">{text}</p>
-          <kbd className="pointer-events-none ml-auto inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-foreground opacity-100">
+          <p className="text-sm">{text}</p>
+          <kbd className="pointer-events-none ml-auto inline-flex h-5 select-none items-center gap-1 rounded border bg-foreground px-1.5 font-mono text-[10px] font-medium text-background opacity-100">
             <span className="text-xs">⌘</span>K
           </kbd>
         </Button>

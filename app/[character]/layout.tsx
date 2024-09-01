@@ -28,7 +28,7 @@ export default async function CharacterLayout({
   )
 
   const wallMoves = moves.filter(
-    (move) => move.tags && ["hb", "hs", "he"].some((tag) => tag in move.tags)
+    (move) => move.tags && ["bbr", "wc"].some((tag) => tag in move.tags)
   )
 
   const allCount = moves.length

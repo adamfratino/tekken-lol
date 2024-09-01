@@ -10,6 +10,7 @@ const HIT_LEVELS_DICTIONARY = {
   h: "High",
   H: "High (hits grounded)",
   m: "Mid",
+  mm: "Mid (2)",
   sm: "Special Mid",
   M: "Mid (hits grounded)",
   l: "Low",

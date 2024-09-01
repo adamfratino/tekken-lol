@@ -39,22 +39,17 @@ export default async function CharacterPunishersPage({
   )
 
   return (
-    <Stack gap="xl" w="full">
-      <Stack gap="md">
-        <MoveTable
-          title="Standing Punishers"
-          character={character}
-          frames={standingPunishers}
-        />
-      </Stack>
-
-      <Stack gap="md">
-        <MoveTable
-          title="Crouching Punishers"
-          character={character}
-          frames={crouchingPunishers}
-        />
-      </Stack>
-    </Stack>
+    <div>
+      <MoveTable
+        title="Standing Punishers"
+        character={character}
+        frames={standingPunishers}
+      />
+      <MoveTable
+        title="Crouching Punishers"
+        character={character}
+        frames={crouchingPunishers}
+      />
+    </div>
   )
 }
