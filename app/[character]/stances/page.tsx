@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
 
   return {
-    title: "tekken.lol : " + getCharacterLabel(character) + " : at the wall",
+    title: "tekken.lol : " + getCharacterLabel(character) + " : stances",
   }
 }
 
@@ -24,24 +24,24 @@ export default async function CharacterHeatPage({
   const data = JSON.parse(file) as FrameData
 
   const frames = data.framesNormal
-
-  const wcFrames = frames.filter((move) => move.tags && "wc" in move.tags)
-  const bbrFrames = frames.filter((move) => move.tags && "bbr" in move.tags)
+  const stances = data.stances
 
   return (
     <div>
-      {wcFrames.length > 0 && (
-        <MoveTable
-          character={character}
-          frames={wcFrames}
-          title="Wall Crush moves"
-        />
-      )}
-      <MoveTable
-        character={character}
-        frames={bbrFrames}
-        title="Balcony Break moves"
-      />
+      {stances.map((stance) => {
+        const filteredFrames = frames.filter((move) =>
+          move.command.startsWith(stance)
+        )
+
+        return (
+          <MoveTable
+            key={stance}
+            character={character}
+            frames={filteredFrames}
+            title={`${stance} Moves`}
+          />
+        )
+      })}
     </div>
   )
 }

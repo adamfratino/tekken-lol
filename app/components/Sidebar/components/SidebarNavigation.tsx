@@ -54,6 +54,7 @@ export type SidebarNavigationProps = {
   heatCount?: number
   punisherCount?: number
   wallCount?: number
+  stancesCount?: number
 }
 
 export const SidebarNavigation = ({
@@ -62,6 +63,7 @@ export const SidebarNavigation = ({
   heatCount,
   punisherCount,
   wallCount,
+  stancesCount,
 }: SidebarNavigationProps) => {
   const pathname = usePathname()
   const pathnameArray = pathname.split("/").filter((c) => c)
@@ -96,7 +98,13 @@ export const SidebarNavigation = ({
       >
         At the wall
       </Item>
-      {/* <Item>Stances</Item> */}
+      <Item
+        href={`/${character}/${PATHS.STANCES}`}
+        active={pathnameArray[1] === PATHS.STANCES}
+        count={stancesCount}
+      >
+        Stances
+      </Item>
       {/* <Item>Launchers</Item> */}
     </Stack>
   )

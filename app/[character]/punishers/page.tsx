@@ -1,7 +1,7 @@
 import { promises as fs } from "fs"
 import type { FrameData } from "@/data/types"
 import { Stack, Title } from "@/ui/components"
-import { MoveTable } from "../components/MovesTable"
+import { MoveTable } from "../../components/MovesTable"
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "../types"
 

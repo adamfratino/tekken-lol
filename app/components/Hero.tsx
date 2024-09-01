@@ -9,7 +9,7 @@ export function Hero() {
       {/* Announcement Banner */}
       <div className="flex justify-center">
         <a
-          className="inline-flex items-center gap-x-2 rounded-full border p-1 ps-3 text-sm transition"
+          className="inline-flex items-center gap-x-2 rounded-full border p-1 ps-5 text-sm transition"
           href="#"
         >
           Join our empty Discord server
@@ -41,7 +41,7 @@ export function Hero() {
       {/* End Title */}
       <div className="mx-auto mt-5 max-w-3xl text-center">
         <p className="text-xl text-muted-foreground">
-          Explore detailed frame data, punishers, heat moves and more to improve
+          Explore frame data, punishers, heat moves, stances and more to improve
           your skills and get the upper hand in any matchup. Or get salty and
           rage-quit, that's fine too.
         </p>
@@ -62,7 +62,7 @@ export function Hero() {
       <div className="sm:gap-x- mt-5 flex items-center justify-center gap-x-1">
         <span className="text-sm text-muted-foreground">Created by:</span>
         <span className="text-sm font-bold">shrimping vessel</span>
-        <svg
+        {/* <svg
           className="h-5 w-5 text-muted-foreground"
           width={16}
           height={16}
@@ -74,12 +74,12 @@ export function Hero() {
           <path d="M6 13L10 3" stroke="currentColor" strokeLinecap="round" />
         </svg>
         <a
-          className="inline-flex items-center gap-x-1 text-sm font-medium decoration-2 hover:underline"
+          className="inlin/e-flex items-center gap-x-1 text-sm font-medium decoration-2 hover:underline"
           href="#"
         >
           Installation Guide
           <ChevronRightIcon className="h-4 w-4 flex-shrink-0" />
-        </a>
+        </a> */}
       </div>
     </div>
   )

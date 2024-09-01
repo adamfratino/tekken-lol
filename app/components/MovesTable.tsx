@@ -1,7 +1,7 @@
 import { Stack } from "@/ui/components"
 import type { Characters } from "@/data/types"
 import { Title } from "@/ui/components"
-import { MoveCard } from "app/components"
+import { MoveCard } from "./MoveCard"
 
 type MoveTableProps = {
   frames: any[]

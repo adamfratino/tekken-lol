@@ -22,6 +22,7 @@ export default async function CharacterLayout({
   const data = JSON.parse(file) as FrameData
   const punisherData = JSON.parse(punisherFile) as PunishersType
   const moves = data.framesNormal
+  const stances = data.stances
 
   const heatMoves = moves.filter(
     (move) => move.tags && ["hb", "hs", "he"].some((tag) => tag in move.tags)
@@ -30,6 +31,12 @@ export default async function CharacterLayout({
   const wallMoves = moves.filter(
     (move) => move.tags && ["bbr", "wc"].some((tag) => tag in move.tags)
   )
+  const stancesCount = stances.reduce((total, stance) => {
+    const filteredFrames = moves.filter((move) =>
+      move.command.startsWith(stance)
+    )
+    return total + filteredFrames.length
+  }, 0)
 
   const allCount = moves.length
   const heatCount = heatMoves.length
@@ -47,6 +54,7 @@ export default async function CharacterLayout({
         heatCount={heatCount}
         punisherCount={punisherCount}
         wallCount={wallCount}
+        stancesCount={stancesCount}
       />
       <Stack>
         <Header />
