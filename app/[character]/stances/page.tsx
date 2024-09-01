@@ -26,9 +26,14 @@ export default async function CharacterHeatPage({
   const frames = data.framesNormal
   const stances = data.stances
 
+  const stancesToOmit = ["H", "SS", "FC", "FUFT", "WS"]
+  const filteredStances = stances.filter(
+    (stance) => !stancesToOmit.includes(stance)
+  )
+
   return (
     <div>
-      {stances.map((stance) => {
+      {filteredStances.map((stance) => {
         const filteredFrames = frames.filter((move) =>
           move.command.startsWith(stance)
         )

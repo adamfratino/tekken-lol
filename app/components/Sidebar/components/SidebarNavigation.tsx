@@ -92,18 +92,18 @@ export const SidebarNavigation = ({
         Punishers
       </Item>
       <Item
+        href={`/${character}/${PATHS.STANCES}`}
+        active={pathnameArray[1] === PATHS.STANCES}
+        count={stancesCount}
+      >
+        Moves from stance
+      </Item>
+      <Item
         href={`/${character}/${PATHS.WALL}`}
         active={pathnameArray[1] === PATHS.WALL}
         count={wallCount}
       >
         At the wall
-      </Item>
-      <Item
-        href={`/${character}/${PATHS.STANCES}`}
-        active={pathnameArray[1] === PATHS.STANCES}
-        count={stancesCount}
-      >
-        Stances
       </Item>
       {/* <Item>Launchers</Item> */}
     </Stack>

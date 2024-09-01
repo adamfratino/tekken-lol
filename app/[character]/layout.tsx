@@ -31,7 +31,11 @@ export default async function CharacterLayout({
   const wallMoves = moves.filter(
     (move) => move.tags && ["bbr", "wc"].some((tag) => tag in move.tags)
   )
-  const stancesCount = stances.reduce((total, stance) => {
+  const stancesToOmit = ["H", "SS", "FC", "FUFT", "WS"]
+  const filteredStances = stances.filter(
+    (stance) => !stancesToOmit.includes(stance)
+  )
+  const stancesCount = filteredStances.reduce((total, stance) => {
     const filteredFrames = moves.filter((move) =>
       move.command.startsWith(stance)
     )
