@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
 
   return {
-    title: "tekken.lol : " + getCharacterLabel(character) + " : heat moves",
+    title: "tekken.lol : " + getCharacterLabel(character) + " : heat",
   }
 }
 
@@ -25,11 +25,24 @@ export default async function CharacterHeatPage({
 
   const frames = data.framesNormal
 
-  const tagsToFilter = ["hb", "hs", "he"]
+  // Separate arrays for each tag
+  const hbFrames = frames.filter((move) => move.tags && "hb" in move.tags)
+  const hsFrames = frames.filter((move) => move.tags && "hs" in move.tags)
+  const heFrames = frames.filter((move) => move.tags && "he" in move.tags)
 
-  const filteredFrames = frames.filter(
-    (move) => move.tags && tagsToFilter.some((tag) => tag in move.tags)
+  return (
+    <div>
+      <MoveTable character={character} frames={hbFrames} title="Heat Burst" />
+      <MoveTable
+        character={character}
+        frames={hsFrames}
+        title="Heat Engager moves"
+      />
+      <MoveTable
+        character={character}
+        frames={heFrames}
+        title="Heat Smash moves"
+      />
+    </div>
   )
-
-  return <MoveTable character={character} frames={filteredFrames} />
 }

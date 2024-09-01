@@ -11,6 +11,7 @@ type MoveTableProps = {
 
 const Headline = ({ text }: { text: string }) => (
   <Title
+    as="h2"
     size="xl"
     className="border-b-background-muted sticky top-0 border-b bg-background px-6 py-4"
   >
