@@ -32,7 +32,6 @@ export const Search = ({ moves, active }: SearchProps) => {
     setOpen(false)
   }
 
-  // Map the moves and characters to the format expected by the Command component
   const groups = [
     {
       heading: "Moves",
