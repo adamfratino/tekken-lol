@@ -5,14 +5,7 @@ import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { Group } from "@/ui/components"
 import { Button } from "@/ui/primitives"
-import {
-  CommandDialog,
-  CommandInput,
-  CommandList,
-  CommandEmpty,
-  CommandGroup,
-  CommandItem,
-} from "@/ui/components"
+import { Command } from "@/ui/components/dropdowns"
 import { CHARACTERS } from "@/data/variables"
 import { cn } from "@/ui/lib/utils"
 
@@ -45,6 +38,31 @@ export const SearchButton = ({
     setOpen(false)
   }
 
+  // Map the moves and characters to the format expected by the Command component
+  const groups = [
+    {
+      heading: "Moves",
+      items: moves
+        ? moves.map((move) => ({
+            label: `${move.command.replaceAll(
+              ",",
+              ", "
+            )} / ${move.hitLevel.replaceAll(",", ", ")}`,
+            value: `search_${move.command + move.moveNumber}`,
+            onSelect: () => handleSelect(`#${move.command}`),
+          }))
+        : [],
+    },
+    {
+      heading: "Characters",
+      items: CHARACTERS.map((char) => ({
+        label: char.label,
+        value: `search_${char.value}`,
+        onSelect: () => handleSelect(`/${char.value}`),
+      })),
+    },
+  ]
+
   return (
     <>
       <Group
@@ -62,39 +80,13 @@ export const SearchButton = ({
         </Button>
       </Group>
 
-      <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Type a command or search..." />
-        <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
-
-          {moves && (
-            <CommandGroup heading="Moves">
-              {moves.map((move) => (
-                <CommandItem
-                  key={`search_${move.command + move.moveNumber}`}
-                  onSelect={() => handleSelect(`#${move.command}`)}
-                  className="cursor-pointer"
-                >
-                  {move.command.replaceAll(",", ", ")} /{" "}
-                  {move.hitLevel.replaceAll(",", ", ")}
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          )}
-
-          <CommandGroup heading="Characters">
-            {CHARACTERS.map((char) => (
-              <CommandItem
-                key={`search_${char.value}`}
-                onSelect={() => handleSelect(`/${char.value}`)}
-                className="cursor-pointer"
-              >
-                {char.label}
-              </CommandItem>
-            ))}
-          </CommandGroup>
-        </CommandList>
-      </CommandDialog>
+      <Command
+        open={open}
+        onOpenChange={setOpen}
+        placeholder="Type a command or search..."
+        empty="No results found."
+        groups={groups}
+      />
     </>
   )
 }

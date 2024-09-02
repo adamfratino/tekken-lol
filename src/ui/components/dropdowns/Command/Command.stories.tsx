@@ -2,13 +2,13 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { CommandSeparator } from "cmdk"
 
 import {
-  Command,
+  CommandRoot as Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
-} from "./Command"
+} from "./Command.primitives"
 
 /**
  * Fast, composable, unstyled command menu for React.
