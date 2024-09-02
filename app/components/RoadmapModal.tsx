@@ -27,6 +27,15 @@ export const RoadmapModal = () => (
 
       <li>
         <div>
+          <Title size="lg">Character overview &mdash; Sep. 2024</Title>
+          <p className="mt-1 max-w-[460px] text-sm text-muted-foreground">
+            Create an overview template for each character
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div>
           <Title size="lg">Button mapping &mdash; Oct. 2024</Title>
           <p className="mt-1 max-w-[460px] text-sm text-muted-foreground">
             Create a tool that maps move commands to a button sequence.
@@ -80,7 +89,7 @@ export const RoadmapModal = () => (
 
       <li>
         <div>
-          <Title size="lg">Move videos &mdash; Jun. 2025</Title>
+          <Title size="lg">Link move videos &mdash; Jun. 2025</Title>
           <p className="mt-1 max-w-[460px] text-sm text-muted-foreground">
             Link to video clips of each move.{" "}
             <span className="font-semibold italic">

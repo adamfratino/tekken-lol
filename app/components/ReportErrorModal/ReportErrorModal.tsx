@@ -31,7 +31,7 @@ import { ReportModalSuccess } from "./subcomponents/ReportModalSuccess"
 const UserSchema = z.object({
   property: z.enum(MOVE_PROPERTIES),
   problem: z.string(),
-  solution: z.string(),
+  solution: z.string().optional(),
 })
 
 export type UserType = z.infer<typeof UserSchema>
@@ -54,7 +54,7 @@ export const ReportErrorModal = ({
   const [isOpen, setIsOpen] = useState(false)
   const formattedName = getCharacterLabel(character)?.toUpperCase()
   const pathname = usePathname()
-  const url = "http://localhost:3000" + pathname + "#" + command
+  const url = "http://tekken-lol.vercel.app" + pathname + "#" + command
 
   const form = useForm<UserType>({
     resolver: zodResolver(UserSchema),
@@ -83,7 +83,7 @@ export const ReportErrorModal = ({
                 { name: "Command", value: command, inline: true },
                 { name: "Property", value: data.property, inline: true },
                 { name: "Problem", value: data.problem },
-                { name: "Solution", value: data.solution },
+                { name: "Solution", value: data.solution ?? "-" },
               ],
             },
           ],
@@ -166,6 +166,7 @@ export const ReportErrorModal = ({
             )}
           />
           <FormField
+            required={false}
             control={form.control}
             name="problem"
             render={({ field }) => (

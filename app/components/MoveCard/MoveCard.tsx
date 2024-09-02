@@ -2,7 +2,7 @@ import type { Characters, Move } from "@/data/types"
 import { Card, Group, Stack } from "@/ui/components"
 import {
   MoveCardCommand as Command,
-  MoveCardButtonSequence as ButtonSequence,
+  // MoveCardButtonSequence as ButtonSequence,
   MoveCardStartupFrames as StartupFrames,
   MoveCardDamage as Damage,
   MoveCardResultFrames as ResultFrames,
@@ -53,7 +53,7 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
       >
         <Stack gap={OUTER_GAP} className="w-full lg:w-2/3">
           <Command command={command} />
-          <ButtonSequence />
+          {/* <ButtonSequence /> */}
           {hitLevel && <HitLevels gap={INNER_GAP} hitLevels={hitLevelsArray} />}
           {(startup || damage) && (
             <Group gap={INNER_GAP} w="full">
