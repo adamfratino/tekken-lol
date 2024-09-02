@@ -1,5 +1,4 @@
-import { promises as fs } from "fs"
-import type { FrameData } from "@/data/types"
+import { fetchCharacterFrames, fetchCharacterPunishers } from "@/data/utils"
 import { getCharacterLabel } from "@/utils"
 import { MoveTable } from "../../components/MovesTable"
 import type { CharacterPageProps } from "../types"
@@ -17,24 +16,14 @@ export default async function CharacterPunishersPage({
 }: CharacterPageProps) {
   const { character } = params
 
-  const framesFile = await fs.readFile(
-    process.cwd() + `/app/api/characters/${character}/frames.json`,
-    "utf8"
-  )
-  const punishersFile = await fs.readFile(
-    process.cwd() + `/app/api/characters/${character}/punishers.json`,
-    "utf8"
-  )
-  const framesData = JSON.parse(framesFile) as FrameData
-  const punishersData = JSON.parse(punishersFile) as any
+  const frames = await fetchCharacterFrames(character)
+  const punishers = await fetchCharacterPunishers(character)
 
-  const frames = framesData.framesNormal
-
-  const standingPunishers = frames.filter((move) =>
-    punishersData.standing.includes(move.command)
+  const standingPunishers = frames.filter(
+    (move) => punishers.standing?.includes(move.command)
   )
-  const crouchingPunishers = frames.filter((move) =>
-    punishersData.crouching.includes(move.command)
+  const crouchingPunishers = frames.filter(
+    (move) => punishers.crouching?.includes(move.command)
   )
 
   return (

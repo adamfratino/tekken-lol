@@ -1,10 +1,8 @@
-import { promises as fs } from "fs"
-import path from "path"
-import type { FrameData } from "@/data/types"
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "./types"
 import { MoveTable } from "../components/MovesTable"
 import { CHARACTERS } from "@/data/variables"
+import { fetchCharacterFrames } from "@/data/utils"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -26,13 +24,7 @@ export async function generateStaticParams() {
 export default async function CharacterPage({ params }: CharacterPageProps) {
   const { character } = params
 
-  const filePath = path.join(
-    process.cwd(),
-    `/app/api/characters/${character}/frames.json`
-  )
-  const file = await fs.readFile(filePath, "utf8")
-  const data = JSON.parse(file) as FrameData
-  const frames = data.framesNormal
+  const frames = await fetchCharacterFrames(character)
 
   return <MoveTable character={character} frames={frames} />
 }

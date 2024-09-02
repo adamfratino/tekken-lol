@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ChevronRightCircle } from "lucide-react"
+import Link from "next/link"
 import { useState, useEffect } from "react"
 
 import { Button } from "@/ui/primitives"
@@ -54,9 +55,11 @@ export const ReportModalSuccess = ({
             also leave feedback and request new features!
           </p>
           <Group asChild gap="md">
-            <Button className="my-2 self-start">
-              Check out the Discord
-              <ChevronRightCircle size={14} />
+            <Button asChild className="my-2 self-start">
+              <Link href="https://discord.gg/KJd8sMY8w9" target="_blank">
+                Check out the Discord
+                <ChevronRightCircle size={14} />
+              </Link>
             </Button>
           </Group>
         </Stack>

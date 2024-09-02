@@ -1,8 +1,10 @@
 import { promises as fs } from "fs"
 import type { FrameData } from "@/data/types"
+import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 import { MoveTable } from "../../components/MovesTable"
 import type { CharacterPageProps } from "../types"
+import { fetchCharacterFrames } from "@/data/utils"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -12,22 +14,25 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   }
 }
 
+export async function generateStaticParams() {
+  return CHARACTERS.map(
+    ({ value, disabled }) =>
+      !disabled && {
+        character: value,
+      }
+  )
+}
+
 export default async function CharacterHeatPage({
   params,
 }: CharacterPageProps) {
   const { character } = params
 
-  const file = await fs.readFile(
-    process.cwd() + `/app/api/characters/${character}/frames.json`,
-    "utf8"
-  )
-  const data = JSON.parse(file) as FrameData
+  const frames = await fetchCharacterFrames(character)
 
-  const frames = data.framesNormal
-
-  const hbFrames = frames.filter((move) => move.tags && "hb" in move.tags)
-  const hsFrames = frames.filter((move) => move.tags && "hs" in move.tags)
-  const heFrames = frames.filter((move) => move.tags && "he" in move.tags)
+  const hbFrames = frames!.filter((move) => move.tags && "hb" in move.tags)
+  const hsFrames = frames!.filter((move) => move.tags && "hs" in move.tags)
+  const heFrames = frames!.filter((move) => move.tags && "he" in move.tags)
 
   return (
     <div>
