@@ -46,8 +46,12 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
       p="md"
       className=" bg-gray-lightest/25 shadow-md"
     >
-      <Group w="full" gap={OUTER_GAP} className="overflow-hidden rounded-md">
-        <Stack gap={OUTER_GAP} className="w-2/3">
+      <Group
+        w="full"
+        gap={OUTER_GAP}
+        className="flex-col overflow-hidden rounded-md lg:flex-row"
+      >
+        <Stack gap={OUTER_GAP} className="w-full lg:w-2/3">
           <Command command={command} />
           <ButtonSequence />
           {hitLevel && <HitLevels gap={INNER_GAP} hitLevels={hitLevelsArray} />}
@@ -65,7 +69,7 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
           />
         </Stack>
 
-        <Stack gap={OUTER_GAP} className="w-1/3">
+        <Stack gap={OUTER_GAP} className="w-full lg:w-1/3">
           {name && <Name name={name} />}
           {tags && <Tags gap={INNER_GAP} tags={tagsArray} />}
           {notes && <Notes gap={INNER_GAP} notes={notes} />}

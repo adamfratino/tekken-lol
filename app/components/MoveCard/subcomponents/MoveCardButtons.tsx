@@ -5,7 +5,7 @@ import { Group, type GroupLayoutProps } from "@/ui/components"
 import { Badge } from "@/ui/components"
 import { cn } from "@/ui/lib/utils"
 import type { Characters, Move } from "@/data/types"
-import { ReportErrorModal } from "./ReportErrorModal"
+import { ReportErrorModal } from "app/components/ReportErrorModal"
 
 type InteractiveIconProps = {
   bg: string

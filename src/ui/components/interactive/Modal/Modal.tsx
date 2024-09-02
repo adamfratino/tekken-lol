@@ -11,13 +11,15 @@ import type { ModalProps } from "./Modal.types"
 import { variants } from "./Modal.variants"
 
 export const Modal = ({
+  open,
+  onOpenChange,
   size,
   trigger,
   title,
   description,
   children,
 }: ModalProps) => (
-  <Dialog>
+  <Dialog open={open} onOpenChange={onOpenChange}>
     <DialogTrigger asChild>{trigger}</DialogTrigger>
     <DialogContent className={cn("h-[90dvh] w-[90dvw]", variants({ size }))}>
       <DialogHeader className="mb-4 min-h-5">

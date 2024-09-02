@@ -55,8 +55,8 @@ export const SearchButton = ({
       >
         <Button variant="outline" onClick={() => setOpen(true)}>
           <SearchIcon size={18} />
-          <p className="text-sm">{text}</p>
-          <kbd className="pointer-events-none ml-auto inline-flex h-5 select-none items-center gap-1 rounded border bg-foreground px-1.5 font-mono text-[10px] font-medium text-background opacity-100">
+          <p className={cn("hidden text-sm", "lg:block")}>{text}</p>
+          <kbd className="pointer-events-none ml-auto hidden h-5 select-none items-center gap-1 rounded border bg-foreground px-1.5 font-mono text-[10px] font-medium text-background opacity-100 lg:inline-flex">
             <span className="text-xs">⌘</span>K
           </kbd>
         </Button>
