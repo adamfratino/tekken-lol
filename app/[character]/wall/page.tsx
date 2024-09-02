@@ -1,4 +1,5 @@
 import { MoveTable } from "../../components/MovesTable"
+import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "../types"
 import { fetchCharacterFrames } from "@/data/utils"
@@ -9,6 +10,15 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   return {
     title: "tekken.lol : " + getCharacterLabel(character) + " : at the wall",
   }
+}
+
+export async function generateStaticParams() {
+  return CHARACTERS.map(
+    ({ value, disabled }) =>
+      !disabled && {
+        character: value,
+      }
+  )
 }
 
 export default async function CharacterHeatPage({

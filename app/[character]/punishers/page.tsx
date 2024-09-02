@@ -1,4 +1,5 @@
 import { fetchCharacterFrames, fetchCharacterPunishers } from "@/data/utils"
+import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 import { MoveTable } from "../../components/MovesTable"
 import type { CharacterPageProps } from "../types"
@@ -9,6 +10,15 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   return {
     title: "tekken.lol : " + getCharacterLabel(character) + " : punishers",
   }
+}
+
+export async function generateStaticParams() {
+  return CHARACTERS.map(
+    ({ value, disabled }) =>
+      !disabled && {
+        character: value,
+      }
+  )
 }
 
 export default async function CharacterPunishersPage({
