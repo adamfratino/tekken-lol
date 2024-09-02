@@ -12,7 +12,7 @@ import {
   CommandEmpty,
   CommandGroup,
   CommandItem,
-} from "@/ui/primitives/command"
+} from "@/ui/components"
 import { CHARACTERS } from "@/data/variables"
 import { cn } from "@/ui/lib/utils"
 

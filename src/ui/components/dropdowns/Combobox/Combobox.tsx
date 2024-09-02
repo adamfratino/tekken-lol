@@ -12,7 +12,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/ui/primitives/command"
+} from "../Command/Command"
 import {
   Popover,
   PopoverContent,
