@@ -5,14 +5,7 @@ import { Check, ChevronsUpDown, UserIcon } from "lucide-react"
 
 import { cn } from "@/ui/lib/utils"
 import { Button } from "@/ui/primitives/button2"
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "../Command/Command"
+import * as Command from "../Command/Command.primitives"
 import {
   Popover,
   PopoverContent,
@@ -55,13 +48,13 @@ export function Combobox({ items, buttonClassName }: ComboboxProps) {
         </Button>
       </PopoverTrigger>
       <PopoverContent align="start" className="w-[360px] p-0">
-        <Command>
-          <CommandInput placeholder="Search characters..." />
-          <CommandList>
-            <CommandEmpty>No character found.</CommandEmpty>
-            <CommandGroup>
+        <Command.CommandRoot>
+          <Command.CommandInput placeholder="Search characters..." />
+          <Command.CommandList>
+            <Command.CommandEmpty>No character found.</Command.CommandEmpty>
+            <Command.CommandGroup>
               {items.map((item) => (
-                <CommandItem
+                <Command.CommandItem
                   key={item.value}
                   value={item.value}
                   onSelect={(currentValue: any) => {
@@ -76,11 +69,11 @@ export function Combobox({ items, buttonClassName }: ComboboxProps) {
                     )}
                   />
                   {item.label}
-                </CommandItem>
+                </Command.CommandItem>
               ))}
-            </CommandGroup>
-          </CommandList>
-        </Command>
+            </Command.CommandGroup>
+          </Command.CommandList>
+        </Command.CommandRoot>
       </PopoverContent>
     </Popover>
   )

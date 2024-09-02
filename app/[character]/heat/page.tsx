@@ -1,8 +1,6 @@
-import { promises as fs } from "fs"
-import type { FrameData } from "@/data/types"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
-import { MoveTable } from "../../components/MovesTable"
+import { MoveTable, Search } from "app/components"
 import type { CharacterPageProps } from "../types"
 import { fetchCharacterFrames } from "@/data/utils"
 
@@ -35,7 +33,7 @@ export default async function CharacterHeatPage({
   const heFrames = frames!.filter((move) => move.tags && "he" in move.tags)
 
   return (
-    <div>
+    <>
       <MoveTable character={character} frames={hbFrames} title="Heat Burst" />
       <MoveTable character={character} frames={hsFrames} title="Heat Smash" />
       <MoveTable
@@ -43,6 +41,7 @@ export default async function CharacterHeatPage({
         frames={heFrames}
         title="Heat Engager moves"
       />
-    </div>
+      <Search moves={[...hbFrames, ...hsFrames, ...heFrames]} />
+    </>
   )
 }

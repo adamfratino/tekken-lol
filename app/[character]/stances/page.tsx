@@ -1,6 +1,6 @@
 import { fetchCharacterFrames, fetchCharacterStances } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
-import { MoveTable } from "../../components/MovesTable"
+import { MoveTable, Search } from "app/components"
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "../types"
 
@@ -34,12 +34,18 @@ export default async function CharacterHeatPage({
     (stance) => !stancesToOmit.includes(stance)
   )
 
+  const filterFrames = (stance: any) =>
+    frames.filter((move) => move.command.startsWith(stance))
+
+  // Aggregate all moves from the filtered stances
+  const allStanceMoves = filteredStances.flatMap((stance) =>
+    filterFrames(stance)
+  )
+
   return (
-    <div>
+    <>
       {filteredStances.map((stance) => {
-        const filteredFrames = frames.filter((move) =>
-          move.command.startsWith(stance)
-        )
+        const filteredFrames = filterFrames(stance)
 
         return (
           <MoveTable
@@ -50,6 +56,8 @@ export default async function CharacterHeatPage({
           />
         )
       })}
-    </div>
+      {/* Pass the aggregated moves to the Search component */}
+      <Search moves={allStanceMoves} />
+    </>
   )
 }

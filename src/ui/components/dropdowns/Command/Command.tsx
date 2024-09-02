@@ -6,6 +6,8 @@ import {
   CommandEmpty,
   CommandGroup,
   CommandItem,
+  CommandRoot,
+  type CommandRootProps,
 } from "./Command.primitives"
 
 type DialogProps = Pick<
@@ -14,7 +16,7 @@ type DialogProps = Pick<
 >
 
 type Item = {
-  label: string
+  label: React.ReactNode
   value: string
   onSelect: () => void
 }
@@ -28,6 +30,7 @@ type CommandProps = DialogProps & {
   placeholder: string
   empty: React.ReactNode
   groups: Group[]
+  filter?: CommandRootProps["filter"]
 }
 
 export const Command = ({
@@ -37,29 +40,32 @@ export const Command = ({
   placeholder,
   empty,
   groups,
+  filter,
 }: CommandProps) => (
-  <CommandDialog
-    open={open}
-    onOpenChange={onOpenChange}
-    defaultOpen={defaultOpen}
-  >
-    <CommandInput placeholder={placeholder} />
-    <CommandList>
-      <CommandEmpty>{empty}</CommandEmpty>
+  <CommandRoot filter={filter}>
+    <CommandDialog
+      open={open}
+      onOpenChange={onOpenChange}
+      defaultOpen={defaultOpen}
+    >
+      <CommandInput placeholder={placeholder} />
+      <CommandList>
+        <CommandEmpty>{empty}</CommandEmpty>
 
-      {groups.map(({ heading, items }) => (
-        <CommandGroup key={heading} heading={heading}>
-          {items.map(({ label, value, onSelect }) => (
-            <CommandItem
-              key={value}
-              onSelect={onSelect}
-              className="cursor-pointer"
-            >
-              {label}
-            </CommandItem>
-          ))}
-        </CommandGroup>
-      ))}
-    </CommandList>
-  </CommandDialog>
+        {groups.map(({ heading, items }) => (
+          <CommandGroup key={heading} heading={heading}>
+            {items.map(({ label, value, onSelect }) => (
+              <CommandItem
+                key={value}
+                onSelect={onSelect}
+                className="cursor-pointer"
+              >
+                {label}
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        ))}
+      </CommandList>
+    </CommandDialog>
+  </CommandRoot>
 )

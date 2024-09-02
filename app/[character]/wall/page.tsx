@@ -1,4 +1,4 @@
-import { MoveTable } from "../../components/MovesTable"
+import { MoveTable, Search } from "app/components"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "../types"
@@ -32,7 +32,7 @@ export default async function CharacterHeatPage({
   const bbrFrames = frames.filter((move) => move.tags && "bbr" in move.tags)
 
   return (
-    <div>
+    <>
       {wcFrames.length > 0 && (
         <MoveTable
           character={character}
@@ -45,6 +45,7 @@ export default async function CharacterHeatPage({
         frames={bbrFrames}
         title="Balcony Break moves"
       />
-    </div>
+      <Search moves={[...wcFrames, ...bbrFrames]} />
+    </>
   )
 }
