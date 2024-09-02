@@ -18,11 +18,11 @@ export default async function CharacterPunishersPage({
   const { character } = params
 
   const framesFile = await fs.readFile(
-    process.cwd() + `/app/api/${character}/frames.json`,
+    process.cwd() + `/public/data/characters/${character}/frames.json`,
     "utf8"
   )
   const punishersFile = await fs.readFile(
-    process.cwd() + `/app/api/${character}/punishers.json`,
+    process.cwd() + `/public/data/characters/${character}/punishers.json`,
     "utf8"
   )
   const framesData = JSON.parse(framesFile) as FrameData

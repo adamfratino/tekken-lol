@@ -12,11 +12,11 @@ export default async function CharacterLayout({
   const { character } = params
 
   const file = await fs.readFile(
-    process.cwd() + `/app/api/${character}/frames.json`,
+    process.cwd() + `/public/data/characters/${character}/frames.json`,
     "utf8"
   )
   const punisherFile = await fs.readFile(
-    process.cwd() + `/app/api/${character}/punishers.json`,
+    process.cwd() + `/public/data/characters/${character}/punishers.json`,
     "utf8"
   )
   const data = JSON.parse(file) as FrameData
