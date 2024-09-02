@@ -44,7 +44,10 @@ export const Sidebar = ({
 
         <div className="mt-auto px-4 pb-2 font-medium">
           <p className="text-xs">
-            <Link href="/">tekken.lol</Link> &mdash; v0.0.1
+            <Link href="/" className="hover:underline">
+              tekken.lol
+            </Link>{" "}
+            &mdash; v0.0.1
           </p>
         </div>
       </Stack>

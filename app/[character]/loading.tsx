@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="flex h-full w-full items-center justify-center">
+    <div className="flex size-full items-center justify-center">
       <div className="size-32">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
           <path

@@ -1,8 +1,8 @@
-import { promises as fs } from "fs"
 import type { PropsWithChildren } from "react"
+import { promises as fs } from "fs"
 import type { FrameData, PunishersType } from "@/data/types"
 import { Stack } from "@/ui/components"
-import { Sidebar, Header } from "app/components"
+import { Header, Sidebar } from "app/components"
 import type { CharacterPageProps } from "./types"
 
 export default async function CharacterLayout({

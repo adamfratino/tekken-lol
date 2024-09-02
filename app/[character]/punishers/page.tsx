@@ -1,8 +1,7 @@
 import { promises as fs } from "fs"
 import type { FrameData } from "@/data/types"
-import { Stack, Title } from "@/ui/components"
-import { MoveTable } from "../../components/MovesTable"
 import { getCharacterLabel } from "@/utils"
+import { MoveTable } from "../../components/MovesTable"
 import type { CharacterPageProps } from "../types"
 
 export async function generateMetadata({ params }: CharacterPageProps) {

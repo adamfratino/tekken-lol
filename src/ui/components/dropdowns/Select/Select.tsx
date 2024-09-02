@@ -16,6 +16,8 @@ type SelectProps = {
   items: Character[]
   triggerClassName?: string
   groupClassName?: string
+  onChange?: (value: string) => void
+  autoFocus?: boolean
 }
 
 export function Select({
@@ -23,10 +25,15 @@ export function Select({
   triggerClassName,
   groupClassName,
   items,
+  autoFocus,
+  onChange,
 }: SelectProps) {
   return (
-    <SelectPrimitive>
-      <SelectTrigger className={cn("w-[540px]", triggerClassName)}>
+    <SelectPrimitive onValueChange={onChange}>
+      <SelectTrigger
+        className={cn("w-[540px]", triggerClassName)}
+        autoFocus={autoFocus}
+      >
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
       <SelectContent>

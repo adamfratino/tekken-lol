@@ -11,15 +11,16 @@ export function getResponsiveClasses<T extends string>(
   utility: Record<string, Record<string, string>>
 ): string[] {
   if (typeof prop === "string") {
-    return utility.base![prop] ? [utility.base![prop]] : []
+    const className = utility.base?.[prop]
+    return className ? [className] : []
   }
 
-  if (isObject(prop)) {
+  if (prop && isObject(prop)) {
     return Object.entries(prop)
       .map(([breakpoint, value]) => {
-        return utility[breakpoint]?.[value] || utility.base![value]
+        return utility[breakpoint]?.[value] || utility.base?.[value]
       })
-      .filter(Boolean)
+      .filter((className): className is string => Boolean(className)) // Filter out undefined
   }
 
   return []

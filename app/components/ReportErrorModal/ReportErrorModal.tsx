@@ -1,11 +1,12 @@
 import { zodResolver } from "@hookform/resolvers/zod"
-import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
-import { Group, Modal, Title } from "@/ui/components"
+import type { Characters, Move } from "@/data/types"
+import { MOVE_PROPERTIES } from "@/data/variables"
+import { Group, Modal } from "@/ui/components"
 import {
   Button,
   Form,
@@ -23,14 +24,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/ui/primitives/select"
-import type { Characters, Move } from "@/data/types"
-import { MOVE_PROPERTIES } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 
-import {
-  ReportModalSuccess,
-  framerVariants,
-} from "./subcomponents/ReportModalSuccess"
+import { ReportModalSuccess } from "./subcomponents/ReportModalSuccess"
 
 const UserSchema = z.object({
   property: z.enum(MOVE_PROPERTIES),
@@ -40,7 +36,8 @@ const UserSchema = z.object({
 
 export type UserType = z.infer<typeof UserSchema>
 
-const wait = () => new Promise((resolve) => setTimeout(resolve, 4000))
+const timer = 5
+const wait = () => new Promise((resolve) => setTimeout(resolve, timer * 1000))
 
 type ReportErrorModalProps = {
   trigger: React.ReactNode
@@ -114,7 +111,7 @@ export const ReportErrorModal = ({
       onOpenChange={setIsOpen}
       trigger={trigger}
       size="small"
-      title={`${getCharacterLabel(character)}'s ${command} doesn't look right?`}
+      title={`${getCharacterLabel(character)} ${command} doesn't look right?`}
       description={
         <>
           Thanks for letting us know. Your feedback will be posted publicly in
@@ -129,91 +126,85 @@ export const ReportErrorModal = ({
         </>
       }
     >
-      <motion.div
-        variants={framerVariants}
-        transition={{ ease: "easeInOut", duration: 0.25 }}
-        animate={!isSubmitted ? "visible" : "invisible"}
-      >
-        <Form {...form}>
-          <form
-            className="w-full space-y-6 pt-2"
-            onSubmit={form.handleSubmit(onSubmit)}
-          >
-            <FormField
-              control={form.control}
-              name="property"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel autoFocus>
-                    Which property needs to be fixed?
+      <Form {...form}>
+        <form
+          className="w-full space-y-6 pt-2"
+          onSubmit={form.handleSubmit(onSubmit)}
+        >
+          <FormField
+            control={form.control}
+            name="property"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel autoFocus>
+                  Which property needs to be fixed?
+                </FormLabel>
+                <Select
+                  disabled={isSubmitted}
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                >
+                  <FormControl>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select a move property" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    {MOVE_PROPERTIES.map((property, i) => (
+                      <SelectItem
+                        key={property + i}
+                        value={property}
+                        className="cursor-pointer capitalize"
+                      >
+                        {property}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="problem"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>What is the problem?</FormLabel>
+                <FormControl>
+                  <Textarea {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="solution"
+            render={({ field }) => (
+              <FormItem>
+                <Group
+                  asChild
+                  align="between"
+                  w="full"
+                  className="items-center"
+                >
+                  <FormLabel>
+                    How can we fix it?{" "}
+                    <span className="text-xs text-gray-dark">(optional)</span>
                   </FormLabel>
-                  <Select
-                    disabled={isSubmitted}
-                    onValueChange={field.onChange}
-                    defaultValue={field.value}
-                  >
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select a move property" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      {MOVE_PROPERTIES.map((property, i) => (
-                        <SelectItem
-                          key={property + i}
-                          value={property}
-                          className="cursor-pointer capitalize"
-                        >
-                          {property}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="problem"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>What is the problem?</FormLabel>
-                  <FormControl>
-                    <Textarea {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="solution"
-              render={({ field }) => (
-                <FormItem>
-                  <Group
-                    asChild
-                    align="between"
-                    w="full"
-                    className="items-center"
-                  >
-                    <FormLabel>
-                      How can we fix it?{" "}
-                      <span className="text-xs text-gray-dark">(optional)</span>
-                    </FormLabel>
-                  </Group>
-                  <FormControl>
-                    <Textarea {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit">Submit</Button>
-          </form>
-        </Form>
-      </motion.div>
-      <ReportModalSuccess visible={isSubmitted} />
+                </Group>
+                <FormControl>
+                  <Textarea {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit">Submit</Button>
+        </form>
+      </Form>
+      <ReportModalSuccess visible={isSubmitted} countdown={timer} />
     </Modal>
   )
 }

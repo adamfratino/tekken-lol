@@ -1,7 +1,7 @@
 import { promises as fs } from "fs"
 import type { FrameData } from "@/data/types"
-import { MoveTable } from "../../components/MovesTable"
 import { getCharacterLabel } from "@/utils"
+import { MoveTable } from "../../components/MovesTable"
 import type { CharacterPageProps } from "../types"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
@@ -32,15 +32,11 @@ export default async function CharacterHeatPage({
   return (
     <div>
       <MoveTable character={character} frames={hbFrames} title="Heat Burst" />
-      <MoveTable
-        character={character}
-        frames={hsFrames}
-        title="Heat Engager moves"
-      />
+      <MoveTable character={character} frames={hsFrames} title="Heat Smash" />
       <MoveTable
         character={character}
         frames={heFrames}
-        title="Heat Smash moves"
+        title="Heat Engager moves"
       />
     </div>
   )

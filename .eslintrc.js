@@ -16,6 +16,7 @@ module.exports = {
     },
   },
   rules: {
+    "react/no-unescaped-entities": 0,
     "tailwindcss/no-custom-classname": "off",
     "testing-library/prefer-screen-queries": "off",
     "@next/next/no-html-link-for-pages": "off",
@@ -27,7 +28,7 @@ module.exports = {
       },
     ],
     "sort-imports": [
-      "error",
+      1,
       {
         ignoreCase: true,
         ignoreDeclarationSort: true,
@@ -37,7 +38,14 @@ module.exports = {
     "import/order": [
       1,
       {
-        groups: ["external", "builtin", "internal", "sibling", "parent", "index"],
+        groups: [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index",
+        ],
         pathGroups: [
           ...getDirectoriesToSort().map((singleDir) => ({
             pattern: `${singleDir}/**`,
@@ -69,7 +77,9 @@ module.exports = {
 
 function getDirectoriesToSort() {
   const ignoredSortingDirectories = [".git", ".next", ".vscode", "node_modules"]
-  return getDirectories(process.cwd()).filter((f) => !ignoredSortingDirectories.includes(f))
+  return getDirectories(process.cwd()).filter(
+    (f) => !ignoredSortingDirectories.includes(f)
+  )
 }
 
 function getDirectories(path) {

@@ -10,4 +10,4 @@ const meta: Meta<typeof ColorGrid> = {
 export default meta
 type Story = StoryObj<typeof ColorGrid>
 
-export const palettes: Story = {}
+export const Palettes: Story = { storyName: "palettes" }
