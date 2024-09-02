@@ -18,7 +18,7 @@ export default async function CharacterHeatPage({
   const { character } = params
 
   const file = await fs.readFile(
-    process.cwd() + `/public/data/characters/${character}/frames.json`,
+    process.cwd() + `/app/api/characters/${character}/frames.json`,
     "utf8"
   )
   const data = JSON.parse(file) as FrameData

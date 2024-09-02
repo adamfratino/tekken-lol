@@ -4,6 +4,7 @@ import type { FrameData } from "@/data/types"
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "./types"
 import { MoveTable } from "../components/MovesTable"
+import { CHARACTERS } from "@/data/variables"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -13,12 +14,21 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   }
 }
 
+export async function generateStaticParams() {
+  return CHARACTERS.map(
+    ({ value, disabled }) =>
+      !disabled && {
+        character: value,
+      }
+  )
+}
+
 export default async function CharacterPage({ params }: CharacterPageProps) {
   const { character } = params
 
   const filePath = path.join(
     process.cwd(),
-    `/public/data/characters/${character}/frames.json`
+    `/app/api/characters/${character}/frames.json`
   )
   const file = await fs.readFile(filePath, "utf8")
   const data = JSON.parse(file) as FrameData
