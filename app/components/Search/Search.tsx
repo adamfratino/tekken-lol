@@ -36,10 +36,11 @@ export const Search = ({ moves, active }: SearchProps) => {
     {
       // heading: "Moves",
       items: moves
-        ? moves.map((move) => ({
+        ? moves.map((move, i) => ({
             label: <SearchItemMove move={move} />,
             value: `search_${move.command + move.moveNumber}`,
             onSelect: () => handleSelect(`#${move.command}`),
+            key: move.command + i + move.moveNumber,
           }))
         : [],
     },

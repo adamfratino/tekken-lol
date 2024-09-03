@@ -42,7 +42,7 @@ export const Command = ({
   groups,
   filter,
 }: CommandProps) => (
-  <CommandRoot filter={filter}>
+  <CommandRoot filter={filter} className={!open ? "hidden" : undefined}>
     <CommandDialog
       open={open}
       onOpenChange={onOpenChange}
@@ -52,11 +52,11 @@ export const Command = ({
       <CommandList>
         <CommandEmpty>{empty}</CommandEmpty>
 
-        {groups.map(({ heading, items }) => (
-          <CommandGroup key={heading} heading={heading}>
-            {items.map(({ label, value, onSelect }) => (
+        {groups.map(({ heading, items }, i) => (
+          <CommandGroup key={`${heading}__${i}`} heading={heading}>
+            {items.map(({ label, value, onSelect }, i) => (
               <CommandItem
-                key={value}
+                key={value + i + i}
                 onSelect={onSelect}
                 className="cursor-pointer"
               >
