@@ -8,27 +8,42 @@ type SearchItemMoveProps = {
 export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
   const { name, command, block, hit, counterHit, hitLevel, tags } = move
   const hitLevelsArray = hitLevel.split(",") || ["-"]
+  const tagsArray = tags && Object.keys(tags)
+
   return (
-    <Stack gap="xs" className="cursor-pointer">
+    <Stack gap="xs" w="full" className="cursor-pointer">
       <div>
         {name && (
           <Title as="h4" shade="muted" weight="normal">
             {name}
           </Title>
         )}
-        <Group gap="md" className="items-center">
+        <Group gap="md" w="full" className="items-center">
           <Title as="h3" size="2xl" weight="semibold">
             {command}
           </Title>
-          <Group gap="xs">
-            {hitLevelsArray.map((level, i) => (
-              <Badge
-                key={level + i}
-                shade={level as any}
-                className="p-[5px] text-xs"
-              />
-            ))}
-          </Group>
+          {hitLevel && (
+            <Group gap="xs">
+              {hitLevelsArray.map((level, i) => (
+                <Badge
+                  key={level + i}
+                  shade={level as any}
+                  className="p-[5px] text-xs"
+                />
+              ))}
+            </Group>
+          )}
+          {tags && (
+            <Group gap="sm" className="ml-auto">
+              {tagsArray.map((tag: string, i: number) => (
+                <Badge
+                  key={tag + i}
+                  shade={tag as any}
+                  className="p-[5px] text-xs"
+                />
+              ))}
+            </Group>
+          )}
         </Group>
       </div>
       <Group gap="lg" className="items-center">

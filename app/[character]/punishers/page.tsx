@@ -37,7 +37,7 @@ export default async function CharacterPunishersPage({
   )
 
   return (
-    <>
+    <div>
       <MoveTable
         title="Standing Punishers"
         character={character}
@@ -49,6 +49,6 @@ export default async function CharacterPunishersPage({
         frames={crouchingPunishers}
       />
       <Search moves={[...standingPunishers, ...crouchingPunishers]} />
-    </>
+    </div>
   )
 }

@@ -34,7 +34,7 @@ export const Search = ({ moves, active }: SearchProps) => {
 
   const groups = [
     {
-      heading: "Moves",
+      // heading: "Moves",
       items: moves
         ? moves.map((move) => ({
             label: <SearchItemMove move={move} />,

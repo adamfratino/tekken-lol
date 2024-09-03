@@ -32,7 +32,7 @@ export default async function CharacterHeatPage({
   const bbrFrames = frames.filter((move) => move.tags && "bbr" in move.tags)
 
   return (
-    <>
+    <div>
       {wcFrames.length > 0 && (
         <MoveTable
           character={character}
@@ -46,6 +46,6 @@ export default async function CharacterHeatPage({
         title="Balcony Break moves"
       />
       <Search moves={[...wcFrames, ...bbrFrames]} />
-    </>
+    </div>
   )
 }

@@ -22,7 +22,7 @@ type Item = {
 }
 
 type Group = {
-  heading: string
+  heading?: string
   items: Item[]
 }
 

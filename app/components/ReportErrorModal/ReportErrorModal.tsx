@@ -75,7 +75,7 @@ export const ReportErrorModal = ({
           embeds: [
             {
               color: 14177041,
-              title: `${formattedName} needs attention`,
+              title: `${formattedName}'s ${command} needs attention`,
               url: url,
               description: `A user has submitted a report regarding ${formattedName}'s frame data!`,
               timestamp: new Date().toISOString(),

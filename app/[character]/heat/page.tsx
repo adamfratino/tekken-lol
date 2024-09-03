@@ -33,7 +33,7 @@ export default async function CharacterHeatPage({
   const heFrames = frames!.filter((move) => move.tags && "he" in move.tags)
 
   return (
-    <>
+    <div>
       <MoveTable character={character} frames={hbFrames} title="Heat Burst" />
       <MoveTable character={character} frames={hsFrames} title="Heat Smash" />
       <MoveTable
@@ -42,6 +42,6 @@ export default async function CharacterHeatPage({
         title="Heat Engager moves"
       />
       <Search moves={[...hbFrames, ...hsFrames, ...heFrames]} />
-    </>
+    </div>
   )
 }

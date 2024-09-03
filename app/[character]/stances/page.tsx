@@ -43,7 +43,7 @@ export default async function CharacterHeatPage({
   )
 
   return (
-    <>
+    <div>
       {filteredStances.map((stance) => {
         const filteredFrames = filterFrames(stance)
 
@@ -58,6 +58,6 @@ export default async function CharacterHeatPage({
       })}
       {/* Pass the aggregated moves to the Search component */}
       <Search moves={allStanceMoves} />
-    </>
+    </div>
   )
 }

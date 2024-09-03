@@ -4,8 +4,8 @@ import "@/ui/styles/globals.css"
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
-      <body className="flex min-h-[100dvh] flex-col">
+    <html lang="en" className="overflow-y-hidden">
+      <body className="flex h-[100dvh] flex-col">
         {children}
         <SpeedInsights />
       </body>
