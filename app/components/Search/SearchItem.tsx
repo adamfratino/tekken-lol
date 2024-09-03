@@ -70,7 +70,7 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
           )}
           {counterHit && (
             <Property shade="muted" size="sm">
-              <strong>Counter-Hit:</strong> {counterHit}
+              <strong>CH:</strong> {counterHit}
             </Property>
           )}
         </Group>

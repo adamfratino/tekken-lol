@@ -2,24 +2,30 @@ import { Map } from "lucide-react"
 import { Modal, Stack, Group, Title } from "@/ui/components"
 import { Button } from "@/ui/primitives"
 
-export const RoadmapModal = () => (
+type RoadmapModalProps = {
+  trigger?: React.ReactNode
+}
+
+export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
   <Modal
     size="small"
     title=""
     trigger={
-      <Group asChild gap="sm" className="absolute bottom-8 text-xs">
-        <Button size="sm" variant="outline">
-          <Map size={18} />
-          View roadmap
-        </Button>
-      </Group>
+      trigger ?? (
+        <Group asChild gap="sm" className="absolute bottom-8 text-xs">
+          <Button size="sm" variant="outline">
+            <Map size={18} />
+            View roadmap
+          </Button>
+        </Group>
+      )
     }
   >
     <Stack as="ol" gap="xl" className="ml-5 list-decimal text-sm">
       <li>
-        <div>
-          <Title size="lg">Full-featured search &mdash; Sep. 2024</Title>
-          <p className="mt-1 max-w-[460px] text-sm text-muted-foreground">
+        <div className="line-through">
+          <Title size="md">Full-featured search &mdash; Sep. 2024</Title>
+          <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
             Add moves and other details to the search bar.
           </p>
         </div>

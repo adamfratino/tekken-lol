@@ -15,14 +15,25 @@ export const MoveCardContainer = ({
   className,
   value,
 }: PropertyContainerProps) => {
-  const valueNum = value && value.split(" ")[0]!.replace(/[^\d-]/g, "")
+  const valueNum = value && value.split(" ")[0]!.replace(/[^\d~-]/g, "")
+
+  let minValueNum: number | null = null
+
+  if (valueNum && valueNum.includes("~")) {
+    const rangeParts = valueNum.split("~")
+    const minValue = rangeParts[0]
+    minValueNum = parseFloat(minValue as string)
+  } else if (valueNum) {
+    minValueNum = parseFloat(valueNum)
+  }
 
   return (
     <Stack
       className={cn("w-full rounded-md border shadow-md", className, {
-        "bg-red-light": valueNum && +valueNum <= -10,
-        "bg-yellow-light": valueNum && +valueNum <= 0 && +valueNum > -10,
-        "bg-forest-light": valueNum && +valueNum >= 1,
+        "bg-red-light": minValueNum !== null && minValueNum <= -10,
+        "bg-yellow-light":
+          minValueNum !== null && minValueNum <= 0 && minValueNum > -10,
+        "bg-forest-light": minValueNum !== null && minValueNum >= 1,
       })}
     >
       <Property

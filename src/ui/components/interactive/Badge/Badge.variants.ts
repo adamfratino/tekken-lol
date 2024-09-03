@@ -13,7 +13,7 @@ const twVariants = {
       "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
     outline: "text-foreground",
     block: "rounded-md shadow-lg",
-    count: "rounded-sm text-xs bg-foreground text-background tracking-wide",
+    count: "text-xs font-bold tracking-wide",
   },
   size: {
     large: "px-6 py-2 text-base",

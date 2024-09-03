@@ -38,7 +38,7 @@ const Item = ({
     <Link
       href={href ?? "#"}
       className={cn(itemVariants({ variant }), {
-        "bg-yellow-light text-primary hover:bg-yellow-light":
+        "bg-yellow-light text-primary shadow-md hover:bg-yellow-light":
           active && variant === "yellow",
       })}
     >

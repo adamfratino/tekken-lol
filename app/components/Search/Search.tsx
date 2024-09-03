@@ -53,7 +53,7 @@ export const Search = ({ moves }: SearchProps) => {
     },
     {
       heading: "Characters",
-      items: CHARACTERS.map((char, i) => ({
+      items: CHARACTERS.filter((char) => !char.disabled).map((char, i) => ({
         label: (
           <SearchItemCharacter character={char.label} count={moves!.length} />
         ),
