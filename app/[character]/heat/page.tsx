@@ -1,8 +1,6 @@
-import { promises as fs } from "fs"
-import type { FrameData } from "@/data/types"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
-import { MoveTable } from "../../components/MovesTable"
+import { MoveTable, Search } from "app/components"
 import type { CharacterPageProps } from "../types"
 import { fetchCharacterFrames } from "@/data/utils"
 
@@ -43,6 +41,7 @@ export default async function CharacterHeatPage({
         frames={heFrames}
         title="Heat Engager moves"
       />
+      <Search moves={[...hbFrames, ...hsFrames, ...heFrames]} />
     </div>
   )
 }

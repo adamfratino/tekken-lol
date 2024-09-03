@@ -13,7 +13,7 @@ const twVariants = {
       "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
     outline: "text-foreground",
     block: "rounded-md shadow-lg",
-    count: "rounded-md text-xs bg-foreground text-background tracking-wide",
+    count: "rounded-sm text-xs bg-foreground text-background tracking-wide",
   },
   size: {
     large: "px-6 py-2 text-base",
@@ -25,10 +25,12 @@ const twVariants = {
     m: "bg-yellow-light",
     mm: "bg-yellow-light",
     sm: "bg-purple-light",
+    sp: "bg-purple-medium",
     M: "bg-yellow-medium",
     l: "bg-red-light",
     L: "bg-red-medium",
     t: "bg-blue-light",
+    th: "bg-blue-light",
     "ub(m)": "bg-aqua-light",
     /** Tags */
     bbr: "bg-green-medium",

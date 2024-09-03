@@ -12,6 +12,7 @@ type InteractiveIconProps = {
   className?: string
   icon: React.ElementType
   text?: string
+  disabled?: boolean
   onClick?: () => void
 }
 
@@ -20,11 +21,16 @@ const InteractiveIcon = ({
   icon,
   text,
   className,
+  disabled,
 }: InteractiveIconProps) => {
   const Icon = icon
 
   return (
-    <Group asChild gap="xs">
+    <Group
+      asChild
+      gap="xs"
+      className={disabled ? "cursor-not-allowed opacity-50" : undefined}
+    >
       <Badge className={cn("text-black px-4 py-2 text-xs", className, bg)}>
         <Icon size={18} />
         {text}
@@ -68,8 +74,13 @@ export const MoveCardButtons = ({
           </button>
         }
       />
-      <InteractiveIcon bg="bg-red-light" icon={Heart} text="Favorite" />
-      <InteractiveIcon bg="bg-forest-light" icon={Film} text="Watch" />
+      <InteractiveIcon
+        bg="bg-red-light"
+        icon={Heart}
+        text="Favorite"
+        disabled
+      />
+      <InteractiveIcon bg="bg-forest-light" icon={Film} text="Watch" disabled />
     </Group>
   )
 }

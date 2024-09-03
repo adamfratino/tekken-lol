@@ -1,6 +1,7 @@
 export const shades = {
   alert: "text-red-medium",
   success: "text-green-dark",
+  muted: "text-muted-foreground",
 }
 
 export const weights = {

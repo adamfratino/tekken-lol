@@ -12,10 +12,12 @@ const HIT_LEVELS_DICTIONARY = {
   m: "Mid",
   mm: "Mid (2)",
   sm: "Special Mid",
+  sp: "Special",
   M: "Mid (hits grounded)",
   l: "Low",
   L: "Low (hits grounded)",
   t: "Throw",
+  th: "Throw",
   "ub(m)": "Unblockable Mid",
 } as any
 
@@ -40,7 +42,7 @@ export const MoveCardHitLevels = ({
   <MoveCardContainer title="Hit Levels">
     <Group gap={gap}>
       {hitLevels.map((level, i) => (
-        <HitLevel key={(level as string) + i + i} shade={level} />
+        <HitLevel key={(level as string) + i} shade={level} />
       ))}
     </Group>
   </MoveCardContainer>

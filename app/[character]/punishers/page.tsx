@@ -1,7 +1,7 @@
 import { fetchCharacterFrames, fetchCharacterPunishers } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
-import { MoveTable } from "../../components/MovesTable"
+import { MoveTable, Search } from "app/components"
 import type { CharacterPageProps } from "../types"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
@@ -48,6 +48,7 @@ export default async function CharacterPunishersPage({
         character={character}
         frames={crouchingPunishers}
       />
+      <Search moves={[...standingPunishers, ...crouchingPunishers]} />
     </div>
   )
 }

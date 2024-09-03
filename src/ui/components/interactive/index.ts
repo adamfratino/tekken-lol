@@ -1,5 +1,3 @@
-export * from "./Accordion"
 export * from "./Badge"
-export * from "./Drawer"
-export * from "./Combobox"
 export * from "./Modal"
+export * from "./Tabs/Tabs"

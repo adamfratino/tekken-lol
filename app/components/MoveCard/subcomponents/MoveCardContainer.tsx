@@ -21,7 +21,7 @@ export const MoveCardContainer = ({
     <Stack
       className={cn("w-full rounded-md border shadow-md", className, {
         "bg-red-light": valueNum && +valueNum <= -10,
-        "bg-yellow-light": valueNum && +valueNum <= 0,
+        "bg-yellow-light": valueNum && +valueNum <= 0 && +valueNum > -10,
         "bg-forest-light": valueNum && +valueNum >= 1,
       })}
     >

@@ -14,15 +14,15 @@ export default async function CharacterLayout({
 }: PropsWithChildren<CharacterPageProps>) {
   const { character } = params
 
-  const moves = await fetchCharacterFrames(character)
+  const allMoves = await fetchCharacterFrames(character)
   const punishers = await fetchCharacterPunishers(character)
   const stances = await fetchCharacterStances(character)
 
-  const heatMoves = moves.filter(
+  const heatMoves = allMoves.filter(
     (move) => move.tags && ["hb", "hs", "he"].some((tag) => tag in move.tags)
   )
 
-  const wallMoves = moves.filter(
+  const wallMoves = allMoves.filter(
     (move) => move.tags && ["bbr", "wc"].some((tag) => tag in move.tags)
   )
   const stancesToOmit = ["H", "SS", "FC", "FUFT", "WS"]
@@ -30,13 +30,13 @@ export default async function CharacterLayout({
     (stance) => !stancesToOmit.includes(stance)
   )
   const stancesCount = filteredStances.reduce((total, stance) => {
-    const filteredFrames = moves.filter((move) =>
+    const filteredFrames = allMoves.filter((move) =>
       move.command.startsWith(stance)
     )
     return total + filteredFrames.length
   }, 0)
 
-  const allCount = moves.length
+  const allCount = allMoves.length
   const heatCount = heatMoves.length
   const punisherCount = Object.values(punishers).reduce(
     (total, arr) => total + arr.length,

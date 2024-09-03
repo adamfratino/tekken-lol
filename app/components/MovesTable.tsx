@@ -19,23 +19,17 @@ const Headline = ({ text }: { text: string }) => (
   </Title>
 )
 
-export const MoveTable = async ({
-  frames,
-  character,
-  title,
-}: MoveTableProps) => (
-  <>
-    <div className="sticky">
-      {title && <Headline text={title} />}
-      <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
-        {frames.map((move) => (
-          <MoveCard
-            key={move.moveNumber + move.command}
-            move={move}
-            character={character}
-          />
-        ))}
-      </Stack>
-    </div>
-  </>
+export const MoveTable = ({ frames, character, title }: MoveTableProps) => (
+  <div className="sticky">
+    {title && <Headline text={title} />}
+    <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
+      {frames.map((move) => (
+        <MoveCard
+          key={move.moveNumber + move.command}
+          move={move}
+          character={character}
+        />
+      ))}
+    </Stack>
+  </div>
 )
