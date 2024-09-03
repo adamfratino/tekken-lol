@@ -1,7 +1,7 @@
 import { Group, type GroupLayoutProps } from "@/ui/components"
 import { MoveCardContainer } from "./MoveCardContainer"
 
-type PropertyHitLevelsProps = Pick<GroupLayoutProps, "gap"> & {
+type MoveCardResultFramesProps = Pick<GroupLayoutProps, "gap"> & {
   block?: string
   hit?: string
   counterhit?: string
@@ -12,7 +12,7 @@ export const MoveCardResultFrames = ({
   block,
   hit,
   counterhit,
-}: PropertyHitLevelsProps) => (
+}: MoveCardResultFramesProps) => (
   <Group gap={gap} w="full">
     {block && <MoveCardContainer title="On Block" value={block} />}
     {hit && <MoveCardContainer title="On Hit" value={hit} />}

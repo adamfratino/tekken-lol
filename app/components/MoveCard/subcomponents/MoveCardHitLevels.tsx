@@ -17,6 +17,7 @@ const HIT_LEVELS_DICTIONARY = {
   l: "Low",
   L: "Low (hits grounded)",
   t: "Throw",
+  th: "Throw",
   "ub(m)": "Unblockable Mid",
 } as any
 

@@ -29,7 +29,9 @@ export const Sidebar = ({
         <div className="flex h-14 items-center border-b px-6 lg:h-[60px]">
           <Group gap="sm" className="items-center">
             <UserIcon size={18} />
-            <Title as="h2">{characterName?.label}</Title>
+            <Title as="h2" size="xl">
+              {characterName?.label}
+            </Title>
           </Group>
         </div>
 

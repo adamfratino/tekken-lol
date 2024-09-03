@@ -5,22 +5,29 @@ import { useRouter } from "next/navigation"
 import { Command } from "@/ui/components/dropdowns"
 import type { Move } from "@/data/types"
 import { CHARACTERS } from "@/data/variables"
-import { SearchItemMove } from "./SearchItem"
+import { SearchItemCharacter, SearchItemMove } from "./SearchItem"
 
 type SearchProps = {
   moves?: Move[]
-  active?: boolean
 }
 
-export const Search = ({ moves, active }: SearchProps) => {
+export const Search = ({ moves }: SearchProps) => {
   const [open, setOpen] = useState(false)
+  const [activeSearchGroup, setActiveSearchGroup] = useState<
+    "Moves" | "Characters" | undefined
+  >(undefined)
   const router = useRouter()
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault()
-        setOpen((open) => !open)
+        setActiveSearchGroup("Moves")
+        setOpen(true)
+      }
+      if (e.key === "j" && (e.metaKey || e.ctrlKey)) {
+        setActiveSearchGroup("Characters")
+        setOpen(true)
       }
     }
     document.addEventListener("keydown", down)
@@ -34,7 +41,7 @@ export const Search = ({ moves, active }: SearchProps) => {
 
   const groups = [
     {
-      // heading: "Moves",
+      heading: "Moves",
       items: moves
         ? moves.map((move, i) => ({
             label: <SearchItemMove move={move} />,
@@ -46,19 +53,23 @@ export const Search = ({ moves, active }: SearchProps) => {
     },
     {
       heading: "Characters",
-      items: CHARACTERS.map((char) => ({
-        label: char.label,
+      items: CHARACTERS.map((char, i) => ({
+        label: (
+          <SearchItemCharacter character={char.label} count={moves!.length} />
+        ),
         value: `search_${char.value}`,
         onSelect: () => handleSelect(`/${char.value}`),
+        key: `${char}search${i}`,
       })),
     },
   ]
 
   return (
     <Command
+      defaultValue={activeSearchGroup}
       open={open}
       onOpenChange={setOpen}
-      placeholder="Type a command or search..."
+      placeholder="Search for a move by command, property..."
       empty="No results found."
       groups={groups}
     />

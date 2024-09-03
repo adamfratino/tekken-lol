@@ -111,7 +111,9 @@ export const ReportErrorModal = ({
       onOpenChange={setIsOpen}
       trigger={trigger}
       size="small"
-      title={`${getCharacterLabel(character)} ${command} doesn't look right?`}
+      title={`${getCharacterLabel(
+        character
+      )?.toUpperCase()} ${command} doesn't look right?`}
       description={
         <>
           Thanks for letting us know. Your feedback will be posted publicly in

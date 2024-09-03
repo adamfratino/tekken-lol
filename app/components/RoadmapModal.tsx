@@ -36,19 +36,19 @@ export const RoadmapModal = () => (
 
       <li>
         <div>
-          <Title size="lg">Button mapping &mdash; Oct. 2024</Title>
+          <Title size="lg">Mobile-friendly &mdash; Oct. 2024</Title>
           <p className="mt-1 max-w-[460px] text-sm text-muted-foreground">
-            Create a tool that maps move commands to a button sequence.
+            Responsive styles, optimized mobile navigation and search,
+            progressive web app (PWA) support.
           </p>
         </div>
       </li>
 
       <li>
         <div>
-          <Title size="lg">Mobile-friendly &mdash; Nov. 2024</Title>
+          <Title size="lg">Button mapping &mdash; Nov. 2024</Title>
           <p className="mt-1 max-w-[460px] text-sm text-muted-foreground">
-            Responsive styles, optimized mobile navigation and search,
-            progressive web app (PWA) support.
+            Create a tool that maps move commands to a button sequence.
           </p>
         </div>
       </li>

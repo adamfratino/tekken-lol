@@ -1,12 +1,22 @@
 import { Move } from "@/data/types"
-import { Group, Stack, Title, Badge } from "@/ui/components"
+import { Group, Stack, Title, Badge, Property } from "@/ui/components"
 
 type SearchItemMoveProps = {
   move: Move
 }
 
 export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
-  const { name, command, block, hit, counterHit, hitLevel, tags } = move
+  const {
+    name,
+    command,
+    block,
+    hit,
+    counterHit,
+    hitLevel,
+    tags,
+    damage,
+    startup,
+  } = move
   const hitLevelsArray = hitLevel.split(",") || ["-"]
   const tagsArray = tags && Object.keys(tags)
 
@@ -46,25 +56,53 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
           )}
         </Group>
       </div>
-      <Group gap="lg" className="items-center">
-        <Group gap="sm" aria-hidden>
+      <Group gap="lg" align="between" className="items-center">
+        <Group gap="sm">
           {block && (
-            <span className="text-sm">
+            <Property shade="muted" size="sm">
               <strong>Block:</strong> {block}
-            </span>
+            </Property>
           )}
           {hit && (
-            <span className="text-sm">
+            <Property shade="muted" size="sm">
               <strong>Hit:</strong> {hit}
-            </span>
+            </Property>
           )}
           {counterHit && (
-            <span className="text-sm">
+            <Property shade="muted" size="sm">
               <strong>Counter-Hit:</strong> {counterHit}
-            </span>
+            </Property>
+          )}
+        </Group>
+        <Group gap="sm">
+          {startup && (
+            <Property shade="muted" size="sm">
+              <strong>Frames:</strong> {startup}
+            </Property>
+          )}
+          {damage && (
+            <Property shade="muted" size="sm">
+              <strong>Damage:</strong> {damage}
+            </Property>
           )}
         </Group>
       </Group>
     </Stack>
+  )
+}
+
+export const SearchItemCharacter = ({
+  character,
+  count,
+}: {
+  character: string
+  count: number
+}) => {
+  return (
+    <Group asChild align="between" w="full">
+      <Title as="h3" size="2xl" weight="semibold" className="cursor-pointer">
+        {character}
+      </Title>
+    </Group>
   )
 }
