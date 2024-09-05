@@ -27,9 +27,8 @@ export const Sidebar = ({
   return (
     <div className="sticky hidden border-r bg-muted md:block">
       <Stack gap="sm" w="full" className="h-full max-h-screen">
-        <div className="flex h-14 items-center border-b bg-yellow-medium px-6 lg:h-[60px]">
+        <div className="flex h-14 items-center border-b bg-yellow-medium px-6 md:h-[60px]">
           <Group gap="sm" w="full" className="items-center">
-            {/* <UserIcon size={18} /> */}
             <Title as="h2" size="xl">
               {characterName?.label}
             </Title>

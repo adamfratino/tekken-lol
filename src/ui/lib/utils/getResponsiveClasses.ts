@@ -20,7 +20,7 @@ export function getResponsiveClasses<T extends string>(
       .map(([breakpoint, value]) => {
         return utility[breakpoint]?.[value] || utility.base?.[value]
       })
-      .filter((className): className is string => Boolean(className)) // Filter out undefined
+      .filter((className): className is string => Boolean(className))
   }
 
   return []

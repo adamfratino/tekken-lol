@@ -44,7 +44,7 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
       id={command}
       w="full"
       p="md"
-      className=" bg-gray-lightest/25 shadow-md"
+      className=" bg-gray-lightest/25 mt-12 shadow-md first:mt-4"
     >
       <Group
         w="full"

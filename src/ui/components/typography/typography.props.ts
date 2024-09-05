@@ -21,5 +21,6 @@ export const sizes = {
   xl: "text-xl",
   "2xl": "text-2xl",
   "3xl": "text-3xl",
-  hero: "text-3xl sm:text-[48px] md:text-[64px]",
+  paragraph: "text-sm sm:text-md",
+  hero: "scroll-m-20 font-extrabold tracking-tight text-3xl sm:text-4xl lg:text-5xl",
 }

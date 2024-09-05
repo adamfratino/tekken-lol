@@ -22,7 +22,7 @@ const Headline = ({ text }: { text: string }) => (
 export const MoveTable = ({ frames, character, title }: MoveTableProps) => (
   <div className="sticky">
     {title && <Headline text={title} />}
-    <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
+    <Stack gap={{ base: "lg", sm: "xl" }} p={{ base: "sm", md: "md" }} w="full">
       {frames.map((move) => (
         <MoveCard
           key={move.moveNumber + move.command}
