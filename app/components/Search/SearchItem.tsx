@@ -1,5 +1,5 @@
 import { Move } from "@/data/types"
-import { Group, Stack, Title, Badge, Property } from "@/ui/components"
+import { Group, Stack, Flex, Title, Badge, Property } from "@/ui/components"
 
 type SearchItemMoveProps = {
   move: Move
@@ -56,8 +56,11 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
           )}
         </Group>
       </div>
-      <Group gap="lg" align="between" className="items-center">
-        <Group gap="sm">
+      <Group gap="lg" align="between" className="md:items-center">
+        <Flex
+          gap={{ base: undefined, md: "sm" }}
+          direction={{ base: "column", md: "row" }}
+        >
           {block && (
             <Property shade="muted" size="sm">
               <strong>Block:</strong> {block}
@@ -73,8 +76,11 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
               <strong>CH:</strong> {counterHit}
             </Property>
           )}
-        </Group>
-        <Group gap="sm">
+        </Flex>
+        <Flex
+          gap={{ base: undefined, md: "sm" }}
+          direction={{ base: "column", md: "row" }}
+        >
           {startup && (
             <Property shade="muted" size="sm">
               <strong>Frames:</strong> {startup}
@@ -85,7 +91,7 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
               <strong>Damage:</strong> {damage}
             </Property>
           )}
-        </Group>
+        </Flex>
       </Group>
     </Stack>
   )

@@ -57,7 +57,7 @@ export const MoveCardButtons = ({
   }
 
   return (
-    <Group gap={gap} w="full">
+    <Group gap={gap} w="full" wrap>
       <button onClick={handleCopyToClipboard} className="cursor-pointer">
         <InteractiveIcon bg="bg-aqua-medium" icon={Copy} text="Copy" />
       </button>

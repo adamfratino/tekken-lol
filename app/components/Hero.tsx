@@ -4,14 +4,7 @@ import { Map } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { CHARACTERS, PATHS } from "@/data/variables"
-import {
-  Select,
-  TransitionContainer,
-  Stack,
-  Group,
-  Modal,
-  Title,
-} from "@/ui/components"
+import { Select, Group, Title, Flex, Transition, Body } from "@/ui/components"
 import { Button } from "@/ui/primitives"
 import { RoadmapModal } from "./RoadmapModal"
 
@@ -19,34 +12,38 @@ export function Hero() {
   const [character, setCharacter] = useState<string | undefined>(undefined)
 
   const handleCharacterChange = (value: string) => {
-    setCharacter(value) // Update the selected character
+    setCharacter(value)
   }
 
   return (
-    <div className="-mt-2 flex min-h-screen flex-col items-center px-4 pt-48">
+    <Flex
+      direction="column"
+      p={{ base: "md", md: "lg" }}
+      className="min-h-screen items-center lg:pt-40"
+    >
       <div className="mx-auto mt-5 max-w-2xl text-center">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        <Title as="h1" size="hero">
           Welcome to tekken.lol
-        </h1>
+        </Title>
       </div>
 
       <div className="mx-auto mt-5 max-w-3xl text-center">
-        <p className="text-lg text-muted-foreground">
+        <Body as="p" className="text-md text-muted-foreground md:text-lg">
           Explore <span className="font-bold text-foreground">Tekken 8</span>{" "}
           frame data, punishers, heat moves, stances and more to improve your
           skills and get the upper hand in any matchup. Or{" "}
           <span className="font-bold text-foreground">get salty</span> and
           <span className="font-bold text-foreground"> rage-quit</span>, that's
           fine too.
-        </p>
+        </Body>
       </div>
 
       <div className="mt-5 flex items-center justify-center gap-x-1 sm:gap-x-1">
         <span className="text-sm text-muted-foreground">Created by:</span>
-        <span className="text-sm font-bold">shrimping vessel (🦐 + ⛵)</span>
+        <span className="text-sm font-bold">shrimping vessel [🦐 + ⛵]</span>
       </div>
 
-      <div className="mt-8 flex justify-center gap-3">
+      <Group w="full" gap="sm" className="mt-8 max-w-[540px] justify-center">
         <Select
           autoFocus
           items={CHARACTERS}
@@ -54,11 +51,15 @@ export function Hero() {
           placeholder="Choose your fighter..."
           groupClassName="text-lg"
         />
-      </div>
+      </Group>
 
-      <TransitionContainer visible={!!character}>
+      <Transition visible={!!character} className="w-full">
         {character && (
-          <Group gap="md" className="mt-12">
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            gap="md"
+            className="mt-8 w-full md:justify-center"
+          >
             <Button asChild size="sm">
               <Link href={`/${character}`}>All Moves</Link>
             </Button>
@@ -74,11 +75,11 @@ export function Hero() {
             <Button asChild size="sm">
               <Link href={`/${character}/${PATHS.WALL}`}>At the Wall</Link>
             </Button>
-          </Group>
+          </Flex>
         )}
-      </TransitionContainer>
+      </Transition>
 
       <RoadmapModal />
-    </div>
+    </Flex>
   )
 }

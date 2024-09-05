@@ -1,4 +1,5 @@
 export * from "./alignments"
+export * from "./directions"
 export * from "./gaps"
 export * from "./padding"
 export * from "./shadows"

@@ -7,6 +7,7 @@ import type { PropsWithChildren } from "react"
 import { Stack, Group, Badge } from "@/ui/components"
 import { cn } from "@/ui/lib/utils"
 import { PATHS } from "@/data/variables"
+import { useNavigationStore } from "@/stores"
 
 const itemVariants = cva(
   "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:bg-yellow-lighter hover:text-primary",
@@ -33,20 +34,25 @@ const Item = ({
   variant = "yellow",
   href,
   count,
-}: ItemProps) => (
-  <Group asChild align="between">
-    <Link
-      href={href ?? "#"}
-      className={cn(itemVariants({ variant }), {
-        "bg-yellow-light text-primary shadow-md hover:bg-yellow-light":
-          active && variant === "yellow",
-      })}
-    >
-      {children}
-      {count && <Badge variant="count">{count}</Badge>}
-    </Link>
-  </Group>
-)
+}: ItemProps) => {
+  const setActive = useNavigationStore((s) => s.setActive)
+
+  return (
+    <Group asChild align="between">
+      <Link
+        href={href ?? "#"}
+        onClick={() => setActive(false)}
+        className={cn(itemVariants({ variant }), {
+          "bg-yellow-light text-primary shadow-md hover:bg-yellow-light":
+            active && variant === "yellow",
+        })}
+      >
+        {children}
+        {count && <Badge variant="count">{count}</Badge>}
+      </Link>
+    </Group>
+  )
+}
 
 export type SidebarNavigationProps = {
   character: string

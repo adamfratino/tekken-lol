@@ -13,7 +13,7 @@ const Headline = ({ text }: { text: string }) => (
   <Title
     as="h2"
     size="md"
-    className="sticky top-0 bg-foreground px-6 py-2 text-background"
+    className="sticky top-0 z-10 bg-foreground px-4 py-2 text-sm text-background md:px-6 md:text-base"
   >
     {text}
   </Title>
@@ -22,7 +22,7 @@ const Headline = ({ text }: { text: string }) => (
 export const MoveTable = ({ frames, character, title }: MoveTableProps) => (
   <div className="sticky">
     {title && <Headline text={title} />}
-    <Stack gap={{ base: "lg", sm: "xl" }} p="lg" w="full">
+    <Stack gap={{ base: "lg", sm: "xl" }} p={{ base: "sm", md: "md" }} w="full">
       {frames.map((move) => (
         <MoveCard
           key={move.moveNumber + move.command}

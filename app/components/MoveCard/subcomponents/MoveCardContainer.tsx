@@ -43,7 +43,7 @@ export const MoveCardContainer = ({
       >
         {title}
       </Property>
-      <div className="bg-primary-foreground/50 h-full rounded-b-md p-3">
+      <div className="bg-primary-foreground/50 h-full overflow-y-auto rounded-b-md p-3">
         {value ? (
           <Property as="p" variant="secondary">
             {value}

@@ -31,7 +31,7 @@ export function Select({
   return (
     <SelectPrimitive onValueChange={onChange}>
       <SelectTrigger
-        className={cn("w-[540px]", triggerClassName)}
+        className={cn("w-full", triggerClassName)}
         autoFocus={autoFocus}
       >
         <SelectValue placeholder={placeholder} />

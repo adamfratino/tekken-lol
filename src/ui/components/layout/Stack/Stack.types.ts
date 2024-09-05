@@ -8,4 +8,6 @@ export type StackLayoutProps = Pick<LayoutProps, "p" | "gap" | "align">
 
 export type StackProps<T extends React.ElementType> = BoxProps<T> &
   StackVariantProps &
-  StackLayoutProps
+  StackLayoutProps & {
+    wrap?: true
+  }
