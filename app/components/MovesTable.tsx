@@ -13,7 +13,7 @@ const Headline = ({ text }: { text: string }) => (
   <Title
     as="h2"
     size="md"
-    className="sticky top-0 bg-foreground px-6 py-2 text-background"
+    className="sticky top-0 z-10 bg-foreground px-4 py-2 text-sm text-background md:px-6 md:text-base"
   >
     {text}
   </Title>

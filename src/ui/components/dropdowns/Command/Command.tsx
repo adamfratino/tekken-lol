@@ -50,6 +50,7 @@ export const Command = ({
       open={open}
       onOpenChange={onOpenChange}
       defaultOpen={defaultOpen}
+      className="w-11/12"
     >
       <CommandInput placeholder={placeholder} />
       <CommandList>

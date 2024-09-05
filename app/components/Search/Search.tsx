@@ -6,13 +6,14 @@ import { Command } from "@/ui/components/dropdowns"
 import type { Move } from "@/data/types"
 import { CHARACTERS } from "@/data/variables"
 import { SearchItemCharacter, SearchItemMove } from "./SearchItem"
+import { useSearchStore } from "@/stores"
 
 type SearchProps = {
   moves?: Move[]
 }
 
 export const Search = ({ moves }: SearchProps) => {
-  const [open, setOpen] = useState(false)
+  const { active: activeSearch, setActive: setActiveSearch } = useSearchStore()
   const [activeSearchGroup, setActiveSearchGroup] = useState<
     "Moves" | "Characters" | undefined
   >(undefined)
@@ -23,11 +24,11 @@ export const Search = ({ moves }: SearchProps) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault()
         setActiveSearchGroup("Moves")
-        setOpen(true)
+        setActiveSearch(true)
       }
       if (e.key === "j" && (e.metaKey || e.ctrlKey)) {
         setActiveSearchGroup("Characters")
-        setOpen(true)
+        setActiveSearch(true)
       }
     }
     document.addEventListener("keydown", down)
@@ -36,7 +37,7 @@ export const Search = ({ moves }: SearchProps) => {
 
   const handleSelect = (href: string) => {
     router.push(href)
-    setOpen(false)
+    setActiveSearch(false)
   }
 
   const groups = [
@@ -67,8 +68,8 @@ export const Search = ({ moves }: SearchProps) => {
   return (
     <Command
       defaultValue={activeSearchGroup}
-      open={open}
-      onOpenChange={setOpen}
+      open={activeSearch}
+      onOpenChange={setActiveSearch}
       placeholder="Search for a move by command, property..."
       empty="No results found."
       groups={groups}
