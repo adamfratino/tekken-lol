@@ -40,7 +40,7 @@ export const MoveCardHitLevels = ({
   hitLevels,
 }: MoveCardHitLevelsProps) => (
   <MoveCardContainer title="Hit Levels">
-    <Group gap={gap}>
+    <Group gap={gap} wrap>
       {hitLevels.map((level, i) => (
         <HitLevel key={(level as string) + i} shade={level} />
       ))}

@@ -8,10 +8,12 @@ export const Header = () => (
         as="h2"
         size="sm"
         weight="medium"
-        className="flex w-full items-center rounded-md bg-yellow-medium px-4 py-2 text-sm shadow-md md:max-w-[440px]"
+        className="flex items-center overflow-y-auto rounded-md bg-yellow-medium px-4 py-2 text-sm shadow-md md:w-full md:max-w-[440px]"
       >
         <Search size={16} />
-        Search for move commands, stances, frames, etc.
+        <span className="hidden md:inline">
+          Search for move commands, stances, frames, etc.
+        </span>
         <kbd className="pointer-events-none ml-auto hidden h-5 select-none items-center gap-1 rounded bg-foreground px-1.5 font-mono text-[10px] font-medium text-background opacity-100 md:inline-flex">
           <span className="text-xs">⌘</span>K
         </kbd>
