@@ -19,7 +19,7 @@ export function Hero() {
     <Flex
       direction="column"
       p={{ base: "md", md: "lg" }}
-      className="-mt-2 min-h-screen items-center lg:pt-40"
+      className="min-h-screen items-center lg:pt-40"
     >
       <div className="mx-auto mt-5 max-w-2xl text-center">
         <Title as="h1" size="hero">
