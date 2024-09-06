@@ -4,7 +4,7 @@ import { RoadmapModal } from "app/components/RoadmapModal"
 
 export const SidebarFooter = () => (
   <Group align="between" p="lg" className="item-center mt-auto">
-    <p className="mb-1 text-sm font-semibold">
+    <p className="mb-1 text-xs font-semibold">
       <RoadmapModal
         trigger={
           <Group
@@ -20,6 +20,6 @@ export const SidebarFooter = () => (
         }
       />
     </p>
-    <p className="fon-bold text-sm">[🦐 ⛵]</p>
+    <p className="fon-bold text-xs">[🦐 ⛵]</p>
   </Group>
 )

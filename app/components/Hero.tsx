@@ -83,8 +83,8 @@ export function Hero() {
 
       <div className="mx-auto mt-auto inline-flex flex-col">
         <div className="mb-2 mt-5 flex items-center justify-center gap-x-1 sm:gap-x-1">
-          <span className="text-sm text-muted-foreground">Created by:</span>
-          <span className="text-sm font-bold">shrimping vessel [🦐 + ⛵]</span>
+          <span className="text-xs text-muted-foreground">Created by:</span>
+          <span className="text-xs font-bold">shrimping vessel [🦐 + ⛵]</span>
         </div>
         <RoadmapModal
           trigger={
