@@ -65,14 +65,10 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
 
       <li>
         <div>
-          <Title size="md">
-            Extend tags, filtering & categories &mdash; Jan. 2025
-          </Title>
+          <Title size="md">Extend tags & filtering &mdash; Jan. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
-            Find new tags to extract from frame data (natural combo, jails, chip
-            damage, etc.), create a filtering system that persists on a single
-            page and refines the frame data, and create new dedicated sidebar
-            categories with subcategory links when active.
+            Find new tags, create a filtering system for tags, add subcategory
+            links to sidebar.
           </p>
         </div>
       </li>
@@ -81,8 +77,8 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
         <div>
           <Title size="md">User accounts &mdash; Mar. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
-            Save your favorites moves, rank the attributes of the roster,
-            participate in community events and other exclusive content.
+            Favorites moves, chraacter notes, attribute ranks, exclusive
+            content.
           </p>
         </div>
       </li>
@@ -91,8 +87,7 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
         <div>
           <Title size="md">Quiz mode &mdash; May. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
-            How well do you know the roster? Test your frame knowledge with a
-            quz, and keep track of your results if you're a member.
+            Frame data, pick the punish, name the character, etc.
           </p>
         </div>
       </li>
@@ -101,7 +96,6 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
         <div>
           <Title size="md">Link move videos &mdash; Jun. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
-            Link to video clips of each move.{" "}
             <span className="font-semibold italic">
               Please reach out if you have a library and would like to
               collaborate!

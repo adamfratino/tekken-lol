@@ -106,7 +106,11 @@ export const SearchItemCharacter = ({
 }) => {
   return (
     <Group asChild align="between" w="full">
-      <Title as="h3" size="2xl" weight="semibold" className="cursor-pointer">
+      <Title
+        as="h3"
+        weight="semibold"
+        className="cursor-pointer text-xl md:text-2xl"
+      >
         {character}
       </Title>
     </Group>

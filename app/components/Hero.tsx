@@ -27,8 +27,11 @@ export function Hero() {
         </Title>
       </div>
 
-      <div className="mx-auto mt-5 max-w-3xl text-center">
-        <Body as="p" className="text-md text-muted-foreground md:text-lg">
+      <div className="mx-auto max-w-3xl text-center">
+        <Body
+          as="p"
+          className="text-md mt-6 max-w-[540px] text-muted-foreground md:text-lg"
+        >
           Explore <span className="font-bold text-foreground">Tekken 8</span>{" "}
           frame data, punishers, heat moves, stances and more to improve your
           skills and get the upper hand in any matchup. Or{" "}
@@ -38,17 +41,16 @@ export function Hero() {
         </Body>
       </div>
 
-      <div className="mt-5 flex items-center justify-center gap-x-1 sm:gap-x-1">
-        <span className="text-sm text-muted-foreground">Created by:</span>
-        <span className="text-sm font-bold">shrimping vessel [🦐 + ⛵]</span>
-      </div>
-
-      <Group w="full" gap="sm" className="mt-8 max-w-[540px] justify-center">
+      <Group
+        w="full"
+        gap="sm"
+        className="mx-auto mt-8 max-w-[320px] justify-center md:max-w-[540px]"
+      >
         <Select
           autoFocus
           items={CHARACTERS}
           onChange={handleCharacterChange}
-          placeholder="Choose your fighter..."
+          placeholder="Choose  your fighter..."
           groupClassName="text-lg"
         />
       </Group>
@@ -56,8 +58,8 @@ export function Hero() {
       <Transition visible={!!character} className="w-full">
         {character && (
           <Flex
-            direction={{ base: "column", md: "row" }}
             gap="md"
+            direction={{ base: "column", md: "row" }}
             className="mt-8 w-full md:justify-center"
           >
             <Button asChild size="sm">
@@ -79,7 +81,22 @@ export function Hero() {
         )}
       </Transition>
 
-      <RoadmapModal />
+      <div className="mx-auto mt-auto inline-flex flex-col">
+        <div className="mb-2 mt-5 flex items-center justify-center gap-x-1 sm:gap-x-1">
+          <span className="text-sm text-muted-foreground">Created by:</span>
+          <span className="text-sm font-bold">shrimping vessel [🦐 + ⛵]</span>
+        </div>
+        <RoadmapModal
+          trigger={
+            <Group asChild gap="sm" className="text-xs">
+              <Button size="sm" variant="outline">
+                <Map size={18} />
+                View roadmap
+              </Button>
+            </Group>
+          }
+        />
+      </div>
     </Flex>
   )
 }

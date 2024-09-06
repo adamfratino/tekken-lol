@@ -49,7 +49,7 @@ const CommandDialog = ({
       </DialogDescription>
       <DialogContent
         className={cn(
-          "bottom-auto top-16 max-w-[640px] translate-y-[-12px] overflow-hidden p-0 shadow-lg",
+          "overflow-hidden p-0 shadow-lg max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-0 max-md:h-full max-md:w-full max-md:translate-x-0 max-md:translate-y-0 md:bottom-auto md:top-16 md:max-w-[640px] md:translate-y-[-12px]",
           className
         )}
       >
@@ -86,7 +86,10 @@ const CommandList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <CommandPrimitive.List
     ref={ref}
-    className={cn("max-h-[540px] overflow-y-auto overflow-x-hidden", className)}
+    className={cn(
+      "overflow-y-auto overflow-x-hidden md:max-h-[540px]",
+      className
+    )}
     {...props}
   />
 ))
