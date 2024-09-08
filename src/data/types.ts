@@ -1,11 +1,13 @@
 import { CHARACTERS, HIT_LEVELS, TAGS, TAGS_DICTIONARY } from "@/data/variables"
 
+/** @todo rename */
 export type Character = {
   label: string
   value: string
   disabled?: boolean
 }
 
+/** @todo rename to Character */
 export type Characters = (typeof CHARACTERS)[number]["value"]
 export type HitLevels = keyof typeof HIT_LEVELS
 export type Tags = keyof typeof TAGS

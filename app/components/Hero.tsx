@@ -81,11 +81,7 @@ export function Hero() {
         )}
       </Transition>
 
-      <div className="mx-auto mt-auto inline-flex flex-col">
-        <div className="mb-2 mt-5 flex items-center justify-center gap-x-1 sm:gap-x-1">
-          <span className="text-xs text-muted-foreground">Created by:</span>
-          <span className="text-xs font-bold">shrimping vessel [🦐 + ⛵]</span>
-        </div>
+      <div className="mx-auto mt-auto inline-flex flex-col pb-4">
         <RoadmapModal
           trigger={
             <Group asChild gap="sm" className="text-xs">
@@ -96,6 +92,12 @@ export function Hero() {
             </Group>
           }
         />
+        <div className="mt-2 flex items-center justify-center gap-x-1 sm:gap-x-1">
+          <span className="text-[10px] text-muted-foreground">Created by:</span>
+          <span className="text-[10px] font-bold">
+            shrimping vessel [🦐 + ⛵]
+          </span>
+        </div>
       </div>
     </Flex>
   )

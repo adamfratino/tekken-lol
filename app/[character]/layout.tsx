@@ -1,10 +1,13 @@
 import type { PropsWithChildren } from "react"
+
 import {
   fetchCharacterFrames,
   fetchCharacterPunishers,
   fetchCharacterStances,
 } from "@/data/utils"
 import { Stack } from "@/ui/components"
+import { filterHeatMoves, filterWallMoves } from "@/utils/filterMoves"
+
 import { Header, Sidebar } from "app/components"
 import type { CharacterPageProps } from "./types"
 
@@ -18,17 +21,14 @@ export default async function CharacterLayout({
   const punishers = await fetchCharacterPunishers(character)
   const stances = await fetchCharacterStances(character)
 
-  const heatMoves = allMoves.filter(
-    (move) => move.tags && ["hb", "hs", "he"].some((tag) => tag in move.tags)
-  )
+  const heatMoves = filterHeatMoves(allMoves)
+  const wallMoves = filterWallMoves(allMoves)
 
-  const wallMoves = allMoves.filter(
-    (move) => move.tags && ["bbr", "wc"].some((tag) => tag in move.tags)
-  )
   const stancesToOmit = ["H", "SS", "FC", "FUFT", "WS"]
   const filteredStances = stances.filter(
     (stance) => !stancesToOmit.includes(stance)
   )
+
   const stancesCount = filteredStances.reduce((total, stance) => {
     const filteredFrames = allMoves.filter((move) =>
       move.command.startsWith(stance)
@@ -55,7 +55,7 @@ export default async function CharacterLayout({
         stancesCount={stancesCount}
       />
       <Stack>
-        <Header character={character} />
+        <Header character={character} moves={allMoves} />
         <main className="h-[calc(100dvh-60px)] overflow-y-scroll">
           {children}
         </main>

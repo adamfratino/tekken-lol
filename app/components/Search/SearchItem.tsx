@@ -24,12 +24,23 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
     <Stack gap="xs" w="full" className="cursor-pointer">
       <div>
         {name && (
-          <Title as="h4" shade="muted" weight="normal">
+          <Title
+            as="h4"
+            size="sm"
+            shade="muted"
+            weight="normal"
+            className="max-md:mb-1"
+          >
             {name}
           </Title>
         )}
         <Group gap="md" w="full" className="items-center">
-          <Title as="h3" size="2xl" weight="semibold">
+          <Title
+            as="h3"
+            size="2xl"
+            weight="semibold"
+            className="max-md:text-lg"
+          >
             {command}
           </Title>
           {hitLevel && (
@@ -80,6 +91,7 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
         <Flex
           gap={{ base: undefined, md: "sm" }}
           direction={{ base: "column", md: "row" }}
+          className="max-md:text-right"
         >
           {startup && (
             <Property shade="muted" size="sm">
