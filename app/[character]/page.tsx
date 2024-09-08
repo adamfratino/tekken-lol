@@ -1,7 +1,7 @@
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "./types"
 import { CHARACTERS } from "@/data/variables"
-import { MoveTable, Search } from "app/components"
+import { MoveTable, MovesSearch, CharacterSearch } from "app/components"
 import { fetchCharacterFrames } from "@/data/utils"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
@@ -29,7 +29,8 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
   return (
     <div>
       <MoveTable character={character} frames={frames} />
-      <Search moves={frames} />
+      <MovesSearch moves={frames} />
+      <CharacterSearch />
     </div>
   )
 }

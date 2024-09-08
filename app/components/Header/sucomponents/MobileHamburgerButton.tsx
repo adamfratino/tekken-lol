@@ -20,7 +20,8 @@ type MobileHamburgerButtonProps = {
 export const MobileHamburgerButton = ({
   character,
 }: MobileHamburgerButtonProps) => {
-  const { active, setActive } = useNavigationStore()
+  // const { active, setActive } = useNavigationStore()
+  const [active, setActive] = useState(false)
 
   return (
     <>
@@ -35,7 +36,7 @@ export const MobileHamburgerButton = ({
         {active && (
           <Stack
             asChild
-            className="fixed inset-0 z-20 flex max-h-screen w-screen overflow-y-auto bg-background p-4"
+            className="fixed inset-0 z-20 flex max-h-screen w-screen overflow-y-auto bg-background p-4 md:hidden"
           >
             <motion.div
               variants={horizontalModalVariants}

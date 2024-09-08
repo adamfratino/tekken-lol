@@ -56,7 +56,10 @@ export const MobileCharacterSelectButton = () => {
                   {CHARACTERS.map(
                     ({ label, value, disabled }) =>
                       !disabled && (
-                        <motion.span variants={linkItemVariants}>
+                        <motion.span
+                          key={`${label}_MobileCharacterSelect`}
+                          variants={linkItemVariants}
+                        >
                           <Card
                             asChild
                             bordered

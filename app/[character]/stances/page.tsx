@@ -1,6 +1,6 @@
 import { fetchCharacterFrames, fetchCharacterStances } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
-import { MoveTable, Search } from "app/components"
+import { MoveTable, CharacterSearch, MovesSearch } from "app/components"
 import { getCharacterLabel } from "@/utils"
 import type { CharacterPageProps } from "../types"
 
@@ -57,7 +57,8 @@ export default async function CharacterHeatPage({
         )
       })}
       {/* Pass the aggregated moves to the Search component */}
-      <Search moves={allStanceMoves} />
+      <MovesSearch moves={allStanceMoves} />
+      <CharacterSearch />
     </div>
   )
 }

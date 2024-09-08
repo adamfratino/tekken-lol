@@ -1,6 +1,6 @@
 "use client"
 
-import { Map } from "lucide-react"
+import { Map, Database } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { CHARACTERS, PATHS } from "@/data/variables"
@@ -81,10 +81,10 @@ export function Hero() {
         )}
       </Transition>
 
-      <div className="mx-auto mt-auto inline-flex flex-col pb-4">
+      <div className="mx-auto mt-auto inline-flex flex-col pb-6">
         <RoadmapModal
           trigger={
-            <Group asChild gap="sm" className="text-xs">
+            <Group asChild gap="sm" className="mb-2 text-xs">
               <Button size="sm" variant="outline">
                 <Map size={18} />
                 View roadmap
@@ -92,11 +92,28 @@ export function Hero() {
             </Group>
           }
         />
-        <div className="mt-2 flex items-center justify-center gap-x-1 sm:gap-x-1">
-          <span className="text-[10px] text-muted-foreground">Created by:</span>
-          <span className="text-[10px] font-bold">
-            shrimping vessel [🦐 + ⛵]
-          </span>
+        <div className="mt-2 flex flex-col items-center justify-center gap-x-1 gap-y-1 sm:gap-x-1">
+          <Group gap="xs">
+            <span className="text-[10px] text-muted-foreground">
+              Created by:
+            </span>
+            <span className="text-[10px] font-bold">
+              shrimping vessel [🦐⛵]
+            </span>
+          </Group>
+
+          <Group gap="xs">
+            <span className="text-[10px] text-muted-foreground">
+              Datasource:
+            </span>
+            <a
+              href="https://tekkendocs.com"
+              target="_blank"
+              className="text-[10px] font-bold"
+            >
+              tekkendocs.com
+            </a>
+          </Group>
         </div>
       </div>
     </Flex>

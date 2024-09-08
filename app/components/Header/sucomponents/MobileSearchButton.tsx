@@ -45,13 +45,14 @@ export const MobileSearchButton = ({ moves }: MobileSearchButtonProps) => {
               animate="visible"
               exit="exit"
             >
+              <Title className="mt-2">Find a move</Title>
               <Button
                 onClick={() => setActive(false)}
                 className="fixed right-2 top-2 z-30 self-end"
               >
                 <X size={16} />
               </Button>
-              <Stack asChild gap="md" className="pt-6">
+              <Stack asChild gap="md" className="pt-4">
                 <motion.div
                   className="bg-gray-900 relative w-full"
                   variants={navLinksVariants}
@@ -60,7 +61,10 @@ export const MobileSearchButton = ({ moves }: MobileSearchButtonProps) => {
                   exit="exit"
                 >
                   {moves.map((move, i) => (
-                    <motion.span variants={linkItemVariants}>
+                    <motion.span
+                      key={`${move.command}_MobileSearchButton_${i}`}
+                      variants={linkItemVariants}
+                    >
                       <Card key={`${move.command}_move_${i}`} p="sm">
                         <SearchItemMove move={move} />
                       </Card>

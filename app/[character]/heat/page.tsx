@@ -1,6 +1,6 @@
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
-import { MoveTable, Search } from "app/components"
+import { MoveTable, MovesSearch, CharacterSearch } from "app/components"
 import type { CharacterPageProps } from "../types"
 import { fetchCharacterFrames } from "@/data/utils"
 
@@ -41,7 +41,8 @@ export default async function CharacterHeatPage({
         frames={heFrames}
         title="Heat Engager moves"
       />
-      <Search moves={[...hbFrames, ...hsFrames, ...heFrames]} />
+      <MovesSearch moves={[...hbFrames, ...hsFrames, ...heFrames]} />
+      <CharacterSearch />
     </div>
   )
 }

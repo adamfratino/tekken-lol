@@ -9,7 +9,7 @@ import type { PropsWithChildren } from "react"
 import { PATHS } from "@/data/variables"
 import { useNavigationStore } from "@/stores"
 import { cn } from "@/ui/lib/utils"
-import { Stack, Group, Badge } from "@/ui/components"
+import { Stack, Badge } from "@/ui/components"
 
 import {
   navLinksVariants,

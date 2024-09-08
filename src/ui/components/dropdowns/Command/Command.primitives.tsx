@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
 import { Command as CommandPrimitive } from "cmdk"
 import { Search } from "lucide-react"
 
@@ -43,10 +44,12 @@ const CommandDialog = ({
 }: CommandDialogProps) => {
   return (
     <Dialog {...props}>
-      <DialogTitle>Search Overlay</DialogTitle>
-      <DialogDescription>
-        Search for move commands, move names, frame properties, and characters
-      </DialogDescription>
+      <VisuallyHidden>
+        <DialogTitle>Search Overlay</DialogTitle>
+        <DialogDescription>
+          Search for move commands, move names, frame properties, and characters
+        </DialogDescription>
+      </VisuallyHidden>
       <DialogContent
         className={cn(
           "overflow-hidden p-0 shadow-lg max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:top-0 max-md:h-full max-md:w-full max-md:translate-x-0 max-md:translate-y-0 md:bottom-auto md:top-16 md:max-w-[640px] md:translate-y-[-12px]",

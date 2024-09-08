@@ -109,13 +109,7 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
   )
 }
 
-export const SearchItemCharacter = ({
-  character,
-  count,
-}: {
-  character: string
-  count: number
-}) => {
+export const SearchItemCharacter = ({ character }: { character: string }) => {
   return (
     <Group asChild align="between" w="full">
       <Title
