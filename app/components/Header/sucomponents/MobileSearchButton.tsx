@@ -65,8 +65,14 @@ export const MobileSearchButton = ({ moves }: MobileSearchButtonProps) => {
                       key={`${move.command}_MobileSearchButton_${i}`}
                       variants={linkItemVariants}
                     >
-                      <Card key={`${move.command}_move_${i}`} p="sm">
-                        <SearchItemMove move={move} />
+                      <Card asChild p="sm">
+                        <Link
+                          href={`#${move.command}`}
+                          onClick={() => setActive(false)}
+                          className="w-full"
+                        >
+                          <SearchItemMove move={move} />
+                        </Link>
                       </Card>
                     </motion.span>
                   ))}

@@ -33,6 +33,7 @@ type ItemProps = VariantProps<typeof itemVariants> &
     active?: boolean
     href?: string
     count?: number
+    onClick?: () => void
   }>
 
 const Item = ({
@@ -41,6 +42,7 @@ const Item = ({
   variant = "yellow",
   href,
   count,
+  onClick,
 }: ItemProps) => {
   const setActive = useNavigationStore((s) => s.setActive)
 
@@ -48,7 +50,11 @@ const Item = ({
     <motion.div variants={linkItemVariants}>
       <Link
         href={href ?? "#"}
-        onClick={() => setActive(false)}
+        onClick={() => {
+          setActive(false)
+          if (onClick) onClick()
+          console.log("test")
+        }}
         className={cn(itemVariants({ variant }), {
           "w-full bg-yellow-light text-primary shadow-md hover:bg-yellow-light":
             active && variant === "yellow",
@@ -68,6 +74,7 @@ export type SidebarNavigationProps = {
   punisherCount?: number
   wallCount?: number
   stancesCount?: number
+  onClick?: () => void
 }
 
 export const SidebarNavigation = ({
@@ -77,6 +84,7 @@ export const SidebarNavigation = ({
   punisherCount,
   wallCount,
   stancesCount,
+  onClick,
 }: SidebarNavigationProps) => {
   const pathname = usePathname()
   const pathnameArray = pathname.split("/").filter((c) => c)
@@ -93,6 +101,7 @@ export const SidebarNavigation = ({
         >
           <Item
             href={`/${character}`}
+            onClick={onClick}
             active={pathnameArray.length === 1}
             count={count}
           >
@@ -100,6 +109,7 @@ export const SidebarNavigation = ({
           </Item>
           <Item
             href={`/${character}/${PATHS.HEAT}`}
+            onClick={onClick}
             active={pathnameArray[1] === PATHS.HEAT}
             count={heatCount}
           >
@@ -107,6 +117,7 @@ export const SidebarNavigation = ({
           </Item>
           <Item
             href={`/${character}/${PATHS.STANCES}`}
+            onClick={onClick}
             active={pathnameArray[1] === PATHS.STANCES}
             count={stancesCount}
           >
@@ -114,6 +125,7 @@ export const SidebarNavigation = ({
           </Item>
           <Item
             href={`/${character}/${PATHS.PUNISHERS}`}
+            onClick={onClick}
             active={pathnameArray[1] === PATHS.PUNISHERS}
             count={punisherCount}
           >
@@ -121,6 +133,7 @@ export const SidebarNavigation = ({
           </Item>
           <Item
             href={`/${character}/${PATHS.WALL}`}
+            onClick={onClick}
             active={pathnameArray[1] === PATHS.WALL}
             count={wallCount}
           >

@@ -58,7 +58,10 @@ export const MobileHamburgerButton = ({
                   animate="visible"
                   exit="exit"
                 >
-                  <SidebarNavigation character={character} />
+                  <SidebarNavigation
+                    character={character}
+                    onClick={() => setActive(false)}
+                  />
                 </motion.div>
               </Stack>
             </motion.div>
