@@ -63,7 +63,7 @@ export function Hero() {
             className="mt-8 w-full md:justify-center"
           >
             <Button asChild size="sm">
-              <Link href={`/${character}`}>All Moves</Link>
+              <Link href={`/${character}/${PATHS.ALL}`}>All Moves</Link>
             </Button>
             <Button asChild size="sm">
               <Link href={`/${character}/${PATHS.HEAT}`}>Heat Moves</Link>

@@ -1,14 +1,14 @@
 import { getCharacterLabel } from "@/utils"
-import type { CharacterPageProps } from "./types"
 import { CHARACTERS } from "@/data/variables"
-import { MoveTable, MovesSearch, CharacterSearch } from "app/components"
 import { fetchCharacterFrames } from "@/data/utils"
+import { MoveTable, MovesSearch, CharacterSearch } from "app/components"
+import type { CharacterPageProps } from "../types"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
 
   return {
-    title: "tekken.lol : " + getCharacterLabel(character) + " : moves",
+    title: "tekken.lol : " + getCharacterLabel(character) + " : all moves",
   }
 }
 

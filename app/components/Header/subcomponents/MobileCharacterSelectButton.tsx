@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { UserIcon, X } from "lucide-react"
 
-import { CHARACTERS } from "@/data/variables"
+import { CHARACTERS, PATHS } from "@/data/variables"
 import { Stack, Card, Title } from "@/ui/components"
 import { Button } from "@/ui/primitives"
 
@@ -56,21 +56,22 @@ export const MobileCharacterSelectButton = () => {
                   {CHARACTERS.map(
                     ({ label, value, disabled }) =>
                       !disabled && (
-                        <motion.span
+                        // <motion.span
+                        //   key={`${label}_MobileCharacterSelect`}
+                        //   variants={linkItemVariants}
+                        // >
+                        <Card
                           key={`${label}_MobileCharacterSelect`}
-                          variants={linkItemVariants}
+                          asChild
+                          bordered
+                          p="md"
+                          className="active:bg-yellow-medium"
                         >
-                          <Card
-                            asChild
-                            bordered
-                            p="md"
-                            className="active:bg-yellow-medium"
-                          >
-                            <Link href={`/${value}`}>
-                              <Title size="md">{label}</Title>
-                            </Link>
-                          </Card>
-                        </motion.span>
+                          <Link href={`/${value}/${PATHS.ALL}`}>
+                            <Title size="md">{label}</Title>
+                          </Link>
+                        </Card>
+                        // </motion.span>
                       )
                   )}
                 </motion.div>

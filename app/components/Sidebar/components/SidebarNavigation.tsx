@@ -14,7 +14,7 @@ import { Stack, Badge } from "@/ui/components"
 import {
   navLinksVariants,
   linkItemVariants,
-} from "app/components/Header/sucomponents/motion.variants"
+} from "app/components/Header/subcomponents/motion.variants"
 
 const itemVariants = cva(
   "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:bg-yellow-lighter hover:text-primary justify-between",
@@ -100,9 +100,9 @@ export const SidebarNavigation = ({
           exit="exit"
         >
           <Item
-            href={`/${character}`}
+            href={`/${character}/${PATHS.ALL}`}
             onClick={onClick}
-            active={pathnameArray.length === 1}
+            active={pathnameArray[1] === PATHS.ALL}
             count={count}
           >
             All moves

@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 
-import { CHARACTERS } from "@/data/variables"
+import { CHARACTERS, PATHS } from "@/data/variables"
 import { useNavigationStore } from "@/stores"
 import { Command } from "@/ui/components"
 
@@ -32,7 +32,7 @@ export const CharacterSearch = () => {
   const items = CHARACTERS.filter((char) => !char.disabled).map((char, i) => ({
     label: <SearchItemCharacter character={char.label} />,
     value: `search_${char.value}`,
-    onSelect: () => handleSelect(`/${char.value}`),
+    onSelect: () => handleSelect(`/${char.value}/${PATHS.ALL}`),
     key: `${char}search${i}`,
   }))
 

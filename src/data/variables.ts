@@ -1,6 +1,7 @@
 import type { Character } from "./types"
 
 export enum PATHS {
+  ALL = "all",
   HEAT = "heat",
   STANCES = "stances",
   PUNISHERS = "punishers",
