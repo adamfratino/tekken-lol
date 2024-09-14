@@ -1,6 +1,6 @@
 "use client"
 
-import { Map, Database } from "lucide-react"
+import { Map } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { CHARACTERS, PATHS } from "@/data/variables"
@@ -23,7 +23,7 @@ export function Hero() {
     >
       <div className="mx-auto mt-5 max-w-2xl text-center">
         <Title as="h1" size="hero">
-          Welcome to tekken.lol
+          welcome to tekken<span className="text-red-medium">.lol</span>
         </Title>
       </div>
 

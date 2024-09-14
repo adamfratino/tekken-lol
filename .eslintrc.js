@@ -27,13 +27,13 @@ module.exports = {
         varsIgnorePattern: "^_",
       },
     ],
-    "sort-imports": [
-      1,
-      {
-        ignoreCase: true,
-        ignoreDeclarationSort: true,
-      },
-    ],
+    // "sort-imports": [
+    //   1,
+    //   {
+    //     ignoreCase: true,
+    //     ignoreDeclarationSort: true,
+    //   },
+    // ],
     "tailwindcss/classnames-order": "off",
     "import/order": [
       1,
@@ -42,8 +42,8 @@ module.exports = {
           "external",
           "builtin",
           "internal",
-          "sibling",
           "parent",
+          "sibling",
           "index",
         ],
         pathGroups: [

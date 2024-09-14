@@ -18,6 +18,9 @@ export default {
     },
     extend: {
       ...variables,
+      fontFamily: {
+        brand: ["var(--font-brand)"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
