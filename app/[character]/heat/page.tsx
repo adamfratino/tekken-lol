@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
 
   return {
-    title: "tekken.lol : " + getCharacterLabel(character) + " : heat",
+    title: getCharacterLabel(character) + " - heat moves",
   }
 }
 
