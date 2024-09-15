@@ -1,11 +1,13 @@
 import { Characters, Move } from "@/data/types"
 import { Group } from "@/ui/components"
 
-import { MobileHamburgerButton } from "./subcomponents/MobileHamburgerButton"
-import { MobileSearchButton } from "./subcomponents/MobileSearchButton"
-import { MobileCharacterSelectButton } from "./subcomponents/MobileCharacterSelectButton"
-import { DesktopCharacterSelectButton } from "./subcomponents/DesktopCharacterSelectButton"
-import { DesktopSearchButton } from "./subcomponents/DesktopSearchButton"
+import {
+  MobileHamburgerButton,
+  MobileSearchButton,
+  MobileCharacterSelectButton,
+  DesktopCharacterSelectButton,
+  DesktopSearchButton,
+} from "./subcomponents"
 
 type HeaderProps = {
   character: Characters
