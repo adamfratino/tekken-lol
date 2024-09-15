@@ -1,10 +1,10 @@
-import { Stack } from "@/ui/components"
 import type { Characters, Move } from "@/data/types"
-import { Title } from "@/ui/components"
+import { fetchCharacterFrames } from "@/data/utils"
+import { Stack, Title } from "@/ui/components"
 import { MoveCard } from "./MoveCard"
 
 type MoveTableProps = {
-  frames: Move[]
+  moves: Move[]
   character: Characters
   title?: string
 }
@@ -19,17 +19,30 @@ const Headline = ({ text }: { text: string }) => (
   </Title>
 )
 
-export const MoveTable = ({ frames, character, title }: MoveTableProps) => (
-  <div className="sticky">
-    {title && <Headline text={title} />}
-    <Stack gap={{ base: "lg", sm: "xl" }} p={{ base: "sm", md: "md" }} w="full">
-      {frames.map((move) => (
-        <MoveCard
-          key={move.moveNumber + move.command}
-          move={move}
-          character={character}
-        />
-      ))}
-    </Stack>
-  </div>
-)
+export const MoveTable = async ({
+  moves,
+  character,
+  title,
+}: MoveTableProps) => {
+  const allMoves = await fetchCharacterFrames(character)
+
+  return (
+    <div className="sticky">
+      {title && <Headline text={title} />}
+      <Stack
+        gap={{ base: "lg", sm: "xl" }}
+        p={{ base: "sm", md: "md" }}
+        w="full"
+      >
+        {moves.map((move) => (
+          <MoveCard
+            key={move.moveNumber + move.command}
+            move={move}
+            character={character}
+            allMoves={allMoves}
+          />
+        ))}
+      </Stack>
+    </div>
+  )
+}

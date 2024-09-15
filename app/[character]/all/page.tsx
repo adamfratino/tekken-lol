@@ -24,12 +24,12 @@ export async function generateStaticParams() {
 export default async function CharacterPage({ params }: CharacterPageProps) {
   const { character } = params
 
-  const frames = await fetchCharacterFrames(character)
+  const moves = await fetchCharacterFrames(character)
 
   return (
     <div>
-      <MoveTable character={character} frames={frames} />
-      <MovesSearch moves={frames} />
+      <MoveTable character={character} moves={moves} />
+      <MovesSearch moves={moves} />
       <CharacterSearch />
     </div>
   )

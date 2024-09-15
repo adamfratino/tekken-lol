@@ -26,19 +26,19 @@ export default async function CharacterHeatPage({
 }: CharacterPageProps) {
   const { character } = params
 
-  const frames = await fetchCharacterFrames(character)
+  const moves = await fetchCharacterFrames(character)
 
-  const hbFrames = frames!.filter((move) => move.tags && "hb" in move.tags)
-  const hsFrames = frames!.filter((move) => move.tags && "hs" in move.tags)
-  const heFrames = frames!.filter((move) => move.tags && "he" in move.tags)
+  const hbFrames = moves!.filter((move) => move.tags && "hb" in move.tags)
+  const hsFrames = moves!.filter((move) => move.tags && "hs" in move.tags)
+  const heFrames = moves!.filter((move) => move.tags && "he" in move.tags)
 
   return (
     <div>
-      <MoveTable character={character} frames={hbFrames} title="Heat Burst" />
-      <MoveTable character={character} frames={hsFrames} title="Heat Smash" />
+      <MoveTable character={character} moves={hbFrames} title="Heat Burst" />
+      <MoveTable character={character} moves={hsFrames} title="Heat Smash" />
       <MoveTable
         character={character}
-        frames={heFrames}
+        moves={heFrames}
         title="Heat Engager moves"
       />
       <MovesSearch moves={[...hbFrames, ...hsFrames, ...heFrames]} />

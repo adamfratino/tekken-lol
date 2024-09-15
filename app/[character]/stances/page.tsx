@@ -26,7 +26,7 @@ export default async function CharacterHeatPage({
 }: CharacterPageProps) {
   const { character } = params
 
-  const frames = await fetchCharacterFrames(character)
+  const moves = await fetchCharacterFrames(character)
   const stances = await fetchCharacterStances(character)
 
   const stancesToOmit = ["H", "SS", "FC", "FUFT", "WS"]
@@ -35,7 +35,7 @@ export default async function CharacterHeatPage({
   )
 
   const filterFrames = (stance: any) =>
-    frames.filter((move) => move.command.startsWith(stance))
+    moves.filter((move) => move.command.startsWith(stance))
 
   // Aggregate all moves from the filtered stances
   const allStanceMoves = filteredStances.flatMap((stance) =>
@@ -51,12 +51,11 @@ export default async function CharacterHeatPage({
           <MoveTable
             key={stance}
             character={character}
-            frames={filteredFrames}
+            moves={filteredFrames}
             title={`${stance} Moves`}
           />
         )
       })}
-      {/* Pass the aggregated moves to the Search component */}
       <MovesSearch moves={allStanceMoves} />
       <CharacterSearch />
     </div>

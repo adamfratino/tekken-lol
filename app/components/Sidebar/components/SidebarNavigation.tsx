@@ -53,7 +53,6 @@ const Item = ({
         onClick={() => {
           setActive(false)
           if (onClick) onClick()
-          console.log("test")
         }}
         className={cn(itemVariants({ variant }), {
           "w-full bg-yellow-light text-primary shadow-md hover:bg-yellow-light":
