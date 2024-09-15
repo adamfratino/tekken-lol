@@ -8,7 +8,7 @@ type MoveCardProps = {
 export const MoveCardCommand = ({ command }: MoveCardProps) => (
   <MoveCardContainer title="Command">
     <Property as="p" variant="primary">
-      {command}
+      {command.replaceAll(",", ", ")}
     </Property>
   </MoveCardContainer>
 )
