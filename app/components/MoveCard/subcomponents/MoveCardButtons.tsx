@@ -33,7 +33,7 @@ const InteractiveIcon = ({
     >
       <Badge className={cn("text-black px-4 py-2 text-xs", className, bg)}>
         <Icon size={18} />
-        {text}
+        <span className="max-sm:hidden">{text}</span>
       </Badge>
     </Group>
   )

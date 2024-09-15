@@ -7,6 +7,6 @@ type MoveCardDamage = {
 
 export const MoveCardDamage = ({ damage }: MoveCardDamage) => (
   <MoveCardContainer title="Damage">
-    <Property variant="secondary">{damage}</Property>
+    <Property variant="secondary">{damage.replaceAll(",", ", ")}</Property>
   </MoveCardContainer>
 )

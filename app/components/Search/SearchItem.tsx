@@ -67,7 +67,7 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
           )}
         </Group>
       </div>
-      <Group gap="lg" align="between" className="md:items-center">
+      {/* <Group gap="lg" align="between" className="md:items-center">
         <Flex
           gap={{ base: undefined, md: "sm" }}
           direction={{ base: "column", md: "row" }}
@@ -104,7 +104,7 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
             </Property>
           )}
         </Flex>
-      </Group>
+      </Group> */}
     </Stack>
   )
 }

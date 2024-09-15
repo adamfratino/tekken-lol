@@ -26,23 +26,23 @@ export default async function CharacterHeatPage({
 }: CharacterPageProps) {
   const { character } = params
 
-  const frames = await fetchCharacterFrames(character)
+  const moves = await fetchCharacterFrames(character)
 
-  const wcFrames = frames.filter((move) => move.tags && "wc" in move.tags)
-  const bbrFrames = frames.filter((move) => move.tags && "bbr" in move.tags)
+  const wcFrames = moves.filter((move) => move.tags && "wc" in move.tags)
+  const bbrFrames = moves.filter((move) => move.tags && "bbr" in move.tags)
 
   return (
     <div>
       {wcFrames.length > 0 && (
         <MoveTable
           character={character}
-          frames={wcFrames}
+          moves={wcFrames}
           title="Wall Crush moves"
         />
       )}
       <MoveTable
         character={character}
-        frames={bbrFrames}
+        moves={bbrFrames}
         title="Balcony Break moves"
       />
       <MovesSearch moves={[...wcFrames, ...bbrFrames]} />

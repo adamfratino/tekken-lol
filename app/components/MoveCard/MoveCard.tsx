@@ -1,5 +1,4 @@
-import type { Characters, Move } from "@/data/types"
-import { Card, Group, Stack } from "@/ui/components"
+import type { Characters, Move, TagsShort } from "@/data/types"
 import {
   MoveCardCommand as Command,
   // MoveCardButtonSequence as ButtonSequence,
@@ -12,7 +11,8 @@ import {
   MoveCardNotes as Notes,
   MoveCardButtons as Buttons,
 } from "./subcomponents"
-import type { TagsShort } from "@/data/types"
+import { Card, Group, Stack } from "@/ui/components"
+import { calculateStartupFrames } from "@/utils"
 
 const OUTER_GAP = "md"
 const INNER_GAP = "sm"
@@ -20,9 +20,10 @@ const INNER_GAP = "sm"
 type MoveCardProps = {
   move: Move
   character: Characters
+  allMoves: Move[]
 }
 
-export const MoveCard = ({ move, character }: MoveCardProps) => {
+export const MoveCard = ({ move, character, allMoves }: MoveCardProps) => {
   const {
     command,
     startup,
@@ -38,13 +39,14 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
 
   const hitLevelsArray = hitLevel.split(",") || ["-"]
   const tagsArray = tags && (Object.keys(tags) as TagsShort[])
+  const startupFrames = calculateStartupFrames(command, allMoves)
 
   return (
     <Card
       id={command}
       w="full"
       p="md"
-      className=" bg-gray-lightest/25 mt-12 shadow-md first:mt-4 last:mb-12"
+      className=" mt-12 bg-gray-lightest/25 shadow-md first:mt-4 last:mb-12"
     >
       <Group
         w="full"
@@ -55,9 +57,9 @@ export const MoveCard = ({ move, character }: MoveCardProps) => {
           <Command command={command} />
           {/* <ButtonSequence /> */}
           {hitLevel && <HitLevels gap={INNER_GAP} hitLevels={hitLevelsArray} />}
-          {(startup || damage) && (
+          {(startupFrames || damage) && (
             <Group gap={INNER_GAP} w="full">
-              {startup && <StartupFrames frames={startup} />}
+              {startupFrames && <StartupFrames frames={startupFrames} />}
               {damage && <Damage damage={damage} />}
             </Group>
           )}

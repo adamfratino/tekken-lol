@@ -26,13 +26,13 @@ export default async function CharacterPunishersPage({
 }: CharacterPageProps) {
   const { character } = params
 
-  const frames = await fetchCharacterFrames(character)
+  const moves = await fetchCharacterFrames(character)
   const punishers = await fetchCharacterPunishers(character)
 
-  const standingPunishers = frames.filter(
+  const standingPunishers = moves.filter(
     (move) => punishers.standing?.includes(move.command)
   )
-  const crouchingPunishers = frames.filter(
+  const crouchingPunishers = moves.filter(
     (move) => punishers.crouching?.includes(move.command)
   )
 
@@ -41,12 +41,12 @@ export default async function CharacterPunishersPage({
       <MoveTable
         title="Standing Punishers"
         character={character}
-        frames={standingPunishers}
+        moves={standingPunishers}
       />
       <MoveTable
         title="Crouching Punishers"
         character={character}
-        frames={crouchingPunishers}
+        moves={crouchingPunishers}
       />
       <MovesSearch moves={[...standingPunishers, ...crouchingPunishers]} />
       <CharacterSearch />
