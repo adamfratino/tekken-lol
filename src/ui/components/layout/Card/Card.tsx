@@ -11,11 +11,12 @@ export const Card = <T extends React.ElementType = typeof Box>({
   interactive,
   disabled,
   bordered,
+  w,
   ...props
 }: CardProps<T>) => {
   const responsiveClasses = responsiveProps({ gap, p, shadow })
   const classNames = cn(
-    variants({ className, interactive, disabled, bordered }),
+    variants({ className, interactive, disabled, bordered, w }),
     ...responsiveClasses
   )
 

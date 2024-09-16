@@ -4,9 +4,7 @@ import type { LayoutProps } from "../layout.types"
 import { alignments, gaps, padding, widths } from "../layout.props"
 
 const twVariants = {
-  w: {
-    full: "flex w-full",
-  },
+  w: widths,
 }
 
 export const variants = cva("inline-flex flex-col", {

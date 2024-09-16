@@ -8,9 +8,10 @@ export const Title = <T extends React.ElementType = typeof Text>({
   shade,
   size,
   weight,
+  variant,
   ...props
 }: TitleProps<T>) => {
-  const classNames = cn(variants({ className, shade, size, weight }))
+  const classNames = cn(variants({ variant, shade, size, weight, className }))
 
   return <Text className={classNames} {...props} />
 }

@@ -1,6 +1,12 @@
 import { promises as fs } from "fs"
 import path from "path"
-import type { Characters, FrameData, Move, PunishersType } from "@/data/types"
+import type {
+  CharacterMeta,
+  Characters,
+  FrameData,
+  Move,
+  PunishersType,
+} from "@/data/types"
 
 export async function fetchCharacterFrames(
   character: Characters
@@ -53,5 +59,23 @@ export async function fetchCharacterPunishers(
   } catch (error) {
     console.error(`Error loading frames data for ${character}:`, error)
     return { standing: undefined, crouching: undefined }
+  }
+}
+
+export async function fetchCharacterMeta(
+  character: Characters
+): Promise<CharacterMeta> {
+  const filePath = path.join(
+    process.cwd(),
+    `app/api/characters/${character}/meta.json`
+  )
+
+  try {
+    const file = await fs.readFile(filePath, "utf8")
+    const data = JSON.parse(file) as CharacterMeta
+    return data
+  } catch (error) {
+    console.error(`Error loading frames data for ${character}:`, error)
+    return undefined as any
   }
 }

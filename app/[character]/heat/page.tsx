@@ -3,7 +3,7 @@ import { fetchCharacterFrames } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 
-import { MoveTable, MovesSearch, CharacterSearch } from "app/components"
+import { MovesTable, MovesSearch, CharacterSearch } from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -35,9 +35,9 @@ export default async function CharacterHeatPage({
 
   return (
     <div>
-      <MoveTable character={character} moves={hbFrames} title="Heat Burst" />
-      <MoveTable character={character} moves={hsFrames} title="Heat Smash" />
-      <MoveTable
+      <MovesTable character={character} moves={hbFrames} title="Heat Burst" />
+      <MovesTable character={character} moves={hsFrames} title="Heat Smash" />
+      <MovesTable
         character={character}
         moves={heFrames}
         title="Heat Engager moves"

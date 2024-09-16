@@ -1,9 +1,10 @@
 import { cva } from "class-variance-authority"
 import { getResponsiveClasses } from "@/ui/lib/utils"
 import type { LayoutProps } from "../layout.types"
-import { alignments, gaps, padding, shadows } from "../layout.props"
+import { alignments, gaps, padding, shadows, widths } from "../layout.props"
 
 const twVariants = {
+  w: widths,
   interactive: {
     true: "transform transition duration-50 hover:scale-[1.025] cursor-pointer active:scale-[1.005]",
   },
@@ -13,12 +14,9 @@ const twVariants = {
   bordered: {
     true: "border",
   },
-  w: {
-    full: "w-full",
-  },
 }
 
-export const variants = cva("rounded-md flex border overflow-hidden", {
+export const variants = cva("rounded-md flex flex-col border overflow-hidden", {
   variants: twVariants,
   defaultVariants: {},
 })
