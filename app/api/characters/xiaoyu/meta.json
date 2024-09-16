@@ -3,5 +3,25 @@
   "tagline": "Dancing Phoenix",
   "country": "China",
   "style": "Baguazhang, Piguazhang-based Chinese Martial Arts",
-  "description": "Ling Xiaoyu is a Chinese martial arts master who has feelings for Jin Kazama. She infiltrates the Mishima Zaibatsu building in search of clues to find a missing Jin and to obtain data that would prove helpful in her search. Traveling around the world and following whatever traces she can find, six months have passed for Xiaoyu with no hope in sight. Xiaoyu has run out of leads, but she simply must find Jin, no matter the cost. There is something she needs to know from him... It is this unwavering and ever-growing determination which drives Xiaoyu ever forward."
+  "description": [
+    "Xiaoyu is a tricky and evasive stance-based mixup character who excels in slipping past her opponent's attacks in order to land powerful mixups. She is a specialist character who thrives in the hands of players who love spending time in the lab, discovering setups with her many evasive stances and unique move properties.",
+    "Xiaoyu is defined by her evasion. Her infamous Art of Phoenix (AOP) stance allows her to slip under many highs and even mids, allowing her to turn an opponent's offense against them. This, along with her Hypnotist (HYP) and Rain Dance (RDS), are highly flexible stances that can be entered into manually, or from many move cancels. These allow her to present a very unpredictable and jarring offense that makes opponents freeze up, where she can land powerful mixups. Xiaoyu thrives on creating setplay situations, whether on oki, after certain combo enders, or at the wall. These can devastate the unaware opponent, making them unable to play the game. Heat makes her mixups even more potent, granting her a tremendous boost in damage potential.",
+    "Xiaoyu's evasion and trickery naturally make her frustrating and difficult to defend against, and she has an infamous reputation as a \"lab character\". However, she is just as much a lab character for her pilot, requiring good matchup knowledge to take advantage of her evasion, flexible and creative use of her stances to freeze up an aggressive opponent, and a breadth of effective setups to increase her damage output. She pays for her evasion with generally low poke and combo damage, and has to land many more mixups to equal the damage other characters get with a few. Her short poke range makes it difficult for her to approach, further necessitating creative stance usage."
+  ],
+  "strengths": [
+    "Queen of Evasion: Phoenix stance shrinks Xiaoyu's hurtbox down to almost comical levels, allowing her to slip under highs and even some mids. Her other stance Hypnotist automatically walks left to bait responses in pressure, while d3+4 and u3+4 act as enhanced sidesteps. Effective Xiaoyu players can slip through just about anything.",
+    "Godlike Okizeme: Xiaoyu's evasive stances beat a lot of wakeup options inherently, while giving her devastating reward on hit. Her small frame and fast jump also allows her to tech chase and set up crossup situations.",
+    "Powerful Mixups: Xiaoyu is blessed with an armada of strong lows and excellent mids. She has several solid standing lows, a snake edge, consistent mixups out of her stances, and multiple launching highs of various speeds.",
+    "Heat: Xiaoyu's damage potential skyrockets in Heat, as she gains access to not only new moves in Hypnotist, but also two enhanced strings that both deal excellent damage and act as a natural 50/50."
+  ],
+  "weaknesses": [
+    "Range: Xiaoyu is tiny, and thus needs to play very compact. She can be effectively walled out by characters with longer limbs, like Bryan or Dragunov."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/ling-xiaoyu",
+    "wavu": "https://wavu.wiki/t/Xiaoyu",
+    "fandom": "https://tekken.fandom.com/wiki/Ling_Xiaoyu",
+    "discord": "https://discord.com/invite/ChpgrWB",
+    "youtube movelist": "https://www.youtube.com/watch?v=vh_DwNZn0_U"
+  }
 }

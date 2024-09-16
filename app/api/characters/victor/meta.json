@@ -3,5 +3,30 @@
   "tagline": "Refined Violence",
   "country": "France",
   "style": "Super Spy CQB",
-  "description": "Enter Victor Chevalier, the living legend who founded the UN's independent forces. Descended from a lineage of distinguished knights, Victor has dreamed of rescuing those in need ever since he was a boy. Following in the footsteps of his father, a high-ranking naval officer, Victor enlists in the French Navy. Viewed as riding the coattails of his successful father by jealous peers,Victor was sent into dangerous operating zones again and again. Still, thanks to the time he spent diligently training with his father's mercenary friend from the East, Victor is able to use his knowledge of combat to come back from every mission alive and victorious.Famous for his penny-pinching nature and the long list of broken hearts he's left in his wake, Victor leaves a trail of rumors and stories wherever he goes. Before he knows it, Victor earns himself the codename \"Phantom Raven,\" and is looked upon with both fear and awe by others in the military. Victor leaves the Navy to join the UN, hoping to find a way to help even more people as well as explore new paths outside the constraints of working for the state. Soon, though, he begins to sense that the world is on the brink of being taken over by a corporate giant. In response, he starts securing the means needed to counter the corporation's private armed forces. In preparation for the coming upheaval, Victor exhausts all the means of negotiation he has available to him and succeeds in founding armed forces that have the authority to act at their own discretion. He directs the Raven Unit—an elite team he trained himself—to conduct special ops all over the world while in the meantime, he takes up the mantle as leader of the UN forces. Time passes, and the flames of G Corp's brutal military invasion have begun to engulf the world. Having foreseen such a future, Victor takes command of his new forces and readies himself for the fight. \"We'd best hold the reins to the global balance of power.\" Armed with an haute couture suit from an established design house and the latest optical weapons, Victor, the living legend, retakes his place on the battlefield."
+  "description": [
+    "Victor is a flashy and versatile all-rounder, with easy execution. He can express any playstyle, with solid pokes, counterhit tools, pressure moves, stance mixups and panic moves.",
+    "Most of his tools are weapon-based, making them unparryable, while also granting him great range on his attacks. He has a notably strong while running move (f,f,F+2), which has great range, is plus on block, deals heavy damage on hit, and is a counterhit launcher. He has one of the rare few high, powercrush Heat Engagers in the game, making it difficult to pressure him. In Heat, he gets access to buffed versions of some existing moves that serve to deal heavy chip damage to his opponent.",
+    "While having the tools to play in many different ways, Victor doesn't have the best in class of any of them. This puts the onus on the player to rapidly adapt playstyles to gain an advantage. The tools themselves are also fairly committal; whiffing them leaves Victor open to heavy whiff punishment."
+  ],
+  "strengths": [
+    "Fantastic high damage counterhit moves (db+4, 1+2, d+4, b+1+2 etc)",
+    "Great evasive moves like u+1+2 and db+3",
+    "Simple and effective gameplan",
+    "Has a safe, fast power crush move in b+1+2",
+    "The general theme of his movelist is not parryable because of weapon attacks and knee attacks"
+  ],
+  "weaknesses": [
+    "Weak tracking overall",
+    "Iai stance suffers against jabs",
+    "No power lows outside of Heat or stance.",
+    "Is very punishable on key moves; has many high moves that are exploitable with no mid alternative",
+    "Very feast or famine character"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/victor-chevalier",
+    "wavu": "https://wavu.wiki/t/Victor",
+    "fandom": "https://tekken.fandom.com/wiki/Victor_Chevalier",
+    "discord": "https://discord.com/invite/BfGHDB4eQC",
+    "youtube movelist": "https://www.youtube.com/watch?v=FKd7NMXxXCo"
+  }
 }

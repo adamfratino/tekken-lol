@@ -3,5 +3,23 @@
   "tagline": "The Lion of the Rebellion",
   "country": "Sweden",
   "style": "Tekken Force Martial Arts",
-  "description": "Lars Alexandersson is Heihachi Mishima's illegitimate son and the leader of the rebel army fighting against G Corporation. A former officer of the Mishima Zaibatsu's special military unit known as the Tekken Force, Lars led a coup d'état against the Zaibatsu and took many of the Tekken Force personnel with him.Not long after the coup, the world fell under the control of G Corporation led by Kazuya Mishima. Lars formed a new rebel army called Yggdrasil and amassed enough military strength to launch a revolt against the tyrant. Lars even formed an alliance with his long-time enemy, Jin Kazama, and began preparations for Operation Lightning, a plan to take down Kazuya and bring peace to the world."
+  "description": [
+    "Lars is a simple, solid all-rounder with good generics and stance mixups, strong block punishment and great combo damage. Simple to pick up and play, and boasting some very flashy moves, Lars is a great choice for the Tekken beginner.",
+    "Lars is fairly fundamental character at heart. He can use his solid pokes to control the neutral and set up stance mixups. He has tools to fish for counterhits or keep his opponents out. On defence, he boasts strong block punishment, with the rare privilege of being able to launch at i14 with Blue Bolt (f,n,b+2,1), along with a highly evasive selection of panic moves to keep aggressive opponents on their toes. His mixup stances, Dynamic Entry (DEN) and Silent Entry (SEN), double as surprisingly good movement options, and their ability to transition into one another makes it tricky to pin Lars down. Heat amplifies Lars' mixup potential, allowing him to more easily enter his mixup stances and increase his damage potential from them.",
+    "Lars' mixup stances can get increasingly difficult to set up against prepared opponents, necessitating patient conditioning with his pokes. This can make coming back from a life deficit challenging and risky."
+  ],
+  "strengths": [
+    "Strong stance mixups",
+    "Good generic tools",
+    "Decent selection of lows",
+    "Strong block punishment, with ability to launch at i14"
+  ],
+  "weaknesses": ["Poor CH game", "Risky to make a comeback with"],
+  "links": {
+    "official": "https://tekken.com/fighters/lars-alexandersson",
+    "wavu": "https://wavu.wiki/t/Lars",
+    "fandom": "https://tekken.fandom.com/wiki/Lars_Alexandersson",
+    "discord": "https://discord.gg/6E34uZK",
+    "youtube movelist": "https://www.youtube.com/watch?v=i8-lglAPuNg"
+  }
 }

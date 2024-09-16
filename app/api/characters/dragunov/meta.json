@@ -3,7 +3,18 @@
   "tagline": "White Reaper",
   "country": "Russia",
   "style": "Commando Sambo",
-  "description": "Sergei Dragunov is a user of Commando Sambo and is feared for his alias \"The White Angel of Death,\" a name he earned through his sheer and overwhelming combat prowess. While the world was embroiled in the armed conflict between the Mishima Zaibatsu and G Corp, Dragunov joined the King of Iron Fist Tournament with a certain goal in mind. However, midway through the tournament, the tournament's organizer, Heihachi Mishima, goes missing, bringing the competition to a halt. Dragunov returns home, and in recognition of his dedication to his work, is granted an extended leave for the first time in his life. Dragunov is known for his extreme work ethic—so much so that it is rumored he works even in his sleep. However, upon returning to his room, it's as if he has a spring in his step. In his study, Dragunov opens a safe and removes an ancient notebook with an eerie cover, which he begins to examine. The usually cold-hearted Dragunov seems to be in high spirits as he writes. From his unsettling manner, it is clear that it can only be one thing— a list known and feared as \"The Angel of Death's List.\" ...However, in reality, it is nothing more than a bucket list of things that Dragunov has been saving up to do when he finally gets some extended free time. While drinking a cup of homemade sbiten to warm himself, Dragunov reads over the notebook, humming a tune and nodding in apparent satisfaction. After reflecting upon his younger self, Dragunov chooses a task that will be particularly difficult to achieve. With that new aim in mind, he sets out to accomplish his goal.",
+  "description": [
+    "Dragunov is an oppressive pressure and rushdown character who excels at freezing his opponents cold with powerful, plus-on-block mids, and then slicing them open with hard-hitting mixups, and a complete throw game. He combines strong poking and above-average movement and whiff punishment, making his \"small Tekken\" also difficult to deal with. In Heat, Dragunov's pressure becomes even more chilling due to the constant chip damage, which when coupled with his pokes, will punish you even for blocking.",
+    "Dragunov is fairly simple and straightforward to use, and success with him is directly proportional to your skill. He is excellent for players looking to embody Tekken 8's aggressive philosophy and force their opponents to constantly block their big, strong buttons.",
+    "Dragunov's pressure moves can be fairly linear, and require skill to land against opponents with good movement. Their slower startup also leaves Dragunov open to interruption, and he doesn't have the best tools to counterhit opponents trying to mash against him."
+  ],
+  "strengths": [
+    "Excellent pressure mids (wr2, b+1+2 etc.) that punish opponents both for getting hit or blocking",
+    "High damage output",
+    "Long range on pokes",
+    "Access to a complete throw game, along with unbreakable tackles in Heat"
+  ],
+  "weaknesses": ["His primary pressure tools are fairly linear"],
   "links": {
     "official": "https://tekken.com/fighters/sergei-dragunov",
     "wavu": "https://wavu.wiki/t/Dragunov",

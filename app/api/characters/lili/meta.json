@@ -3,5 +3,29 @@
   "tagline": "Fighting Heiress",
   "country": "Monaco",
   "style": "Self-Taught Style",
-  "description": "Daughter of a wealthy oil magnate from Monaco who, despite her pampered upbringing, loves to fight. Keeping it a secret from her peace-loving father, Lili uses the family private jet to fly around the globe in search of worthy opponents to hone her skills. All of it to defeat her eternal rival, Asuka Kazama, who has beaten her twice in The King of Iron Fist Tournament. Lili buys the Kazama family's dojo with her pocket money, decorates the entire dojo with roses, and sends Asuka a formal challenge. Imagining Asuka's angry face, Lili smiles elegantly while petting her cat, Salt."
+  "description": [
+    "Lili is a versatile character with good generics, ample plus frame pressure, and the best sidestep in the game. Her strong movement and space control make her extremely difficult to pin down, and she can punish all kinds of situations with her array of damaging whiff punish launchers and quick punishment tools. With these things in mind, opponents will hesitate to press mindlessly, allowing her to approach with plus frames or mixups out of her Feisty Rabbit and backturn (BT) stances. Heat makes her pressure and mixups even more threatening, with access to arguably the best low Heat Smash in the game if she's able to get into BT. She also has good mid checks, strong oki and a terrifying wall game with many safe wall splats.",
+    "All of these strengths come at a pretty glaring cost: despite being the queen of sidesteps, Lili is prone to getting sidestepped herself, and lacks effective tracking on almost all of her moves. Her homing options tend to be highly lacking in speed and/or range. Her BT pressure is also interruptible by mid checks on block, and her lows outside of BT pose little threat damage-wise."
+  ],
+  "strengths": [
+    "The best sidestep in the game, allowing her to escape situations others can't",
+    "Strong close-range poking, generic tools, and confirmable strings",
+    "Solid plus moves and fantastic wallsplats that greatly aid her pressure",
+    "Good oki with lots of moves that hit grounded",
+    "The safest low Heat Smash in the game"
+  ],
+  "weaknesses": [
+    "Linear moves and poor homing attacks",
+    "Short range on most reliable pokes and checks",
+    "Lows do little damage, limited mix without BT setups and/or Heat",
+    "Slow and crouchable Heat Smash outside of BT",
+    "Risky Heat Engagers"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/lidia",
+    "wavu": "https://wavu.wiki/t/Lili",
+    "fandom": "https://tekken.fandom.com/wiki/Emilie_de_Rochefort",
+    "discord": "https://discord.com/invite/pFKBKXK",
+    "youtube movelist": "https://www.youtube.com/watch?v=otwmkKg4now"
+  }
 }

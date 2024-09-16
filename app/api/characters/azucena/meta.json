@@ -3,12 +3,27 @@
   "tagline": "Perfect Blend",
   "country": "Peru",
   "style": "Mixed Martial Arts (Striker)",
-  "description": "Azucena Milagros Ortiz Castillo, known better as the \"Coffee Queen,\" is beloved for her innocent personality and her fearless fighting style as an MMA champion. The only daughter of the family who owns Ortiz Farm, a coffee plantation located 2000 meters above sea level, Azucena grew up observing her father's trade and dreamed of becoming the world's best coffee farmer. To make her dream come true, a young Azucena conducted countless experiments by cultivating new coffee plants based on her novel ideas. Although adults around her rejected her ideas time and again, Azucena used their rejection to motivate herself and continued to refine her daring spirit. A few years later, Azucena's efforts finally bore fruit, and her coffee beans were awarded the highest quality rating at a world-renowned trade fair, making her a rising star within the industry. Azucena continued to challenge herself using her positive thinking and ingenious ideas to pursue and achieve success both as a model and a dancer. She even studied business administration at the most prestigious university in the country. However, the caffeine coursing through her body led her to the conclusion that, in order to become the best in the world, one needs not only stability, but adventures as well. A plan suddenly clicked into place for her while she captured a runaway alpaca with one hand and held a cup of coffee in the other. She decided she would use her physical prowess earned from training at high attitudes to break into the American MMA scene and promote her eponymous \"Azucena Blend.\" Her plan succeeded, and in her first year, Azucena rose to the top of the ranks as champion. All the while, she acted as a walking billboard for the Ortiz Farm, leading to a dramatic increase in the plantation's sales and popularity. As her next step forward, Azucena has turned her attention to The King of Iron Fist Tournament, which has emerged as the world's most popular fighting tournament in recent years. If she wins, Azucena will be that much closer to becoming best in the world. Although the date for the tournament remains undecided, Azucena is confident that that day is not far away. \"My intuition never fails me!\"",
+  "description": [
+    "entering her Libertador (LIB) and Backturned (BT) stances to bully her opponents. Both stances have a diverse set of mixup options, frame traps and pressure tools that allow Azucena to cash out her stance entries in a variety of ways. She can also toy with her opponent using the stances' auto parries and built-in movement options to dance circles around them.",
+    "Heat makes it much easier for Azucena to enter stance and enforce her mixups, and also makes her stance game deadlier.",
+    "Azucena has sub-par neutral, with weak pokes and pressure tools, and can struggle to setup her stance mixups. She must rely on conditioning her opponent with string extension threats or outplaying the opponent to earn respect. She must also layer her mixups to avoid playing \"casino Tekken\"."
+  ],
+  "strengths": [
+    "Simple inputs and easily understood gameplan",
+    "Strong and versatile standing punishment (e.g., 1,2, df+1,4, f+1+2)",
+    "Plenty of wall splatting moves (e.g., 1,2, f+1+2, f+4,4 etc.)",
+    "Has a high, power crush Heat engager (f+1+2)"
+  ],
+  "weaknesses": [
+    "Weak pokes and pressure tools",
+    "Sub-par crouching punishment",
+    "Whiff punishment is fairly committal"
+  ],
   "links": {
     "official": "https://tekken.com/fighters/azucena-milagros-ortiz-castillo",
     "wavu": "https://wavu.wiki/t/Azucena",
     "fandom": "https://tekken.fandom.com/wiki/Azucena_Ortiz",
     "discord": "https://discord.gg/qkNe4wNMDH",
-    "youtube movelist": "https://www.youtube.com/watch?v=8Ck_axLUak0"
+    "youtube movelist": "https://www.youtube.com/watch?v=ZiVJqxMBjqk"
   }
 }

@@ -3,7 +3,23 @@
   "tagline": "Spirited Fighter",
   "country": "Japan",
   "style": "Kazama-Style Traditional Martial Arts",
-  "description": "Asuka Kazama is a master of Kazama-style traditional martial arts and is a well-known mediator. She once defeated the young heiress Lili at The King of Iron Fist Tournament, but after that victory, Asuka got the feeling she was being followed wherever she went. Lili's increasingly irrational behavior escalated day by day. One day Asuka came home to discover her dojo was bought by Lili and covered in rose decorations. But these days of farcical shenanigans are about to come to an end with G Corp's global invasion.",
+  "description": [
+    "Asuka Kazama is a solid defensive character that is a good pick for beginner players looking to punish their opponent's habits. Her basic combos are straightforward, and she has good keep-out tools, safe counter hit launchers, and good panic buttons that are all fairly easy to understand and use.",
+    "As a practitioner of the Kazama-ryu, Asuka thrives on turning the opponent's offense against them, either by making them whiff and punishing, by counterhitting them, or by using her many sabakis and reversals. A key technique of the Kazama-ryu is the Demon Slayer (f+2, also known as Tooth Fairy before Tekken 5), a best-in-class whiff punisher that travels far, ducks under some highs, and can even be cancelled if you want to back out. Her inputs tend to be very simple, requiring little to no dexterity to perform her moves, allowing her pilot to better react to opportunities in neutral as they turn up. She also has strong keep-out and panic buttons to further discourage her opponent from rushing her down.",
+    "Her focus on defense makes it difficult for her to mount a safe, effective offense. Asuka lacks the standard plus on block jab, and instead earns her frame advantage with big, slow moves, by threatening string extensions or reversals, or by confusing her opponent with fake-out cancels. She demands patience and creativity in opening up a defensive opponent, as getting greedy with her flashier mixups can be very risky. Optimizing her combo damage can also sharply increase her execution requirements. Her weakness on offense is remedied when she gets access to Naniwa Gusto, her new install mechanic, which she can access after landing certain moves, or when in Heat."
+  ],
+  "strengths": [
+    "Highly rewarding whiff punish tools",
+    "Good arsenal of panic moves and heat engagers to close rounds and turn the tide",
+    "Strong keepout with mid-range pokes and sabakis",
+    "Fast, safe CH launchers"
+  ],
+  "weaknesses": [
+    "No plus jab, generally risky and flawed offense",
+    "Subpar backdash, forcing her to rely more on sidesteps and spacing traps to make things whiff",
+    "Very weak i10-13 frame punishes",
+    "Struggles vs. defensive players"
+  ],
   "links": {
     "official": "https://tekken.com/fighters/asuka-kazama",
     "wavu": "https://wavu.wiki/t/Asuka",

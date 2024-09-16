@@ -23,13 +23,15 @@ export const Overview = async ({ character }: OverviewProps) => {
 
   return (
     <Stack
-      p={{ base: "sm", md: "xl" }}
+      p={{ base: "lg", md: "xl" }}
       gap="xl"
       className="items-start"
       w="narrow"
     >
       <Stack gap="sm" className="items-start">
-        <Badge className="px-6">{tagline}</Badge>
+        <Title variant="eyebrow" shade="muted" size="sm" italic>
+          {tagline}
+        </Title>
         <Title as="h1" variant="headline" className="mb-2">
           {name}
         </Title>
@@ -54,7 +56,7 @@ export const Overview = async ({ character }: OverviewProps) => {
 
       {strengths && weaknesses && (
         <Flex direction={{ base: "column", md: "row" }} w="full" gap="md">
-          <Card w="half" p="md">
+          <Card w={{ base: "full", md: "half" }} p="md">
             <Title variant="subheadline">Strengths</Title>
             <Stack as="ul" p="md" gap="md">
               {strengths?.map((strength) => (
@@ -64,7 +66,7 @@ export const Overview = async ({ character }: OverviewProps) => {
               ))}
             </Stack>
           </Card>
-          <Card w="half" p="md">
+          <Card w={{ base: "full", md: "half" }} p="md">
             <Title variant="subheadline">Weaknesses</Title>
             <Stack as="ul" p="md" gap="md">
               {weaknesses?.map((strength) => (
@@ -78,7 +80,7 @@ export const Overview = async ({ character }: OverviewProps) => {
       )}
 
       {links && (
-        <Group gap="md">
+        <Group gap="md" wrap>
           {Object.entries(links).map(([label, url]) => (
             <Button key={url} asChild>
               <Link href={url} target="_blank">

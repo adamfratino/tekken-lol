@@ -32,7 +32,7 @@ export const CharacterSearch = () => {
   const items = CHARACTERS.filter((char) => !char.disabled).map((char, i) => ({
     label: <SearchItemCharacter character={char.label} />,
     value: `search_${char.value}`,
-    onSelect: () => handleSelect(`/${char.value}/${PATHS.ALL}`),
+    onSelect: () => handleSelect(`/${char.value}`),
     key: `${char}search${i}`,
   }))
 

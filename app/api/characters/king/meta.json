@@ -3,5 +3,29 @@
   "tagline": "Anger of the Beast",
   "country": "Mexico",
   "style": "Pro Wrestling",
-  "description": "King is active on the pro wrestling circuit and also manages an orphanage on the side. The war between G Corporation and Mishima Zaibatsu has ravaged the world, causing an unprecedented swell in the number of children needing his help. King may be the undisputed champion of the wrestling world, but he will need to put on a spectacle far beyond the bright arena lights if he is to earn the funds required to help all those orphans.Anticipating the need for allies to help realize such aspirations, he set out to hone his body and wrestling skills in preparation of meeting such like-minded individuals."
+  "description": [
+    "King is Tekken's iconic implementation of a grappler, having access to a wide variety of very strong and very useful throws.",
+    "King has great approach tools and great pokes, enabling him to get in on his opponents and stay in to make opponents hesitate to create openings for him to make use of his ambiguous throw mixup between Giant Swing and Shining Wizard (the latter of which is referred to as Tomahawk in-game). To discourage opponents from ducking his throws, he is also equipped with an arsenal of strong mids and very rewarding crouch throws for hard reads.",
+    "The introduction of King's new and repurposed powercrush moves are exceptionally powerful tools for dealing with pressure and stealing turns from the opponent, rewarding him with big damage and knockdowns, and mixups from his new stance.",
+    "King's new Jaguar Sprint (notated as JGR) gives him a mixup between an unbreakable heat engager throw, a homing mid that low crushes, a low-crushing dropkick, and an elbow mid that becomes an instant bound launcher during Heat."
+  ],
+  "strengths": [
+    "Patron Saint of Throws: King has one of the best selection of throws in the game. Not only does he have an arsenal of traditional 1, 2, and 1+2 breaks, he also has the devastating Giant Swing/Shining Wizard mixup, where the two throws look nearly identical despite having completely different breaks. He even has a set of \"gimmick\" throws, including several throws that work on crouching or downed opponents.",
+    "Prodigious Poking: King has a good set of pokes and homing moves to condition the opponent to sit still, setting up his throw mixups. Opponents who duck must contend with his devastating mids, like uf4, db2, f4, and f2,1.",
+    "Neutral Control: King is armed with array of block and whiff punishers with a good balance of speed, range, and damage, which also set up his throw mixups.",
+    "Knowledge Checker: Aside from basic throw knowledge checks, King has extremely damaging chain throws that can be used against opponents. If the opponent doesn't know the proper breaks, they can end up eating a huge amount of damage with no way of stopping it.",
+    "Armored Aggression: King has several excellent armored moves, like b3 and uf3+4, that allow him to control neutral by muscling through things. He can also use db1+2 to gain armor and punish brutal approaches."
+  ],
+  "weaknesses": [
+    "Big Boy: King's huge frame and poor backwards movement combines to make him very weak on defense. He must be very considerate of his opponent's offensive choices.",
+    "Back to the Wall: While King can be devastating with a Giant Swing near the wall (with a reverse Execution Drop to mix up with), his actual wall carry and wall combos don't really stand out compared to the rest of the cast. Sometimes Shining Wizard is in fact his optimal ender when close to the wall.",
+    "Slow to Recover: If King's moves whiff, he is often left open for quite a while. Extending his strings is usually the only way he can mitigate this, which can be exploited."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/king",
+    "wavu": "https://wavu.wiki/t/King",
+    "fandom": "https://tekken.fandom.com/wiki/King_II",
+    "discord": "https://discord.com/invite/EYcqqfA",
+    "youtube movelist": "https://www.youtube.com/watch?v=agVQsdtrkus"
+  }
 }

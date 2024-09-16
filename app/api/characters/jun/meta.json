@@ -3,5 +3,27 @@
   "tagline": "Light of Hope",
   "country": "Japan",
   "style": "Kazama-Style Traditional Martial Arts",
-  "description": "Jun Kazama, the mother of Jin, is a practitioner of the Kazama-Style Traditional Martial Arts. Jun displayed a propensity in communicating with animals from a very young age. She went on to become a wildlife surveillance officer for a conservation group where she pursued Kazuya Mishima, who was suspected of smuggling protected animals. The two met and became close at the second The King of Iron Fist Tournament. Soon after, Jun became pregnant with Jin. Jun went on to raise Jin in the same place where she was born, in the remote mountains of Yakushima. However, seven years ago, one day when Jin turned 15 years old, Jun was attacked by a mysterious being known as Ogre and disappeared without a trace"
+  "description": [
+    "Jun is a versatile poking and defense-oriented character, who excels at chipping away an opponent's health and frustrating them into running into her strong whiff punishment, reversals or counterhits. Her unique Kazama's Power allows her to power up key moves at the cost of grey health, with Heat allowing her to heal herself by landing these key moves.",
+    "Jun retains the powerful defense of a Kazama-ryu practitioner, with access to strong whiff punishers like the Demon Slayer (f+2), and a number of parries and sabakis. Unlike her fellow practitioner, Asuka, she has a much more potent poking-based offense, allowing her to safely and effectively wear down her opponent with a multitude of pokes, counterhit tools and poke strings. She also has access to strong early punishment, an i14 crouching launcher, and likely the most devastating i10 crouching punish (FC.df+1) in the game (shades of Akuma...).",
+    "Jun's mysterious Kazama Power allows her to spend grey health to buff her key moves. This can allow her to turn some moves into launchers, make launchers safe, and increase the damage on her mixups. Heat allows her to heal herself upon landing these moves, making the strategic use of her Kazama Power an important part of gameplan. She has three stances, however they don't see much use outside of being combo filler.",
+    "Jun has many strengths and few weaknesses, chief among them being her lack of a standing i15 launch punish. She lacks heavy mixups and cannot snowball an opponent or make quick comebacks. Proper usage of her Kazama Power can be tricky, with mismanagement quickly putting you in a situation with too much grey health, and too few opportunities to heal yourself."
+  ],
+  "strengths": [
+    "Well-Rounded: All facets of Jun's play are excellent; whiff punishment, evasiveness, keepout, damage, and even safety are all well-above average, especially if she spends health. uf+1 and FC.df+1 stand out as excellent fast punishes in this regard.",
+    "Strong Defense: Jun's defense stands out above the rest, being able to interrupt quickly with her counter-hit tools, parry with either her reversal or GEN stance (which uniquely parries both lows and throws), and being highly evasive with various crushing options.",
+    "Tricky: Almost all of her strings have layered mixups that can counter various defensive measures (catching high duckers with a mid, going into either GEN or MIA, covering sidesteps with a different extension, etc.), making it nearly impossible to solidly defend against her.",
+    "Strong in Heat: Jun has a great set of Heat Engagers, and during Heat, all of her pillar attacks will cost less health. She also has one of the fastest and farthest reaching Heat Smashes in the game (which also heals her gray health), and an enhanced low Heat Smash out of her GEN stance."
+  ],
+  "weaknesses": [
+    "Standing Punishment: She cannot launch from standing at i15, though she still gets a decent mini-combo (and i14 launch from crouching makes up for it anyway).",
+    "Power Balance: As she now loses real health, using Kazama Power is inherently riskier, but without it, her punishes and combos suffer. Players must gauge how much health they are willing to lose for a better positional advantage or settle for less to save Power for later."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/jun-kazama",
+    "wavu": "https://wavu.wiki/t/Jun",
+    "fandom": "https://tekken.fandom.com/wiki/Jun_Kazama",
+    "discord": "https://discord.com/invite/xQ47pdh4AU",
+    "youtube movelist": "https://www.youtube.com/watch?v=1aRjn8tAS-I"
+  }
 }

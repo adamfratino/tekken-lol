@@ -67,7 +67,7 @@ export const MobileCharacterSelectButton = () => {
                           p="md"
                           className="active:bg-yellow-medium"
                         >
-                          <Link href={`/${value}/${PATHS.ALL}`}>
+                          <Link href={`/${value}`}>
                             <Title size="md">{label}</Title>
                           </Link>
                         </Card>

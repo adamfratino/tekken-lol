@@ -3,5 +3,26 @@
   "tagline": "Blood Talon",
   "country": "South Korea",
   "style": "Taekwondo",
-  "description": "A Taekwondo master, Hwoarang has considered Jin Kazama as his rival ever since their first fight ended in a draw. About six months ago, he meets Jin again in the Middle East. The black-winged figure that stood before him was the same that had trounced him in an instant in a previous encounter. With all the strength he could muster, Hwoarang succeeded in defeating the rampaging Jin. However, due to the intervention of the Union of Nations forces, Jin disappears once again. \"Victory was mine, but...\" he said. Hwoarang was left feeling incontent at the unresolved conflict with Jin after returning home, so he threw himself into stoic training in order to find answers. He quietly looks inward and gradually arrives at the answer — what he wants, and what he must do to achieve it."
+  "description": [
+    "Hwoarang is a heavy-hitting rush down character, using strong plus frames and multitude of stances to force opponents into a torrent of snap defensive decisions - many of them granting Hwoarang huge damage potential.",
+    "While infamous at lower levels of play due to being an absolute blender of stance attacks, Hwoarang requires high levels of execution and a more measured approach to pressure at high level due to his best sources of plus frames often requiring highs or lows."
+  ],
+  "strengths": [
+    "Overwhelming offensive pressure with his multiple stances, rapid attacks, and plus on block transitions",
+    "Can armor through pressure with an assortment of armor moves and strings",
+    "Multiple tricky and effective strings to stack chip damage"
+  ],
+  "weaknesses": [
+    "Learning the ins and outs of his four stances can be challenging",
+    "Lacks decent high crush tools",
+    "Susceptible to being ducked with many key tools being highs",
+    "Requires above average execution on tools like the Just Frame Skyrocket (JFSR) and his wavedash"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/hwoarang",
+    "wavu": "https://wavu.wiki/t/Hwoarang",
+    "fandom": "https://tekken.fandom.com/wiki/Hwoarang",
+    "discord": "https://discord.gg/rXNYq9j",
+    "youtube movelist": "https://www.youtube.com/watch?v=fkUhnaUmqic"
+  }
 }

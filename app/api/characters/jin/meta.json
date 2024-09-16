@@ -3,5 +3,29 @@
   "tagline": "Lightning of Fate",
   "country": "Japan",
   "style": "Karate",
-  "description": "Despising the cursed blood that ran through his veins, Jin Kazama sought to bring an end to the devil bloodline. He joined forces with Lars Alexandersson, and together they prepared to commence Operation Lightning, a plan to eliminate the other bearer of the devil gene, Kazuya Mishima. Jin had once plunged the world into chaos in order to resurrect Azazel, the devil gene's progenitor. His plan was to permanently extinguish the devil gene by defeating Azazel once and for all, even if it cost him his own life. While Jin managed to defeat Azazel, he lost consciousness and fell into a deep sleep. During his absence, G Corporation, led by Kazuya, took over the world by force. Several months later, Jin finally regained consciousness. His deadly struggle with Azazel had taught him how to control his inner devil power. Jin swore to end Kazuya's reign of terror in order to atone for the war and destruction he had caused."
+  "description": [
+    "Jin is an incredibly versatile character, having an answer for every situation. His strengths include powerful punishment, space control with long-ranged keep-out attacks, and excellent close-ranged pressure thanks to his pokes and wavedash mix-ups. His execution requirements are strict in high-level play, but he can be played effectively by beginners and masters alike.",
+    "Jin's strong space control tools include Front Thrust Kick (f+4) a safe, counter-hit launching mid, and High Right Roundhouse (4), a fast homing move with counter-hit properties. When it’s time to go on the offensive, use Demon’s Paw (f, f+2), a safe, long-ranged, mid Heat Engager; one of the strongest approach tools in Tekken 8.",
+    "Up close, Jin has several delayable poking strings, such as Double Thrust > Roundhouse (2, 1, 4) and Mid Left Punch > High Roundhousekick (d/f+1, 4). Mix in lows such as Scourge (d+2) and Right Low Roundhouse (d/b+4) for oppressive offense.",
+    "Rounding out Jin's moveset is the incredible Electric Wind Hook Fist (f, n, d, d/f+2), an excellent tool for pressure, keep out and punishment alike. Practice wavedashing to mix it up with Depraved Savagery (f, n, d, d/f+4, 2), a power low, and Left Axe Kick (f, f+3), a safe mid launcher.",
+    "Perhaps the most well-rounded character in the roster, few encompass Tekken more than Jin: The Lightning of Fate!"
+  ],
+  "strengths": [
+    "Mishima Supreme: Jin has all the Mishima tools, but few of their weaknesses. He retains his variant of the EWGF (EWHF), Hellsweep, wave dash and Left Splits Kick toolkit, but also has good tracking tools and many generalist moves.",
+    "Great Pokes: Jin has many good pokes and safe strings. Front Thrust Kick leads to excellent damage on counterhit and gives him formidable defensive prowess.",
+    "Mixup Machine: Zanshin stance, Scourge, Fiendish Rend, Hellsweep, and his great low buttons give Jin everything he needs to open people up.",
+    "Defensive Demon: Jin's Electric Wind Hook Fist is a scary keepout tool, and his unique parry allows him to slip through things that other characters may struggle with.",
+    "Punishment: Jin's fast punishes from standing and crouching are among the best in the game, and Jin is one of the only characters with i14 launchers for both standing and crouching (though EWHF requires frame precision). His optimized launch combos are also among the most damaging in the game.",
+    "Easy execution: While Jin used to have extremely difficult execution, in Tekken 8 he has built-in electrics from his moves that require no execution. His panic moves are also easy to execute. Electric and Wavedash are now the hardest execution requirements on Jin (and f4 CH ws4 pickup)."
+  ],
+  "weaknesses": [
+    "War Criminal: Started WWIII in Tekken 6 and still hasn't gone to the Hague for it."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/jin-kazama",
+    "wavu": "https://wavu.wiki/t/Jin",
+    "fandom": "https://tekken.fandom.com/wiki/Jin_Kazama",
+    "discord": "https://discord.gg/yMcYG4G",
+    "youtube movelist": "https://www.youtube.com/watch?v=cjULcLZ_o2Y"
+  }
 }

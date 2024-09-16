@@ -3,5 +3,27 @@
   "tagline": "Cold-Blooded Oppressor",
   "country": "None",
   "style": "Mishima-Style Fighting Karate",
-  "description": "Using the full extent of his devil power and G Corporation, Kazuya Mishima went on a conquest for world domination. After defeating his father Heihachi Mishima, Kazuya intensifies his offensive to eliminate the leaderless Mishima Zaibatsu. This brutal war divided the world in two, and in the end G Corporation came out on top. However, G corporation showed no signs of relenting, and continued to dominate the world by force. The Union of Nations was appalled by these actions, and they gathered various world leaders in New York to discuss how to impose sanctions against G Corporation. But then, Kazuya himself showed up to the meeting and announced that he would continue to wage war. He then unleashed G Corporation's army on New York, setting the entire city ablaze."
+  "description": [
+    "Kazuya is a defensive and mixup-oriented Mishima-style character. He boasts the strongest, most complete punishment kit in the game, making it dangerous to do anything unsafe against him. His Mishima kit allows him to enforce a strong neutral to force an opponent's respect, and an opponent thus conditioned has to deal with his terrifying 50/50 between a safe launcher and a knockdown hellsweep that sets up the same 50/50 again. Kazuya is a specialist character who demands strong execution, defense and fundamentals, but rewards it with explosive mixups, high damage, and the feeling of utterly outplaying your opponents.",
+    "Kazuya is prone to being pressured, and lacks panic moves to overcome a player's lack of defense. His demanding execution makes it difficult to be consistent with him. His explosive 50/50s can blow up in his face if his opponent guesses right on them."
+  ],
+  "strengths": [
+    "Mishima Bloodline: As a Mishima, Kazuya has access to their excellent suite of specials and command normals. EWGF, Hellsweep, wave dash and Left Splits Kick are all best in class tools and make him well rounded.",
+    "Mixup Machine: Left Splits Kick and Hellsweep combine to give Kazuya 50/50 mixups at all times. Both options lead to good damage and can even allow him to loop setups if given the chance.",
+    "Incredible Punish Game: Flash Punch Combo is the best i10 punish string in the game, and his i13 and i15 punish tools (ws1,2 and EWGF) both lead to exceptional damage.",
+    "EWGF: Arguably the single best move in all of Tekken. Good range, plus on block, deals chip, and launches for a full combo. Keep out and pressure extraordinaire.",
+    "Devil: Kazuya's Heat gives him access to unique extensions for greater damage. His Heat Smash is also an improved Hellsweep for better mixups."
+  ],
+  "weaknesses": [
+    "Weak To Sidestep Left: As with all Mishimas, Kaz is very weak to being stepped. EWGF in particular has this baked in as a weakness.",
+    "Bad Pokes: Kazuya has many minus strings and his pokes are very stubby. It can be difficult for him to make his way in without taking substantial risk.",
+    "Devil's Finesse: Kazuya's gameplan requires unconventional execution to be performed very consistently. While his execution is not too far beyond other characters (unless you want to consistently WS cancel from wavedash), Kazuya demands a higher level of consistency than almost any other character on the roster, making him difficult to play. His players must have a basic ability to wavedash or perform EWGF to survive at higher levels of play."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/kazuya-mishima",
+    "wavu": "https://wavu.wiki/t/Kazuya",
+    "fandom": "https://tekken.fandom.com/wiki/Kazuya_Mishima",
+    "discord": "https://discord.gg/Vg7HXVK",
+    "youtube movelist": "https://www.youtube.com/watch?v=hvNTgqaGiyQ"
+  }
 }

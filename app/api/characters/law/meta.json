@@ -3,5 +3,26 @@
   "tagline": "The Legendary Dragon",
   "country": "U.S.A.",
   "style": "Martial Arts",
-  "description": "Marshall Law is a renowned martial arts master and runs his own dojo. However, he fell into debt due to his son's motorcycle accident, and his efforts to repay this debt caused him to neglect the management of his dojo, resulting in a sharp drop-off of students coming to train. Law set out to find a distinguished master who could take over the dojo and solve all his troubles. Unfortunately, all negotiations ended in failure, and to make matters worse, his dojo was repossessed as collateral while he was gone. Now plunged into poverty, Law became bound by the concept of money making the world go round. His only hope was to make a killing at the next tournament and secure the prize money he so desperately needed. To increase his chances of success, he promised to split the winnings with his friend Paul Phoenix. Together, the pair journeyed to the mountains in order to train."
+  "description": [
+    "Law is a close range, poking-based, slide archetype character with strong neutral tools and strong block punishment. A legacy character with traditionally challenging execution, he is very accessible this time around and is suitable for anyone looking to live out their Bruce Lee fantasy.",
+    "Law has an extensive moveset that allows for flexibility in terms of playstyle - shifting between aggressive, sticky pressure with tools like the Dragon Hammer (f+1+2), forcing counter hit situations with his i10 1,2,3 and i13 4,3; and a mix of backdashing and whiff punishment with 3+4,4 and b+2,1. Though Law now has easier inputs to access his slide mixups and Dragon Charge (DSS) stance, he still rewards oldheads for their legacy skills just frames for extra damage.",
+    "Law thrives when in poke range, but can struggle to close the gap, putting the onus on a player's movement and ability to get around their opponent's keepout. He embodies the philosophy of a \"death by a thousand cuts\", and lacks strong mixups to make a comeback against an opponent who refuses to get counterhit."
+  ],
+  "strengths": [
+    "Strong standing/crouching punishment",
+    "Insane stagger pressure",
+    "One of the better crouch mixups in the game"
+  ],
+  "weaknesses": [
+    "Can be hard to make a comeback with",
+    "Poor keepout tools",
+    "Limited range"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/marshall-law",
+    "wavu": "https://wavu.wiki/t/Law",
+    "fandom": "https://tekken.fandom.com/wiki/Marshall_Law",
+    "discord": "https://discord.com/invite/jWvTCMv",
+    "youtube movelist": "https://www.youtube.com/watch?v=THZfQPvsKkss"
+  }
 }

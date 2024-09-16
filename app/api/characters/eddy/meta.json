@@ -3,7 +3,19 @@
   "tagline": "Indomitable Flash",
   "country": "Brazil",
   "style": "Capoeira",
-  "description": "Eddy Gordo is a skilled capoeira user who has devoted half his life to honing his skills so he can exact revenge on Kazuya Mishima for his father's death. One day, his capoeira master falls victim to an incurable disease. With no one else to turn to, Eddy pleads for help from the current head of the Mishima Zaibatsu, Jin Kazama. Jin agrees, but in exchange for medical care for his master, Eddy must join the Tekken Force. Knowing full well the weight of the sins he will bear, he is left with no choice but to participate in the destructive missions. However, his master succumbs to the illness nevertheless, rendering his sacrifice in vain. Lost in despair, Eddy abandons the Tekken Force and heads for G Corp's Millennium Tower. There, he cuts through countless G Corp soldiers, making his way to the top. However, in the face of Kazuya's overwhelming power, Eddy is defeated. \"Is this how my life is destined to end? Unable to exact vengeance or atone for my sins...?\" These are Eddy's final thoughts as his world begins to fade to black...until Yoshimitsu drops in from the sky to rescue him from the brink of death. Eddy narrowly escapes with his life, and a short time later, Yoshimitsu helps him reunite with an unexpected figure from his past—someone he hasn't seen in ten years. This person, too, wants to see the world freed from Kazuya's tyrannical reign, and it is their words that convince Eddy to join forces with them. \"No matter what hardships people face, they can always rise again.\" Bearing the weight of those words, Eddy puts himself on a grueling training regime to redeem his pride. With his master's teachings close to his heart and an unbridled love for the freedom capoeira gave him, Eddy hones his moves to new levels of proficiency. And after much meditation during his days of training, he comes to the realization that his abilities should not be used for revenge, but to save as many people as he can. This, he decides, is the best way to repay his father and master. And so, his journey of redemption begins.",
+  "description": [
+    "Eddy is a mid-ranged stance-based mixup character. His long legs come with good pokes, lows and plus frames to control the mid range. His strings allow him to play mindgames with his opponent by threatening extensions while transitioning into stance. He can flow into and out of his two stances, Negativa (RLX) and Bananeira (HSP), quite freely, while enforcing powerful mixups from each, allowing players to layer their mixups and keep their opponents guessing constantly.",
+    "Being centered around mixups can backfire on Eddy, since it can be difficult to get consistent results with him. Against prepared opponents, it is a lot harder to utilize his strings and stances, since they require juggling a lot of options to get any reward from."
+  ],
+  "strengths": [
+    "Can easily setup mixups to force the opponent to guess",
+    "RLX and sidestep HSP stances make Eddy very evasive and tricky to pin down",
+    "Eddy requires a lot of lab work to defend against"
+  ],
+  "weaknesses": [
+    "Requires some very specific combos",
+    "Struggles against opponents who know the matchup"
+  ],
   "links": {
     "official": "https://tekken.com/fighters/eddy-gordo",
     "wavu": "https://wavu.wiki/t/Eddy",

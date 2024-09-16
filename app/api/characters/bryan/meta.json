@@ -3,7 +3,22 @@
   "tagline": "Harbinger of Chaos",
   "country": "U.S.A.",
   "style": "Kickboxing",
-  "description": "Obtaining the perpetual generator, Bryan Fury became the ultimate replicant, using this endless source of energy to wreak havoc. Even after the battle between G Corp. and Mishima Zaibatsu concluded, Bryan continued waging acts of war around the globe, and quickly became the target of international police organizations. Something suddenly changed in Bryan when he confronted the elite counter terrorist unit of the international police agency he formerly belonged to in an urban conflict. Either a result of overuse in countless conflicts, or from a lingering memory of his mortal body, his perpetual generator overheated during battle. A surge in feelings of power and pleasure burned their imprint into his brain, turning it crimson red. When he awoke, he was alone in the devastated aftermath he had likely caused. \"Are you really the infamous Bryan Fury..?\" From under the rubble, the voice of someone who appeared to know him said, but was abruptly interrupted by the sounds of pummeling fists and maniacal laughter.",
+  "description": [
+    "Bryan is Tekken's keep-out and counter hit monster. It is scary to press buttons against Bryan due to his plethora of CH-launching attacks and high combo damage. It is scary to not press buttons against Bryan due to his strong pressure tools, lows and the infamous Taunt Jet Upper, an unblockable launcher. Playing Bryan requires demanding execution, a mastery of Tekken fundamentals, and an understanding of how to stoke tension in your opponent. The reward is one of the scariest characters to press a button against in the entire game.",
+    "Bryan's demanding execution and gameplan can make him difficult to approach for newcomers. He lacks defensive tools and puts the onus on the player to avoid getting pressured. His \"small Tekken\" is weak, and he can struggle against faster characters with better pokes."
+  ],
+  "strengths": [
+    "Strong counterhit moves and strings (e.g., 3+4, 1,2,1, b+1, f+3) that reward timing and punish aggression",
+    "High damage from combos and mixups, tremendous wall carry",
+    "Can launch punish -14 moves from standing with Jet Upper",
+    "Very strong moves to play keepout (e.g., 3+4, qcb+1, db+4)",
+    "Devastating oki at the wall with taunt and its follow-ups"
+  ],
+  "weaknesses": [
+    "Poor early standing punishment",
+    "Lacks panic moves",
+    "Requires difficult execution to optimize"
+  ],
   "links": {
     "official": "https://tekken.com/fighters/bryan-fury",
     "wavu": "https://wavu.wiki/t/Bryan",

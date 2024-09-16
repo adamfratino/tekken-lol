@@ -3,5 +3,28 @@
   "tagline": "Mystic Stargazer",
   "country": "Unknown",
   "style": "Ancient Assassination Arts",
-  "description": "Zafina is a warrior born into a family of exorcists whose lineage dates back to the time of ancient dynasties. In her day-to-day life, however, she uses her exceptional spiritual abilities to earn a living as an astrologist. Only a few months ago, the earth-shattering clash between the two evil stars, Jin Kazama and Kazuya Mishima, led to the resurrection of the original devil Azazel, an evil whom Zafina's family had kept sealed away for generations. Jin is able to defeat Azazel by the skin of his teeth, but Azazel's spirit is indestructible and survives. Now, it is only a matter of time before Azazel is resurrected once again. In order to delay Azazel's return for as long as possible, Zafina seals away Azazel's spirit in her left arm using her family's secret arts. However, Azazel's power is far beyond what even she could have foreseen, and the devil begins to wrest control of Zafina's body and soul away from her again and again. An exhausted Zafina arrives at Sirius Sanctuary, the headquarters of the Sirius Marksmen, in a last-ditch effort just before losing consciousness. When she awakens, she finds herself surrounded by Ling Xiaoyu, who is devotedly attending to her recovery, and Claudio Serafino, who is applying a holy seal to her left arm. Deeming them worthy of her trust, Zafina confesses all to them. In return, the two promise to spare no effort in aiding her whenever she needs it. Shortly after, while under the protection of the Sirius Marksmen, Zafina struggles to find a way to change their doomed fate. From the countless futures she's seen, though, there seems to be only one way out. However, that path would come at a great cost..."
+  "description": [
+    "Zafina is a stance-based character with strong movement and space control. Her toolkit allows for stylish play, with some tricky moves and stance transitions, while still retaining the ability to play in a solid, fundamental way thanks to her backdash and spacing options.",
+    "Zafina's strong movement and far-reaching moves such as f,F+4 give her excellent space control, and her stance transitions such as wr1+2 and ws3 are effective ways to start her stance pressure, which can be devastating if the opponent lacks matchup knowledge. However, she pays for it with long and telling recovery on whiffs, and generally slow start-ups (her df+2 is i16, uf+4 is i18). Her damage output is below average, and she often has to choose between using Azazel moves in combos, which consume health, or giving up on extra damage.",
+    "She has many evasive lows that shift her hurtboxes, allowing her to evade even mids sometimes, similar to Lili's Matterhorn and Xiaoyu's Art of Phoenix stance."
+  ],
+  "strengths": [
+    "Many evasive options",
+    "Good backdash that can escape even some strings",
+    "Strong keepout",
+    "Good stance pressure and mixups",
+    "2 Heat Smashes - one of which is a low"
+  ],
+  "weaknesses": [
+    "Slow, commital moves, easy to whiff punish",
+    "Subpar punish options",
+    "Below average damage without Azazel moves, which consume health"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/zafina",
+    "wavu": "https://wavu.wiki/t/Zafina",
+    "fandom": "https://tekken.fandom.com/wiki/Zafina",
+    "discord": "https://discord.com/invite/cKvtNjZ",
+    "youtube movelist": "https://www.youtube.com/watch?v=zVWG_QeNVbY"
+  }
 }

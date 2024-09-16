@@ -12,7 +12,7 @@ export type Direction = keyof typeof directions.base
 export type Gap = keyof typeof gaps.base
 export type Padding = keyof typeof padding.base
 export type Shadow = keyof typeof shadows.base
-export type Width = keyof typeof widths
+export type Width = keyof typeof widths.base
 
 export type ResponsiveProp<T extends string> =
   | T
@@ -24,5 +24,5 @@ export type LayoutProps = {
   gap?: ResponsiveProp<Gap>
   p?: ResponsiveProp<Padding>
   shadow?: ResponsiveProp<Shadow>
-  w?: Width
+  w?: ResponsiveProp<Width>
 }
