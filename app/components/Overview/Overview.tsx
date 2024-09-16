@@ -80,8 +80,8 @@ export const Overview = async ({ character }: OverviewProps) => {
       {links && (
         <Group gap="md">
           {Object.entries(links).map(([label, url]) => (
-            <Button asChild>
-              <Link key={url} href={url} target="_blank">
+            <Button key={url} asChild>
+              <Link href={url} target="_blank">
                 {label} <ExternalLink size={16} className="ml-2" />
               </Link>
             </Button>
