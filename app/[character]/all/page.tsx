@@ -1,8 +1,9 @@
-import { getCharacterLabel } from "@/utils"
-import { CHARACTERS } from "@/data/variables"
+import type { CharacterPageProps } from "@/data/types"
 import { fetchCharacterFrames } from "@/data/utils"
+import { CHARACTERS } from "@/data/variables"
+import { getCharacterLabel } from "@/utils"
+
 import { MoveTable, MovesSearch, CharacterSearch } from "app/components"
-import type { CharacterPageProps } from "../types"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params

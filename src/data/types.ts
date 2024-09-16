@@ -41,3 +41,10 @@ export type PunishersType = {
   standing?: string[]
   crouching?: string[]
 }
+
+export interface CharacterPageProps {
+  params: {
+    character: Characters
+    frames: FrameData[]
+  }
+}
