@@ -46,7 +46,7 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
       </li>
 
       <li>
-        <div>
+        <div className="line-through">
           <Title size="md">Character overview &mdash; Sep. 2024</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
             Create an overview template for each character

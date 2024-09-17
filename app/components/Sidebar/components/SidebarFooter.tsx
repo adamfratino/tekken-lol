@@ -4,7 +4,7 @@ import { RoadmapModal } from "app/components/RoadmapModal"
 
 export const SidebarFooter = () => (
   <Stack gap="xs" p="md" className="mt-auto">
-    <Group align="between" className="item-center">
+    <Group gap="sm" className="item-center">
       <p className="mb-1 text-xs font-semibold">
         <RoadmapModal
           trigger={
@@ -24,26 +24,21 @@ export const SidebarFooter = () => (
       <p className="fon-bold text-xs">[🦐 ⛵]</p>
     </Group>
 
-    <Group align="between" className="item-center">
-      <p className="mb-1 text-xs font-semibold">
-        <Group gap="xs" className="cursor-pointer items-center hover:underline">
-          <Database size={18} />
-          <a
-            href="https://wavu.wiki"
-            target="_blank"
-            className="hover:underline"
-          >
-            wavu.wiki,
-          </a>
-          <a
-            href="https://tekkendocs.com"
-            target="_blank"
-            className="hover:underline"
-          >
-            tekkendocs
-          </a>
-        </Group>
-      </p>
+    <Group
+      gap="xs"
+      className="cursor-pointer items-center text-xs font-semibold"
+    >
+      <Database size={18} />
+      <a href="https://wavu.wiki" target="_blank" className="hover:underline">
+        wavu.wiki,
+      </a>
+      <a
+        href="https://tekkendocs.com"
+        target="_blank"
+        className="hover:underline"
+      >
+        tekkendocs
+      </a>
     </Group>
   </Stack>
 )
