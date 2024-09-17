@@ -2,10 +2,11 @@
 
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Search, X } from "lucide-react"
 
-import type { Move } from "@/data/types"
+import type { Characters, Move } from "@/data/types"
 import { Card, Stack, Title } from "@/ui/components"
 import { Button } from "@/ui/primitives"
 
@@ -14,15 +15,21 @@ import { SearchItemMove } from "app/components/Search/SearchItem"
 import {
   verticalModalVariants,
   navLinksVariants,
-  linkItemVariants,
+  // linkItemVariants,
 } from "./motion.variants"
 
 type MobileSearchButtonProps = {
   moves: Move[]
+  character: Characters
 }
 
-export const MobileSearchButton = ({ moves }: MobileSearchButtonProps) => {
+export const MobileSearchButton = ({
+  moves,
+  character,
+}: MobileSearchButtonProps) => {
   const [active, setActive] = useState(false)
+  const pathname = usePathname()
+  const pathnameArray = pathname.split("/").filter((c) => c)
 
   return (
     <>
@@ -60,26 +67,33 @@ export const MobileSearchButton = ({ moves }: MobileSearchButtonProps) => {
                   animate="visible"
                   exit="exit"
                 >
-                  {moves.map((move, i) => (
-                    // <motion.span
-                    //   key={`${move.command}_MobileSearchButton_${i}`}
-                    //   variants={linkItemVariants}
-                    // >
-                    <Card
-                      key={`${move.command}_MobileSearchButton_${i}`}
-                      asChild
-                      p="sm"
-                    >
-                      <Link
-                        href={`#${move.command}`}
-                        onClick={() => setActive(false)}
-                        className="w-full"
+                  {moves.map((move, i) => {
+                    const movePath =
+                      pathnameArray.length === 1
+                        ? `/${character}/all#${move.command}`
+                        : `#${move.command}`
+
+                    return (
+                      // <motion.span
+                      //   key={`${move.command}_MobileSearchButton_${i}`}
+                      //   variants={linkItemVariants}
+                      // >
+                      <Card
+                        key={`${move.command}_MobileSearchButton_${i}`}
+                        asChild
+                        p="sm"
                       >
-                        <SearchItemMove move={move} />
-                      </Link>
-                    </Card>
-                    // </motion.span>
-                  ))}
+                        <Link
+                          href={movePath}
+                          onClick={() => setActive(false)}
+                          className="w-full"
+                        >
+                          <SearchItemMove move={move} />
+                        </Link>
+                      </Card>
+                      // </motion.span>
+                    )
+                  })}
                 </motion.div>
               </Stack>
             </motion.div>

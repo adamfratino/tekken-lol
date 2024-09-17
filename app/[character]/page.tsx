@@ -13,8 +13,8 @@ export default async function CharacterOverviewPage({
   return (
     <>
       <Overview character={character} />
-      <MovesSearch moves={moves} />
       <CharacterSearch />
+      <MovesSearch character={character} moves={moves} />
     </>
   )
 }

@@ -20,7 +20,7 @@ export const Header = ({ character, moves }: HeaderProps) => (
     <DesktopCharacterSelectButton character={character} />
 
     <Group gap="sm" className="ml-auto">
-      <MobileSearchButton moves={moves} />
+      <MobileSearchButton character={character} moves={moves} />
       <DesktopSearchButton />
       <MobileCharacterSelectButton />
     </Group>
