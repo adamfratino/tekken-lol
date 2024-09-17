@@ -55,7 +55,10 @@ export function Hero() {
         />
       </Group>
 
-      <Transition visible={!!character} className="w-full">
+      <Transition
+        visible={!!character}
+        className="mx-auto w-full max-w-[720px]"
+      >
         {character && (
           <Flex
             gap="md"
