@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority"
 import { getResponsiveClasses } from "@/ui/lib/utils"
 import type { LayoutProps } from "../layout.types"
-import { alignments, gaps, padding, shadows } from "../layout.props"
+import { alignments, gaps, padding, shadows, widths } from "../layout.props"
 
 const twVariants = {
   interactive: {
@@ -13,23 +13,27 @@ const twVariants = {
   bordered: {
     true: "border",
   },
-  w: {
-    full: "w-full",
-  },
 }
 
-export const variants = cva("rounded-md flex border overflow-hidden", {
+export const variants = cva("rounded-md flex flex-col border overflow-hidden", {
   variants: twVariants,
   defaultVariants: {},
 })
 
 export const responsiveProps = (props: LayoutProps) => {
-  const { align, gap, p, shadow } = props
+  const { align, gap, p, shadow, w } = props
 
-  const paddingClasses = p ? getResponsiveClasses(p, padding) : []
-  const gapClasses = gap ? getResponsiveClasses(gap, gaps) : []
-  const shadowClasses = shadow ? getResponsiveClasses(shadow, shadows) : []
   const alignClasses = align ? getResponsiveClasses(align, alignments) : []
+  const gapClasses = gap ? getResponsiveClasses(gap, gaps) : []
+  const paddingClasses = p ? getResponsiveClasses(p, padding) : []
+  const shadowClasses = shadow ? getResponsiveClasses(shadow, shadows) : []
+  const widthClasses = w ? getResponsiveClasses(w, widths) : []
 
-  return [...paddingClasses, ...gapClasses, ...shadowClasses, ...alignClasses]
+  return [
+    ...paddingClasses,
+    ...gapClasses,
+    ...shadowClasses,
+    ...alignClasses,
+    ...widthClasses,
+  ]
 }

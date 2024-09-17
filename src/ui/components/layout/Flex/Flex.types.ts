@@ -6,7 +6,7 @@ import { variants } from "./Flex.variants"
 export type FlexVariantProps = VariantProps<typeof variants>
 export type FlexLayoutProps = Pick<
   LayoutProps,
-  "gap" | "p" | "align" | "direction"
+  "gap" | "p" | "align" | "direction" | "w"
 >
 
 export type FlexProps<T extends React.ElementType> = BoxProps<T> &

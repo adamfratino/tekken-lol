@@ -1,5 +1,6 @@
 import type { PropsWithChildren } from "react"
 
+import type { CharacterPageProps } from "@/data/types"
 import {
   fetchCharacterFrames,
   fetchCharacterPunishers,
@@ -9,7 +10,6 @@ import { Stack } from "@/ui/components"
 import { filterHeatMoves, filterWallMoves } from "@/utils/filterMoves"
 
 import { Header, Sidebar } from "app/components"
-import type { CharacterPageProps } from "./types"
 
 export default async function CharacterLayout({
   params,

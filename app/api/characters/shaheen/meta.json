@@ -3,5 +3,30 @@
   "tagline": "Desert Falcon",
   "country": "Saudi Arabia",
   "style": "Close Quarters Combat",
-  "description": "Shaheen works for a private military firm and is investigating the mysterious death of his best friend. Utilizing his \"peaceful\" negotiation skills, he learns from an executive of the Middle East G Corp branch that the mastermind is none other than Kazuya Mishima. The wheel of fate must have been turning that day 13 years ago when, on the same day Shaheen lost his family, he saved Salim, a boy around the same age as him, from an assassin. It was the first time he had used the techniques his father had ingrained in him meant to bring down enemies to instead save another's life. Afterwards, Salim told him, \"You should use such skills to become a shield for those in need.\" Then he took Shaheen's hands and welcomed him as his bodyguard. Salim came from the most prominent family in the area, and they did not think twice about taking Shaheen under their wing after he saved their precious son. Salim was bright and full of knowledge, while Shaheen excelled in fighting. The two grew up respecting one another, even as they followed their own paths. Salim became the head of an oil company, and Shaheen, a private military specialist. Yet even if their two paths had diverged, they could still work side by side under the same desire to protect the wealth and pride of others... Or, that's how it should have been. Instead, Shaheen now returns home to deliver news of the confession he'd pried from the G Corp executive regarding Salim's death to his family. The next day, just as Shaheen is about to depart, Salim's younger brother, Zarif, approaches him.  \"I want you to finish what my brother could not,\" Zarif says as he hands Shaheen a sword. It's his brother's treasured blade, one that Salim had carried with him wherever he went. Shaheen draws the keepsake from its sheath. Looking into its polished surface, he makes a vow to never forgive G Corp's tyranny"
+  "description": [
+    "Shaheen is a simple, \"back-to-basics\" character. His game-plan revolves almost entirely around his extremely potent full crouch (FC) mix-up and controlling space through an abundance of great pokes. He has a strong punishment kit, and both a generic df+2 and a hopkick to whiff punish with. He has several strong counterhit tools to dissuade mashing and decent plus frame mids to pressure a defensive opponent.",
+    "Shaheen takes great advantage of Tekken 8's grey health and Heat system. He has several good moves that deal chip, while also being blessed with moves that entirely remove grey health. While in Heat, Shaheen's FC mix and grey life manipulation become even more potent, as he is able to repeatedly chip the opponent down while threatening with slide, launching mids, or his new guard break move Al-Ghul Master (you can read more about it on his Tech page.) While outside of Heat, however, his wall game is considerably weakened, and he has some of the lowest wall-combo damage in the game.",
+    "Being so straightforward is a both a blessing and a curse, as taking advantage of his straightforward kit demands strong fundamentals and decision making."
+  ],
+  "strengths": [
+    "Powerful full crouch mixup: Slide (FC.df,d,df+3) is arguably the best low in the entire game, and can be VERY difficult deal with if done correctly.",
+    "Consistency is Key: Shaheen's gameplan is very simple, his moves are intuitive, and he has great block and whiff punishment tools.",
+    "Heat Wall Pressure: Al-Ghul Master into f+2,3 along with f,f,F+2 and df+3 can turn Shaheen into a menace at the wall while he's in Heat.",
+    "Grey Health Deletion: Has the rare ability to erase opponent's grey health with easy setups.",
+    "Combo Artist: Has very lenient and varied combo routes that allow for good damage, wall carry, or decent okizeme. Also has the ability to easily switch sides during combos, giving him great control over stage positioning.",
+    "Agile: Great movement and approach tools.",
+    "Solid Counter-hit Tools: Has reliable CH tools in a game where CH tools tend to be weak and risky."
+  ],
+  "weaknesses": [
+    "Can't Open Turtles: Struggles versus patient players since he lacks threatening lows from standing, and relies on a very unsafe slide to open defensive players.",
+    "Average Defense: Few defensive gimmicks without any standout evasive attacks or reversals. He has to rely on good reads, movement and precise Heat Burst/power crush placement to get out of jams.",
+    "Weak Strings and Knowledge Checks: The few strings Shaheen has don't lead to any real mix, and almost all of them can be blocked standing."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/shaheen",
+    "wavu": "https://wavu.wiki/t/Shaheen",
+    "fandom": "https://tekken.fandom.com/wiki/Shaheen",
+    "discord": "https://discord.com/invite/AWqNzQ6",
+    "youtube movelist": "https://www.youtube.com/watch?v=PpJNy6-vfTA"
+  }
 }

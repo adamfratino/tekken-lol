@@ -41,3 +41,26 @@ export type PunishersType = {
   standing?: string[]
   crouching?: string[]
 }
+
+export type CharacterMeta = {
+  name: string
+  tagline: string
+  country: string
+  style: string
+  description: string | string[]
+  strengths?: string[]
+  weaknesses?: string[]
+  links?: { [key: string]: string }
+  strategy?: {
+    midRange?: object
+    approach?: object
+    closeRange?: object
+  }
+}
+
+export interface CharacterPageProps {
+  params: {
+    character: Characters
+    frames: FrameData[]
+  }
+}

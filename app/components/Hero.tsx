@@ -19,7 +19,7 @@ export function Hero() {
     <Flex
       direction="column"
       p={{ base: "md", md: "lg" }}
-      className="min-h-screen items-center lg:pt-40"
+      className="items-center lg:pt-40"
     >
       <div className="mx-auto mt-5 max-w-2xl text-center">
         <Title as="h1" size="hero">
@@ -48,7 +48,7 @@ export function Hero() {
       >
         <Select
           autoFocus
-          items={CHARACTERS}
+          items={CHARACTERS.filter((char) => !char.disabled)}
           onChange={handleCharacterChange}
           placeholder="Choose  your fighter..."
           groupClassName="text-lg"
@@ -62,26 +62,29 @@ export function Hero() {
             direction={{ base: "column", md: "row" }}
             className="mt-8 w-full md:justify-center"
           >
-            <Button asChild size="sm">
+            <Button asChild size="sm" className="mx-auto w-full max-w-xs">
+              <Link href={`/${character}`}>Overview</Link>
+            </Button>
+            <Button asChild size="sm" className="mx-auto w-full max-w-xs">
               <Link href={`/${character}/${PATHS.ALL}`}>All Moves</Link>
             </Button>
-            <Button asChild size="sm">
+            <Button asChild size="sm" className="mx-auto w-full max-w-xs">
               <Link href={`/${character}/${PATHS.HEAT}`}>Heat Moves</Link>
             </Button>
-            <Button asChild size="sm">
+            <Button asChild size="sm" className="mx-auto w-full max-w-xs">
               <Link href={`/${character}/${PATHS.STANCES}`}>Stance Moves</Link>
             </Button>
-            <Button asChild size="sm">
+            <Button asChild size="sm" className="mx-auto w-full max-w-xs">
               <Link href={`/${character}/${PATHS.PUNISHERS}`}>Punishers</Link>
             </Button>
-            <Button asChild size="sm">
+            <Button asChild size="sm" className="mx-auto w-full max-w-xs">
               <Link href={`/${character}/${PATHS.WALL}`}>At the Wall</Link>
             </Button>
           </Flex>
         )}
       </Transition>
 
-      <div className="mx-auto mt-auto inline-flex flex-col pb-6">
+      <div className="mx-auto mt-auto inline-flex flex-col py-8">
         <RoadmapModal
           trigger={
             <Group asChild gap="sm" className="mb-2 text-xs">
@@ -107,11 +110,18 @@ export function Hero() {
               Datasource:
             </span>
             <a
+              href="https://wavu.wiki"
+              target="_blank"
+              className="text-[10px] font-bold hover:underline"
+            >
+              wavu.wiki,
+            </a>
+            <a
               href="https://tekkendocs.com"
               target="_blank"
-              className="text-[10px] font-bold"
+              className="text-[10px] font-bold hover:underline"
             >
-              tekkendocs.com
+              tekkendocs
             </a>
           </Group>
         </div>

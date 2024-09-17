@@ -12,8 +12,8 @@ export const Group = <T extends React.ElementType = typeof Box>({
   wrap,
   ...props
 }: GroupProps<T>) => {
-  const responsiveClasses = responsiveProps({ align, gap, p })
-  const classNames = cn(variants({ className, w, wrap }), ...responsiveClasses)
+  const responsiveClasses = responsiveProps({ align, gap, p, w })
+  const classNames = cn(variants({ className, wrap }), ...responsiveClasses)
 
   return <Box className={classNames} {...props} />
 }

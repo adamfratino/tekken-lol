@@ -3,5 +3,31 @@
   "tagline": "Pretty Protector",
   "country": "None",
   "style": "Heihachi-Style Advanced Kuma Shin Ken",
-  "description": "Panda doubles as both Ling Xiaoyu's pet and bodyguard. A short while after Jin Kazama, whom Xiaoyu has feelings for, goes missing, she sets off on a journey to find him, leaving her home only to never return again. Determined to uphold her duty of protecting Xiaoyu, Panda tracks her all the way to the Mishima Zaibatsu building. When she finds her, Xiaoyu informs her that she's successfully obtained Jin's search data and is going on a journey across the globe to follow after him. Shocked as she is by Xiaoyu's tenacity, Panda decides nevertheless to set off with her—after all, Xiaoyu deserves a vacation where she can enjoy all the sights and delicious cuisine the world has to offer. On their journey, Panda makes sure Xiaoyu is always looking her best by coordinating her outfits so that whenever she finally meets Jin again, she won't be embarrassed. After six months of traveling around the world and tracking down what few leads they have, however, any hope of finding Jin is fading fast. Even so, just as Xiaoyu refuses to give up out of her unwavering dedication to Jin, so too is Panda resolute in staying by Xiaoyu's side until the very end."
+  "description": [
+    "Panda (and Kuma, often just referred to as bears) is an oddball character specializing in ranged poking and whiff punishment.",
+    "Cursed with often terrible frame data on her moves and the worst overall mobility in the game between her huge size, lack of specialized movement tools and a generally bad backdash/sidestep, Panda has to navigate the mid range carefully and deliberately, lest she gets run over by enemy pressure.",
+    "To offset this, the bears come equipped with some of the absolute best whiff punishment tools in the entire game. Kuma Musou (df+2,1) is an i15 whiff-confirmable launcher that hits all the way from range 3 for close to 45% damage without Heat on open ground. Demon Bear Breath (1+2) is an i13 mid stolen from Heihachi, which boasts similarly impressive range and heat engages. Panda also has an array of ranged mids and low pokes to gradually chip away at the opponent from outside their effective range, and a decent selection of tracking keepout moves such as b,f+2, uf+1 or b+1+2, all of which deal considerable chip damage when blocked.",
+    "Holding down or pressing 3+4 after select moves transitions Panda into the Hunting Bear Stance (HBS for short), a naturally high-crushing, mixup-focussed stance. HBS allows some additional light pressure with the threat of an enormously plus on hit, fast low in HBS.2. This can be mixed up with HBS's good selection of safe, or even plus on block Mids.",
+    "Panda can also be consiered the more \"party\" focused of the bears, as Heat grants her access to a number of unconventional mixup tools. The real star of the show here is the aptly named Panda Shooting Star, a massively plus on block hopkick-type move which leaves Panda in Bear Sit Stance right in front of the opponent, allowing her to push a series of mixups. Panda's Heat Smash, while not as powerful as Kuma's, is still very fast at i15 and can transition into ROL or HBS by holding a direction after the animation finishes."
+  ],
+  "strengths": [
+    "Range: Panda's large frame grants her immense range on many of her attacks, making her both excellent at keeping out the opponent and punishing them if they overextend.",
+    "Mixups: All of her stances have decent mixups which can catch opponents off guard.",
+    "Chip: Many of Panda's attacks also deal a bunch of chip damage, which makes it easier to wear down and pressure her opponents.",
+    "Heat: Panda becomes a much deadlier character when Heat is activated, making her roll a true 50/50 and having a free Bear Sit Stance entry with Panda Shooting Star. The charge times on chargeable moves severly decreases, and her Heat Smash also allows her to enter her Bear Roll or Hunting stances for more mixups."
+  ],
+  "weaknesses": [
+    "Hurtbox: Her large, unorthodox frame usually grants opponents more damaging or unique combos that don't work on anyone else.",
+    "Movement: While her stubby legs can cause lows to whiff, they don't allow Panda to go that far with her backdash (which makes her lean forward) or her sidesteps, which are easily one of, if not the worst in the game because of her size.",
+    "Risk-taking: Several of Panda's moves, even her best ones like her G-Clef, df+2,1, and db+2, are all launch punishable by nearly the entire cast. A knowledgeable opponent is extremely difficult to fight because of this.",
+    "Lows: By extension, most of her lows are unusable because while damaging, they are often both slow AND launch punishable.",
+    "Kuma: Kuma plays in almost exactly the same way, except his Heat system grants him more immediately useful moves in Wind Bear Fist and his faster Heat Smash."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/panda",
+    "wavu": "https://wavu.wiki/t/Panda",
+    "fandom": "https://tekken.fandom.com/wiki/Panda",
+    "discord": "https://discord.com/invite/UrQ2Fe6",
+    "youtube movelist": "https://www.youtube.com/watch?v=1nKt1GDxWXc"
+  }
 }

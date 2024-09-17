@@ -3,5 +3,34 @@
   "tagline": "Grandmaster of Drip",
   "country": "U.S.A.",
   "style": "Wing Chun",
-  "description": "A Wing Chun master, Leroy Smith is extolled as a hero for freeing New York from the clutches of gangs. When he discovers that the Mishima Zaibatsu was responsible for the war that tore the city apart half a century ago, he decides to participate in The King of Iron Fist Tournament with the sole purpose of shutting them down. When Heihachi Mishima, the head of the Mishima Zaibatsu, suddenly disappears, G Corp takes advantage of this situation and overthrows the Mishima Zaibatsu. G Corp continues its invasion, and soon the whole world is ruled by its iron fist. After learning that Heihachi's son, Kazuya Mishima, is the leader of G Corp, Leroy and his dog, Sugar, know what they must do to restore peace to the world."
+  "description": [
+    "Leroy Smith is an aggressive fighter defined by his stance mix-ups, parries, and lightning fast counter hit moves.",
+    "Leroy excels at close range thanks to fast, multi-hit punches called ”chain punches”. These lie at the heart of his pressure game. Chain Punch: Stem (1+2,1+2,1) is a hit confirmable Heat Engager, and Admonishment Whirl (df+1,1+2), is a strong mid poke. These moves leave Leroy in an almost neutral situation on block, maintaining many options afterwards. Chain Punch: Seed (ss1+2) and Beheading Back Kick (b+3) excel at pressing advantage and maintaining momentum with plus frames.",
+    "Leroy's parry; Twin Dragon Gate (b+2), parries high and mid strikes, including some typically unparryable moves - knee strikes, jumping attacks, etc. Leroy's sabaki (db+1+2) is a Heat Engager. Combine these parries with Chain Punch: Sheath (1,1,1+2,1) and Outcast Arrow (b+1+2) - two fast counter hit moves - to condition the opponent to block. Capitalise with the mix-up lows: Twin Snake Strike (d+3,2) and Amputation Kick (db+3), which lead into Hermit stance mix-ups. In stance, dissuade counter attacks with Chain Punch: Root (1+2,1), another hit confirmable Heat Engager, and mix it up with low attacks.",
+    "Whilst dominating up close, Leroy's gap closing attacks are lacking. Patient opponents can make Leroy struggle to obtain momentum and force him to gamble. Respond by combining movement with space control attacks such as Chanhui Zhang (d+1+2) to create a solid neutral presence and chances to whiff punish. Additionally, Sacrum Severance (f,F+4), while a tad unrewarding, can be used to approach safely. This alleviates Leroy's flaw of approaching somewhat and helps him get up close and personal.",
+    "Armed with powerful parries that are uniquely combined with strong mix-ups and counter hits, any foe of this Wing Chun master will get more than their feelings hurt!"
+  ],
+  "strengths": [
+    "Fast Counter Hits: Leroy has both a CH jab string, a CH df+1 string and a very strong i14 CH mid string. He also has an i12 mid CH launcher and a safe i13 CH high.",
+    "Strong Pokes: Chain punches are powerful poking strings as Leroy recovers quickly enough on block to maintain many options, such as sidestepping. 1+2,1+2,1 is especially rewarding and hit-confirmable.",
+    "Turn Stealer: Armed with multiple parries, a Heat Engager sabaki, and a high-crushing CH low, Leroy is quite risky to challenge.",
+    "Stance Mix-ups: Hermit stance provides many powerful mix-up options including a knockdown low and a hit-confirmable Heat Engager.",
+    "Grandmaster of Chip: Leroy deals high chip damage, most notably from ss1+2 and 1+2,1+2,1 Heat Dash.",
+    "Combo Master: Leroy's combo damage is quite high, both with and without resources to spend. Additionally, his df+2,1+2 launcher turns the opponent to directly face him, making his sidewalk punishment especially strong. For wall combos, Leroy's HRM f+4 spike into a grounded follow-up allows for great okizeme and damage.",
+    "My Last Resort: Leroy's one-use per match cane gives him access to a long range, high damage launcher that's both safe on block and doesn't extend Leroy's hurtbox. Leroy also gains access to a -14 on block low that tornado launches; a very powerful low.",
+    "Fashion: He's called the Grandmaster of Drip for a reason."
+  ],
+  "weaknesses": [
+    "Unrewarding Mix-up Lows: The purpose of his mix-up lows in normal stance is mostly to enter Hermit stance for more threatening mix-ups. This two-step gameplan makes multiple correct guesses required when mixing the opponent up.",
+    "Weak Power Mids: His power mids are underwhelming as they are either quite slow or disproportionately risky for their reward. Even when the opponent is conditioned to duck, Leroy needs to take big risks when mixing them up or settle for safe pokes. Also lacks a fast, safe mid wall-splat.",
+    "Old Man Movement: His generic movement options are on the weaker side, and he struggles to approach as his approach attacks are mediocre at best. He's quite reliant on turn-stealing as a result.",
+    "Please Press Into Me: Struggles against players who mix up their offensive timing, as his reversals are heavily punishable if baited."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/leroy-smith",
+    "wavu": "https://wavu.wiki/t/Leroy",
+    "fandom": "https://tekken.fandom.com/wiki/Leroy_Smith",
+    "discord": "https://discord.com/invite/ACeTa8x",
+    "youtube movelist": "https://www.youtube.com/watch?v=V5ajXFw1LBk"
+  }
 }

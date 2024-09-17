@@ -3,5 +3,27 @@
   "tagline": "Silent Assassin",
   "country": "Ireland",
   "style": "Assassination Arts",
-  "description": "Nina Williams is a master of the lethal arts and a professional killer known by the alias of \"Silent Assassin.\" She was employed by the Mishima Zaibatsu and acted as commander of the special forces unit, \"Tekken Force.\" However, after failing the mission to retrieve Jin Kazama, she left the unit to work as a freelance assassin. Some time later, Kazuya Mishima takes the lead in G Corporation's attempts at world domination. Kazuya recruits Nina as his direct subordinate and grants her the title of commander of the G Corporation forces."
+  "description": [
+    "Nina is the queen of rushdown, with arguably the most suffocating poke pressure in the game. She has relentless block pressure from her many fast poke strings and sidestep cancels, and can make it unwise for her opponents to challenge with her fast counterhit tools. Once she gets her opponents in the air, she can very easily carry them to the wall with her Butterfly Loops, where she boasts a strong wall game. She has a complete set of throws that can open up defensive opponents as well as erase their grey health. Heat makes her poke pressure even more terrifying, with high chip damage if you just block, and the threat of an extremely fast i11 Heat Smash if you decide to challenge. On defense, she is surprisingly evasive through her Hayashida Step, which, along with a strong power crush and a reversal, means she can punish aggressive opponents hard.",
+    "Nina's poke pressure is only effective up close, and she can struggle to maintain her preferred range. Being based around primarily pokes, she lacks relatively safe, chunky mixups, and has to take risks to make a comeback. Executing her gameplan to its maximum potential places high execution demands on her pilot, with many essential techniques requiring high precision to pull off."
+  ],
+  "strengths": [
+    "Wall Carry and Damage Galore: A trademark of Nina, she has some of the best wall carry in the game, accentuated even more by the aerial tailspin mechanic, and her gunshot strings being able to trigger wall hazards. Her punish game is also quite consistent, having a good option against nearly every tricky-to-punish move in the game.",
+    "Queen of Pressure: Many of Nina's moves can be cancelled into either her crouch dash, backsway, or sidestep, or a combination of all 3. This leaves her with few openings for opponents to retaliate, and one wrong read can give Nina an opportunity to deal even more damage.",
+    "Tracking Monster: If Nina's pressure wasn't hard enough to deal with, the fact that she has several good homing moves makes her even more dangerous. Notable is b+2,2, which is the fastest homing move in the game at i12 and can be CH confirmed into the final hit for 50 damage, and db+2, which can CH launch and is her aerial tailspin move of choice.",
+    "Tricky Defense: Hayashida Step gives Nina some of the best backward movement in the game, making it quite tough to lock her down in neutral. Any misstep while approaching her can be massively punished by qcb+4, db+3+4, or b+1+4, and even when on the backfoot, she has Blonde Bomb, a Power Crush Heat Engager, as well as a reversal and several high crushing panic options.",
+    "Still Plays Tekken 7: Unlike most characters, Nina retains many fast counter-hit tools, including an i11 magic 4,4 (which full combos certain characters), the aforementioned b+2,2,2, her i13 f+2,1 strings, and the i14 f+3 and b+4, which still guarantee full combos.",
+    "Strong in Heat: With Heat comes chip damage, and Nina's poking game allows her to rack up serious gray life damage. She also has by far the most options to delete gray life, with several throws and a very simple move in b+1+2 that also gets enhanced during Heat."
+  ],
+  "weaknesses": [
+    "Closing the Gap: Nina is most effective at close range. While she does have long range moves, they do not necessarily help her get in, making it tough for her to make comebacks should she fall behind.",
+    "High Demanding Execution: While it isn't absolutely necessary to learn Butterfly loops anymore, Nina still takes quite a high APM to use effectively, and some dedication to learn all the intricacies of her moveset."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/nina-williams",
+    "wavu": "https://wavu.wiki/t/Nina",
+    "fandom": "https://tekken.fandom.com/wiki/Nina_Williams",
+    "discord": "https://discord.com/invite/sKY7Yeh",
+    "youtube movelist": "https://www.youtube.com/watch?v=bF0ejtK-FaQ"
+  }
 }

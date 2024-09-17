@@ -6,11 +6,11 @@ import { variants } from "./Text.variants"
 
 export const Text = forwardRef(
   <T extends React.ElementType = "span">(
-    { as, asChild, className, shade, weight, ...props }: TextProps<T>,
+    { as, asChild, className, italic, ...props }: TextProps<T>,
     ref: React.Ref<HTMLSpanElement>
   ) => {
     const Component = asChild ? Slot : as ?? "span"
-    const classNames = cn(variants({ shade, weight, className }))
+    const classNames = cn(variants({ italic, className }))
 
     return <Component ref={ref} className={classNames} {...props} />
   }

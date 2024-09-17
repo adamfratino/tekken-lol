@@ -1,8 +1,9 @@
+import type { CharacterPageProps } from "@/data/types"
 import { fetchCharacterFrames, fetchCharacterStances } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
-import { MoveTable, CharacterSearch, MovesSearch } from "app/components"
 import { getCharacterLabel } from "@/utils"
-import type { CharacterPageProps } from "../types"
+
+import { MovesTable, CharacterSearch, MovesSearch } from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -48,7 +49,7 @@ export default async function CharacterHeatPage({
         const filteredFrames = filterFrames(stance)
 
         return (
-          <MoveTable
+          <MovesTable
             key={stance}
             character={character}
             moves={filteredFrames}

@@ -1,8 +1,9 @@
-import { fetchCharacterFrames, fetchCharacterPunishers } from "@/data/utils"
+import type { CharacterPageProps } from "@/data/types"
 import { CHARACTERS } from "@/data/variables"
+import { fetchCharacterFrames, fetchCharacterPunishers } from "@/data/utils"
 import { getCharacterLabel } from "@/utils"
-import { MoveTable, CharacterSearch, MovesSearch } from "app/components"
-import type { CharacterPageProps } from "../types"
+
+import { MovesTable, CharacterSearch, MovesSearch } from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -38,12 +39,12 @@ export default async function CharacterPunishersPage({
 
   return (
     <div>
-      <MoveTable
+      <MovesTable
         title="Standing Punishers"
         character={character}
         moves={standingPunishers}
       />
-      <MoveTable
+      <MovesTable
         title="Crouching Punishers"
         character={character}
         moves={crouchingPunishers}

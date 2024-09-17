@@ -3,5 +3,27 @@
   "tagline": "Silver-Haired Demon",
   "country": "Japan",
   "style": "Martial Arts",
-  "description": "Raised in a harsh environment as Heihachi Mishima's adopted son, Lee Chaolan now manages the global humanoid manufacturer, Violet Systems. Lee carries with him a bitter hatred of both Heihachi and Kazuya Mishima, and when he first meets Lars Alexandersson—a man who stands in opposition of the Mishima Zaibatsu—he intends to use him as a pawn for his own revenge. However, Lee comes to sympathize with Lars's honest and excellent desire for peace. With the sincere intention of supporting Lars's plan, Lee teams up with him to form the rebel army \"Yggdrasil\" and begins working as a staff officer. Meanwhile, Kazuya leads G Corp and shows no sign of slowing his invasions, despite G Corp's defeat of the Mishima Zaibatsu. The world is being brought to its knees under a brutal wave of military rule. But Lee knows his adopted brother Kazuya inside and out, and he's started to fully use his knowledge and vast resources to develop a variety of weapons. With the help of the ingenious scientist Dr. Bosconovitch, he constructs the enormous flying boat, \"Víðópnir,\" in addition to developing mobile warfare units using motorbikes. With these, the rebel army is able to start pushing back against G Corp in every region. Lee also invests in a next-gen battle suit perfect for close-range combat that will act as a trump card against the enemy's impenetrable armor. It is called the Violet Suit, a marvelous creation that utilizes sophisticated technologies and is equipped with numerous features that reflect Lee's own aesthetics. Lee struts onto the battlefield in this new armor, ready to take on whatever may come."
+  "description": [
+    "Lee is a stylish, counterhit-focused character who rewards mastery. He has counterhits for days, and can fish for them while representing any kind of playstyle, whether poking or keepout. Lee boasts the highest number of just frames in the game, including the strongest i10 punisher in the game in Acid Rain. Along with high combo damage and wall carry, Lee truly rewards excellence, and time spent mastering the character.",
+    "Outside of enforcing the slide mixup, Lee can struggle to open up patient opponents, since his lows are risky or low reward. His demanding just frames require practice, and can be risky to get wrong. His Heat mode is quite underwhelming, offering up nothing more than making his just frames a bit easier."
+  ],
+  "strengths": [
+    "Pressure: Lee boasts a plethora of powerful CH options as well as an oppressive WR3,4 and strong mid checks to keep opponents at bay.",
+    "Amazing Wall Carry: Lee's loopable combo strings, particularly with b+2, have excellent potential for carrying opponents to the wall.",
+    "Keepout: Tools such as b4 & ff3 allow Lee to keep the opponent outside of their perfect range.",
+    "Full Crouch Mixups: In crouch, Lee has a multitude of options to mix the opponent up, such as the safe WS4 or the quick FC.df4 for a low risk mixup, or using his slide as well as WS2,3 for a more marvelous, but risky mixup.",
+    "Defense and Punishment: Lee boasts the highest damage i10 punisher in the game. Many of his moves, including his Heat Engagers, are well suited to getting out of pressure."
+  ],
+  "weaknesses": [
+    "Lows: Lee's lows are heavily poke oriented tools that tend to have poor advantage on hit in exchange for obnoxious range, visibility, and different punish requirements for mind games. Some lows require excellent spacing to be arguably safe. Though his b+3,3 is a good advantageous low string, it is launch punishable.",
+    "Poor Heat: Lee's Heat is very underwhelming, with its only unique attribute being a more lenient window for his Just Frames. This benefit is negligible for players that can already land these consistently. His Heat Smash also does relatively low damage and is launch punishable.",
+    "Execution: Lee is designed to reward execution heavy players. Though he may not have the hardest techniques in the game, full combos from CH d3 or CH 4,4,4 are tight, as well as his Just Frames demanding a bit more execution on things that other characters get for free—and in some cases, missing the timing can lead to you getting punished."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/lee-chaolan",
+    "wavu": "https://wavu.wiki/t/Lee",
+    "fandom": "https://tekken.fandom.com/wiki/Lee_Chaolan",
+    "discord": "https://discord.com/invite/7Dypwgh",
+    "youtube movelist": "https://www.youtube.com/watch?v=jw3f_NZt3S8"
+  }
 }

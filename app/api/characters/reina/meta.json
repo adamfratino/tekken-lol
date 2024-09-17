@@ -3,5 +3,27 @@
   "tagline": "Purple Lightning",
   "country": "Unknown",
   "style": "Unknown",
-  "description": "Meet Reina, the mysterious fighter who uses lightning-quick moves to overwhelm anyone who dares face her. Other than the fact she's a student of the Mishima Polytechnical School, everything else about her is shrouded in mystery"
+  "description": [
+    "Reina is an aggressive, rushdown-oriented Mishima who can quickly overwhelm an opponent's defense with her fast pokes and rapid transitions into mix-up stances. She boasts a surprising number of evasive moves, stances and parries to keep her turn, and has a strong punishment kit - either leading into more mixups or Heat. Heat amplifies all aspects of Reina's game, giving her scarier pressure and deadlier mixups. Her combo damage is also nothing to scoff at, and she can easily carry you to the wall on all but the largest stages.",
+    "Reina is a deep character with something for players at all levels of skill. She is very approachable for a Mishima and can form a complete game plan around a small set of easy but effective moves. For advanced players, she offers challenging execution on tools like the wave dash and EWGF, multiple rewarding hit-confirms and just frames, and a wide, intricate move pool that can be brought to bear in creating a multi-layered offense.",
+    "Reina inherits the classic Mishima weakness to SSL, and she suffers from linearity on many of her pokes. While her high and mid mixup options are excellent, she pays dearly if her opponent guesses right on her lows, since they're almost universally very punishable on block. Some of her tools demand good execution, which can make it exhausting for the player piloting her to maintain."
+  ],
+  "strengths": [
+    "Mishima: Reina's heritage gives her access to classic techniques like the wave dash, Electric Wind God Fist, and hellsweep, making her highly versatile.",
+    "Stance Trickster: Reina can weave through multiple stances from her moves and also from each other. She can frequently and persistently overwhelm her opponent's mental stack.",
+    "Fast Approach: Reina can approach from full-screen (f,F+2), from the air (3+4) or by rolling on the ground (f+3+4). Basically, if she wants to get in your space, she will.",
+    "Versatile: Reina has a tool for everything. She can play both offense or defense, rushdown or keepout, solid or wild."
+  ],
+  "weaknesses": [
+    "Committal Lows: Most of Reina's lows are launch punishable on block, and their reward does not match the risk.",
+    "Linear: Most of Reina's toolkit lacks tracking, and it can get complicated to maintain pressure against an opponent with good lateral movement.",
+    "Demanding: Reina is a very approachable Mishima, but extracting the maximum out of her requires good execution."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/reina",
+    "wavu": "https://wavu.wiki/t/Reina",
+    "fandom": "https://tekken.fandom.com/wiki/Reina",
+    "discord": "https://discord.com/invite/Quuqdm4Sc9",
+    "youtube movelist": "https://www.youtube.com/watch?v=4hmg_XvCEA4"
+  }
 }

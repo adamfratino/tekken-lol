@@ -3,5 +3,59 @@
   "tagline": "God Fist",
   "country": "China",
   "style": "Taijiquan",
-  "description": "Feng Wei is a master of Taijiquan who, guided by the teachings of the God Fist scrolls, aims to become the perfect warrior who transcends all — the Dragon God. However, at the most recent King of Iron Fist Tournament, Feng suffered a crushing defeat at the hands of Wing Chun master Leroy Smith. \"You will never reach the height of true martial arts with that heartless technique of yours. You are unworthy of even being compared to your master.\" The master to which Leroy refers is Wu Zihao, a martial artist who was known as the \"God Fist\" and under whose guidance Feng trained. In contrast to Feng, who believes that true martial arts reside in pure and unyielding power, his master Wu Zihao had always preached that it is essential for one's heart to be in line with one's technique. Whose belief holds the truth? Feng thought he had found the answer on the stormy night he killed his own master...yet his fight with Leroy seemed to say otherwise. (Wing Chun as a martial art is nearly invulnerable. Users turn their opponents' own power against them to control them. Even still, if one can just break through their defenses with overwhelming power, then...!) Feng uses his rage as fuel for his training, and travels to every corner of the globe, destroying masters who excel in self-defense as he grows even more powerful. Six months pass, and Nina Williams visits Feng with a proposal: she promises him that if he lends his support to G Corp, they will provide him with an opportunity to avenge himself against Leroy. Although he knows that such an offer means he will become an accomplice to G Corp, Feng gives his assent. Feng scoffs at the ridiculous concept of \"heart\" that his dead master and Leroy value so much, continuing down the path he must take to become the Dragon God."
+  "description": [
+    "Feng Wei is, in a word, unconventional. Whatever he lacks in traditional Tekken tools, he makes up for it with incredible evasion, a full kit of very frustrating lows, and a great suite of back turn tools, including a 50/50 coin-flip throw mixup. His crouch dash (qcf or d,df) gives him the ability to make deep approaches by canceling into his safe ws1 (d,df,n,1) and also gives him access to his qcf+1+2 and qcf+1. The former is a +0 on block headbutt that forces the opponent into crouch. The latter is a low, unparryable shoulder. Both wreak havoc on counter hit.",
+    "His stances Deceptive Step (b+3+4, A.K.A. \"back Kenpo\" or \"KNP\") and Shifting Clouds (f+3+4, A.K.A. \"forward Kenpo\" or \"STC\") can both be used to either sway out of an opponents threat range or move into it to apply pressure. In both, Feng has a plentiful selection of threatening pokes and mixups.",
+    "Feng requires a lot of raw conditioning to be done before he can really open up his evasive, tricky gameplan. After testing the waters with his snake dash (crouch dash chain) and stances, he'll create opportunities to land big hits with moves like b+1+2 in no time."
+  ],
+  "strengths": [
+    "Strong neutral control with great jabs, mid pokes (b+4, df+1) and low pokes (d+2, db+4, FC.df+4,1)",
+    "Highly evasive with moves like uf+2 and b,f+1, and stances like Deceptive Step"
+  ],
+  "weaknesses": [
+    "Weak to sidestep/sidewalk left",
+    "Wonky range and hitbox on his hopkick and ws3 can make it hard to launch punish some specific moves",
+    "The oldest 27 year old man of all time"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/feng-wei",
+    "wavu": "https://wavu.wiki/t/Feng",
+    "fandom": "https://tekken.fandom.com/wiki/Feng_Wei",
+    "discord": "https://discord.gg/nd4j595",
+    "youtube movelist": "https://www.youtube.com/watch?v=fm8qcpQggrw"
+  },
+  "strategy": {
+    "midRange": {
+      "f+4": "Good safe keepout tool. Can transition to BT while still being easy to confirm into a combo.",
+      "b+1+2": "Shoulder. Your i13 punish that works very well as a fast whiff punisher due its reach. The most common way you'll be entering Heat.",
+      "f,F+2": "Big safe mid Heat Engager. Can be hard to whiff punish because he takes a step back during the recovery frames.",
+      "df+4,3": "Nice mid check with a natural high extension. Careful, because your opponent can duck and punish the 2nd hit.",
+      "db+1": "mid range mid to check if the opponent is ducking or trying to step",
+      "db+3": "Great long range low that's + on hit with a nice reward on CH. While no longer pseudo-homing, it can still be difficult to step around it.",
+      "df+3+4": "Safe homing mid that gives a guaranteed 4~3 on hit.",
+      "b+3+4 (KNP)": "Not a bad idea to just throw this out in the mid-range to see if your opponent whiffed. Read more in the KNP section."
+    },
+    "approach": {
+      "d, d/f~B": "Crouch dashing forward while blocking highs and mids and having access to WS moves",
+      "WS1": "fantastic approach tool",
+      "WS1,3": "Delayable follow up to dissuade mashing after ws1. It is a high, but giving your opponent the idea to duck can be used in your favor.",
+      "QCF+1": "Unparryable low that CH launches. Slower than FC.df+4 but great to annoy your opponent with in combination.",
+      "f+3": "Long mid that can get you into range. Follow-ups in f+3,2 and f+3,4 can make the opponent hesitate. Try not to do f+3,4 on block as it's heavily punishable.",
+      "WR3": "Typical while running 3"
+    },
+    "closeRange": {
+      "1": "The standing jab is the basis of every strategy in Tekken. Use it to check if strings are safe, to check for gaps, and to start your pressure.",
+      "1,3": "Safe jab string that leaves you at -5",
+      "1,1": "Unsafe jab string that can net you a big CH with the follow-up. Use if your opponent is mashing after a single jab.",
+      "b+1": "i10 high that gives you a guaranteed b+1+2 on CH. Use to dissuade your opponent from mashing. Not bad risk-reward as it's only -12 on block.",
+      "df+1": "Not your typical df+1, but very good as it's -0 on block. Df+1 > b+1 is a classic CH setup.",
+      "df+3": "A fast and safe mid that instantly Tornados on hit. Use if you want a safe option to mix-up your opponent with.",
+      "d+2": "A good high-crushing low that leaves you in FC.",
+      "d+4": "An advancing low that leaves you right in their face at 0 on hit. An underrated tool.",
+      "b+4": "Very fast short range mid to check if the opponent is ducking or trying to step",
+      "b+3": "Mom said it's my turn to be plus.",
+      "uf+2": "Evasive mid that takes a big step to Feng's left. Can be done from crouch due to the U input, so it can get you out of a lot of situations.",
+      "QCF+1+2": "Now +0 on block instead of plus, but still forces crouch. Still a good tool to limit the opponent's options if they give you the space to do so."
+    }
+  }
 }

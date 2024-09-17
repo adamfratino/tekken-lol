@@ -3,5 +3,33 @@
   "tagline": "Mechanized Space Ninja",
   "country": "None (Formely Japan)",
   "style": "Advanced Manji Ninjutsu",
-  "description": "Yoshimitsu is an inheritor of the Manji Ninjutsu and current head of the Manji Clan, a group of chivalrous thieves active since the Sengoku period. Six months ago, Yoshimitsu accepted a request from an investor of the refugee relief project. The task was to find archives that contained information on the past doings of the Mishima Zaibatsu. After analyzing information that his clan members had gathered, Yoshimitsu is led to an old, underground cave. Legend has it that the Mishimas once used it for exorcisms. He scans the area using the technology built into his reinforced armor and continues down a dilapidated path. In the recesses of the cave, Yoshimitsu discovers the archives he has been looking for. Just then, the faint demonic aura that had been surrounding the archives resonates with Yoshimitsu's cursed blade and causes a wave of evil to surge forth. The Cursed Blade Yoshimitsu, passed down between heads of the Manji Clan for generations, is corrupted with an unquenchable bloodlust that eventually drives its wielder insane. In the blink of an eye, the blade infiltrates Yoshimitsu's mind and amplifies his desire for destruction. Yoshimitsu quickly stabs himself with the blade so he can feed its thirst, yet the blade becomes even more uncontrollable. After he returns, the clan elders teach Yoshimitsu how to suppress the cursed sword's malevolent will, even if only barely. Still, his cursed blade has called out to him ever since that day. \"If the owner of the voice I hear is the source of the sword's uncontrollable nature, then I will cut it off at its root.\" Yoshimitsu's ally, Dr. Bosconovitch, provides him with the latest reinforced armor before sending him off on his journey out of Secret Manji Village to follow wherever his blade leads him."
+  "description": [
+    "Yoshimitsu is an extremely unorthodox, stance-based keepout character. His moves are just plain weird - a permanent stance with a hitbox around his butt, a highly evasive spin that hurts him, an i8 parry/attack that can punish moves that would ordinarily be safe, and the ability to commit seppuku. His movelist is a double edged sword - confusing and unintuitive for the straight-laced, and an infinite color palette for the clinically insane.",
+    "Yoshimitsu's tools allow him to dictate the pace of the match at will. His Flash (1+4) acts as an i8 parry/attack that allows him to punish overt aggression, making it difficult to pressure him. A cautious opponent is open to being launched with his unblockable low sword sweep, or mixed up with his myriad stance options. Aggressive approach can be further stuffed with his evasive side spin or strong keepout options. Plenty of Yoshimitsu's tools allow him to toy with his opponent to setup unique or weird situations, forcing the opponent to constantly respond to whatever he's doing.",
+    "Yoshimitsu's is difficult to play straightforwardly due to his poor generics, lows and punishment, necessitating leaning into his unconventional tools. They can be difficult to take advantage of effectively, requiring in-depth match-up knowledge and situational awareness."
+  ],
+  "strengths": [
+    "Unique Punishment. Yoshimitsu can launch punish or interrupt a collection of usually-safe moves using Flash, Spinning Evade or Kincho parry. Flash is so fast that it can even punish some strings that are safe on block or interrupt them outright.",
+    "Special Movement. Meditation backdash cancel and Spinning Evade are unusually evasive. Many of Yoshi's attacks also manuver him about the screen, making it difficult to keep track of him.",
+    "Irritating Keepout. Meditation stance cancel, long-range mids with pushback, and high-crushing moves make it difficult for opponents to just dash in.",
+    "Stance Barrage: Yoshi's stances give him strong combo or mixup opportunities and are very easy to get into with normal strings. Special note goes to NSS, which results powered up attacks that heal him.",
+    "Just Plain Weird: Yoshimitu's toolkit is so unconventional that it becomes a huge boon if mastered. Even the most dedicated of opponents can be confused by his wide range of strange stances and strong defensive tools.",
+    "Legacy Character. Having appeared in every mainline game, his movelist has become massive, allowing for greater player expression and experimentation.",
+    "Can commit seppuku."
+  ],
+  "weaknesses": [
+    "Unique Punishment. Yoshimitsu requires in-depth match-up knowledge to use tools like Flash, Spinning Evade and Kincho parry to effect.",
+    "Poor Fundamentals. Most pokes either end his turn on block, or don't give enough advantage on hit. No knockdown on his WS punishment. No Down Jab in 1SS.",
+    "Weak Movement. Single backdash distance and sidestep evasion are poor, forcing him to rely on the Spinning Evade and Meditation cancel.",
+    "Subpar Lows. Some of his lows are minus on hit, while the plus ones are either reactable or launch punishable on block.",
+    "Legacy Character. Having appeared in every mainline game, his movelist has become massive, making him overwhelming for newer players to pick up.",
+    "Can commit seppuku."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/yoshimitsu",
+    "wavu": "https://wavu.wiki/t/Yoshimitsu",
+    "fandom": "https://tekken.fandom.com/wiki/Yoshimitsu",
+    "discord": "https://discord.com/invite/PNwfjk8u6y",
+    "youtube movelist": "https://www.youtube.com/watch?v=63OTfprgoH8"
+  }
 }

@@ -3,5 +3,31 @@
   "tagline": "Banisher of Demons",
   "country": "Italy",
   "style": "Sirius Exorcist Arts",
-  "description": "Leader of the Sirius Marksmen, a group of exorcists who had banished evil in various forms since ancient times, Claudio Serafino was one of the most powerful exorcists in his organization. After learning from Heihachi Mishima six months earlier of Jin Kazama and Kazuya Mishima, and the power they command over the devil gene , Claudio decided to cooperate with Heihachi despite considerable opposition from within his own organization. Also, Claudio learned of the existence of Ling Xiaoyu who was searching for Jin. He decided to get close to Xiaoyu in order to use her in his mission to locate and defeat Jin. Born in to the house of the \"purifying blue flame\", Claudio took pride in his lineage, and was determined to defeat Devil at all cost. However, Claudio lost all credibility due to a certain incident in which Heihachi betrayed him, and disolved their cooperative alliance. Many of the organization's members defected to save themselves, causing Claudio great distress. In this difficult time, Xiaoyu and her undying trust in Jin Kazama left a strong impression on him. Claudio, embarrassed by his actions up to that point, confessed everything to Xiaoyu and apologized. He promised to aid her in her quest to find Jin. However, if Jin were overcome by the influence of the Devil gene and betrayed Xiaoyu, Claudio would have no reservations about what he must do... Determined to do what he must, Claudio released one of the seals on his right arm. It was the forbidden exorcism arts that had been forbidden by his those before him, as its power consumes the lifeforce of its practitioner"
+  "description": [
+    "Claudio, the flamboyant Italian exorcist, is a simple, straightforward and no-nonsense character who relies on controlling space in order to lock his opponents down, allowing him to setup mixups or pressure. He possesses a limited but effective set of tools to implement this gameplan, allowing the player to quickly achieve character fluency with him and focus on developing their fundamentals and match-up knowledge. In Heat, his mixups become deadlier, with a low Heat Smash and a safe mid launcher.",
+    "Claudio can struggle to deal with patient opponents. His low mixup options are generally low damage and risky, making it painful for him to have them blocked. He must condition his opponents that much more with mids to ensure they aren't tempted to duck."
+  ],
+  "strengths": [
+    "Strong keepout and whiff punishment tools",
+    "Easy to learn and effective gameplan",
+    "Simple but strong wall game",
+    "Low Heat Smash",
+    "Strong mids, especially in Starburst"
+  ],
+  "weaknesses": [
+    "Lows are rather risky outside of ss4",
+    "No notable mixups or throw game",
+    "Rather weak at close range",
+    "Below-average combo damage",
+    "Weak CH game",
+    "Timing is most important at Higher Levels",
+    "Linear outside of homing moves"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/claudio-serafino",
+    "wavu": "https://wavu.wiki/t/Claudio",
+    "fandom": "https://tekken.fandom.com/wiki/Claudio_Serafino",
+    "discord": "https://discord.gg/eCPT5mv",
+    "youtube movelist": "https://www.youtube.com/watch?v=qD3TUD81v_0"
+  }
 }

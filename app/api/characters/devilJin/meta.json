@@ -3,5 +3,23 @@
   "tagline": "Black Wings of Ruin",
   "country": "None",
   "style": "Unknown",
-  "description": "Devil Jin is another form of Jin Kazama—one that has lost all reasoning due to the devil blood that controls his mind. With the way he glides through the air on jet-black wings, \"devil\" is the perfect word to describe his appearance and abilities that lie beyond human capabilities"
+  "description": [
+    "Devil Jin is a versatile, mixup-oriented Mishima-style character. He has good tools to approach, pressure, mixup and keep out the opponent, a complete throw game, good block and whiff punishment tools and great combo damage. He has an answer for almost every situation, and it is up to the enterprising Devil Jin player to maximize his potential.",
+    "Devil Jin's only real weakness are his poor generics - his jab has poor range, and his df+1 is quite bad on block. Otherwise, his weakness lies in his unforgiving nature; he requires good execution to make use of his key tools, the implementation of a complex game plan and high character knowledge to optimize him effectively."
+  ],
+  "strengths": [
+    "Versatile and strong, with access to effective Mishima tools, stance mixups, punishment and pressure",
+    "His hellsweep combos on hit"
+  ],
+  "weaknesses": [
+    "Poor generic tools with less range or worse frames compared to the rest of the cast",
+    "Lacks a power low outside of hellsweep, which can make him predictable and risky"
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/devil-jin",
+    "wavu": "https://wavu.wiki/t/Devil_Jin",
+    "fandom": "https://tekken.fandom.com/wiki/Devil_Jin",
+    "discord": "https://discord.gg/j2ZKVnk",
+    "youtube movelist": "https://www.youtube.com/watch?v=P6cUa33xXf4"
+  }
 }

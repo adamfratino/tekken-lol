@@ -3,5 +3,27 @@
   "tagline": "Seeker of Truth",
   "country": "Germany",
   "style": "Bajiquan",
-  "description": "Leo is a Bajiquan user born to Niklas Kliesen, a world-renowned archaeologist, and Emma Kliesen, an authority in genetic research. With a father versed in martial arts and an inquisitively minded mother, Leo uses these inherited skills to set off on a hunt for the truth behind the mysterious circumstances of Emma Kliesen's death one year prior. Risking life and limb, Leo obtains confidential data from G Corp that Emma Kliesen had been researching the devil gene there. From this data, Leo also learns that Kazuya Mishima had sent out orders that key researchers who were no longer needed were to be \"taken care of.\" Around the same time, the Mishima Zaibatsu announces that Kazuya Mishima, the mastermind behind G Corp, is himself a devil. In this moment, the puzzle pieces fall into place for Leo. Kazuya must have initiated the research so he could gain control over the devil's power, and then killed Leo's mother when she was no longer of use. Full of rage, Leo is on the verge of a breakdown. But suddenly, the words of Leo's father, who had gone missing many years ago, echo in Leo's ears. \"Listen, Leo. Like a lost coin, the truth is only found when your heart is calm and open.\" Yes. Just relax. That's all it takes. Spurred by these words, Leo sets out on another journey in search of more concrete answers."
+  "description": [
+    "Leo is an all-rounder with strong fundamental tools. Leo's primary focuses are wall pressure, through mixups involving moves like their hellsweep db+4 and KNK stance moves, as well as whiff punishing through moves like df+2. Leo's damage at the wall is extremely high, and they can take their opponent to the wall easily. Leo also has great block and while standing punishment with a decent 1 jab and ws4, a safe-on-block i11 mid with a Heat Engager followup. However, Leo has a fairly weak CH game, with few moves providing great reward, and their low game tends to falter outside of close range.",
+    "Leo's new install mechanic, Lightning Glare, is charged after several key moves and strings, and always on during Heat. It provides them with an additional burst of damage in their most common strings, including the hit-confirmable f+2,4,LTG.3 and b+3,1,LTG.2 as well as the power low db+4,1,LTG.1+2."
+  ],
+  "strengths": [
+    "Jack Of All Trades, Master Of A Few. Leo's basic tools range from decent to amazing, allowing them to rely on fundamentals in most scenarios.",
+    "Whiff Punish Machine. Leo's df+2 launcher reaches from range 2.5, allowing them to easily whiff punish a lot of moves. Also, f,F+2 reaches from range 3.75, leading to insane reward at the wall.",
+    "Wall Monster. Leo gets great mixup potential at the wall, where a lot of good reward moves turn into great reward.",
+    "Stances. Leo's BOK and KNK stances give great pressure, with a lot of moves that lead into them being at least slightly plus, and decently fast moves out of stance can make the opponent think twice before they try to punish.",
+    "Sky's The Limit. Leo's qcf crouch dash, an already great mobility tool, can be cancelled, leading into amazing wall carry and mobility with good execution.",
+    "Heat Smash. Leo's standing Heat Smash hits from range 2.5, is i16, jails into the +8 on block finisher, and can be cancelled into crouch dash by holding df, making you +16. If the opponent throws out a stubby move, you get a free chunk of damage, and on block, you get a free mixup."
+  ],
+  "weaknesses": [
+    "Weak Low Pokes. Leo's lows are below average outside of mixup scenarios, being either stubby or slow.",
+    "Linear. Some of Leo's good moves have poor tracking, making them susceptible to sidestep/walk."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/leo",
+    "wavu": "https://wavu.wiki/t/Leo",
+    "fandom": "https://tekken.fandom.com/wiki/Leo_Kliesen",
+    "discord": "https://discord.com/invite/Ya4XKtf",
+    "youtube movelist": "https://www.youtube.com/watch?v=67vnyuiDP34"
+  }
 }

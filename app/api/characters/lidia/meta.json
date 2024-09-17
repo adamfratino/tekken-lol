@@ -4,15 +4,28 @@
   "country": "Poland",
   "style": "Traditional Karate",
   "description": [
-    "Lidia Sobieska is not only a world-class karate champion, but also one of the political world's most passionate foodies. This has garnered her popularity from the people of Poland, leading her to be known as the \"Warrior Prime Minister.\"",
-    "Lidia lost her father when she was a small girl after he was killed in a terrorist attack targeting her grandfather, the Prime Minister of Poland at the time. Caught in the explosion, she suffered injury herself, resulting in the scar over her left eye.",
-    "Since that fateful day, she has refused to bend a knee to unjust power, and has been especially critical of the Mishima Zaibatsu and G Corp. Her brave political stance has earned her the trust of people around the world. However, as one of the leaders of a rapidly changing world, Lidia is painfully aware that good intentions alone are not suffice to protect innocent lives.",
-    "She believes that the people need a symbol of power that embodies justice, but rallying a force capable of opposing the Mishima Zaibatsu and G Corp is no easy task.",
-    "To help her gather intelligence on her opposition inconspicuously, she forms alliances with secret underground organizations such as the Manji Clan, led by Yoshimitsu.",
-    "Among the vast supply of information brought to her, one document in particular catches her attention. It appears that her old acquaintance and family friend, Eddy Gordo, acts as a commanding officer for the Tekken Force. The Eddy of Lidia's past was hardworking and loyal to a fault—something must have happened to make him collaborate with the Tekken Force. So, with the help of Yoshimitsu, Lidia saves Eddy from imminent annihilation.",
-    "Reunited for the first time in ten years, Lidia learns of the sins Eddy has committed while they were apart. Rather than condemn him, she understands that his hand was forced and instead offers him a beacon of hope.",
-    "\"No, we cannot cast aside even those whose hands have been stained by unjust power. Instead, we must act as torches of hope to light the night—to lead them back to the path of righteousness and pave the way to a peaceful world.\"",
-    "So, Eddy and Lidia come together to form a new, ragtag unit of fighters made up of Tekken Force soldiers who could be convinced to change their ways. At the same time, however, a certain entity has been accelerating the spread of chaos and destruction. Having won the war against the Mishima Zaibatsu, G Corp has kicked its armed invasion of other countries into high gear.",
-    "In response, Lidia quickly takes the lead of public opinion and convinces an international congress to adopt sanctions against G Corp, all while expediting the creation of battle strategies and expansion of troops in preparation for an inevitable showdown.,"
-  ]
+    "Lidia is a defensive, stance-based character designed around controlling her opponent to setup her stance mixups. Defensively, she boasts strong punishment and space control, with far-reaching moves that discourage reckless approach. On offense, she sets a blistering pace of rapid pokes and strings that lead into stances. Her stances have limited but well-defined options to handle any situation, and optionally lead into a third stance for better mixups.",
+    "Heat opens up a sizeable addition to Lidia's gameplan. In Heat, she gains access to a unique stance called Heaven and Earth, that sets up a terrifying mixup between an unblockable high and a devastating, safe mid. Entering this stance also increases Lidia's Heaven and Earth level, a unique mechanic that powers up some of Lidia's moves with each level, and carries over to subsequent rounds, making managing it an important part of playing her.",
+    "Lidia is a deep and well-rounded character that offers a lot for players at all levels. Her stances offer easy ways for newcomers to setup basic mixups, while specialists can spend time mastering her many just frames for higher damage. Implementing her defensive gameplan requires getting around her linearity, and overrelying on her offense can quickly backfire due to its high risk-reward."
+  ],
+  "strengths": [
+    "Politically Punishing. Having punishers for almost every frame advantage and situation, Lidia rewards precisely punishing the opposition's poor preference for improperly placed pokes.",
+    "Tenacious Tactics. Stance situations are quickly and easily enforced and can't be escaped.",
+    "Runaway Freight Train. Can win rounds clean in under 10 seconds, even against strong defense.",
+    "Blue Spark Queen. Has the highest number of blue spark inputs in the game.",
+    "Reversal Toolbox. With a strong powercrush and two varieties of parry, Lidia has many options to struggle out of sticky situations."
+  ],
+  "weaknesses": [
+    "High Commitment. Her best mixup options are all launchable on a wrong guess. Stance transitions are not optional.",
+    "Slow Starter. Needs to build up HAE stacks to truly take off. Losing early rounds without getting any stacks makes it difficult to mount a comeback.",
+    "One-Track Mind. The good moves are good. Your opponents' round and fleshy bodies may start looking a lot like nails for your f,F+2's hammer.",
+    "Low Reward CHs. Her counter hit options mostly give a single free hit. The best counter hit launchers are either unsafe or heavily scaled."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/lidia",
+    "wavu": "https://wavu.wiki/t/Lidia",
+    "fandom": "https://tekken.fandom.com/wiki/Lidia_Sobieska",
+    "discord": "https://discord.com/invite/ZyHmEFV",
+    "youtube movelist": "https://www.youtube.com/watch?v=tqsGOCjIEII"
+  }
 }

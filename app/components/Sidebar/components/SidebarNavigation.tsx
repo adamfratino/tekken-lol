@@ -91,13 +91,20 @@ export const SidebarNavigation = ({
   return (
     <AnimatePresence>
       <Stack asChild p={{ base: "sm", lg: "lg" }} gap="sm" w="full">
-        <motion.div
+        <motion.nav
           className="bg-gray-900 relative w-full"
           variants={navLinksVariants}
           initial="hidden"
           animate="visible"
           exit="exit"
         >
+          <Item
+            href={`/${character}`}
+            onClick={onClick}
+            active={pathnameArray.length === 1}
+          >
+            Overview
+          </Item>
           <Item
             href={`/${character}/${PATHS.ALL}`}
             onClick={onClick}
@@ -138,7 +145,7 @@ export const SidebarNavigation = ({
           >
             At the wall
           </Item>
-        </motion.div>
+        </motion.nav>
         {/* <Item>Launchers</Item> */}
       </Stack>
     </AnimatePresence>

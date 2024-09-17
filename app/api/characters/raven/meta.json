@@ -3,5 +3,27 @@
   "tagline": "Shadow Agent",
   "country": "Unknown",
   "style": "Ninjutsu",
-  "description": "Codename: Raven. An agent and ninjutsu master, he is tasked with special ops missions for the UN's independent forces. Raven has engaged in missions all over the world, utilizing his ninjutsu to put a stop to conflicts before they even begin. However, the brutal power struggle between the Mishima Zaibatsu and G Corp threatens to bring the entire globe to its knees, and Raven only sees more chaos on the horizon. To face the challenges that lie ahead, he must continue to push past his limits. With this in mind, Raven sets out to train with his ninjutsu master once more. While the top brass admires Raven's resolve and accepts his request to go train, their approval comes with a condition: they will only cover his absence for half a year. Aiming to maximize his results in a limited time frame, Raven decides to focus on honing the arts he already excels at. Months pass, and he masters a new art, \"Shadow Clone,\" just as he receives orders to return. Thus, Raven leaves the training grounds behind, anticipating the new battle that awaits him."
+  "description": [
+    "Raven is a versatile, well-rounded character with a strong grip over the mid range thanks to an array of solid, tracking pokes and keepout moves. His unique Shadow Sprint is a highly versatile movement-based stance that gives him a variety of approach options and powerful mixups, such as the character-defining iWS2. This synergizes with his pokes and backturned stance, which give him access to strong counter hit tools, unique defensive options, and good mixups. Raven is an unorthodox character to play, but an expressive and rewarding one to master.",
+    "Though boasting high combo damage, Raven suffers in block punishment, with weak early punishment and the lack of a standing i15 launcher, though this is mitigated with the rare ability to launch at i14 from crouch. Weak low pokes means opening up patient players can be risky, and a Raven player must get creative with their offense to safely land mixups."
+  ],
+  "strengths": [
+    "Strong Approach. With a cancellable Shadow Sprint and a Crouch Step, Raven has the means to quickly get close to the opponent and apply his strong 50/50 pressure with a diverse array of lows and mids.",
+    "Defensive Tools. Alternating Smash (b+1+2), Utsusemi Escape (parry, b+1+3/b+2+4) and Sixth Sense (BT parry, f+1+2) are only some of Raven's high-value defensive moves that an opponent must keep in mind before pressing a button.",
+    "High Damage. Raven boasts very decent combo damage and excellent wall carry tools, which can also impose very tricky okizeme situations for the opponent.",
+    "Space Control. With moves such as f,F+3 or f+1+2, Raven excels at whiff punishing and generally dominating at mid-range."
+  ],
+  "weaknesses": [
+    "Poor Punishment. He lacks an i15 punisher, with df+4,4,3 being his only reliable tool for those frames, and df+2 being i16. He can however launch at i14 from a crouching state as compensation.",
+    "Can't Breach Through. His low attacks are either reactable or have poor damage and often leave Raven minus on hit. He also lacks a 2-break throw. It can be difficult to open up defensive or patient players who rely on punishment.",
+    "Weak Plus Frames. The attacks that grant Raven significant and unconditional plus frames on block (b+1; u+3; b+3; b+4,B+4; WR3 and BT.b+3) are either highs, slow, or have very poor range.",
+    "Difficult Stances. Raven's 3 stances flow into each other through a plethora of moves whose frame data must be studied extensively before playing him correctly."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/raven",
+    "wavu": "https://wavu.wiki/t/Raven",
+    "fandom": "https://tekken.fandom.com/wiki/Raven",
+    "discord": "https://discord.com/invite/QpnEwSm",
+    "youtube movelist": "https://www.youtube.com/watch?v=HFAQ2fj68t0"
+  }
 }

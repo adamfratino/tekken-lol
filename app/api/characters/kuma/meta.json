@@ -3,5 +3,30 @@
   "tagline": "Master of Salmon",
   "country": "None",
   "style": "Heihachi-Style Advanced Kuma Shin Ken",
-  "description": "Kuma is Heihachi Mishima's pet and a member of the Mishima Zaibatsu's special forces, Tekken Force. He never misses the chance to volunteer in disaster relief efforts all across Southeast Asia. Locals are always reluctant to accept Kuma at first, fearing that he might attack them. But, with his playful nature and strong work ethic, Kuma gradually wins them over and becomes the town favorite. However, one fateful day, Heihachi left to settle the score with Kazuya Mishima, only to never be seen again. Kuma believes his master is still somewhere out there, but waits for his return to no avail. Meanwhile, G Corp is gaining the upper hand with their attacks against the Mishima Zaibatsu. Kuma bolts to the Mishima Zaibatsu building to provide backup. However, upon arriving, he realizes his chance to combat G Corp is long gone. The Mishima Zaibatsu leadership had surrendered, unable to wait any longer for Kuma. If Kuma lets the Zaibatsu be dismantled, then his master will have nowhere to come back to. And as Heihachi's loyal pet, that is the one thing he can not abide by. \"(I will continue fighting until Master Heihachi returns...even if it means I'm the last one standing!)\" In the spirit of Heihachi, Kuma trains to perfect his Mishima-style techniques. He dons the outfit and belt his master once wore, then begins his lonely fight. Several months pass, and Kuma—who had rescued Mishima Heavy Industries' elite engineers from the clutches of G Corp—has begun development on a secret weapon that is sure to change the game."
+  "description": [
+    "Kuma (and Panda, often just referred to as bears) is an oddball character specializing in ranged poking and whiff punishment.",
+    "Cursed with often terrible frame data on his moves and the worst overall mobility in the game between his huge size, lack of specialized movement tools and a generally bad backdash/sidestep, Kuma has to navigate the mid range carefully and deliberately, lest he gets run over by enemy pressure.",
+    "To offset this, the bears come equipped with some of the absolute best whiff punishment tools in the entire game. Kuma Musou (df+2,1) is an i15 whiff-confirmable launcher that hits all the way from range 3 for close to 45% damage without Heat on open ground. Demon Bear Breath (1+2) is an i13 mid stolen from Heihachi, which boasts similarly impressive range and heat engages. Kuma also has an array of ranged mids and low pokes to gradually chip away at the opponent from outside their effective range, and a decent selection of tracking keepout moves such as b,f+2, uf+1 or b+1+2, all of which deal considerable chip damage when blocked.",
+    "Holding down or pressing 3+4 after select moves transitions Kuma into the Hunting Bear Stance (HBS for short), a naturally high-crushing, mixup-focussed stance. HBS allows some additional light pressure with the threat of an enormously plus on hit, fast low in HBS.2. This can be mixed up with HBS's good selection of safe, or even plus on block Mids.",
+    "Kuma's Heat allows him to become even deadlier in the neutral game, as he gains access to Wind Bear Fist, a plus on block launcher similar to the iconic Mishima Wind God Fist, which cannot be crouched under. His Heat Smash is also top class. It's incredibly fast at i13, has huge range, hits mid and does above average damage for a Heat Smash, further reinforcing his identity as the more \"neutral\" focussed of the two bears."
+  ],
+  "strengths": [
+    "Range: Kuma's large frame grants him immense range on many of his attacks, making him both excellent at keeping out the opponent and punishing them if they overextend.",
+    "Mixups: All of his stances have decent mixups which can catch opponents off guard.",
+    "Chip: Many of Kuma's attacks also deal a bunch of chip damage, which makes it easier to wear down and pressure his opponents.",
+    "Heat: Kuma becomes a much deadlier character when Heat is activated, making his roll a true 50/50 and having a much safer launch in WBF. The charge times on chargeable moves severly decreases, and his Heat Smash is a one-time use i13 punisher with massive range that can hit moves like Paul's heat Deathfist and Bryan's 3+4 on block."
+  ],
+  "weaknesses": [
+    "Hurtbox: His large, unorthodox frame usually grants opponents more damaging or unique combos that don't work on anyone else.",
+    "Movement: While his stubby legs can cause lows to whiff, they don't allow Kuma to go that far with his backdash (which makes him lean forward) or his sidesteps, which are easily one of, if not the worst in the game because of his size.",
+    "Risk-taking: Several of Kuma's moves, even his best ones like his G-Clef, df+2,1, and db+2, are all launch punishable by nearly the entire cast. A knowledgeable opponent is extremely difficult to fight because of this.",
+    "Lows: By extension, most of his lows are unusable because while damaging, they are often both slow AND launch punishable."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/kuma",
+    "wavu": "https://wavu.wiki/t/Kuma",
+    "fandom": "https://tekken.fandom.com/wiki/Kuma",
+    "discord": "https://discord.gg/UrQ2Fe6",
+    "youtube movelist": "https://www.youtube.com/watch?v=JiibWknLLEw"
+  }
 }

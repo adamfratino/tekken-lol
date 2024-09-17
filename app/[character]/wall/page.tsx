@@ -1,8 +1,9 @@
-import { MoveTable, CharacterSearch, MovesSearch } from "app/components"
+import type { CharacterPageProps } from "@/data/types"
+import { fetchCharacterFrames } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
-import type { CharacterPageProps } from "../types"
-import { fetchCharacterFrames } from "@/data/utils"
+
+import { MovesTable, CharacterSearch, MovesSearch } from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -34,13 +35,13 @@ export default async function CharacterHeatPage({
   return (
     <div>
       {wcFrames.length > 0 && (
-        <MoveTable
+        <MovesTable
           character={character}
           moves={wcFrames}
           title="Wall Crush moves"
         />
       )}
-      <MoveTable
+      <MovesTable
         character={character}
         moves={bbrFrames}
         title="Balcony Break moves"

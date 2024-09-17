@@ -3,5 +3,26 @@
   "tagline": "Counter-Punching Paragon",
   "country": "United Kingdom",
   "style": "Boxing",
-  "description": "Steve Fox is a middleweight boxing world champion whose ingenious technique and pace control in the ring have charmed countless audiences. Raised in a facility owned by the Mishima Zaibatsu, Steve went on a search for his real parents the moment he learned he was just a test subject. He encounters Nina Williams by chance and learns that he was made from her genetic material. Although they are mother and son by blood, Nina has never acknowledged Steve as her own. To Steve, knowing his roots was everything. Nina, on the other hand, believed such knowledge to be a mere inconvenience. The bell rings, wrapping up Steve's fight with his past. With his driving force in life gone, Steve becomes a husk of his former self. His training buddies Paul Phoenix and Marshall Law sense his desperation and come to his rescue. \"If you have time to look so down, then you have time for a tournament! If any of us ends up on top, let's split the prize money evenly!\" As he forces out a fake laugh at his friends' ridiculous words, Steve remembers that his fists hold the power to carve out a new future for him. Although grateful to his friends, Steve turns down their offer to train in the mountains like fighters of old and instead begins his own search for a brand-new fighting style. The bell for round two has just rung."
+  "description": [
+    "Steve is an unorthodox counterhit and rushdown character. As a boxer, he does not use kicks, with the kick buttons instead acting as evasive boxing weaves. He excels at suffocating his opponent with endless pokes and strings, chipping them down if they freeze up, and counterhitting them if they swing back in desperation. His infamous Quick Hook (b+1) is the best counterhit tool in Tekken 8, which combined with his many other counterhits off of strings and other moves, allow him to greatly benefit from getting a beat on his opponent's timing.",
+    "Steve has one of the longest movelists in the game, with three primary stances and five secondary stances, giving him a very freeform and flexible approach towards structuring his offense. They are easy to transition into from moves and from other stances, and can be used to layer his mixups and pressure, to dart in and weave around his opponents, or to add safety to his moves. He can get by with small set of core tools, but will reward the specialist. A great Steve player will employ a highly unpredictable offense with his large amount of options to harass and annoy the opponent, goading them into fighting back, before catching their careless attempts at retaliation with a brutal, well-timed counter hit.",
+    "Steve unorthodox nature extends to his punishment. Unlike almost all other characters, Steve cannot launch at -15 from either standing or crouching. With his damage mainly coming from counterhits, Steve can struggle to make comebacks against patient players unwilling to swing into him. His extensive movelist and unorthodox nature combine to make him fairly technical to pick up and play."
+  ],
+  "strengths": [
+    "Counter Punching Paragon: Steve's entire gameplan revolves around landing his safe, rewarding counter-hit tools, which are arguably some of the best in the game.",
+    "Safety: With the ability to stance cancel his mids and highs, Steve is not only very safe but also quite hard to whiff punish.",
+    "Flexible Stances: Steve's many stances have multiple purposes, and can be freely cancelled into each other, allowing unique offensive/defensive scenarios and boundless player expression."
+  ],
+  "weaknesses": [
+    "No Free Launch: Uniquely, Steve lacks a standard i15 launch punisher, only able to launch at i16 from crouching and a whopping i22 for standing, making him very unorthodox and uncomfortable for a new player, as well as significantly limiting his block punishment.",
+    "Boxer Lows: Steve's lows each have multiple flaws ranging from poor frame advantage, safety, range, and speed. This makes it significantly harder for Steve to chip away at an opponent's health and make comebacks compared to the rest of the cast.",
+    "Advanced: Steve's lack of a standard i15 launch, his kick buttons being stances, his numerous stances and extensive movelist, and his reliance on landing counterhits all combine to make Steve a fairly difficult character for Tekken newcomers to pick up and play."
+  ],
+  "links": {
+    "official": "https://tekken.com/fighters/steve-fox",
+    "wavu": "https://wavu.wiki/t/Steve",
+    "fandom": "https://tekken.fandom.com/wiki/Steve_Fox",
+    "discord": "https://discord.com/invite/3qRmSTj",
+    "youtube movelist": "https://www.youtube.com/watch?v=ig-BOwYRU0s"
+  }
 }

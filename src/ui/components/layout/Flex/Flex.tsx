@@ -13,8 +13,8 @@ export const Flex = <T extends React.ElementType = typeof Box>({
   wrap,
   ...props
 }: FlexProps<T>) => {
-  const responsiveClasses = responsiveProps({ align, gap, p, direction })
-  const classNames = cn(variants({ className, w, wrap }), ...responsiveClasses)
+  const responsiveClasses = responsiveProps({ align, gap, p, direction, w })
+  const classNames = cn(variants({ className, wrap }), ...responsiveClasses)
 
   return <Box className={classNames} {...props} />
 }
