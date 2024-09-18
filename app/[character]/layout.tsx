@@ -5,6 +5,7 @@ import {
   fetchCharacterFrames,
   fetchCharacterPunishers,
   fetchCharacterStances,
+  fetchCharacterThrows,
 } from "@/data/utils"
 import { Stack } from "@/ui/components"
 import { filterHeatMoves, filterWallMoves } from "@/utils/filterMoves"
@@ -20,6 +21,7 @@ export default async function CharacterLayout({
   const allMoves = await fetchCharacterFrames(character)
   const punishers = await fetchCharacterPunishers(character)
   const stances = await fetchCharacterStances(character)
+  const throws = await fetchCharacterThrows(character)
 
   const heatMoves = filterHeatMoves(allMoves)
   const wallMoves = filterWallMoves(allMoves)
@@ -43,6 +45,7 @@ export default async function CharacterLayout({
     0
   )
   const wallCount = wallMoves.length
+  const throwsCount = throws.length
 
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[320px_1fr]">
@@ -52,6 +55,7 @@ export default async function CharacterLayout({
         heatCount={heatCount}
         punisherCount={punisherCount}
         wallCount={wallCount}
+        throwsCount={throwsCount}
         stancesCount={stancesCount}
       />
       <Stack>
