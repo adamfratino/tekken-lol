@@ -79,3 +79,35 @@ export async function fetchCharacterMeta(
     return undefined as any
   }
 }
+
+export async function fetchCharacterThrows(
+  character: Characters
+): Promise<Move[]> {
+  const filePath = path.join(
+    process.cwd(),
+    `app/api/characters/${character}/frames.json`
+  )
+
+  try {
+    const file = await fs.readFile(filePath, "utf8")
+    const data = JSON.parse(file) as FrameData
+
+    // Filter moves where hitLevel is "th" or "t", excluding cases where "th" appears in the middle of the string
+    const throws = data.framesNormal.filter((move) => {
+      const hitLevel = move.hitLevel.toLowerCase()
+      return (
+        hitLevel === "th" ||
+        hitLevel === "t" ||
+        hitLevel.startsWith("th") ||
+        hitLevel.startsWith("t") ||
+        move.command.toLowerCase().includes("throw") ||
+        move.notes.toLowerCase().includes("throw break")
+      )
+    })
+
+    return throws
+  } catch (error) {
+    console.error(`Error loading throws data for ${character}:`, error)
+    return [] // Return an empty array in case of an error
+  }
+}

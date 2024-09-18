@@ -11,14 +11,21 @@ const HIT_LEVELS_DICTIONARY = {
   H: "High (hits grounded)",
   m: "Mid",
   mm: "Mid (2)",
-  sm: "Special Mid",
+  sm: "Mid (Special)",
   sp: "Special",
   M: "Mid (hits grounded)",
   l: "Low",
   L: "Low (hits grounded)",
   t: "Throw",
   th: "Throw",
-  "ub(m)": "Unblockable Mid",
+  throw: "Throw",
+  "th(h)": "Throw (High)",
+  "t(c)": "Throw (Crouching)",
+  "t(a)": "Throw (Air)",
+  "t(s)": "Throw (Special)",
+  "t(g)": "Throw (Ground)",
+  "t / m": "Throw (Mid?)",
+  "ub(m)": "Mid (Unblockable)",
 } as any
 
 export const HitLevel = ({ shade }: { shade: BadgeVariantProps["shade"] }) => {

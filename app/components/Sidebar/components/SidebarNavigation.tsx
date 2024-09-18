@@ -72,6 +72,7 @@ export type SidebarNavigationProps = {
   heatCount?: number
   punisherCount?: number
   wallCount?: number
+  throwsCount?: number
   stancesCount?: number
   onClick?: () => void
 }
@@ -81,6 +82,7 @@ export const SidebarNavigation = ({
   count,
   heatCount,
   punisherCount,
+  throwsCount,
   wallCount,
   stancesCount,
   onClick,
@@ -136,6 +138,14 @@ export const SidebarNavigation = ({
             count={punisherCount}
           >
             Punishers
+          </Item>
+          <Item
+            href={`/${character}/${PATHS.THROWS}`}
+            onClick={onClick}
+            active={pathnameArray[1] === PATHS.THROWS}
+            count={throwsCount}
+          >
+            Throws
           </Item>
           <Item
             href={`/${character}/${PATHS.WALL}`}

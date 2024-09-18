@@ -18,6 +18,7 @@ export const Sidebar = ({
   count,
   heatCount,
   punisherCount,
+  throwsCount,
   wallCount,
   stancesCount,
 }: SidebarProps) => {
@@ -32,6 +33,7 @@ export const Sidebar = ({
           character={character}
           count={count}
           heatCount={heatCount}
+          throwsCount={throwsCount}
           punisherCount={punisherCount}
           wallCount={wallCount}
           stancesCount={stancesCount}
