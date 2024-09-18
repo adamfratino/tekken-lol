@@ -68,7 +68,7 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
           <Title size="md">Extend tags & filtering &mdash; Jan. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
             Find new tags, create a filtering system for tags, add subcategory
-            links to sidebar.
+            links to sidebar, clickable special properties badges.
           </p>
         </div>
       </li>
@@ -77,8 +77,7 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
         <div>
           <Title size="md">User accounts &mdash; Mar. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
-            Favorites moves, chraacter notes, attribute ranks, exclusive
-            content.
+            Favorites moves, chraacter notes, tier lists, exclusive content.
           </p>
         </div>
       </li>
@@ -87,7 +86,7 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
         <div>
           <Title size="md">Quiz mode &mdash; May. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
-            Frame data, pick the punish, name the character, etc.
+            Is it a launcher? What's the punish? Test your knowledge!
           </p>
         </div>
       </li>
@@ -96,7 +95,7 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
         <div>
           <Title size="md">Link move videos &mdash; Jun. 2025</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
-            <span className="font-semibold italic">
+            <span className="italic">
               Please reach out if you have a library and would like to
               collaborate!
             </span>

@@ -81,6 +81,9 @@ export function Hero() {
               <Link href={`/${character}/${PATHS.PUNISHERS}`}>Punishers</Link>
             </Button>
             <Button asChild size="sm" className="mx-auto w-full max-w-xs">
+              <Link href={`/${character}/${PATHS.THROWS}`}>Throws</Link>
+            </Button>
+            <Button asChild size="sm" className="mx-auto w-full max-w-xs">
               <Link href={`/${character}/${PATHS.WALL}`}>At the Wall</Link>
             </Button>
           </Flex>
