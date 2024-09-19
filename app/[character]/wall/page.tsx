@@ -3,7 +3,12 @@ import { fetchCharacterFrames } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 
-import { MovesTable, CharacterSearch, MovesSearch } from "app/components"
+import {
+  MovesTable,
+  CharacterSearch,
+  MovesSearch,
+  MobileMovesSearch,
+} from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -47,6 +52,7 @@ export default async function CharacterHeatPage({
         title="Balcony Break moves"
       />
       <MovesSearch moves={[...wcFrames, ...bbrFrames]} />
+      <MobileMovesSearch moves={[...wcFrames, ...bbrFrames]} />
       <CharacterSearch />
     </div>
   )

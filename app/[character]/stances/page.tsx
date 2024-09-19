@@ -3,7 +3,12 @@ import { fetchCharacterFrames, fetchCharacterStances } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 
-import { MovesTable, CharacterSearch, MovesSearch } from "app/components"
+import {
+  MovesTable,
+  CharacterSearch,
+  MovesSearch,
+  MobileMovesSearch,
+} from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -22,7 +27,7 @@ export async function generateStaticParams() {
   )
 }
 
-export default async function CharacterHeatPage({
+export default async function CharacterStancesPage({
   params,
 }: CharacterPageProps) {
   const { character } = params
@@ -58,6 +63,7 @@ export default async function CharacterHeatPage({
         )
       })}
       <MovesSearch moves={allStanceMoves} />
+      <MobileMovesSearch moves={allStanceMoves} />
       <CharacterSearch />
     </div>
   )

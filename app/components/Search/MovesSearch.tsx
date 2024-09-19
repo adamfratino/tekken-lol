@@ -7,39 +7,55 @@ import type { Characters, Move } from "@/data/types"
 import { SearchItemMove } from "./SearchItem"
 import { useSearchStore } from "@/stores"
 
-type SearchProps = {
+type MovesSearchProps = {
   moves?: Move[]
   character?: Characters
+  subpath?: string // New optional prop
 }
 
-export const MovesSearch = ({ moves, character }: SearchProps) => {
+export const MovesSearch = ({
+  moves,
+  character,
+  subpath,
+}: MovesSearchProps) => {
   const { active: activeSearch, setActive: setActiveSearch } = useSearchStore()
   const router = useRouter()
   const pathname = usePathname()
   const pathnameArray = pathname.split("/").filter((c) => c)
 
+  // Function to ensure subpath starts with a single '/'
+  const formatSubpath = (path: string) => {
+    if (!path.startsWith("/")) {
+      return `/${path}`
+    }
+    return path
+  }
+
+  const handleOpenChange = (isOpen: boolean) => {
+    setActiveSearch(isOpen ? "desktop" : undefined)
+  }
+
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault()
-        setActiveSearch(true)
+        setActiveSearch("desktop")
       }
     }
     document.addEventListener("keydown", down)
     return () => document.removeEventListener("keydown", down)
-  }, [])
+  }, [setActiveSearch])
 
   const handleSelect = (href: string) => {
     router.push(href)
-    setActiveSearch(false)
+    setActiveSearch(undefined)
   }
 
   const items = moves
     ? moves.map((move, i) => {
-        const movePath =
-          pathnameArray.length === 1
-            ? `/${character}/all#${move.command}`
-            : `#${move.command}`
+        const movePath = subpath
+          ? `${formatSubpath(subpath)}#${move.command}`
+          : `#${move.command}`
 
         return {
           label: <SearchItemMove move={move} />,
@@ -52,8 +68,8 @@ export const MovesSearch = ({ moves, character }: SearchProps) => {
 
   return (
     <Command
-      open={activeSearch}
-      onOpenChange={setActiveSearch}
+      open={activeSearch === "desktop"}
+      onOpenChange={handleOpenChange}
       placeholder="Search for a move by command, property..."
       empty="No results found."
       items={items}
