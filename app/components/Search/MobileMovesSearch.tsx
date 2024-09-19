@@ -62,13 +62,9 @@ export const MobileMovesSearch = ({
                 exit="exit"
               >
                 {moves.map((move, i) => {
-                  // Encode the move.command to handle special characters
-                  const encodedCommand = encodeURIComponent(move.command)
-
-                  // Construct the movePath with subpath if provided
                   const movePath = subpath
-                    ? `${formatSubpath(subpath)}#${encodedCommand}`
-                    : `#${encodedCommand}`
+                    ? `${formatSubpath(subpath)}#${move.command}`
+                    : `#${move.command}`
 
                   return (
                     <Card

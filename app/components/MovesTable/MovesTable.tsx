@@ -1,6 +1,5 @@
 import type { Characters, Move } from "@/data/types"
 import { fetchCharacterFrames } from "@/data/utils"
-import { useScrollToHash } from "@/hooks"
 import { Stack } from "@/ui/components"
 
 import { MoveCard } from "../MoveCard"
