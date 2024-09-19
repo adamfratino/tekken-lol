@@ -6,7 +6,7 @@ import { getCharacterLabel } from "@/utils"
 import {
   MovesTable,
   CharacterSearch,
-  MovesSearch,
+  DesktopMovesSearch,
   MobileMovesSearch,
 } from "app/components"
 
@@ -54,7 +54,9 @@ export default async function CharacterPunishersPage({
         character={character}
         moves={crouchingPunishers}
       />
-      <MovesSearch moves={[...standingPunishers, ...crouchingPunishers]} />
+      <DesktopMovesSearch
+        moves={[...standingPunishers, ...crouchingPunishers]}
+      />
       <MobileMovesSearch
         moves={[...standingPunishers, ...crouchingPunishers]}
       />

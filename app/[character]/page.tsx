@@ -1,7 +1,11 @@
 import { CharacterPageProps } from "@/data/types"
 import { fetchCharacterFrames } from "@/data/utils"
 
-import { CharacterSearch, MobileMovesSearch, MovesSearch } from "app/components"
+import {
+  CharacterSearch,
+  MobileMovesSearch,
+  DesktopMovesSearch,
+} from "app/components"
 import { Overview } from "app/components/Overview/Overview"
 
 export default async function CharacterOverviewPage({
@@ -14,7 +18,7 @@ export default async function CharacterOverviewPage({
     <>
       <Overview character={character} />
       <CharacterSearch />
-      <MovesSearch
+      <DesktopMovesSearch
         character={character}
         moves={moves}
         subpath={`/${character}/all`}

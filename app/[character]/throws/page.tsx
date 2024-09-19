@@ -5,7 +5,7 @@ import { getCharacterLabel } from "@/utils"
 
 import {
   MovesTable,
-  MovesSearch,
+  DesktopMovesSearch,
   CharacterSearch,
   MobileMovesSearch,
 } from "app/components"
@@ -35,7 +35,7 @@ export default async function ThrowsPage({ params }: CharacterPageProps) {
   return (
     <>
       <MovesTable character={character} moves={moves} />
-      <MovesSearch moves={moves} />
+      <DesktopMovesSearch moves={moves} />
       <MobileMovesSearch moves={moves} />
       <CharacterSearch />
     </>

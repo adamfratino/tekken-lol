@@ -6,7 +6,7 @@ import { getCharacterLabel } from "@/utils"
 import {
   MovesTable,
   MobileMovesSearch,
-  MovesSearch,
+  DesktopMovesSearch,
   CharacterSearch,
 } from "app/components"
 
@@ -47,7 +47,7 @@ export default async function CharacterHeatPage({
         moves={heFrames}
         title="Heat Engager moves"
       />
-      <MovesSearch moves={[...hbFrames, ...hsFrames, ...heFrames]} />
+      <DesktopMovesSearch moves={[...hbFrames, ...hsFrames, ...heFrames]} />
       <MobileMovesSearch moves={[...hbFrames, ...hsFrames, ...heFrames]} />
       <CharacterSearch />
     </div>

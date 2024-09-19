@@ -6,7 +6,7 @@ import { getCharacterLabel } from "@/utils"
 import {
   MovesTable,
   CharacterSearch,
-  MovesSearch,
+  DesktopMovesSearch,
   MobileMovesSearch,
 } from "app/components"
 
@@ -51,7 +51,7 @@ export default async function CharacterHeatPage({
         moves={bbrFrames}
         title="Balcony Break moves"
       />
-      <MovesSearch moves={[...wcFrames, ...bbrFrames]} />
+      <DesktopMovesSearch moves={[...wcFrames, ...bbrFrames]} />
       <MobileMovesSearch moves={[...wcFrames, ...bbrFrames]} />
       <CharacterSearch />
     </div>

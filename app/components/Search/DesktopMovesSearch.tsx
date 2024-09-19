@@ -13,7 +13,7 @@ type MovesSearchProps = {
   subpath?: string // New optional prop
 }
 
-export const MovesSearch = ({
+export const DesktopMovesSearch = ({
   moves,
   character,
   subpath,
