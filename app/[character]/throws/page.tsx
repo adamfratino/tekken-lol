@@ -3,7 +3,12 @@ import { fetchCharacterThrows } from "@/data/utils"
 import { CHARACTERS } from "@/data/variables"
 import { getCharacterLabel } from "@/utils"
 
-import { MovesTable, MovesSearch, CharacterSearch } from "app/components"
+import {
+  MovesTable,
+  MovesSearch,
+  CharacterSearch,
+  MobileMovesSearch,
+} from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
   const { character } = params
@@ -31,6 +36,7 @@ export default async function ThrowsPage({ params }: CharacterPageProps) {
     <>
       <MovesTable character={character} moves={moves} />
       <MovesSearch moves={moves} />
+      <MobileMovesSearch moves={moves} />
       <CharacterSearch />
     </>
   )

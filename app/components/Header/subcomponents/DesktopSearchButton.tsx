@@ -6,18 +6,14 @@ import { useSearchStore } from "@/stores"
 import { Group, Title } from "@/ui/components"
 import { Button } from "@/ui/primitives"
 
-type SearchButtonProps = {
-  onClick?: () => void
-}
-
-export const DesktopSearchButton = ({ onClick }: SearchButtonProps) => {
+export const DesktopSearchButton = () => {
   const setActiveSearch = useSearchStore((s) => s.setActive)
 
   return (
     <Group asChild gap="sm" p="md" className="max-md:hidden">
       <Button
         className="flex items-center overflow-y-auto rounded-md bg-yellow-medium px-4 py-2 text-sm shadow-md hover:bg-yellow-lighter md:w-full md:max-w-[440px]"
-        onClick={() => setActiveSearch(true)}
+        onClick={() => setActiveSearch("desktop")}
       >
         <Search size={16} color="black" />
         <Title

@@ -59,8 +59,7 @@ export default async function CharacterLayout({
         stancesCount={stancesCount}
       />
       <Stack>
-        <Header character={character} moves={allMoves} />
-        {/* <main className="h-[calc(100dvh-60px)] overflow-y-scroll"> */}
+        <Header character={character} />
         <main>{children}</main>
       </Stack>
     </div>

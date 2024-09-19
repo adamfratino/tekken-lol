@@ -18,11 +18,15 @@ export const MovesSearch = ({ moves, character }: SearchProps) => {
   const pathname = usePathname()
   const pathnameArray = pathname.split("/").filter((c) => c)
 
+  const handleOpenChange = (isOpen: boolean) => {
+    setActiveSearch(isOpen ? "desktop" : undefined)
+  }
+
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault()
-        setActiveSearch(true)
+        setActiveSearch("desktop")
       }
     }
     document.addEventListener("keydown", down)
@@ -31,7 +35,7 @@ export const MovesSearch = ({ moves, character }: SearchProps) => {
 
   const handleSelect = (href: string) => {
     router.push(href)
-    setActiveSearch(false)
+    setActiveSearch(undefined)
   }
 
   const items = moves
@@ -52,8 +56,8 @@ export const MovesSearch = ({ moves, character }: SearchProps) => {
 
   return (
     <Command
-      open={activeSearch}
-      onOpenChange={setActiveSearch}
+      open={activeSearch === "desktop"}
+      onOpenChange={handleOpenChange}
       placeholder="Search for a move by command, property..."
       empty="No results found."
       items={items}

@@ -1,11 +1,13 @@
 import { create } from "zustand"
 
+type SearchType = "mobile" | "desktop" | undefined
+
 type SearchState = {
-  active: boolean
-  setActive: (isActive: boolean) => void
+  active?: SearchType
+  setActive: (isActive: SearchType) => void
 }
 
 export const useSearchStore = create<SearchState>((set) => ({
-  active: false,
+  active: undefined,
   setActive: (isActive) => set({ active: isActive }),
 }))
