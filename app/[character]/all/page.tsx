@@ -7,7 +7,7 @@ import {
   MovesTable,
   DesktopMovesSearch,
   MobileMovesSearch,
-  CharacterSearch,
+  DesktopCharacterSearch,
   ScrollToHash,
 } from "app/components"
 
@@ -39,7 +39,7 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
       <ScrollToHash />
       <DesktopMovesSearch moves={moves} />
       <MobileMovesSearch moves={moves} />
-      <CharacterSearch />
+      <DesktopCharacterSearch />
     </>
   )
 }

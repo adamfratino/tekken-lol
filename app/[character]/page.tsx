@@ -2,7 +2,7 @@ import { CharacterPageProps } from "@/data/types"
 import { fetchCharacterFrames } from "@/data/utils"
 
 import {
-  CharacterSearch,
+  DesktopCharacterSearch,
   MobileMovesSearch,
   DesktopMovesSearch,
 } from "app/components"
@@ -17,7 +17,7 @@ export default async function CharacterOverviewPage({
   return (
     <>
       <Overview character={character} />
-      <CharacterSearch />
+      <DesktopCharacterSearch />
       <DesktopMovesSearch
         character={character}
         moves={moves}

@@ -3,13 +3,13 @@
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 
-import { CHARACTERS, PATHS } from "@/data/variables"
+import { CHARACTERS } from "@/data/variables"
 import { useNavigationStore } from "@/stores"
 import { Command } from "@/ui/components"
 
 import { SearchItemCharacter } from "./SearchItem"
 
-export const CharacterSearch = () => {
+export const DesktopCharacterSearch = () => {
   const router = useRouter()
   const { active, setActive } = useNavigationStore()
 

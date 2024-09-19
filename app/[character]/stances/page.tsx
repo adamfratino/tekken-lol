@@ -5,7 +5,7 @@ import { getCharacterLabel } from "@/utils"
 
 import {
   MovesTable,
-  CharacterSearch,
+  DesktopCharacterSearch,
   DesktopMovesSearch,
   MobileMovesSearch,
 } from "app/components"
@@ -64,7 +64,7 @@ export default async function CharacterStancesPage({
       })}
       <DesktopMovesSearch moves={allStanceMoves} />
       <MobileMovesSearch moves={allStanceMoves} />
-      <CharacterSearch />
+      <DesktopCharacterSearch />
     </div>
   )
 }

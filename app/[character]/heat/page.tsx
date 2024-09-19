@@ -7,7 +7,7 @@ import {
   MovesTable,
   MobileMovesSearch,
   DesktopMovesSearch,
-  CharacterSearch,
+  DesktopCharacterSearch,
 } from "app/components"
 
 export async function generateMetadata({ params }: CharacterPageProps) {
@@ -49,7 +49,7 @@ export default async function CharacterHeatPage({
       />
       <DesktopMovesSearch moves={[...hbFrames, ...hsFrames, ...heFrames]} />
       <MobileMovesSearch moves={[...hbFrames, ...hsFrames, ...heFrames]} />
-      <CharacterSearch />
+      <DesktopCharacterSearch />
     </div>
   )
 }

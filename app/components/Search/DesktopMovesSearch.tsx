@@ -10,7 +10,7 @@ import { useSearchStore } from "@/stores"
 type MovesSearchProps = {
   moves?: Move[]
   character?: Characters
-  subpath?: string // New optional prop
+  subpath?: string
 }
 
 export const DesktopMovesSearch = ({
