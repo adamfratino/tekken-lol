@@ -14,7 +14,7 @@ export default async function CharacterOverviewPage({
     <>
       <Overview character={character} />
       <CharacterSearch />
-      <MovesSearch character={character} moves={moves} />
+      <MovesSearch character={character} moves={moves} prefetch />
     </>
   )
 }

@@ -47,6 +47,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html
       lang="en"
+      className="scroll-smooth"
       // className={brandFont.variable}
     >
       <Stack as="body" w="full">
