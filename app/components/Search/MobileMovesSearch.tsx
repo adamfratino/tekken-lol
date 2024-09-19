@@ -17,10 +17,21 @@ import { SearchItemMove } from "./SearchItem"
 
 type MobileMovesSearchProps = {
   moves: Move[]
+  subpath?: string
 }
 
-export const MobileMovesSearch = ({ moves }: MobileMovesSearchProps) => {
+export const MobileMovesSearch = ({
+  moves,
+  subpath,
+}: MobileMovesSearchProps) => {
   const { active, setActive } = useSearchStore()
+
+  const formatSubpath = (path: string) => {
+    if (!path.startsWith("/")) {
+      return `/${path}`
+    }
+    return path
+  }
 
   return (
     active === "mobile" && (
@@ -50,21 +61,31 @@ export const MobileMovesSearch = ({ moves }: MobileMovesSearchProps) => {
                 animate="visible"
                 exit="exit"
               >
-                {moves.map((move, i) => (
-                  <Card
-                    key={`${move.command}_MobileSearchButton_${i}`}
-                    asChild
-                    p="sm"
-                  >
-                    <Link
-                      href={`#${encodeURIComponent(move.command)}`}
-                      onClick={() => setActive(undefined)}
-                      className="w-full"
+                {moves.map((move, i) => {
+                  // Encode the move.command to handle special characters
+                  const encodedCommand = encodeURIComponent(move.command)
+
+                  // Construct the movePath with subpath if provided
+                  const movePath = subpath
+                    ? `${formatSubpath(subpath)}#${encodedCommand}`
+                    : `#${encodedCommand}`
+
+                  return (
+                    <Card
+                      key={`${move.command}_MobileMovesSearch_${i}`}
+                      asChild
+                      p="sm"
                     >
-                      <SearchItemMove move={move} />
-                    </Link>
-                  </Card>
-                ))}
+                      <Link
+                        href={movePath}
+                        onClick={() => setActive(undefined)}
+                        className="w-full"
+                      >
+                        <SearchItemMove move={move} />
+                      </Link>
+                    </Card>
+                  )
+                })}
               </motion.div>
             </Stack>
           </motion.div>
