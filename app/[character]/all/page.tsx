@@ -28,10 +28,10 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
   const moves = await fetchCharacterFrames(character)
 
   return (
-    <div>
+    <>
       <MovesTable character={character} moves={moves} />
       <MovesSearch moves={moves} />
       <CharacterSearch />
-    </div>
+    </>
   )
 }

@@ -3,8 +3,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata, Viewport } from "next"
 import type { PropsWithChildren } from "react"
 // import { Paytone_One, Righteous } from "next/font/google"
-
 import "@/ui/styles/globals.css"
+
+import { Stack } from "@/ui/components"
 
 export const metadata: Metadata = {
   title: "welcome to tekken.lol",
@@ -48,11 +49,11 @@ export default function RootLayout({ children }: PropsWithChildren) {
       lang="en"
       // className={brandFont.variable}
     >
-      <body className="flex h-[100dvh] flex-col">
+      <Stack as="body" w="full">
         {children}
-        <Analytics />
         <SpeedInsights />
-      </body>
+        <Analytics />
+      </Stack>
     </html>
   )
 }

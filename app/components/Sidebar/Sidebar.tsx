@@ -25,8 +25,8 @@ export const Sidebar = ({
   const characterName = CHARACTERS.filter((char) => char.value === character)[0]
 
   return (
-    <div className="sticky hidden border-r bg-muted md:block">
-      <Stack gap="sm" w="full" className="h-full max-h-screen">
+    <div className="hidden border-r bg-muted md:block">
+      <Stack gap="sm" w="full" className="sticky top-0 h-full max-h-screen">
         <SidebarCharacterSelect character={character} />
 
         <SidebarNavigation
