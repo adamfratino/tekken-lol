@@ -2,8 +2,8 @@
 
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { useState } from "react"
+import { usePathname, useRouter } from "next/navigation"
+import { useState, useEffect } from "react"
 import { Search, X } from "lucide-react"
 
 import type { Characters, Move } from "@/data/types"
@@ -30,6 +30,20 @@ export const MobileSearchButton = ({
   const [active, setActive] = useState(false)
   const pathname = usePathname()
   const pathnameArray = pathname.split("/").filter((c) => c)
+  const router = useRouter()
+
+  useEffect(() => {
+    if (active) {
+      moves.forEach((move) => {
+        const movePath =
+          pathnameArray.length === 1
+            ? `/${character}/all#${move.command}`
+            : `#${move.command}`
+        router.prefetch(movePath)
+      })
+      console.log("prefetched")
+    }
+  }, [active, moves, character, pathnameArray, router])
 
   return (
     <>
