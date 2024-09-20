@@ -16,7 +16,7 @@ import { Group } from "../../layout"
 type ComboboxItem = {
   value: string
   label: string
-  icon?: React.ReactNode
+  // icon?: React.ReactNode
 }
 
 type ComboboxProps = {
