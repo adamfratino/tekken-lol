@@ -12,6 +12,7 @@ import { Button } from "@/ui/primitives"
 import { SidebarNavigation } from "app/components/Sidebar/components/SidebarNavigation"
 
 import { horizontalModalVariants, navLinksVariants } from "./motion.variants"
+import { SidebarFooter } from "app/components/Sidebar/components/SidebarFooter"
 
 type MobileHamburgerButtonProps = {
   character: Characters
@@ -20,7 +21,6 @@ type MobileHamburgerButtonProps = {
 export const MobileHamburgerButton = ({
   character,
 }: MobileHamburgerButtonProps) => {
-  // const { active, setActive } = useNavigationStore()
   const [active, setActive] = useState(false)
 
   return (
@@ -50,7 +50,7 @@ export const MobileHamburgerButton = ({
               >
                 &times;
               </Button>
-              <Stack asChild gap="md" className="pr-10 pt-10">
+              <Stack asChild gap="md" className="h-full pr-10 pt-10">
                 <motion.div
                   className="bg-gray-900 relative w-full"
                   variants={navLinksVariants}
@@ -62,6 +62,7 @@ export const MobileHamburgerButton = ({
                     character={character}
                     onClick={() => setActive(false)}
                   />
+                  <SidebarFooter />
                 </motion.div>
               </Stack>
             </motion.div>
