@@ -1045,7 +1045,7 @@
     },
     {
       "moveNumber": 80,
-      "command": "ALB.d",
+      "command": "ALB.d,1",
       "name": "Double Cyclone Punch",
       "hitLevel": "sp,m",
       "damage": ",34",
@@ -1058,7 +1058,7 @@
     },
     {
       "moveNumber": 81,
-      "command": "ALB.d",
+      "command": "ALB.d+1",
       "name": "Double Cyclone Knee Punch",
       "hitLevel": "sp,l",
       "damage": ",30",

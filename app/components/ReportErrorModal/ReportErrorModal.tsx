@@ -54,7 +54,7 @@ export const ReportErrorModal = ({
   const [isOpen, setIsOpen] = useState(false)
   const formattedName = getCharacterLabel(character)?.toUpperCase()
   const pathname = usePathname()
-  const url = "http://tekken-lol.vercel.app" + pathname + "#" + command
+  const url = "https://tekken.lol" + pathname + "#" + command
 
   const form = useForm<UserType>({
     resolver: zodResolver(UserSchema),
