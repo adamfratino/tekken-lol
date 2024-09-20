@@ -44,7 +44,6 @@ export const MoveCardButtons = ({
           />
         }
       />
-      {/* ...other components... */}
     </Group>
   )
 }
