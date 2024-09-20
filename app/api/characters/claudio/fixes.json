@@ -1,0 +1,18 @@
+[
+  {
+    "identifier": {
+      "wavuId": "Claudio-1+2,1+2,2"
+    },
+    "fix": {
+      "hitLevel": "m,th,th"
+    }
+  },
+  {
+    "identifier": {
+      "wavuId": "Claudio-H.2+3"
+    },
+    "fix": {
+      "hitLevel": "l,th"
+    }
+  }
+]

@@ -8,9 +8,11 @@ import { MoveCardContainer } from "./MoveCardContainer"
 
 const HIT_LEVELS_DICTIONARY = {
   h: "High",
+  hh: "High (2)",
   H: "High (hits grounded)",
   m: "Mid",
   mm: "Mid (2)",
+  sl: "Low (Special)",
   sm: "Mid (Special)",
   sp: "Special",
   M: "Mid (hits grounded)",
@@ -20,6 +22,7 @@ const HIT_LEVELS_DICTIONARY = {
   th: "Throw",
   throw: "Throw",
   "th(h)": "Throw (High)",
+  "h (th)": "Throw (High)",
   "t(c)": "Throw (Crouching)",
   "t(a)": "Throw (Air)",
   "t(s)": "Throw (Special)",

@@ -1,18 +1,26 @@
 [
   {
-    "identifier": {
-      "wavuId": "Steve-ALB.d_u,1"
-    },
-    "fix": {
-      "command": "ALB.d,1"
-    }
+    "identifier": { "wavuId": "Steve-ALB.d_u,1" },
+    "fix": { "command": "ALB.d,1" }
   },
   {
-    "identifier": {
-      "wavuId": "Steve-ALB.d_u,d+1"
-    },
-    "fix": {
-      "command": "ALB.d+1"
-    }
+    "identifier": { "wavuId": "Steve-ALB.d_u,d+1" },
+    "fix": { "command": "ALB.d+1" }
+  },
+  {
+    "identifier": { "wavuId": "Steve-f+1+2,2" },
+    "fix": { "damage": "10,12,20" }
+  },
+  {
+    "identifier": { "wavuId": "Steve-f+2,2,1+2" },
+    "fix": { "damage": "11,15,5,8,20" }
+  },
+  {
+    "identifier": { "wavuId": "Steve-f+2,2" },
+    "fix": { "damage": "11,15" }
+  },
+  {
+    "identifier": { "wavuId": "Steve-H.LNH" },
+    "fix": { "hitLevel": "sp,m,h (th)" }
   }
 ]

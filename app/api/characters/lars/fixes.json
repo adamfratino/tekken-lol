@@ -1,0 +1,6 @@
+[
+  {
+    "identifier": { "wavuId": "Lars-R.df+1+2" },
+    "fix": { "notes": "Erase opponent's recoverable health on hit" }
+  }
+]
