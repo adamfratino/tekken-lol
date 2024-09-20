@@ -1,3 +1,3 @@
 export * from "./MobileMovesSearch"
-export * from "./MovesSearch"
-export * from "./CharacterSearch"
+export * from "./DesktopMovesSearch"
+export * from "./DesktopCharacterSearch"

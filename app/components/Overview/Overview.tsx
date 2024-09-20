@@ -36,10 +36,10 @@ export const Overview = async ({ character }: OverviewProps) => {
           {name}
         </Title>
 
-        <Group gap="sm">
+        <Flex direction={{ base: "column", md: "row" }} gap="sm">
           <Badge className="px-6">{country}</Badge>
           <Badge className="px-6">{style}</Badge>
-        </Group>
+        </Flex>
       </Stack>
 
       <Stack gap="sm">
