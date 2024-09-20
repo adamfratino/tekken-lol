@@ -35,11 +35,15 @@ async function fetchAndFixFrameData(character: Characters): Promise<FrameData> {
       const fixesFile = await fs.readFile(fixesFilePath, "utf8")
       fixes = JSON.parse(fixesFile) as Fix[]
     } catch (fixesError) {
-      // If fixes.json doesn't exist or can't be read, proceed without fixes
-      if (fixesError instanceof Error) {
-        console.warn(`No fixes found for ${character}:`, fixesError.message)
+      // Handle errors when reading fixes.json
+      const error = fixesError as NodeJS.ErrnoException
+      if (error.code === "ENOENT") {
+        // File does not exist, proceed without fixes, and don't log anything
+        // Optionally, you can log a debug message if desired
+        // console.debug(`No fixes.json file for character ${character}. Proceeding without fixes.`);
       } else {
-        console.warn(`No fixes found for ${character}:`, fixesError)
+        // Other errors (e.g., permission issues, invalid JSON)
+        console.error(`Error reading fixes for ${character}:`, error.message)
       }
     }
 
@@ -54,7 +58,8 @@ async function fetchAndFixFrameData(character: Characters): Promise<FrameData> {
     // Return an empty FrameData object to prevent undefined issues
     return {
       framesNormal: [],
-      stances: [] /* include other properties as needed */,
+      stances: [],
+      // Include other properties as needed
     } as FrameData
   }
 }

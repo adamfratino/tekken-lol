@@ -21,6 +21,7 @@ const twVariants = {
   shade: {
     /** Hit Levels */
     h: "bg-red-light",
+    hh: "bg-red-light",
     H: "bg-red-medium",
     m: "bg-yellow-light",
     mm: "bg-yellow-light",
@@ -30,10 +31,11 @@ const twVariants = {
     sl: "bg-green-medium",
     l: "bg-blue-light",
     L: "bg-blue-medium",
-    t: "bg-blue-lighter",
-    th: "bg-blue-lighter",
+    t: "bg-teal-lighter",
+    th: "bg-teal-lighter",
     throw: "bg-teal-lighter",
     "th(h)": "bg-pink-light",
+    "h (th)": "bg-pink-light",
     "t(a)": "bg-pink-medium",
     "t(c)": "bg-pink-medium",
     "t(g)": "bg-pink-dark",
