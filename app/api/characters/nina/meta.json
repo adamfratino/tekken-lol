@@ -19,6 +19,11 @@
     "Closing the Gap: Nina is most effective at close range. While she does have long range moves, they do not necessarily help her get in, making it tough for her to make comebacks should she fall behind.",
     "High Demanding Execution: While it isn't absolutely necessary to learn Butterfly loops anymore, Nina still takes quite a high APM to use effectively, and some dedication to learn all the intricacies of her moveset."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 16,
+  "jabPunisher": "1,1 or 2,4",
+  "launchPunisher": "uf+4",
   "links": {
     "official": "https://tekken.com/fighters/nina-williams",
     "wavu": "https://wavu.wiki/t/Nina",

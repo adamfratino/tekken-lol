@@ -23,6 +23,11 @@
     "Lows: By extension, most of her lows are unusable because while damaging, they are often both slow AND launch punishable.",
     "Kuma: Kuma plays in almost exactly the same way, except his Heat system grants him more immediately useful moves in Wind Bear Fist and his faster Heat Smash."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 15,
+  "jabPunisher": "2,1",
+  "launchPunisher": "df+2,1",
   "links": {
     "official": "https://tekken.com/fighters/panda",
     "wavu": "https://wavu.wiki/t/Panda",

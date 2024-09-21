@@ -22,6 +22,11 @@
     "Average Defense: Few defensive gimmicks without any standout evasive attacks or reversals. He has to rely on good reads, movement and precise Heat Burst/power crush placement to get out of jams.",
     "Weak Strings and Knowledge Checks: The few strings Shaheen has don't lead to any real mix, and almost all of them can be blocked standing."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 16,
+  "jabPunisher": "2,3",
+  "launchPunisher": "df+2 or uf+4",
   "links": {
     "official": "https://tekken.com/fighters/shaheen",
     "wavu": "https://wavu.wiki/t/Shaheen",

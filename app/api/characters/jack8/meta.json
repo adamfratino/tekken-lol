@@ -20,6 +20,11 @@
     "Huge and Slow: Jack lacks an i10 jab from both standing and crouch, making it difficult to press when he's being pressured. He also has a bad sidestep which makes it hard for him to evade attacks at close ranges.",
     "Mediocre Lows: Jack's low pokes give middling reward, and his bigger lows are slow and/or launch punishable."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "High",
+  "heatSmashStartup": 10,
+  "jabPunisher": "f+2",
+  "launchPunisher": "df+2",
   "links": {
     "official": "https://tekken.com/fighters/jack-8",
     "wavu": "https://wavu.wiki/t/Jack-8",

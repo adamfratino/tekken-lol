@@ -21,6 +21,11 @@
     "Slow and crouchable Heat Smash outside of BT",
     "Risky Heat Engagers"
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "High",
+  "heatSmashStartup": 23,
+  "jabPunisher": "1,1 or 2,4",
+  "launchPunisher": "uf+4",
   "links": {
     "official": "https://tekken.com/fighters/lidia",
     "wavu": "https://wavu.wiki/t/Lili",

@@ -18,6 +18,11 @@
     "Boxer Lows: Steve's lows each have multiple flaws ranging from poor frame advantage, safety, range, and speed. This makes it significantly harder for Steve to chip away at an opponent's health and make comebacks compared to the rest of the cast.",
     "Advanced: Steve's lack of a standard i15 launch, his kick buttons being stances, his numerous stances and extensive movelist, and his reliance on landing counterhits all combine to make Steve a fairly difficult character for Tekken newcomers to pick up and play."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 16,
+  "jabPunisher": "1,1,2",
+  "launchPunisher": "-",
   "links": {
     "official": "https://tekken.com/fighters/steve-fox",
     "wavu": "https://wavu.wiki/t/Steve",

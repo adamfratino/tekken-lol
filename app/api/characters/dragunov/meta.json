@@ -14,6 +14,11 @@
     "Long range on pokes",
     "Access to a complete throw game, along with unbreakable tackles in Heat"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 15,
+  "jabPunisher": "2,1",
+  "launchPunisher": "df+2",
   "weaknesses": ["His primary pressure tools are fairly linear"],
   "links": {
     "official": "https://tekken.com/fighters/sergei-dragunov",

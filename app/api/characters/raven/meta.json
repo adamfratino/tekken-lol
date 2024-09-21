@@ -19,6 +19,11 @@
     "Weak Plus Frames. The attacks that grant Raven significant and unconditional plus frames on block (b+1; u+3; b+3; b+4,B+4; WR3 and BT.b+3) are either highs, slow, or have very poor range.",
     "Difficult Stances. Raven's 3 stances flow into each other through a plethora of moves whose frame data must be studied extensively before playing him correctly."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 18,
+  "jabPunisher": "2,4",
+  "launchPunisher": "df+4,4,3",
   "links": {
     "official": "https://tekken.com/fighters/raven",
     "wavu": "https://wavu.wiki/t/Raven",

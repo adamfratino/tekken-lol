@@ -15,6 +15,11 @@
     "Poor generic tools with less range or worse frames compared to the rest of the cast",
     "Lacks a power low outside of hellsweep, which can make him predictable and risky"
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1,1,2 or 1,2,2",
+  "launchPunisher": "f,n,d,df+2",
   "links": {
     "official": "https://tekken.com/fighters/devil-jin",
     "wavu": "https://wavu.wiki/t/Devil_Jin",

@@ -19,6 +19,11 @@
     "Standing Punishment: She cannot launch from standing at i15, though she still gets a decent mini-combo (and i14 launch from crouching makes up for it anyway).",
     "Power Balance: As she now loses real health, using Kazama Power is inherently riskier, but without it, her punishes and combos suffer. Players must gauge how much health they are willing to lose for a better positional advantage or settle for less to save Power for later."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 13,
+  "jabPunisher": "uf+1",
+  "launchPunisher": "db+1,1,1+2",
   "links": {
     "official": "https://tekken.com/fighters/jun-kazama",
     "wavu": "https://wavu.wiki/t/Jun",

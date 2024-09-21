@@ -2,6 +2,9 @@ export const shades = {
   alert: "text-red-medium",
   success: "text-green-dark",
   muted: "text-muted-foreground",
+  high: "bg-red-light px-2 rounded",
+  mid: "bg-yellow-medium px-2 rounded",
+  low: "bg-blue-lightest px-2 rounded",
 }
 
 export const weights = {

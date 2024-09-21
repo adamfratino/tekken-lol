@@ -21,6 +21,11 @@
     "Back to the Wall: While King can be devastating with a Giant Swing near the wall (with a reverse Execution Drop to mix up with), his actual wall carry and wall combos don't really stand out compared to the rest of the cast. Sometimes Shining Wizard is in fact his optimal ender when close to the wall.",
     "Slow to Recover: If King's moves whiff, he is often left open for quite a while. Extending his strings is usually the only way he can mitigate this, which can be exploited."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 17,
+  "jabPunisher": "2,1",
+  "launchPunisher": "uf+4",
   "links": {
     "official": "https://tekken.com/fighters/king",
     "wavu": "https://wavu.wiki/t/King",

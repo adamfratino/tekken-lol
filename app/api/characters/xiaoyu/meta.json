@@ -17,6 +17,11 @@
   "weaknesses": [
     "Range: Xiaoyu is tiny, and thus needs to play very compact. She can be effectively walled out by characters with longer limbs, like Bryan or Dragunov."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 15,
+  "jabPunisher": "1,d+2",
+  "launchPunisher": "b+1+2",
   "links": {
     "official": "https://tekken.com/fighters/ling-xiaoyu",
     "wavu": "https://wavu.wiki/t/Xiaoyu",

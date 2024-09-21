@@ -18,6 +18,11 @@
     "Poor keepout tools",
     "Limited range"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 14,
+  "jabPunisher": "1,1,2 or 2,b+2",
+  "launchPunisher": "df+2",
   "links": {
     "official": "https://tekken.com/fighters/marshall-law",
     "wavu": "https://wavu.wiki/t/Law",

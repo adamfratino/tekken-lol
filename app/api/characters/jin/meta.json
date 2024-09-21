@@ -21,6 +21,11 @@
   "weaknesses": [
     "War Criminal: Started WWIII in Tekken 6 and still hasn't gone to the Hague for it."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 15,
+  "jabPunisher": "uf+1",
+  "launchPunisher": "d+3+4",
   "links": {
     "official": "https://tekken.com/fighters/jin-kazama",
     "wavu": "https://wavu.wiki/t/Jin",

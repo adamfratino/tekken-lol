@@ -23,6 +23,11 @@
     "Fast Punishes: For all his damage potential, his i10 standing and i11 crouching punishes are a bit lacking against less punishable moves. 1,2,3 would suffice if it wasn't -14 on hit.",
     "Can't do a backflip 😔"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Low",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1,2,3",
+  "launchPunisher": "df+4",
   "links": {
     "official": "https://tekken.com/fighters/paul-phoenix",
     "wavu": "https://wavu.wiki/t/Paul",

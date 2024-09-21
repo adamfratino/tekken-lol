@@ -25,6 +25,11 @@
     "Legacy Character. Having appeared in every mainline game, his movelist has become massive, making him overwhelming for newer players to pick up.",
     "Can commit seppuku."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1, NSS.1",
+  "launchPunisher": "df+2",
   "links": {
     "official": "https://tekken.com/fighters/yoshimitsu",
     "wavu": "https://wavu.wiki/t/Yoshimitsu",
