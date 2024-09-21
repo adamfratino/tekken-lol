@@ -11,17 +11,24 @@ import {
 } from "@/ui/components"
 import type { Characters } from "@/data/types"
 import { fetchCharacterMeta } from "@/data/utils"
+import { cn } from "@/ui/lib/utils"
 
 const OverviewProperty = ({
   property,
   value,
   shade,
+  className,
 }: {
   property: string
   value: string
   shade?: BodyVariantProps["shade"]
+  className?: string
 }) => (
-  <Group align="between" p="sm" className="items-center border border-b-muted">
+  <Group
+    align="between"
+    p="sm"
+    className={cn("items-center border border-b-muted", className)}
+  >
     <Body weight="bold">{property}:</Body>
     <Group gap="xs" className="items-center">
       {value === "Left" && (
@@ -100,6 +107,7 @@ export const OverviewHeader = async ({
         <OverviewProperty
           property="Sidestep weakness"
           value={ssWeakness as string}
+          className="rounded-b-md bg-yellow-lightest"
         />
       </Card>
     </Flex>
