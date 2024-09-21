@@ -20,6 +20,11 @@
     "Subpar punish options",
     "Below average damage without Azazel moves, which consume health"
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "High",
+  "heatSmashStartup": 12,
+  "jabPunisher": "1,3 or 1,4",
+  "launchPunisher": "df+3,4 or df+2",
   "links": {
     "official": "https://tekken.com/fighters/zafina",
     "wavu": "https://wavu.wiki/t/Zafina",

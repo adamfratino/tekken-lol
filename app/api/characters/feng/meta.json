@@ -17,6 +17,11 @@
     "Wonky range and hitbox on his hopkick and ws3 can make it hard to launch punish some specific moves",
     "The oldest 27 year old man of all time"
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 22,
+  "jabPunisher": "1,2,2 or 1,4",
+  "launchPunisher": "uf+4",
   "links": {
     "official": "https://tekken.com/fighters/feng-wei",
     "wavu": "https://wavu.wiki/t/Feng",

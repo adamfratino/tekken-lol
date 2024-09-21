@@ -23,6 +23,11 @@
     "Timing is most important at Higher Levels",
     "Linear outside of homing moves"
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Low",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1,2",
+  "launchPunisher": "uf+4",
   "links": {
     "official": "https://tekken.com/fighters/claudio-serafino",
     "wavu": "https://wavu.wiki/t/Claudio",

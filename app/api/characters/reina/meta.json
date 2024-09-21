@@ -19,6 +19,11 @@
     "Linear: Most of Reina's toolkit lacks tracking, and it can get complicated to maintain pressure against an opponent with good lateral movement.",
     "Demanding: Reina is a very approachable Mishima, but extracting the maximum out of her requires good execution."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 21,
+  "jabPunisher": "1,1,2 or 1,2,2",
+  "launchPunisher": "df+2",
   "links": {
     "official": "https://tekken.com/fighters/reina",
     "wavu": "https://wavu.wiki/t/Reina",

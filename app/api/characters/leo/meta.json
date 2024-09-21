@@ -19,6 +19,11 @@
     "Weak Low Pokes. Leo's lows are below average outside of mixup scenarios, being either stubby or slow.",
     "Linear. Some of Leo's good moves have poor tracking, making them susceptible to sidestep/walk."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 16,
+  "jabPunisher": "1,2 or 1,4",
+  "launchPunisher": "df+2 or uf+4",
   "links": {
     "official": "https://tekken.com/fighters/leo",
     "wavu": "https://wavu.wiki/t/Leo",

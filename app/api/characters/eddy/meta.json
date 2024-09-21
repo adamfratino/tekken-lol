@@ -16,6 +16,11 @@
     "Requires some very specific combos",
     "Struggles against opponents who know the matchup"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1,2 or 1,3",
+  "launchPunisher": "df+3",
   "links": {
     "official": "https://tekken.com/fighters/eddy-gordo",
     "wavu": "https://wavu.wiki/t/Eddy",

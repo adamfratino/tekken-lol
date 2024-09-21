@@ -26,6 +26,11 @@
     "Old Man Movement: His generic movement options are on the weaker side, and he struggles to approach as his approach attacks are mediocre at best. He's quite reliant on turn-stealing as a result.",
     "Please Press Into Me: Struggles against players who mix up their offensive timing, as his reversals are heavily punishable if baited."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 15,
+  "jabPunisher": "1,2,4",
+  "launchPunisher": "df+2,1+2",
   "links": {
     "official": "https://tekken.com/fighters/leroy-smith",
     "wavu": "https://wavu.wiki/t/Leroy",

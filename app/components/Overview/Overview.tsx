@@ -1,25 +1,20 @@
 import { ExternalLink } from "lucide-react"
+import Link from "next/link"
+
 import type { Characters } from "@/data/types"
 import { fetchCharacterMeta } from "@/data/utils"
-import { Badge, Body, Card, Flex, Group, Stack, Title } from "@/ui/components"
+import { Body, Card, Flex, Group, Stack, Title } from "@/ui/components"
 import { Button } from "@/ui/primitives"
-import Link from "next/link"
+
+import { OverviewHeader } from "./subcomponents/OverviewHeader"
 
 type OverviewProps = {
   character: Characters
 }
 
 export const Overview = async ({ character }: OverviewProps) => {
-  const {
-    name,
-    tagline,
-    country,
-    style,
-    description,
-    strengths,
-    weaknesses,
-    links,
-  } = await fetchCharacterMeta(character)
+  const { description, strengths, weaknesses, links } =
+    await fetchCharacterMeta(character)
 
   return (
     <Stack
@@ -28,19 +23,7 @@ export const Overview = async ({ character }: OverviewProps) => {
       className="items-start"
       w="narrow"
     >
-      <Stack gap="sm" className="items-start">
-        <Title variant="eyebrow" shade="muted" size="sm" italic>
-          {tagline}
-        </Title>
-        <Title as="h1" variant="headline" className="mb-2">
-          {name}
-        </Title>
-
-        <Flex direction={{ base: "column", md: "row" }} gap="sm">
-          <Badge className="px-6">{country}</Badge>
-          <Badge className="px-6">{style}</Badge>
-        </Flex>
-      </Stack>
+      <OverviewHeader character={character} />
 
       <Stack gap="sm">
         {Array.isArray(description) ? (

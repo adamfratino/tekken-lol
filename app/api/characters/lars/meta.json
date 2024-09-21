@@ -14,6 +14,11 @@
     "Decent selection of lows",
     "Strong block punishment, with ability to launch at i14"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 18,
+  "jabPunisher": "2,1",
+  "launchPunisher": "f+1+2",
   "weaknesses": ["Poor CH game", "Risky to make a comeback with"],
   "links": {
     "official": "https://tekken.com/fighters/lars-alexandersson",

@@ -21,6 +21,11 @@
     "One-Track Mind. The good moves are good. Your opponents' round and fleshy bodies may start looking a lot like nails for your f,F+2's hammer.",
     "Low Reward CHs. Her counter hit options mostly give a single free hit. The best counter hit launchers are either unsafe or heavily scaled."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1,2,2 or 1,4",
+  "launchPunisher": "uf+4",
   "links": {
     "official": "https://tekken.com/fighters/lidia",
     "wavu": "https://wavu.wiki/t/Lidia",

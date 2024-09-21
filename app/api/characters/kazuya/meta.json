@@ -19,6 +19,11 @@
     "Bad Pokes: Kazuya has many minus strings and his pokes are very stubby. It can be difficult for him to make his way in without taking substantial risk.",
     "Devil's Finesse: Kazuya's gameplan requires unconventional execution to be performed very consistently. While his execution is not too far beyond other characters (unless you want to consistently WS cancel from wavedash), Kazuya demands a higher level of consistency than almost any other character on the roster, making him difficult to play. His players must have a basic ability to wavedash or perform EWGF to survive at higher levels of play."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Low",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1,1,2 or 1,2,2",
+  "launchPunisher": "f,n,d,df+2",
   "links": {
     "official": "https://tekken.com/fighters/kazuya-mishima",
     "wavu": "https://wavu.wiki/t/Kazuya",

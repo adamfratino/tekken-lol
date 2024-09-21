@@ -18,6 +18,11 @@
     "Bigger comeback tools like DES.d+2 are slow",
     "Short range on several key block punishes"
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 20,
+  "jabPunisher": "1,1",
+  "launchPunisher": "uf+4,4",
   "links": {
     "official": "https://tekken.com/fighters/alisa-bosconovitch",
     "wavu": "https://wavu.wiki/t/Alisa",

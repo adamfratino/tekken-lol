@@ -19,6 +19,11 @@
     "Lacks panic moves",
     "Requires difficult execution to optimize"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 15,
+  "jabPunisher": "1,4 or 2,3",
+  "launchPunisher": "f,n,b+2 (14)",
   "links": {
     "official": "https://tekken.com/fighters/bryan-fury",
     "wavu": "https://wavu.wiki/t/Bryan",

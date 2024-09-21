@@ -50,6 +50,11 @@ export type CharacterMeta = {
   description: string | string[]
   strengths?: string[]
   weaknesses?: string[]
+  ssWeakness?: "Left" | "Right"
+  heatSmashLevel?: "High" | "Mid" | "Low" | "Throw"
+  heatSmashStartup?: number
+  jabPunisher: string
+  launchPunisher: string
   links?: { [key: string]: string }
   strategy?: {
     midRange?: object

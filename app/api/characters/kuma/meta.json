@@ -22,6 +22,11 @@
     "Risk-taking: Several of Kuma's moves, even his best ones like his G-Clef, df+2,1, and db+2, are all launch punishable by nearly the entire cast. A knowledgeable opponent is extremely difficult to fight because of this.",
     "Lows: By extension, most of his lows are unusable because while damaging, they are often both slow AND launch punishable."
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 13,
+  "jabPunisher": "2,1",
+  "launchPunisher": "df+2,1",
   "links": {
     "official": "https://tekken.com/fighters/kuma",
     "wavu": "https://wavu.wiki/t/Kuma",

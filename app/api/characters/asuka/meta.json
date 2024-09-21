@@ -20,6 +20,11 @@
     "Very weak i10-13 frame punishes",
     "Struggles vs. defensive players"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 16,
+  "jabPunisher": "1,2",
+  "launchPunisher": "df+2",
   "links": {
     "official": "https://tekken.com/fighters/asuka-kazama",
     "wavu": "https://wavu.wiki/t/Asuka",

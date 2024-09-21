@@ -18,6 +18,11 @@
     "Susceptible to being ducked with many key tools being highs",
     "Requires above average execution on tools like the Just Frame Skyrocket (JFSR) and his wavedash"
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 17,
+  "jabPunisher": "2,f+3",
+  "launchPunisher": "df+2",
   "links": {
     "official": "https://tekken.com/fighters/hwoarang",
     "wavu": "https://wavu.wiki/t/Hwoarang",

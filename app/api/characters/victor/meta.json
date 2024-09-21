@@ -22,6 +22,11 @@
     "Is very punishable on key moves; has many high moves that are exploitable with no mid alternative",
     "Very feast or famine character"
   ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Low",
+  "heatSmashStartup": 20,
+  "jabPunisher": "1,1,2",
+  "launchPunisher": "df+2",
   "links": {
     "official": "https://tekken.com/fighters/victor-chevalier",
     "wavu": "https://wavu.wiki/t/Victor",

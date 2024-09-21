@@ -19,6 +19,11 @@
     "Poor Heat: Lee's Heat is very underwhelming, with its only unique attribute being a more lenient window for his Just Frames. This benefit is negligible for players that can already land these consistently. His Heat Smash also does relatively low damage and is launch punishable.",
     "Execution: Lee is designed to reward execution heavy players. Though he may not have the hardest techniques in the game, full combos from CH d3 or CH 4,4,4 are tight, as well as his Just Frames demanding a bit more execution on things that other characters get for free—and in some cases, missing the timing can lead to you getting punished."
   ],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Low",
+  "heatSmashStartup": 20,
+  "jabPunisher": "1,2:4",
+  "launchPunisher": "df+2 or uf+4",
   "links": {
     "official": "https://tekken.com/fighters/lee-chaolan",
     "wavu": "https://wavu.wiki/t/Lee",
