@@ -3,10 +3,13 @@
 import { Map } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+
 import { CHARACTERS, PATHS } from "@/data/variables"
 import { Select, Group, Title, Flex, Transition, Body } from "@/ui/components"
 import { Button } from "@/ui/primitives"
+
 import { RoadmapModal } from "./RoadmapModal"
+import { UpdateNotice } from "./UpdateNotice"
 
 export function Hero() {
   const [character, setCharacter] = useState<string | undefined>(undefined)
@@ -22,9 +25,10 @@ export function Hero() {
       className="items-center lg:pt-40"
     >
       <div className="mx-auto mt-5 max-w-2xl text-center">
-        <Title as="h1" size="hero">
+        <Title as="h1" size="hero" className="mb-1">
           welcome to tekken<span className="text-red-medium">.lol</span>
         </Title>
+        <UpdateNotice />
       </div>
 
       <div className="mx-auto max-w-3xl text-center">

@@ -1,4 +1,4 @@
-import { Characters, Move } from "@/data/types"
+import { Characters } from "@/data/types"
 import { Group } from "@/ui/components"
 
 import {
