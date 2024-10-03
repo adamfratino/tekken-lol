@@ -24,6 +24,9 @@ async function fetchAndFixFrameData(character: Characters): Promise<FrameData> {
     const framesFile = await fs.readFile(framesFilePath, "utf8")
     const data = JSON.parse(framesFile) as FrameData
 
+    // Remove duplicate moves
+    data.framesNormal = removeDuplicateMoves(data.framesNormal)
+
     // Read fixes.json
     const fixesFilePath = path.join(
       process.cwd(),
@@ -31,6 +34,7 @@ async function fetchAndFixFrameData(character: Characters): Promise<FrameData> {
     )
 
     let fixes: Fix[] = []
+
     try {
       const fixesFile = await fs.readFile(fixesFilePath, "utf8")
       fixes = JSON.parse(fixesFile) as Fix[]
@@ -59,26 +63,70 @@ async function fetchAndFixFrameData(character: Characters): Promise<FrameData> {
     return {
       framesNormal: [],
       stances: [],
-      // Include other properties as needed
     } as FrameData
   }
 }
 
-function applyFixes(moves: Move[], fixes: Fix[]): Move[] {
-  // For each fix
-  fixes.forEach((fix) => {
-    const identifier = fix.identifier
-    const fixData = fix.fix
+function removeDuplicateMoves(moves: Move[]): Move[] {
+  const seen = new Set<string>()
+  const uniqueMoves: Move[] = []
 
-    // Find the move(s) that match the identifier
+  for (const move of moves) {
+    // Assuming 'wavuId' uniquely identifies a move
+    if (!seen.has(move.wavuId)) {
+      seen.add(move.wavuId)
+      uniqueMoves.push(move)
+    } else {
+      console.warn(`Duplicate move found and removed: wavuId=${move.wavuId}`)
+    }
+  }
+
+  return uniqueMoves
+}
+
+function applyFixes(moves: Move[], fixes: Fix[]): Move[] {
+  // Group fixes by a unique identifier key
+  const fixesByIdentifier: Map<string, Partial<Move>[]> = new Map()
+
+  fixes.forEach((fix) => {
+    // Generate a unique key for the identifier
+    const identifierKey = generateIdentifierKey(fix.identifier)
+
+    if (!fixesByIdentifier.has(identifierKey)) {
+      fixesByIdentifier.set(identifierKey, [])
+    }
+
+    // Add the fix data to the corresponding identifier group
+    fixesByIdentifier.get(identifierKey)!.push(fix.fix)
+  })
+
+  // Iterate over each group and apply all fixes to matching moves
+  fixesByIdentifier.forEach((fixGroup, identifierKey) => {
+    const identifier = JSON.parse(identifierKey) as Partial<Move>
+
+    // Find all moves that match the identifier
     const matchingMoves = moves.filter((move) => isMatch(move, identifier))
 
-    // Apply the fix to each matching move
+    // Apply each fix in the group to the matching moves
     matchingMoves.forEach((move) => {
-      Object.assign(move, fixData)
+      fixGroup.forEach((fixData) => {
+        Object.assign(move, fixData)
+      })
     })
   })
+
   return moves
+}
+
+// Helper function to generate a unique key from the identifier object
+function generateIdentifierKey(identifier: Partial<Move>): string {
+  // Sort the keys to ensure consistent key generation
+  const sortedKeys = Object.keys(identifier).sort()
+  const sortedIdentifier: Record<string, any> = {}
+  sortedKeys.forEach((key) => {
+    sortedIdentifier[key] = (identifier as Record<string, any>)[key]
+  })
+  return JSON.stringify(sortedIdentifier)
 }
 
 function isMatch(move: Move, identifier: Partial<Move>): boolean {

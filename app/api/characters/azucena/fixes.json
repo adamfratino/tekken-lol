@@ -1,0 +1,26 @@
+[
+  {
+    "identifier": { "wavuId": "Azucena-H.2+3" },
+    "fix": {
+      "tags": {
+        "hs": "",
+        "bbr": "",
+        "js": "18~57\n*",
+        "fs": "58~60\n&lt;/div&gt;"
+      },
+      "notes": "* Heat Smash\n* Reversal Break\n* Balcony Break\n* 17 chip damage on block\n* Transition to attack throw on hit\n* Enter LIB +6 automatically on block/whiff\n* +15a if only the last hit connects\n* +30a (+20) if only the last two hits connect\n* 2nd hit damage 9 > 15 if 1st hit whiffs\n* 3rd hit damage 29 > 30 if 1st hit whiffs\n* Hit level becomes m,h,m on block/whiff\n* Spike on the last hit if the first two whiff\n* Low crush 18~57\n* fs58~60"
+    }
+  },
+  {
+    "identifier": { "wavuId": "Azucena-f+4,4" },
+    "fix": {
+      "tags": {
+        "he": "",
+        "bbr": "",
+        "js": "15~23\n*",
+        "fs": "24~26&lt;/div&gt;"
+      },
+      "notes": "* Heat Engager\n\n* Heat Dash +62a (+42) on hit, +5 on block\n\n* Balcony Break\n* Combo from 1st hit\n* Cancel 2nd hit into BT -19 -10 r20 with B\n* Low crush 15~23"
+    }
+  }
+]

@@ -39,7 +39,7 @@ export const MoveCardContainer = ({
       <Property
         as="h2"
         variant="title"
-        className="bg-gray-lightest/85 rounded-t-md px-3 py-2"
+        className="rounded-t-md border border-gray-lighter bg-gray-lightest/75 px-3 py-2 text-xs text-foreground dark:border-gray-darker dark:bg-gray-darkest/80"
       >
         {title}
       </Property>

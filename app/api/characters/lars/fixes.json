@@ -2,5 +2,9 @@
   {
     "identifier": { "wavuId": "Lars-R.df+1+2" },
     "fix": { "notes": "Erase opponent's recoverable health on hit" }
+  },
+  {
+    "identifier": { "wavuId": "Lars-1,1,1" },
+    "fix": { "notes": "* Heat Engager\nWall Crush" }
   }
 ]

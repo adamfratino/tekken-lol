@@ -26,7 +26,6 @@ type MoveCardProps = {
 export const MoveCard = ({ move, character, allMoves }: MoveCardProps) => {
   const {
     command,
-    startup,
     damage,
     block,
     hit,
@@ -46,7 +45,7 @@ export const MoveCard = ({ move, character, allMoves }: MoveCardProps) => {
       id={command}
       w="full"
       p="md"
-      className=" mt-12 bg-gray-lightest/25 shadow-md first:mt-4 last:mb-12"
+      className=" mt-12 shadow-md first:mt-4 last:mb-12"
     >
       <Group
         w="full"
