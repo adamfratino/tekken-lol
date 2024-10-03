@@ -1,0 +1,9 @@
+[
+  {
+    "identifier": { "wavuId": "Hwoarang-LFS.4~3" },
+    "fix": {
+      "block": "+6",
+      "notes": "* Balcony Break\nLow crush\nChip damage"
+    }
+  }
+]
