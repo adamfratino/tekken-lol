@@ -1,0 +1,14 @@
+[
+  {
+    "identifier": { "wavuId": "Xiaoyu-BT.f+1+3" },
+    "fix": {
+      "notes": "Balcony Break\nTornado Move\nHoming Move"
+    }
+  },
+  {
+    "identifier": { "wavuId": "Xiaoyu-BT.f+2+3" },
+    "fix": {
+      "notes": "* Throw Break 1+2\n* Balcony Break\n* Cancel into FC with D\nLow crush\nHoming Move"
+    }
+  }
+]
