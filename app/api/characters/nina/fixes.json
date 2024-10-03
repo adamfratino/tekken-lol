@@ -5,5 +5,21 @@
       "counterHit": "15",
       "startup": "i15~16"
     }
+  },
+  {
+    "identifier": { "wavuId": "Nina-df+3,2" },
+    "fix": { "damage": "13,9" }
+  },
+  {
+    "identifier": { "wavuId": "Nina-uf+3" },
+    "fix": { "damage": "18" }
+  },
+  {
+    "identifier": { "wavuId": "Nina-uf+4" },
+    "fix": { "damage": "22" }
+  },
+  {
+    "identifier": { "wavuId": "Nina-CD.1" },
+    "fix": { "damage": "18" }
   }
 ]
