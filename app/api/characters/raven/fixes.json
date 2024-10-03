@@ -1,0 +1,10 @@
+[
+  {
+    "identifier": { "wavuId": "Raven-f+4" },
+    "fix": {
+      "notes": "Balcony Break\nTornado Move",
+      "damage": "17",
+      "block": "-12"
+    }
+  }
+]
