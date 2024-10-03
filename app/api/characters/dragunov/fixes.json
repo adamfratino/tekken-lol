@@ -1,0 +1,17 @@
+[
+  {
+    "identifier": { "wavuId": "Dragunov-b+4,2" },
+    "fix": { "damage": "15,10" }
+  },
+  {
+    "identifier": { "wavuId": "Dragunov-b+4,3" },
+    "fix": { "damage": "15,16" }
+  },
+  {
+    "identifier": { "wavuId": "Dragunov-SNK.4" },
+    "fix": {
+      "damage": "27",
+      "notes": "* Heat Engager\n\n* Heat Dash +5\n\n* Balcony Break\n* Floor Break\n* Chip damage on block"
+    }
+  }
+]
