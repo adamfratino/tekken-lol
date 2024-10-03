@@ -30,7 +30,9 @@ export const DesktopCharacterSearch = () => {
   }
 
   const items = CHARACTERS.filter((char) => !char.disabled).map((char, i) => ({
-    label: <SearchItemCharacter character={char.label} />,
+    label: (
+      <SearchItemCharacter character={char.label} featured={char.featured} />
+    ),
     value: `search_${char.value}`,
     onSelect: () => handleSelect(`/${char.value}`),
     key: `${char}search${i}`,

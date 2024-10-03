@@ -1,0 +1,2272 @@
+{
+  "characterName": "heihachi",
+  "editUrl": "https://docs.google.com/spreadsheets/d/1IDC11ShZjpo6p5k8kV24T-jumjY27oQZlwvKr_lb4iM",
+  "game": "T8",
+  "framesNormal": [
+    {
+      "moveNumber": 1,
+      "command": "2+3",
+      "name": "Heat Burst",
+      "hitLevel": "m",
+      "damage": "[12;12]",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "counterHit": "",
+      "notes": "* Heat Burst\n* Cancel to r45 with b,b\n* 3 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\nPower crush 7~16",
+      "wavuId": "Heihachi-2+3",
+      "tags": {
+        "hb": "",
+        "pc": "7~16"
+      },
+      "recovery": "r30"
+    },
+    {
+      "moveNumber": 2,
+      "command": "H.b,b,n,3+4",
+      "name": "Shadow Step",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Consumes all of the remaining Heat time\n* Tremendous backwards travel",
+      "wavuId": "Heihachi-H.b,b,n,3+4",
+      "recovery": "r30"
+    },
+    {
+      "moveNumber": 3,
+      "command": "H.db+1+2",
+      "name": "Thunderous Battering Ram",
+      "hitLevel": "M",
+      "damage": "25",
+      "startup": "i30",
+      "block": "+0",
+      "hit": "+0a (-17)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Reversal Break\n* Balcony Break\n* Chip damage on block\n* Consumes remaining Heat time\nPower crush 7~29",
+      "wavuId": "Heihachi-H.db+1+2",
+      "tags": {
+        "trn": "",
+        "bbr": "",
+        "chp": "",
+        "pc": "7~29"
+      },
+      "recovery": "r50"
+    },
+    {
+      "moveNumber": 4,
+      "command": "H.2+3",
+      "name": "Enraged Tettsui Otoshi",
+      "hitLevel": "m,m",
+      "damage": "50",
+      "startup": "i15",
+      "block": "+10",
+      "hit": "+0d",
+      "counterHit": "",
+      "notes": "* Heat Smash\n* Reversal Break\n* Floor Break\n* Chip damage on block\n* Transition to attack throw on hit\n* Enter RAI on block only\n* Cancel RAI transition with B, +6 on block instead",
+      "wavuId": "Heihachi-H.2+3",
+      "tags": {
+        "hs": "",
+        "fbr": "",
+        "chp": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 5,
+      "command": "H.2+3,F",
+      "name": "Eight Thunder Kami Slayer",
+      "hitLevel": "m",
+      "damage": "50",
+      "startup": "i15",
+      "block": "+10",
+      "hit": "-2d",
+      "counterHit": "",
+      "notes": "* Heat Smash\n* Reversal Break\n* Balcony Break\n* Chip damage on block\n* Transition to attack throw on hit\n* Enter RAI on block only\n* Cancel RAI transition with B, +6 on block instead",
+      "wavuId": "Heihachi-H.2+3,F",
+      "tags": {
+        "hs": "",
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "FUJ"
+    },
+    {
+      "moveNumber": 6,
+      "command": "R.df+1+2",
+      "name": "Mishima Style Ultimate Technique - Tempest Dragon God Fist",
+      "hitLevel": "m,t",
+      "damage": "55+",
+      "startup": "i20",
+      "block": "-15",
+      "hit": "+0d",
+      "counterHit": "",
+      "notes": "* Rage Art\n* Reversal Break\n* Ereases opponent's recoverable health on hit\n* Damage increases with lower health, maximum 80\n* Freezes match timer on activation and on hit\n* Transition to attack throw on hit\n* Consumes Rage\nPower crush 8~",
+      "wavuId": "Heihachi-R.df+1+2",
+      "tags": {
+        "pc": "8~"
+      },
+      "recovery": "r39"
+    },
+    {
+      "moveNumber": 7,
+      "command": "1",
+      "name": "Jab",
+      "hitLevel": "h",
+      "damage": "5",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "counterHit": "",
+      "notes": "Recovers 2f faster on hit or block (t27 r17)",
+      "wavuId": "Heihachi-1",
+      "recovery": "r19"
+    },
+    {
+      "moveNumber": 8,
+      "command": "1,1",
+      "name": "",
+      "hitLevel": "h, h",
+      "damage": "5,6",
+      "startup": ",i10",
+      "block": "-5",
+      "hit": "+6",
+      "counterHit": "",
+      "notes": "* Jail from 1st attack with 3f delay",
+      "wavuId": "Heihachi-1,1",
+      "recovery": "r24"
+    },
+    {
+      "moveNumber": 9,
+      "command": "1,1,2",
+      "name": "Flash Punch Combo",
+      "hitLevel": "h, h, m",
+      "damage": "5,6,16",
+      "startup": ",i18",
+      "block": "-17",
+      "hit": "+19a (+9)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Combo from 1st hit with 12f delay",
+      "wavuId": "Heihachi-1,1,2",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r37"
+    },
+    {
+      "moveNumber": 10,
+      "command": "1,1,WAR.2",
+      "name": "Ultimate Flash Punch Combo",
+      "hitLevel": "h, h, m",
+      "damage": "5,6,20",
+      "startup": ",i18",
+      "block": "-17",
+      "hit": "28a (+2)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Combo from 1st hit with 12f delay\n* Chip damage on block",
+      "wavuId": "Heihachi-1,1,WAR.2",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r37"
+    },
+    {
+      "moveNumber": 11,
+      "command": "1,2",
+      "name": "One Two Strike",
+      "hitLevel": "h, h",
+      "damage": "5,8",
+      "startup": ",i10",
+      "block": "-3",
+      "hit": "+8",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit with 4f delay\n* Move can be delayed 3f",
+      "wavuId": "Heihachi-1,2",
+      "recovery": "r22"
+    },
+    {
+      "moveNumber": 12,
+      "command": "1,2,2",
+      "name": "Back Fist Combo",
+      "hitLevel": "h, h, h",
+      "damage": "5,8,12",
+      "startup": ",i17",
+      "block": "-12",
+      "hit": "+4",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit\n* Enter FUJ -9 +4 r30 with D on frame 22",
+      "wavuId": "Heihachi-1,2,2",
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 13,
+      "command": "1,2,2~1",
+      "name": "",
+      "hitLevel": "h, h, m",
+      "damage": "5,8,20",
+      "startup": ",i13",
+      "block": "-11",
+      "hit": "+6",
+      "counterHit": "",
+      "notes": "* Combo from 2nd CH\n* Cancel to SS -5 -16 with D_U",
+      "wavuId": "Heihachi-1,2,2~1",
+      "recovery": "r30"
+    },
+    {
+      "moveNumber": 14,
+      "command": "1,2,2~1,1+2",
+      "name": "Demon Executioner Volley",
+      "hitLevel": "h, h, m, m",
+      "damage": "5,8,20,24",
+      "startup": ",i26",
+      "block": "-13",
+      "hit": "+11a (+2)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Combo from 3rd hit\n* Combo from 2nd CH",
+      "wavuId": "Heihachi-1,2,2~1,1+2",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 15,
+      "command": "1,2,4",
+      "name": "Wailing Demon Otoko Geri",
+      "hitLevel": "h, h, h",
+      "damage": "5,8,21",
+      "startup": ",i22~23",
+      "block": "-9",
+      "hit": "+16g",
+      "counterHit": "+52a",
+      "notes": "* Tornado\n* Combo from 2nd CH with 2f delay\n* Opponent recovers crouching",
+      "wavuId": "Heihachi-1,2,4",
+      "tags": {
+        "trn": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 16,
+      "command": "1,b+2",
+      "name": "",
+      "hitLevel": "h, m",
+      "damage": "5,17",
+      "startup": ",i22",
+      "block": "-2",
+      "hit": "+8",
+      "counterHit": "",
+      "notes": "* Combo from 1st CH with 3f delay\n* Input can be delayed 10f\n* Move can be delayed 7f\n* Enter FUJ r30 with D",
+      "wavuId": "Heihachi-1,b+2",
+      "recovery": "r30"
+    },
+    {
+      "moveNumber": 17,
+      "command": "1,b+2,1",
+      "name": "Demon Massacre",
+      "hitLevel": "h, m, m",
+      "damage": "5,17,20",
+      "startup": ",i35~39",
+      "block": "-15",
+      "hit": "+30a (+20)",
+      "counterHit": "",
+      "notes": "* Combo from 2nd CH\nLow crush 38~61",
+      "wavuId": "Heihachi-1,b+2,1",
+      "tags": {
+        "js": "38~61"
+      },
+      "recovery": "r30"
+    },
+    {
+      "moveNumber": 18,
+      "command": "1,b+2,2",
+      "name": "Demon Basara",
+      "hitLevel": "h, m, m",
+      "damage": "5,17,17",
+      "startup": ",i25~26",
+      "block": "-13",
+      "hit": "+6c",
+      "counterHit": "",
+      "notes": "* Spike\n* Head\n* Combo from 2nd hit",
+      "wavuId": "Heihachi-1,b+2,2",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 19,
+      "command": "1,b+2,4",
+      "name": "Demon Lair",
+      "hitLevel": "h, m, m",
+      "damage": "5,17,30",
+      "startup": ",i39",
+      "block": "+5",
+      "hit": "+30a (+9)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Chip damage on block\nLow crush 17~39",
+      "wavuId": "Heihachi-1,b+2,4",
+      "tags": {
+        "bbr": "",
+        "chp": "",
+        "js": "17~39"
+      },
+      "recovery": "r41"
+    },
+    {
+      "moveNumber": 20,
+      "command": "1,b+2,WAR.2",
+      "name": "Ultimate Demon Basara",
+      "hitLevel": "h, m, m",
+      "damage": "5,17,22",
+      "startup": ",i25~26",
+      "block": "-13",
+      "hit": "23a (+13)",
+      "counterHit": "",
+      "notes": "* Reversal Break\n* Balcony Break\n* Head\n* Combo from 2nd hit\n* Chip damage on block\n* Erases opponent's recoverable health on hit\n* +42a on airborne hit",
+      "wavuId": "Heihachi-1,b+2,2",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 21,
+      "command": "2",
+      "name": "",
+      "hitLevel": "h",
+      "damage": "10",
+      "startup": "i11",
+      "block": "+0",
+      "hit": "-1",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-2",
+      "recovery": "r19"
+    },
+    {
+      "moveNumber": 22,
+      "command": "2,2",
+      "name": "Dogenkotsu",
+      "hitLevel": "h, m",
+      "damage": "10,13",
+      "startup": ",i22",
+      "block": "-8",
+      "hit": "+3c",
+      "counterHit": "",
+      "notes": "* Spike\n* Combo from 1st hit with 2f delay",
+      "wavuId": "Heihachi-2,2",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 23,
+      "command": "3",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "10",
+      "startup": "i15",
+      "block": "-4",
+      "hit": "+1",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-3",
+      "recovery": "r29"
+    },
+    {
+      "moveNumber": 24,
+      "command": "3,2",
+      "name": "Byakko Gekishin",
+      "hitLevel": "m, m",
+      "damage": "10,10",
+      "startup": ",i22~23",
+      "block": "-13",
+      "hit": "-2",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit with 1f delay\n* Enter FUJ -2 +9 r25 with D",
+      "wavuId": "Heihachi-3,2",
+      "recovery": "r31"
+    },
+    {
+      "moveNumber": 25,
+      "command": "4",
+      "name": "Otoko Geri",
+      "hitLevel": "h",
+      "damage": "21",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+16g",
+      "counterHit": "+52a",
+      "notes": "* Tornado\n* Balcony Break\n* Opponent recovers crouching on hit",
+      "wavuId": "Heihachi-4",
+      "tags": {
+        "trn": "",
+        "bbr": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 26,
+      "command": "4~3",
+      "name": "Demon Scissors",
+      "hitLevel": "M",
+      "damage": "25",
+      "startup": "i35~37",
+      "block": "-11a",
+      "hit": "+21a",
+      "counterHit": "",
+      "notes": "* Spike\n&lt;div class=&quot;plainlist&quot;&gt;\n* Low crush 10~37\n* fs38~&lt;/div&gt;",
+      "wavuId": "Heihachi-4~3",
+      "tags": {
+        "spk": "",
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "js": "10~37\n*",
+        "fs": "38~&lt;/div&gt;"
+      },
+      "recovery": "r28 FUFT"
+    },
+    {
+      "moveNumber": 27,
+      "command": "1+2",
+      "name": "Demon Breath",
+      "hitLevel": "m",
+      "damage": "25",
+      "startup": "i12",
+      "block": "-10",
+      "hit": "+24a (+14)",
+      "counterHit": "",
+      "notes": "* Balcony Break",
+      "wavuId": "Heihachi-1+2",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 28,
+      "command": "1+4",
+      "name": "Mishima Style Ultimate Technique: Warrior Instinct",
+      "hitLevel": "SL",
+      "damage": "[10;10]",
+      "startup": "i17",
+      "block": "+2",
+      "hit": "+21g",
+      "counterHit": "",
+      "notes": "* Reversal Break\n* Balcony Break\n* Can only be used once per match\n* Ultimate Count 3 required to use\n* Opponent recovers crouching on hit\n* Cannot cause a K.O",
+      "wavuId": "Heihachi-1+4",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r28 WAR"
+    },
+    {
+      "moveNumber": 29,
+      "command": "2+3+4",
+      "name": "Auger",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-2+3+4",
+      "recovery": "r50"
+    },
+    {
+      "moveNumber": 30,
+      "command": "f+2",
+      "name": "",
+      "hitLevel": "h",
+      "damage": "13",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+2",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-f+2",
+      "recovery": "r27"
+    },
+    {
+      "moveNumber": 31,
+      "command": "f+2,2",
+      "name": "Tensu Gekishin",
+      "hitLevel": "h, m",
+      "damage": "13,10",
+      "startup": ",i22~23",
+      "block": "-13",
+      "hit": "-2",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit with 4f delay\n* Enter FUJ -2 +9 r25 with D",
+      "wavuId": "Heihachi-f+2,2",
+      "recovery": "r31"
+    },
+    {
+      "moveNumber": 32,
+      "command": "f+2~1",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "20",
+      "startup": "i13",
+      "block": "-11",
+      "hit": "+6",
+      "counterHit": "",
+      "notes": "* Cancel to SS with D_U",
+      "wavuId": "Heihachi-f+2~1",
+      "recovery": "r30"
+    },
+    {
+      "moveNumber": 33,
+      "command": "f+2~1,1+2",
+      "name": "Demon Shout Volley",
+      "hitLevel": "m, m",
+      "damage": "20,24",
+      "startup": ",i26",
+      "block": "-13",
+      "hit": "+11a (+2)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Combo from 1st hit",
+      "wavuId": "Heihachi-f+2~1,1+2",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 34,
+      "command": "f+3",
+      "name": "Lightning Crush",
+      "hitLevel": "m",
+      "damage": "10",
+      "startup": "i18~20",
+      "block": "-5",
+      "hit": "+9",
+      "counterHit": "",
+      "notes": "* Knee\n* Enter FUJ -2 +12 r25 with D",
+      "wavuId": "Heihachi-f+3",
+      "tags": {
+        "kne": ""
+      },
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 35,
+      "command": "f+4",
+      "name": "Right Splits Kick",
+      "hitLevel": "m",
+      "damage": "20",
+      "startup": "i19~20",
+      "block": "+4",
+      "hit": "+7c",
+      "counterHit": "+26d",
+      "notes": "* Spike\n* Enter FUJ r27 with D",
+      "wavuId": "Heihachi-f+4",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r27"
+    },
+    {
+      "moveNumber": 36,
+      "command": "f+1+2",
+      "name": "Chrome Dome",
+      "hitLevel": "h",
+      "damage": "15",
+      "startup": "i12",
+      "block": "-14",
+      "hit": "+14c",
+      "counterHit": "",
+      "notes": "* Spike\n* Head",
+      "wavuId": "Heihachi-f+1+2",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 37,
+      "command": "f+3+4",
+      "name": "Thunder God's Kamae",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Cancel to r20 with b or db\n* Heihachi remains in stance indefinitely unless a move is used\n* Actionable after 40f",
+      "wavuId": "Heihachi-f+3+4",
+      "recovery": "r40 RAI"
+    },
+    {
+      "moveNumber": 38,
+      "command": "df+1",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "10",
+      "startup": "i13~14",
+      "block": "-5",
+      "hit": "+7",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-df+1",
+      "recovery": "r22"
+    },
+    {
+      "moveNumber": 39,
+      "command": "df+1,1",
+      "name": "Muso Palm Strike",
+      "hitLevel": "m, h",
+      "damage": "10,8",
+      "startup": ",i15",
+      "block": "-2",
+      "hit": "+4",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit",
+      "wavuId": "Heihachi-df+1,1",
+      "recovery": "r21"
+    },
+    {
+      "moveNumber": 40,
+      "command": "df+1,2",
+      "name": "Muso Tekken",
+      "hitLevel": "m, m",
+      "damage": "10,20",
+      "startup": ",i21",
+      "block": "-13",
+      "hit": "+3",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit",
+      "wavuId": "Heihachi-df+1,2",
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 41,
+      "command": "df+1,2*",
+      "name": "True Muso Tekken",
+      "hitLevel": "m, m",
+      "damage": "10,28",
+      "startup": ",i38~39",
+      "block": "+1",
+      "hit": "+32a (+11)",
+      "counterHit": "",
+      "notes": "* Reversal Break\n* Balcony Break\n* Chip damage on block",
+      "wavuId": "Heihachi-df+1,2*",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r37"
+    },
+    {
+      "moveNumber": 42,
+      "command": "df+1:2*",
+      "name": "Zenith Muso Tekken",
+      "hitLevel": "m, m",
+      "damage": "10,23",
+      "startup": ",i28~29",
+      "block": "-9",
+      "hit": "+19a (+14)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Reversal Break\n* Combo from 1st hit\n* Chip damage on block\n* Restores recoverable health on hit or block\n* 23 damage upon releasing input within the 5f window (frames 1822)\n* 28 damage on a perfect input release exactly on frame 17",
+      "wavuId": "Heihachi-df+1:2*",
+      "tags": {
+        "trn": "",
+        "chp": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 43,
+      "command": "df+2",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "8",
+      "startup": "i13~14",
+      "block": "-7",
+      "hit": "+4",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-df+2",
+      "recovery": "r25"
+    },
+    {
+      "moveNumber": 44,
+      "command": "df+2,1",
+      "name": "Reverse Muso Renken",
+      "hitLevel": "m, m",
+      "damage": "8,20",
+      "startup": ",i20~21",
+      "block": "-17",
+      "hit": "+12a (+5)",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit",
+      "wavuId": "Heihachi-df+2,1",
+      "recovery": "r38"
+    },
+    {
+      "moveNumber": 45,
+      "command": "df+2,WAR.1",
+      "name": "Ultimate Muso Renken",
+      "hitLevel": "m, m",
+      "damage": "8,20",
+      "startup": ",i20~21",
+      "block": "-17",
+      "hit": "+66a (+50)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Combo from 1st hit\n* Chip Damage on block",
+      "wavuId": "Heihachi-WAR.df+2,1",
+      "tags": {
+        "trn": "",
+        "chp": ""
+      },
+      "recovery": "r37"
+    },
+    {
+      "moveNumber": 46,
+      "command": "df+3",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "10",
+      "startup": "i15~16",
+      "block": "-6",
+      "hit": "+5",
+      "counterHit": "",
+      "notes": "* Knee",
+      "wavuId": "Heihachi-df+3",
+      "tags": {
+        "kne": ""
+      },
+      "recovery": "r24"
+    },
+    {
+      "moveNumber": 47,
+      "command": "df+3,1+2",
+      "name": "",
+      "hitLevel": "m, h,m,m",
+      "damage": "10,3,3,3",
+      "startup": ",i14 i9 i8",
+      "block": "-15",
+      "hit": "-4",
+      "counterHit": "",
+      "notes": "* Jail from 1st attack",
+      "wavuId": "Heihachi-df+3,1+2",
+      "recovery": "r39"
+    },
+    {
+      "moveNumber": 48,
+      "command": "df+3,1+2,1",
+      "name": "Gokotai Rampage",
+      "hitLevel": "m, h,m,m, m",
+      "damage": "10,3,3,3,25",
+      "startup": ",i22~23",
+      "block": "-15",
+      "hit": "+20a (+15)",
+      "counterHit": "",
+      "notes": "* Balcony break on airborne hit\n* Jail from 1st attack\n* Powered up input df+3,1+2,qcf+1 (5 additional damage)",
+      "wavuId": "Heihachi-df+3,1+2,1",
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 49,
+      "command": "df+4",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "10",
+      "startup": "i13~14",
+      "block": "-6",
+      "hit": "+5",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-df+4",
+      "recovery": "r24"
+    },
+    {
+      "moveNumber": 50,
+      "command": "df+4,2",
+      "name": "Rapid Crush Combo",
+      "hitLevel": "m, m",
+      "damage": "10,23",
+      "startup": ",i20",
+      "block": "-12",
+      "hit": "+9a (+0)",
+      "counterHit": "+55a",
+      "notes": "* Balcony Break\n* Combo from 1st hit with 9f delay",
+      "wavuId": "Heihachi-df+4,2",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r35"
+    },
+    {
+      "moveNumber": 51,
+      "command": "d+1",
+      "name": "Hammer Punch",
+      "hitLevel": "m",
+      "damage": "12",
+      "startup": "i16",
+      "block": "-9",
+      "hit": "+2",
+      "counterHit": "",
+      "notes": "* Spike\n* Enter FC r28 with D",
+      "wavuId": "Heihachi-d+1",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 52,
+      "command": "d+1,2",
+      "name": "Hammer Beating",
+      "hitLevel": "m, m",
+      "damage": "12,14",
+      "startup": ",i27~28",
+      "block": "-9",
+      "hit": "+9",
+      "counterHit": "+35a (+28)",
+      "notes": "* Combo from 1st hit with 2f delay\n* Input can be delayed 11f\n* Move can be delayed 10f\n* Enter RAI -5 +13 r24 with F",
+      "wavuId": "Heihachi-d+1,2",
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 53,
+      "command": "d+3",
+      "name": "Jichinsai",
+      "hitLevel": "M",
+      "damage": "25",
+      "startup": "i22~23",
+      "block": "-7",
+      "hit": "+3a",
+      "counterHit": "",
+      "notes": "* Spike\n* Chip damage on block",
+      "wavuId": "Heihachi-d+3",
+      "tags": {
+        "spk": "",
+        "chp": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 54,
+      "command": "d+3,H.2",
+      "name": "Rending Battering Ram",
+      "hitLevel": "M, SM",
+      "damage": "25,25",
+      "startup": ",i30",
+      "block": "+0",
+      "hit": "-10a (-20)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Reversal Break\n* Combo from 1st hit\n* Chip damage on block\n* Consumes remaining Heat time",
+      "wavuId": "Heihachi-d+3,H.2",
+      "tags": {
+        "trn": "",
+        "chp": ""
+      },
+      "recovery": "r50"
+    },
+    {
+      "moveNumber": 55,
+      "command": "d+1+2",
+      "name": "<div class=\"dotlist\">\n\n* Fujin\n* Wind God's Kamae\n</div>",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Actionable after 30f",
+      "wavuId": "Heihachi-d+1+2",
+      "recovery": "r30 FUJ"
+    },
+    {
+      "moveNumber": 56,
+      "command": "d+1+4",
+      "name": "Lightning Hammer",
+      "hitLevel": "m!",
+      "damage": "50",
+      "startup": "i60",
+      "block": "",
+      "hit": "+18a",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-d+1+4",
+      "recovery": "r41"
+    },
+    {
+      "moveNumber": 57,
+      "command": "db+2",
+      "name": "Eishomon",
+      "hitLevel": "L",
+      "damage": "25",
+      "startup": "i23~25",
+      "block": "-18",
+      "hit": "+6c",
+      "counterHit": "",
+      "notes": "* Spike\nHigh crush 8~",
+      "wavuId": "Heihachi-db+2",
+      "tags": {
+        "spk": "",
+        "cs": "8~"
+      },
+      "recovery": "r29 FC"
+    },
+    {
+      "moveNumber": 58,
+      "command": "db+3",
+      "name": "Sacred Tree Fell",
+      "hitLevel": "L",
+      "damage": "10",
+      "startup": "i16",
+      "block": "-13",
+      "hit": "-2",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-db+3",
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 59,
+      "command": "b+1",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "12",
+      "startup": "i14~15",
+      "block": "-9",
+      "hit": "+4",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-b+1",
+      "recovery": "r30"
+    },
+    {
+      "moveNumber": 60,
+      "command": "b+1,4",
+      "name": "Oni Yarai",
+      "hitLevel": "m, m",
+      "damage": "12,24",
+      "startup": "i22~23",
+      "block": "-13",
+      "hit": "+7a",
+      "counterHit": "",
+      "notes": "* Tornado\n* Knee\n* Combo from 1st hit with 12f delay\n* Move can be delayed 10f\n,Low crush 24~",
+      "wavuId": "Heihachi-b+1,4",
+      "tags": {
+        "trn": "",
+        "kne": "",
+        "js": "24~"
+      },
+      "recovery": "r40"
+    },
+    {
+      "moveNumber": 61,
+      "command": "b+2",
+      "name": "Rashomon",
+      "hitLevel": "m",
+      "damage": "20",
+      "startup": "i22~23",
+      "block": "+2",
+      "hit": "+7",
+      "counterHit": "",
+      "notes": "* Balcony break on airborne hit\n* Chip damage on block",
+      "wavuId": "Heihachi-b+2",
+      "tags": {
+        "chp": ""
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 62,
+      "command": "b+2*",
+      "name": "True Rashomon",
+      "hitLevel": "m",
+      "damage": "30",
+      "startup": "i39~40",
+      "block": "+5",
+      "hit": "+29a (+21)",
+      "counterHit": "",
+      "notes": "* Strong Aerial Tailspin\n* Reversal Break\n* Balcony Break\n* Chip damage on block\n* Enter RAI +8 +32a (+24) r27 with F",
+      "wavuId": "Heihachi-b+2*",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 63,
+      "command": "b+3",
+      "name": "",
+      "hitLevel": "h",
+      "damage": "14",
+      "startup": "i14~15",
+      "block": "-9",
+      "hit": "+2",
+      "counterHit": "",
+      "notes": "* Homing",
+      "wavuId": "Heihachi-b+3",
+      "tags": {
+        "hom": ""
+      },
+      "recovery": "r27"
+    },
+    {
+      "moveNumber": 64,
+      "command": "b+3,2",
+      "name": "Hooking Crescent Thrust",
+      "hitLevel": "h, h",
+      "damage": "14,20",
+      "startup": ",i20",
+      "block": "-1",
+      "hit": "+8",
+      "counterHit": "",
+      "notes": "* Combo from 1st hit with 4f delay",
+      "wavuId": "Heihachi-b+3,2",
+      "recovery": "r25"
+    },
+    {
+      "moveNumber": 65,
+      "command": "b+3,3",
+      "name": "Hooking Crescent Kick",
+      "hitLevel": "h, m",
+      "damage": "14,25",
+      "startup": ",i22~26",
+      "block": "-12c",
+      "hit": "+3a",
+      "counterHit": "",
+      "notes": "* Spike\n* Combo from 1st hit with 4f delay",
+      "wavuId": "Heihachi-b+3,3",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 66,
+      "command": "b+4",
+      "name": "Indra's Kick",
+      "hitLevel": "m",
+      "damage": "27",
+      "startup": "i18~19",
+      "block": "-8",
+      "hit": "+30a (+4)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Chip damage on block",
+      "wavuId": "Heihachi-b+4",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r46"
+    },
+    {
+      "moveNumber": 67,
+      "command": "b+1+2",
+      "name": "Heaven's Merciless Wrath",
+      "hitLevel": "m",
+      "damage": "20",
+      "startup": "i42",
+      "block": "-11",
+      "hit": "+23a (+13)",
+      "counterHit": "",
+      "notes": "* Heat Engager\n\n* Heat Dash +43d (+35), +5\n\n* Balcony Break\n* Gain 1 Ultimate Count on Heat activation\n* Parries all mid or high punches or kicks\n* Attack is guaranteed after a successful parry\nParry state 5~25",
+      "wavuId": "Heihachi-b+1+2",
+      "tags": {
+        "he": "",
+        "bbr": "",
+        "ps": "5~25"
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 68,
+      "command": "ub+2",
+      "name": "Skull Rupture",
+      "hitLevel": "h",
+      "damage": "25",
+      "startup": "i18~19",
+      "block": "-6",
+      "hit": "+40d (-18)",
+      "counterHit": "",
+      "notes": "* Parries mid or high punches\n* Attack is guaranteed after a successful parry\n* Balcony Break\nParry state 5~12",
+      "wavuId": "Heihachi-ub+2",
+      "tags": {
+        "bbr": "",
+        "ps": "5~12"
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 69,
+      "command": "uf+1",
+      "name": "Demon's Wings",
+      "hitLevel": "m",
+      "damage": "25",
+      "startup": "i24~25",
+      "block": "-13",
+      "hit": "+14a (+5)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* -8 on block after absorbing an attack\n* Chip damage on block after absorbing an attack\nPower crush 7~23",
+      "wavuId": "Heihachi-uf+1",
+      "tags": {
+        "bbr": "",
+        "chp": "",
+        "pc": "7~23"
+      },
+      "recovery": "r35"
+    },
+    {
+      "moveNumber": 70,
+      "command": "uf+2",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "16",
+      "startup": "i19",
+      "block": "-9",
+      "hit": "+4",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-uf+2",
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 71,
+      "command": "uf+2,1",
+      "name": "Kidney Crush Combo",
+      "hitLevel": "m, m",
+      "damage": "16,20",
+      "startup": ",i27~28",
+      "block": "-11",
+      "hit": "+21a (+11)",
+      "counterHit": "",
+      "notes": "* Heat Engager\n\n* Heat Dash +36a (+26), +5\n\n* Balcony Break\n* Chip damage on block\n* Combo from 1st hit with 10f delay\n* Gain 1 Ultimate Count on Heat activation",
+      "wavuId": "Heihachi-uf+2,1",
+      "tags": {
+        "he": "",
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 72,
+      "command": "uf+3",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "17",
+      "startup": "i28~29",
+      "block": "-10",
+      "hit": "-10a (-20)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* 2nd hit available only on hit or block\nLow crush 9~",
+      "wavuId": "Heihachi-uf+3",
+      "tags": {
+        "bbr": "",
+        "js": "9~"
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 73,
+      "command": "uf+3,4",
+      "name": "Hell Axle",
+      "hitLevel": "m, h",
+      "damage": "17,20",
+      "startup": ",i20~21",
+      "block": "+4",
+      "hit": "+30a (+23)",
+      "counterHit": "",
+      "notes": "* Strong Aerial Tailspin\n* Balcony Break\n* Chip damage on block\n* Unavailable on whiff\n,Low crush 1~",
+      "wavuId": "Heihachi-uf+3,4",
+      "tags": {
+        "bbr": "",
+        "chp": "",
+        "js": "1~"
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 74,
+      "command": "uf+4",
+      "name": "Wind Slicer",
+      "hitLevel": "m",
+      "damage": "17",
+      "startup": "i24~26",
+      "block": "-9",
+      "hit": "+43a",
+      "counterHit": "",
+      "notes": "* Homing\n* Balcony Break\n&lt;div class=&quot;plainlist&quot;&gt;\n* Low crush 9~29\n* fs31~32&lt;/div&gt;",
+      "wavuId": "Heihachi-uf+4",
+      "tags": {
+        "hom": "",
+        "bbr": "",
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "js": "9~29\n*",
+        "fs": "31~32&lt;/div&gt;"
+      },
+      "recovery": "r22"
+    },
+    {
+      "moveNumber": 75,
+      "command": "uf+4,1",
+      "name": "Soaring Anvil Smasher",
+      "hitLevel": "m, M",
+      "damage": "17,30",
+      "startup": ",i25~30",
+      "block": "+2",
+      "hit": "+5a",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Chip damage on block\n* Consumes remaining Heat time\n* Combo from 1st hit",
+      "wavuId": "Heihachi-uf+4,H.1",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r40"
+    },
+    {
+      "moveNumber": 76,
+      "command": "1+2+3+4",
+      "name": "<div class=\"dotlist\">\n\n* Ki Charge\n* Supercharger\n</div>",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Can't block for 5 seconds\n* CH state for 5 seconds",
+      "wavuId": "Heihachi-1+2+3+4",
+      "recovery": "r55"
+    },
+    {
+      "moveNumber": 77,
+      "command": "b:2*",
+      "name": "Zenith Rashomon",
+      "hitLevel": "m",
+      "damage": "23",
+      "startup": "i29~30",
+      "block": "+6",
+      "hit": "+24a (+14)",
+      "counterHit": "",
+      "notes": "* Strong Aerial Tailspin\n* Reversal Break\n* Balcony Break\n* Chip damage on block\n* Restores recoverable health on hit or block\n* 23 damage upon releasing input within the 5f window (frames 1822)\n* 28 damage on a perfect input release exactly on frame 17",
+      "wavuId": "Heihachi-b:2*",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r31"
+    },
+    {
+      "moveNumber": 78,
+      "command": "f,F+2",
+      "name": "Demon God Fist",
+      "hitLevel": "M",
+      "damage": "22",
+      "startup": "i19~21",
+      "block": "-16",
+      "hit": "+37a (+27)",
+      "counterHit": "",
+      "notes": "* Tornado",
+      "wavuId": "Heihachi-f,F+2",
+      "tags": {
+        "trn": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 79,
+      "command": "f,F+3",
+      "name": "Left Splits Kick",
+      "hitLevel": "m",
+      "damage": "21",
+      "startup": "i20~22",
+      "block": "-3c",
+      "hit": "+56a",
+      "counterHit": "",
+      "notes": "* Spike",
+      "wavuId": "Heihachi-f,F+3",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 80,
+      "command": "f,F+1+2",
+      "name": "Raoh Thrust",
+      "hitLevel": "m",
+      "damage": "22",
+      "startup": "i13",
+      "block": "-8",
+      "hit": "+22a (+12)",
+      "counterHit": "",
+      "notes": "* Heat Engager\n\n* Heat Dash +36a (+26), +5\n\n* Balcony Break\n* Chip damage on block\n* Gain 1 Ultimate Count on Heat activation",
+      "wavuId": "Heihachi-f,F+1+2",
+      "tags": {
+        "he": "",
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 81,
+      "command": "f,n,d,DF+3",
+      "name": "Earth Scraper Kick",
+      "hitLevel": "L",
+      "damage": "24",
+      "startup": "i33~34",
+      "block": "-23",
+      "hit": "+28a",
+      "counterHit": "",
+      "notes": "Low crush 5~28",
+      "wavuId": "Heihachi-f,n,d,DF+3",
+      "tags": {
+        "js": "5~28"
+      },
+      "recovery": "r41"
+    },
+    {
+      "moveNumber": 82,
+      "command": "f,n,d,DF+4",
+      "name": "",
+      "hitLevel": "L",
+      "damage": "15",
+      "startup": "i16~17",
+      "block": "-23",
+      "hit": "+8c",
+      "counterHit": "+28a",
+      "notes": "",
+      "wavuId": "Heihachi-f,n,d,DF+4",
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 83,
+      "command": "f,n,d,DF+4,4",
+      "name": "",
+      "hitLevel": "L, L",
+      "damage": "15,10",
+      "startup": ",i24",
+      "block": "-10",
+      "hit": "+3c",
+      "counterHit": "+26a",
+      "notes": "",
+      "wavuId": "Heihachi-f,n,d,DF+4,4",
+      "recovery": "r35"
+    },
+    {
+      "moveNumber": 84,
+      "command": "f,n,d,DF+4,4,4",
+      "name": "Spinning Demon",
+      "hitLevel": "L, L, L",
+      "damage": "15,10,8",
+      "startup": ",i24",
+      "block": "-10",
+      "hit": "+3c",
+      "counterHit": "+26a",
+      "notes": "",
+      "wavuId": "Heihachi-f,n,d,DF+4,4,4",
+      "recovery": "r35"
+    },
+    {
+      "moveNumber": 85,
+      "command": "f,n,d,DF+4,4,4,1",
+      "name": "Spinning Demon Thunder God Fist",
+      "hitLevel": "L, L, L, m",
+      "damage": "15,10,8,20",
+      "startup": ",i23~24",
+      "block": "-15",
+      "hit": "+25a (+18)",
+      "counterHit": "",
+      "notes": "* Can be performed after any number of f,n,d,DF+4 lows\n,Low crush ?~",
+      "wavuId": "Heihachi-f,n,d,DF+4,4,4,1",
+      "tags": {
+        "js": ""
+      }
+    },
+    {
+      "moveNumber": 86,
+      "command": "f,n,d,DF+4,4,4,3",
+      "name": "Spinning Demon Bell-Ringer",
+      "hitLevel": "L, L, L, h",
+      "damage": "15,10,8,30",
+      "startup": ",i25~28",
+      "block": "+9",
+      "hit": "+45a",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Chip damage on block\n* Can be performed after any number of f,n,d,DF+4 lows\n,Low crush 17~",
+      "wavuId": "Heihachi-f,n,d,DF+4,4,4,3",
+      "tags": {
+        "bbr": "",
+        "chp": "",
+        "js": "17~"
+      },
+      "recovery": "r38"
+    },
+    {
+      "moveNumber": 87,
+      "command": "f,n,d,DF+4,4,4,n+4",
+      "name": "",
+      "hitLevel": "L, L, L, m",
+      "damage": "15,10,8,10",
+      "startup": ",i24~25",
+      "block": "-3",
+      "hit": "+8",
+      "counterHit": "",
+      "notes": "* Can be performed after any number of f,n,d,DF+4 lows",
+      "wavuId": "Heihachi-f,n,d,DF+4,4,4,n+4",
+      "recovery": "r21"
+    },
+    {
+      "moveNumber": 88,
+      "command": "f,n,d,DF+4,4,4,n+4,4",
+      "name": "Spinning Demon Tsunami Kick",
+      "hitLevel": "L, L, L, m, m",
+      "damage": "15,10,8,10,20",
+      "startup": ",i15",
+      "block": "-15",
+      "hit": "+0c",
+      "counterHit": "",
+      "notes": "* Spike\n* Combo from 4th hit\n* Enter FUJ -9 +6c r31 with D\n* Can be performed after any number of f,n,d,DF+4 lows",
+      "wavuId": "Heihachi-f,n,d,DF+4,4,4,n,4,4",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r37"
+    },
+    {
+      "moveNumber": 89,
+      "command": "f,n,d,df",
+      "name": "Wind God Step",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Cannot be buffered\n* Stance moves can be buffered out of heat dash\n* Cancel to sidestep with u\n* Cancel to block with b",
+      "wavuId": "Heihachi-f,n,d,df",
+      "recovery": "r3?"
+    },
+    {
+      "moveNumber": 90,
+      "command": "f,n,d,df,UF",
+      "name": "",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Unable to act from frames 3~27\n&lt;div class=&quot;plainlist&quot;&gt;\n* Low crush 1~21\n* fs22~24&lt;/div&gt;",
+      "wavuId": "Heihachi-f,n,d,df,UF",
+      "tags": {
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "js": "1~21\n*",
+        "fs": "22~24&lt;/div&gt;"
+      },
+      "recovery": "r27"
+    },
+    {
+      "moveNumber": 91,
+      "command": "f,n,d,df:2",
+      "name": "Electric Wind God Fist",
+      "hitLevel": "h",
+      "damage": "23",
+      "startup": "i11~12",
+      "block": "+5",
+      "hit": "+39a (+29)",
+      "counterHit": "",
+      "notes": "* Chip damage on block\n* Can be performed without the d input: f,n,df#2",
+      "wavuId": "Heihachi-f,n,d,df${justFrame}2",
+      "tags": {
+        "chp": ""
+      },
+      "recovery": "r24"
+    },
+    {
+      "moveNumber": 92,
+      "command": "f,n,d,df+1",
+      "name": "Thunder God Fist",
+      "hitLevel": "m",
+      "damage": "30",
+      "startup": "i19~21",
+      "block": "-15",
+      "hit": "+30a (+20)",
+      "counterHit": "",
+      "notes": "* Becomes Electric/Omen Thunder God Fist (f,n,df#1) during Heat, partially uses remaining Heat Time\n&lt;div class=&quot;plainlist&quot;&gt;\n* Low crush 19~40\n* fs41~43&lt;/div&gt;",
+      "wavuId": "Heihachi-f,n,d,df+1",
+      "tags": {
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "js": "19~40\n*",
+        "fs": "41~43&lt;/div&gt;"
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 93,
+      "command": "f,n,d,df+2",
+      "name": "Wind God Fist",
+      "hitLevel": "h",
+      "damage": "20",
+      "startup": "i11~12",
+      "block": "-10",
+      "hit": "+39a (+29)",
+      "counterHit": "",
+      "notes": "* Becomes Electric Wind God Fist (f,n,d,df#2) during Heat, partially uses remaining Heat Time",
+      "wavuId": "Heihachi-f,n,d,df+2",
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 94,
+      "command": "f,n,d,df+3",
+      "name": "Bone Splinter Kick",
+      "hitLevel": "m",
+      "damage": "30",
+      "startup": "i27~28",
+      "block": "+11g",
+      "hit": "+31a (+10)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Balcony Break\n* Chip damage on block\nLow crush 5~28",
+      "wavuId": "Heihachi-f,n,d,df+3",
+      "tags": {
+        "trn": "",
+        "bbr": "",
+        "chp": "",
+        "js": "5~28"
+      },
+      "recovery": "r38"
+    },
+    {
+      "moveNumber": 95,
+      "command": "f,n,df:1",
+      "name": "<div class=\"dotlist\">\n\n* Omen Thunder God Fist\n* Electric Thunder God Fist\n</div>",
+      "hitLevel": "M",
+      "damage": "33",
+      "startup": "i19~21",
+      "block": "-11",
+      "hit": "+26a (+16)",
+      "counterHit": "",
+      "notes": "* Chip damage on block\n&lt;div class=&quot;plainlist&quot;&gt;\n* Low crush 19~40\n* fs41~43&lt;/div&gt;",
+      "wavuId": "Heihachi-f,n,df${justFrame}1",
+      "tags": {
+        "chp": "",
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "js": "19~40\n*",
+        "fs": "41~43&lt;/div&gt;"
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 96,
+      "command": "qcf+2",
+      "name": "Iron Hand",
+      "hitLevel": "m",
+      "damage": "30",
+      "startup": "i14~15",
+      "block": "-17",
+      "hit": "+18a (+8)",
+      "counterHit": "",
+      "notes": "* Heat Engager\n\n* Heat Dash +43d (+35), +5\n\n* Balcony Break\n* Gain 1 Ultimate Count on Heat activation\n* Can be buffered",
+      "wavuId": "Heihachi-qcf+2",
+      "tags": {
+        "he": "",
+        "bbr": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 97,
+      "command": "f,f,F+3",
+      "name": "Leaping Side Kick",
+      "hitLevel": "m",
+      "damage": "28",
+      "startup": "i22~25",
+      "block": "+6",
+      "hit": "+13a (+3)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Chip damage on block\n&lt;div class=&quot;plainlist&quot;&gt;\n* Low crush 3~25\n* fs26~28&lt;/div&gt;",
+      "wavuId": "Heihachi-f,f,F+3",
+      "tags": {
+        "bbr": "",
+        "chp": "",
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "js": "3~25\n*",
+        "fs": "26~28&lt;/div&gt;"
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 98,
+      "command": "ws1",
+      "name": "Quick Iron Fist",
+      "hitLevel": "m",
+      "damage": "17",
+      "startup": "i13~14",
+      "block": "-14",
+      "hit": "+35d (+27)",
+      "counterHit": "",
+      "notes": "* Balcony Break",
+      "wavuId": "Heihachi-ws1",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r29"
+    },
+    {
+      "moveNumber": 99,
+      "command": "ws2",
+      "name": "Dark Thrust",
+      "hitLevel": "m",
+      "damage": "20",
+      "startup": "i18",
+      "block": "-8",
+      "hit": "+8",
+      "counterHit": "+14c",
+      "notes": "* Balcony break on airborne hit",
+      "wavuId": "Heihachi-ws2",
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 100,
+      "command": "ws3",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "10",
+      "startup": "i18~19",
+      "block": "-11",
+      "hit": "+0",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-ws3",
+      "recovery": "r29"
+    },
+    {
+      "moveNumber": 101,
+      "command": "ws3,1+2",
+      "name": "Holy Demon Cross",
+      "hitLevel": "m, m",
+      "damage": "10,20",
+      "startup": ",i22",
+      "block": "-9",
+      "hit": "+13a (+4)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Combo from 1st hit",
+      "wavuId": "Heihachi-ws3,1+2",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 102,
+      "command": "ws4",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "13",
+      "startup": "i11~12",
+      "block": "-3",
+      "hit": "+8",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-ws4",
+      "recovery": "r21"
+    },
+    {
+      "moveNumber": 103,
+      "command": "ws4,4",
+      "name": "Tsunami Kick",
+      "hitLevel": "m, m",
+      "damage": "13,16",
+      "startup": ",i15",
+      "block": "-15",
+      "hit": "+0c",
+      "counterHit": "",
+      "notes": "* Spike\n* Combo from 1st hit\n* Enter FUJ -9 +6c r31 with D",
+      "wavuId": "Heihachi-ws4,4",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r37"
+    },
+    {
+      "moveNumber": 104,
+      "command": "SS.2",
+      "name": "Nail Beating",
+      "hitLevel": "m",
+      "damage": "20",
+      "startup": "i23~24",
+      "block": "-9",
+      "hit": "+9",
+      "counterHit": "+36a (+28)",
+      "notes": "* Enter RAI -5 +13 r24 with F",
+      "wavuId": "Heihachi-SS.2",
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 105,
+      "command": "FC.df+2",
+      "name": "Ascension Upper",
+      "hitLevel": "m",
+      "damage": "17",
+      "startup": "i15",
+      "block": "-14",
+      "hit": "+37a (+27)",
+      "counterHit": "",
+      "notes": "* Tornado",
+      "wavuId": "Heihachi-FC.df+2",
+      "tags": {
+        "trn": ""
+      },
+      "recovery": "r37"
+    },
+    {
+      "moveNumber": 106,
+      "command": "FC.df+4",
+      "name": "Crouching Dragon Kick",
+      "hitLevel": "L",
+      "damage": "16",
+      "startup": "i19~21",
+      "block": "-23",
+      "hit": "+4c",
+      "counterHit": "",
+      "notes": "* On clean hit: +17a and 20 damage\nHigh crush 1~",
+      "wavuId": "Heihachi-FC.df+4",
+      "tags": {
+        "cs": "1~"
+      },
+      "recovery": "r39 FC"
+    },
+    {
+      "moveNumber": 107,
+      "command": "FUJ.1",
+      "name": "",
+      "hitLevel": "h",
+      "damage": "13",
+      "startup": "i12~13",
+      "block": "-4",
+      "hit": "+7",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Heihachi-FUJ.1",
+      "recovery": "r22"
+    },
+    {
+      "moveNumber": 108,
+      "command": "FUJ.1,1",
+      "name": "Wind God Hasai Rengeki",
+      "hitLevel": "h, h",
+      "damage": "13,20",
+      "startup": ",i17~18",
+      "block": "-2",
+      "hit": "+34a (+9)",
+      "counterHit": "",
+      "notes": "* Heat Engager\n\n* Heat Dash +34a (+27), +5\n\n* Balcony Break\n* Combo from 1st hit with 9f delay\n* Move can be delayed 7f\n* Gain 1 Ultimate Count on Heat activation",
+      "wavuId": "Heihachi-FUJ.1,1",
+      "tags": {
+        "he": "",
+        "bbr": ""
+      },
+      "recovery": "r31"
+    },
+    {
+      "moveNumber": 109,
+      "command": "FUJ.1,2",
+      "name": "Wind God Tettsui",
+      "hitLevel": "h, m",
+      "damage": "13,24",
+      "startup": ",i21~22",
+      "block": "-13",
+      "hit": "+13a",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Spike\n* Combo from 1st hit with 8f delay\n* Input can be delayed 9f\n* Move can be delayed 7f",
+      "wavuId": "Heihachi-FUJ.1,2",
+      "tags": {
+        "bbr": "",
+        "spk": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 110,
+      "command": "FUJ.2",
+      "name": "Hidden Wind God Fist",
+      "hitLevel": "m",
+      "damage": "20",
+      "startup": "i15~16",
+      "block": "-10",
+      "hit": "+75a (+59)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Chip damage on block",
+      "wavuId": "Heihachi-FUJ.2",
+      "tags": {
+        "trn": "",
+        "chp": ""
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 111,
+      "command": "FUJ.3",
+      "name": "",
+      "hitLevel": "m",
+      "damage": "17",
+      "startup": "i28~29",
+      "block": "-10",
+      "hit": "-10a (-20)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* 2nd hit available only on hit or block\nLow crush 8~",
+      "wavuId": "Heihachi-FUJ.3",
+      "tags": {
+        "bbr": "",
+        "js": "8~"
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 112,
+      "command": "FUJ.3,4",
+      "name": "Wind God Hell Axle",
+      "hitLevel": "m, m",
+      "damage": "17,20",
+      "startup": ",i20~21",
+      "block": "+4",
+      "hit": "+30a (+23)",
+      "counterHit": "",
+      "notes": "* Strong Aerial Tailspin\n* Balcony Break\n* Combo from 1st hit\n* Chip damage on block\n* Unavailable on whiff\n,Low crush 1~",
+      "wavuId": "Heihachi-FUJ.3,4",
+      "tags": {
+        "bbr": "",
+        "chp": "",
+        "js": "1~"
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 113,
+      "command": "FUJ.4",
+      "name": "Wind God Geta Stomp",
+      "hitLevel": "L",
+      "damage": "20",
+      "startup": "i18~19",
+      "block": "-14",
+      "hit": "-4",
+      "counterHit": "+12g",
+      "notes": "* Spike",
+      "wavuId": "Heihachi-FUJ.4",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 114,
+      "command": "FUJ.1+2",
+      "name": "Tengu's Wings",
+      "hitLevel": "m",
+      "damage": "25",
+      "startup": "i18~19",
+      "block": "-13",
+      "hit": "+6a (-3)",
+      "counterHit": "",
+      "notes": "* Homing\n* Balcony Break\n* -7 on block after absorbing an attack\n* Chip damage on block after absorbing an attack\nPower crush 7~17",
+      "wavuId": "Heihachi-FUJ.1+2",
+      "tags": {
+        "hom": "",
+        "bbr": "",
+        "chp": "",
+        "pc": "7~17"
+      },
+      "recovery": "r38"
+    },
+    {
+      "moveNumber": 115,
+      "command": "FUJ.DF",
+      "name": "Fujin > Wind God Step",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Low parry on frames ?~?\n* Doesn't require a just frame input for Electric or Omen Thunder God Fist",
+      "wavuId": "Heihachi-FUJ.DF",
+      "recovery": "r8 CD"
+    },
+    {
+      "moveNumber": 116,
+      "command": "OTG.d+4",
+      "name": "Geta Stomp",
+      "hitLevel": "L",
+      "damage": "30",
+      "startup": "i19~20",
+      "block": "-14",
+      "hit": "-3a (-11)",
+      "counterHit": "",
+      "notes": "* Spike",
+      "wavuId": "Heihachi-OTG.d+4",
+      "tags": {
+        "spk": ""
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 117,
+      "command": "RAI.1",
+      "name": "Hidden Thunder God Fist",
+      "hitLevel": "M",
+      "damage": "38",
+      "startup": "i17~18",
+      "block": "-11",
+      "hit": "+12a (+2)",
+      "counterHit": "",
+      "notes": "* Gains Reversal Break during Warrior Instinct\n&lt;div class=&quot;plainlist&quot;&gt;\n* Low crush 17~43\n* fs44~46&lt;/div&gt;",
+      "wavuId": "Heihachi-RAI.1",
+      "tags": {
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "js": "17~43\n*",
+        "fs": "44~46&lt;/div&gt;"
+      },
+      "recovery": "r49"
+    },
+    {
+      "moveNumber": 118,
+      "command": "RAI.2",
+      "name": "Thunder Cutter",
+      "hitLevel": "h",
+      "damage": "25",
+      "startup": "i17~18",
+      "block": "+10",
+      "hit": "+51a",
+      "counterHit": "",
+      "notes": "* Strong Aerial Tailspin\n* Homing\n* Guard Break\n* Chip damage on block",
+      "wavuId": "Heihachi-RAI.2",
+      "tags": {
+        "hom": "",
+        "chp": ""
+      },
+      "recovery": "r34"
+    },
+    {
+      "moveNumber": 119,
+      "command": "RAI.3",
+      "name": "Jichinsai",
+      "hitLevel": "M",
+      "damage": "30",
+      "startup": "i22~23",
+      "block": "+7",
+      "hit": "+3a",
+      "counterHit": "",
+      "notes": "* Spike\n* Chip damage on block",
+      "wavuId": "Heihachi-RAI.3",
+      "tags": {
+        "spk": "",
+        "chp": ""
+      },
+      "recovery": "r36"
+    },
+    {
+      "moveNumber": 120,
+      "command": "RAI.4",
+      "name": "Raijin Spinning Demon",
+      "hitLevel": "L",
+      "damage": "15",
+      "startup": "i19~20",
+      "block": "-23",
+      "hit": "+8c",
+      "counterHit": "+28a",
+      "notes": "* Links to f,n,d,DF+4 extensions",
+      "wavuId": "Heihachi-RAI.4",
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 121,
+      "command": "WAR.1+2",
+      "name": "Ultimate Demon Breath",
+      "hitLevel": "m",
+      "damage": "34",
+      "startup": "i12",
+      "block": "-10",
+      "hit": "+32a (+24)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Chip Damage on block",
+      "wavuId": "Heihachi-WAR.1+2",
+      "tags": {
+        "bbr": "",
+        "chp": ""
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 122,
+      "command": "WAR.FUJ.1",
+      "name": "Ultimate Hidden Wind God Fist",
+      "hitLevel": "m",
+      "damage": "24",
+      "startup": "i15~16",
+      "block": "-3",
+      "hit": "+75a (+59)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Reversal Break\n* Chip damage on block",
+      "wavuId": "Heihachi-WAR.FUJ.1",
+      "tags": {
+        "trn": "",
+        "chp": ""
+      },
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 123,
+      "command": "WAR.RAI.1",
+      "name": "Ultimate Hidden Thunder God Fist",
+      "hitLevel": "M",
+      "damage": "42",
+      "startup": "i17~19",
+      "block": "-8",
+      "hit": "+12a (+2)",
+      "counterHit": "",
+      "notes": "* Reversal Break\n* Chip damage on block\nLow crush 17~",
+      "wavuId": "Heihachi-WAR.RAI.1",
+      "tags": {
+        "chp": "",
+        "js": "17~"
+      },
+      "recovery": "r49"
+    },
+    {
+      "moveNumber": 124,
+      "command": "WAR.f,F+2",
+      "name": "Ultimate Demon God Fist",
+      "hitLevel": "M",
+      "damage": "30",
+      "startup": "i19~21",
+      "block": "-16",
+      "hit": "+37a (+27)",
+      "counterHit": "",
+      "notes": "* Tornado\n* Chip Damage on block",
+      "wavuId": "Heihachi-WAR.f,F+2",
+      "tags": {
+        "trn": "",
+        "chp": ""
+      },
+      "recovery": "r33"
+    },
+    {
+      "moveNumber": 125,
+      "command": "WAR.f,F+2",
+      "name": "Ultimate Demon God Fist",
+      "hitLevel": "m",
+      "damage": "25",
+      "startup": "i20~22",
+      "block": "+1",
+      "hit": "+56a",
+      "counterHit": "",
+      "notes": "* Tornado\n* Spike\n* Chip Damage on block",
+      "wavuId": "Heihachi-WAR.f,F+2",
+      "tags": {
+        "trn": "",
+        "spk": "",
+        "chp": ""
+      },
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 126,
+      "command": "WAR.f,n,d,DF+4",
+      "name": "Ultimate Spinning Demon",
+      "hitLevel": "L",
+      "damage": "17",
+      "startup": "i16~17",
+      "block": "-14",
+      "hit": "+8c",
+      "counterHit": "+28a",
+      "notes": "* No stagger on block\n* Links to f,n,d,DF+4 extensions",
+      "wavuId": "Heihachi-WAR.f,n,d,DF+4",
+      "recovery": "r32"
+    },
+    {
+      "moveNumber": 127,
+      "command": "1+3",
+      "name": "Neck Breaker",
+      "hitLevel": "t",
+      "damage": "35",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "-1d",
+      "counterHit": "",
+      "notes": "* Homing\n* Throw break 1 or 2",
+      "wavuId": "Heihachi-1+3",
+      "tags": {
+        "hom": ""
+      },
+      "recovery": "r25"
+    },
+    {
+      "moveNumber": 128,
+      "command": "2+4",
+      "name": "Jumping Powerbomb",
+      "hitLevel": "t",
+      "damage": "35",
+      "startup": "i12~14",
+      "block": "",
+      "hit": "+0d",
+      "counterHit": "",
+      "notes": "* Floor Break\n* Throw break 1 or 2\n* Side switch on break\n* Heihachi recovers BT on break",
+      "wavuId": "Heihachi-2+4",
+      "tags": {
+        "fbr": ""
+      },
+      "recovery": "r25"
+    },
+    {
+      "moveNumber": 129,
+      "command": "Back throw",
+      "name": "Atomic Drop",
+      "hitLevel": "t",
+      "damage": "60",
+      "startup": "",
+      "block": "",
+      "hit": "+0d",
+      "counterHit": "",
+      "notes": "* Unbreakable",
+      "wavuId": "Heihachi-Back throw"
+    },
+    {
+      "moveNumber": 130,
+      "command": "FUJ.1+3",
+      "name": "Fire Starter",
+      "hitLevel": "t",
+      "damage": "15",
+      "startup": "i18",
+      "block": "",
+      "hit": "+7",
+      "counterHit": "",
+      "notes": "* Homing\n* Unbreakable",
+      "wavuId": "Heihachi-FUJ.1+3",
+      "tags": {
+        "hom": ""
+      },
+      "recovery": "r28"
+    },
+    {
+      "moveNumber": 131,
+      "command": "H.FUJ.1+3",
+      "name": "Firestarter",
+      "hitLevel": "t",
+      "damage": "15",
+      "startup": "i18",
+      "block": "",
+      "hit": "+8",
+      "counterHit": "",
+      "notes": "* Cancel RAI transition with B\n* Consumes remaining Heat time\n* Throw is unbreakable",
+      "wavuId": "Heihachi-H.FUJ.1+3",
+      "recovery": "r42 RAI"
+    },
+    {
+      "moveNumber": 132,
+      "command": "H.d+1+2,P",
+      "name": "Charging Hard",
+      "hitLevel": "t",
+      "damage": "35",
+      "startup": "i11",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Parries high or mid punches or kicks\n* Regain health on a successful parry\n* Partially uses remaining heat tiem\nParry state 19~40",
+      "wavuId": "Heihachi-H.d+1+2,P",
+      "tags": {
+        "ps": "19~40"
+      }
+    },
+    {
+      "moveNumber": 133,
+      "command": "Left throw",
+      "name": "Guillotine Chop",
+      "hitLevel": "t",
+      "damage": "40",
+      "startup": "",
+      "block": "",
+      "hit": "-3d",
+      "counterHit": "",
+      "notes": "* Throw break 1",
+      "wavuId": "Heihachi-Left throw"
+    },
+    {
+      "moveNumber": 134,
+      "command": "RAI.1+3",
+      "name": "Thunder Broken Toy",
+      "hitLevel": "t",
+      "damage": "30",
+      "startup": "i15~16",
+      "block": "",
+      "hit": "+0d",
+      "counterHit": "",
+      "notes": "* Unbreakable\n* 42 damage on a wall splat",
+      "wavuId": "Heihachi-RAI.1+3",
+      "recovery": "r39"
+    },
+    {
+      "moveNumber": 135,
+      "command": "Right throw",
+      "name": "Freefall",
+      "hitLevel": "t",
+      "damage": "45",
+      "startup": "",
+      "block": "",
+      "hit": "-4d",
+      "counterHit": "",
+      "notes": "* Floor Break\n* Throw break 2",
+      "wavuId": "Heihachi-Right throw",
+      "tags": {
+        "fbr": ""
+      }
+    },
+    {
+      "moveNumber": 136,
+      "command": "uf+1+2",
+      "name": "Stonehead",
+      "hitLevel": "t",
+      "damage": "35",
+      "startup": "i12",
+      "block": "+0",
+      "hit": "+26a (+7)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Throw break 1+2\n* Side switch on break",
+      "wavuId": "Heihachi-uf+1+2",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r27"
+    },
+    {
+      "moveNumber": 137,
+      "command": "uf+1+4",
+      "name": "Headbutt Clash",
+      "hitLevel": "t",
+      "damage": "30",
+      "startup": "i12 i48",
+      "block": "-6",
+      "hit": "+28d (-30)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Throw break 1+2\n* Headbutt can be reversed with input 1 or 2 or 3 or 4\n* Works on Male characters only?",
+      "wavuId": "Heihachi-uf+1+4",
+      "tags": {
+        "bbr": ""
+      },
+      "recovery": "r27"
+    }
+  ],
+  "stances": ["H", "SS", "FC", "FUJ", "RAI", "WAR"]
+}
