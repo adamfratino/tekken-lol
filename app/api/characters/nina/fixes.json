@@ -1,0 +1,9 @@
+[
+  {
+    "identifier": { "wavuId": "Nina-b+4" },
+    "fix": {
+      "counterHit": "15",
+      "startup": "i15~16"
+    }
+  }
+]

@@ -27,7 +27,10 @@ const OverviewProperty = ({
   <Group
     align="between"
     p="sm"
-    className={cn("items-center border border-b-muted", className)}
+    className={cn(
+      "items-center border-t border-muted last:border-b",
+      className
+    )}
   >
     <Body weight="bold">{property}:</Body>
     <Group gap="xs" className="items-center">
