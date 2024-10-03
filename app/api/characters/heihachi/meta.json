@@ -1,0 +1,25 @@
+{
+  "name": "Heihachi Mishima",
+  "tagline": "Resurrected King of Iron Fist",
+  "country": "Likely Japan",
+  "style": "Mishima-Style Fighting Karate",
+  "description": [
+    "Heihachi Mishima rightly earned his moniker the \"King of the Iron Fist\" after founding the Mishima Zaibatsu with its formidable private army and being feared worldwide for his countless acts of tyranny.",
+    "Heihachi waged a brutal war that divided the world in two with G Corp—led by his son who bore the devil gene, Kazuya Mishima.",
+    "At its culmination, Heihachi was defeated by Kazuya and thrown into a river of lava, leading the world to believe that he was truly dead..."
+  ],
+  "strengths": ["Staying alive"],
+  "weaknesses": ["Dying"],
+  "ssWeakness": "Left",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 15,
+  "jabPunisher": "1,1,2 or 1,2,2",
+  "launchPunisher": "f,n,d,df+2",
+  "links": {
+    "official": "https://tekken.com/fighters/heihachi-mishima",
+    "wavu": "https://wavu.wiki/t/Heihachi",
+    "fandom": "https://tekken.fandom.com/wiki/Heihachi_Mishima",
+    "discord": "https://discord.com/invite/j3WKYVj",
+    "youtube movelist": "https://www.youtube.com/watch?v=2ZjQlXgHxJE"
+  }
+}

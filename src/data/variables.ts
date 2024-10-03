@@ -74,6 +74,7 @@ export const CHARACTERS: Character[] = [
   { label: "Devil Jin", value: "devilJin" },
   { label: "Eddy Gordo", value: "eddy" },
   { label: "Feng Wei", value: "feng" },
+  { label: "Heihachi Mishima", value: "heihachi", featured: true },
   { label: "Hwoarang", value: "hwoarang" },
   { label: "Jack-8", value: "jack8" },
   { label: "Jin Kazama", value: "jin" },
@@ -100,5 +101,4 @@ export const CHARACTERS: Character[] = [
   { label: "Victor Chevalier", value: "victor" },
   { label: "Yoshimitsu", value: "yoshimitsu" },
   { label: "Zafina", value: "zafina" },
-  { label: "Heihachi Mishima", value: "heihachi", disabled: true },
 ]

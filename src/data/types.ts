@@ -5,6 +5,7 @@ export type Character = {
   label: string
   value: string
   disabled?: boolean
+  featured?: boolean
 }
 
 /** @todo rename to Character */

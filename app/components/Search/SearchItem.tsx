@@ -1,5 +1,6 @@
-import { Move } from "@/data/types"
+import { Character, Move } from "@/data/types"
 import { Group, Stack, Flex, Title, Badge, Property } from "@/ui/components"
+import { cn } from "@/ui/lib/utils"
 
 type SearchItemMoveProps = {
   move: Move
@@ -9,13 +10,13 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
   const {
     name,
     command,
-    block,
-    hit,
-    counterHit,
+    // block,
+    // hit,
+    // counterHit,
     hitLevel,
     tags,
-    damage,
-    startup,
+    // damage,
+    // startup,
   } = move
   const hitLevelsArray = hitLevel.split(",") || ["-"]
   const tagsArray = tags && Object.keys(tags)
@@ -109,13 +110,21 @@ export const SearchItemMove = ({ move }: SearchItemMoveProps) => {
   )
 }
 
-export const SearchItemCharacter = ({ character }: { character: string }) => {
+export const SearchItemCharacter = ({
+  character,
+  featured,
+}: {
+  character: string
+  featured?: Character["featured"]
+}) => {
   return (
     <Group asChild align="between" w="full">
       <Title
         as="h3"
         weight="semibold"
-        className="cursor-pointer text-xl md:text-2xl"
+        className={cn("cursor-pointer text-xl md:text-2xl", {
+          "text-red-medium": featured,
+        })}
       >
         {character}
       </Title>

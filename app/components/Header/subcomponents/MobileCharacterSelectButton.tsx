@@ -54,7 +54,7 @@ export const MobileCharacterSelectButton = () => {
                 >
                   <Title className="mb-2">Choose your fighter</Title>
                   {CHARACTERS.map(
-                    ({ label, value, disabled }) =>
+                    ({ label, value, disabled, featured }) =>
                       !disabled && (
                         // <motion.span
                         //   key={`${label}_MobileCharacterSelect`}
@@ -68,7 +68,14 @@ export const MobileCharacterSelectButton = () => {
                           className="active:bg-yellow-medium"
                         >
                           <Link href={`/${value}`}>
-                            <Title size="md">{label}</Title>
+                            <Title
+                              size="md"
+                              className={
+                                featured ? "text-red-medium" : undefined
+                              }
+                            >
+                              {label}
+                            </Title>
                           </Link>
                         </Card>
                         // </motion.span>

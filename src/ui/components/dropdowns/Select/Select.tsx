@@ -16,6 +16,7 @@ type SelectProps = {
   items: Character[]
   triggerClassName?: string
   groupClassName?: string
+  itemClassName?: string
   onChange?: (value: string) => void
   autoFocus?: boolean
 }
@@ -24,6 +25,7 @@ export function Select({
   placeholder,
   triggerClassName,
   groupClassName,
+  itemClassName,
   items,
   autoFocus,
   onChange,
@@ -39,7 +41,11 @@ export function Select({
       <SelectContent>
         <SelectGroup className={groupClassName}>
           {items.map((item, i) => (
-            <SelectItem key={item.label + i} value={item.value}>
+            <SelectItem
+              key={item.label + i}
+              value={item.value}
+              className={item.featured ? "text-red-medium" : undefined}
+            >
               {item.label}
             </SelectItem>
           ))}
