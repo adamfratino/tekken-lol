@@ -7,7 +7,7 @@ const meta = {
   args: {
     className: "size-24 bg-foreground",
     children: <div className="size-8 bg-orange-medium" />,
-    p: { base: "none", sm: "lg" },
+    p: { base: "none", md: "lg" },
   },
 } satisfies Meta<typeof Card>
 
