@@ -13,5 +13,9 @@
       "damage": "27",
       "notes": "* Heat Engager\n\n* Heat Dash +5\n\n* Balcony Break\n* Floor Break\n* Chip damage on block"
     }
+  },
+  {
+    "identifier": { "wavuId": "Dragunov-d+2" },
+    "fix": { "damage": "14" }
   }
 ]

@@ -1,0 +1,10 @@
+[
+  {
+    "identifier": { "wavuId": "Alisa-d+4" },
+    "fix": { "damage": "15" }
+  },
+  {
+    "identifier": { "wavuId": "Alisa-f+2,1" },
+    "fix": { "block": "-12" }
+  }
+]
