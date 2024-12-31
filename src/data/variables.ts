@@ -71,6 +71,7 @@ export const CHARACTERS: Character[] = [
   { label: "Azucena Castillo", value: "azucena" },
   { label: "Bryan Fury", value: "bryan" },
   { label: "Claudio Serafino", value: "claudio" },
+  { label: "Clive Rosfield", value: "clive", featured: true },
   { label: "Devil Jin", value: "devilJin" },
   { label: "Eddy Gordo", value: "eddy" },
   { label: "Feng Wei", value: "feng" },

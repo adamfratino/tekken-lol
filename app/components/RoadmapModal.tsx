@@ -55,8 +55,8 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
       </li>
 
       <li>
-        <div>
-          <Title size="md">Button mapping &mdash; Nov. 2024</Title>
+        <div className="opacity-50">
+          <Title size="md">Button mapping &mdash; Nov. 2024 (postponed)</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
             Create a tool that maps move commands to a button sequence.
           </p>

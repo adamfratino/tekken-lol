@@ -1,0 +1,39 @@
+{
+  "name": "Clive Rosfield",
+  "tagline": "Shield of the Undying Flame",
+  "country": "Grand Duchy of Rosaria",
+  "style": "Dominant",
+  "description": [
+    "Clive Rosfield, Tekken 8's first guest character, wields his sword and Eikonic powers in earnest, where both lend to excellent control of the space in front of him. Clive dominates the neutral with heavy hitting and long-range attacks, most of which are safe, hard to step, grants heat, or some combination of the these properties. His moveset is smaller than average, which makes it easier to digest and comprehend what attacks one should be using at any given time. Clive can also approach the opponent on a whim by utilizing his Phoenix Dash, equipped with a series of safe mids and risky, yet high return lows.",
+    "Clive struggles against a more patient opponent who employs solid defense, forcing him to opt for his lows which are quite risky compared to his mids. It is a necessity for Clive to thoroughly condition his opponent before he can bring his dominant mids into play."
+  ],
+  "strengths": [
+    "f+1+2 is a god button that controls the neutral, boasting great range, and doubles as a safe, wall-splatting heat engager which tracks to both directions.",
+    "Clive has longer range than most of the cast thanks to his sword, allowing him to dominate space easily.",
+    "Most of Clive's attacks utilize his sword, rendering many of his moves unparriable to most characters.",
+    "Great counter-hit potential with strings such as f+2,2,2, which activates heat and grants a combo on heat dash, and 2,2,1, which is an i12 NCC wall-splat.",
+    "Clive's wall carry potential is exorbitantly high, with and without heat, allowing him to hit the wall from any position on most stages with the correct combo.",
+    "A built up Zantetsuken meter lends itself to huge damage, either as a whiff punish or a combo ender.",
+    "WR.2, mostly used as an approach tool, grants Clive +14 on block if he opts to transition to Phoenix Shift, where most characters have no counters to his fastest options.",
+    "Heat allows Clive access to exclusive strings, which can easily stack chip damage, as well as transition to Phoenix Shift early to make unaware opponents hesitate or press on the string extensions.",
+    "He is cool. Voiced by Ben Starr."
+  ],
+  "weaknesses": [
+    "Key pokes such as df+1 have little to no tracking.",
+    "Standing lows are all -13 or higher, and stand a little on the slower side.",
+    "Most Phoenix Shift transitions start from a duckable high or at sizeable minus frames on block, where most options are beat out by a generic mid poke.",
+    "Only one safe launcher in SS.1+2, which comes out at i25 (despite being +2 on block), the rest being -13 or greater.",
+    "Can’t figure out how to equip a helmet."
+  ],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 18,
+  "jabPunisher": "1,2",
+  "launchPunisher": "df+2",
+  "links": {
+    "official": "https://tekken.com/fighters/clive-rosfield",
+    "wavu": "https://wavu.wiki/t/Clive",
+    "fandom": "https://tekken.fandom.com/wiki/Clive_Rosfield",
+    "youtube movelist": "https://www.youtube.com/watch?v=9R0cE9A19B8"
+  }
+}
