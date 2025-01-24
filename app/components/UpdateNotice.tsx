@@ -3,13 +3,13 @@ import Link from "next/link"
 
 export const UpdateNotice = () => (
   <Body as="h2" size="xs" weight="semibold" className="italic">
-    16 Jan 2025: +
+    24 Jan 2025: +
     <Link
-      href="https://www.tekken-official.jp/tekken_news/?p=689"
+      href="https://discord.com/channels/1247963895956504586/1279303773629710368/1332182581931675660"
       target="_blank"
       className="underline hover:no-underline"
     >
-      Update Clive v1.11.00 balance changes
+      fix Lee db+4 properties
     </Link>
   </Body>
 )
