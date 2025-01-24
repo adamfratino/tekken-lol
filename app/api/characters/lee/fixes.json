@@ -6,5 +6,12 @@
   {
     "identifier": { "wavuId": "Lee-H.2+3" },
     "fix": { "block": "-14" }
+  },
+  {
+    "identifier": { "wavuId": "Lee-db+4" },
+    "fix": {
+      "hit": "-4",
+      "block": "-15"
+    }
   }
 ]
