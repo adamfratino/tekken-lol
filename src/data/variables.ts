@@ -67,11 +67,12 @@ export const TAGS_DICTIONARY = {
 
 export const CHARACTERS: Character[] = [
   { label: "Alisa Bosconovitch", value: "alisa" },
+  { label: "Anna Williams", value: "anna", featured: true },
   { label: "Asuka Kazama", value: "asuka" },
   { label: "Azucena Castillo", value: "azucena" },
   { label: "Bryan Fury", value: "bryan" },
   { label: "Claudio Serafino", value: "claudio" },
-  { label: "Clive Rosfield", value: "clive", featured: true },
+  { label: "Clive Rosfield", value: "clive" },
   { label: "Devil Jin", value: "devilJin" },
   { label: "Eddy Gordo", value: "eddy" },
   { label: "Feng Wei", value: "feng" },

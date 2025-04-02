@@ -1,0 +1,34 @@
+{
+  "name": "Anna Williams",
+  "tagline": "Scarlet Lightning",
+  "country": "Ireland",
+  "style": "Assassination Arts",
+  "description": [
+    "Younger sister to Nina Williams, Anna Williams is breathtaking not only in her beauty but also her skills as a deadly former assassin, earning her the alias of \"Scarlet Lightning\".",
+    "Six months ago, Anna was working as an operations strategist for G Corporation after putting her life as a professional killer behind her. It was there she met the love of her life, a G Corp executive. Soon thereafter, they were set to marry.",
+    "But, on the day of her wedding, her husband-to-be was murdered by her sister Nina. To add salt to such a deep wound, Anna was also suddenly cut from her position at G Corp.",
+    "Burning with a fierce hatred towards Nina, Anna put her old information network to work once more to uncover the truth behind this series of devastating events.",
+    "To her surprise, she learned that her late fiancé had been colluding with a nefarious crime syndicate in secret. A true scumbag, through and through.",
+    "\"Was she trying to...protect me from him...?\"",
+    "It turned out that Nina had exterminated a pest Anna was unaware of. Regardless of whether this had been her sister's intention, Anna couldn't help but feel somewhat grateful.",
+    "The feeling didn't last long, though. Soon after, word reached Anna that Nina had taken over her old position at G Corp.",
+    "\"I knew that sister of mine was a snake! At least now I can enjoy getting my sweet revenge.\"",
+    "Fueled once again by the thirst for vengeance, Anna placed an order with genius weapon developer Dr. Nakamura to create something she could use to storm G Corp and take down Nina.",
+    "What the doctor made for her was a compact weapon capable of transforming, allowing her to eliminate multiple targets at once with explosive firepower—a new friend she named \"Lovely Tom.\"",
+    "In order to work in perfect harmony with Tom, Anna completely overhauled her fighting style.",
+    "\"Just you wait, Nina. Lovely Tom and I will have you pleading for mercy on your knees before long.\""
+  ],
+  "strengths": ["TBD"],
+  "weaknesses": ["TBD"],
+  "ssWeakness": "Right",
+  "heatSmashLevel": "Mid",
+  "heatSmashStartup": 13,
+  "jabPunisher": "1,2",
+  "launchPunisher": "df+2",
+  "links": {
+    "official": "https://tekken.com/fighters/anna-williams",
+    "wavu": "https://wavu.wiki/t/Anna",
+    "fandom": "https://tekken.fandom.com/wiki/Anna_Williams",
+    "youtube movelist": "https://www.youtube.com/watch?v=l4urWQCxDL4"
+  }
+}
