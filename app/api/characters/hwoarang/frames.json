@@ -20,6 +20,7 @@
     {
       "moveNumber": 2,
       "command": "H.RFS.d+4",
+      "name": "",
       "hitLevel": "l",
       "damage": "20",
       "startup": "i20~21",
@@ -27,14 +28,16 @@
       "hit": "+7",
       "counterHit": "",
       "notes": "* Shifts to Right Stance\n* Partially uses remaining Heat time",
-      "wavuId": "Hwoarang-H.RFS.d+4"
+      "wavuId": "Hwoarang-H.RFS.d+4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
       "moveNumber": 3,
       "command": "H.RFS.d+4,3",
-      "hitLevel": "l,h",
-      "damage": "20,12",
-      "startup": "i25",
+      "hitLevel": "l, h",
+      "damage": "20, 12",
+      "startup": "i20~21, i25",
       "block": "-9",
       "hit": "-1",
       "counterHit": "",
@@ -45,9 +48,9 @@
       "moveNumber": 4,
       "command": "H.RFS.d+4,3,4",
       "name": "Predator Bardiche",
-      "hitLevel": "l,h,h",
-      "damage": "20,12,30",
-      "startup": "i27~28",
+      "hitLevel": "l, h, h",
+      "damage": "20, 12, 30",
+      "startup": "i20~21, ,i27~28",
       "block": "-9",
       "hit": "+28a (+2)",
       "counterHit": "",
@@ -58,6 +61,7 @@
     {
       "moveNumber": 5,
       "command": "H.RFS.f+4",
+      "name": "",
       "hitLevel": "h,h",
       "damage": "8,10",
       "startup": "i8,i10",
@@ -65,21 +69,27 @@
       "hit": "+5",
       "counterHit": "",
       "notes": "* Remains in Right Flamingo",
-      "wavuId": "Hwoarang-H.RFS.f+4"
+      "wavuId": "Hwoarang-H.RFS.f+4",
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
       "moveNumber": 6,
       "command": "H.RFS.f+4,4",
       "name": "Right Viper Combo > Right Sword",
-      "hitLevel": "h,h,h",
-      "damage": "8,10,9",
-      "startup": "i23",
+      "hitLevel": "h,h, h",
+      "damage": "8,10, 9",
+      "startup": "i8,i10, i23",
       "block": "-6",
       "hit": "+75 (+59)",
       "counterHit": "",
       "notes": "* Tornado\n* Instant Tornado on standing hit\n* Shifts to Right Stance\n* Combo from 1st hit\n* Partially uses remaining Heat time",
       "wavuId": "Hwoarang-H.RFS.f+4,4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-h.rfs.f+4,4.mp4",
+      "recovery": "RFF"
     },
     {
       "moveNumber": 7,
@@ -93,21 +103,24 @@
       "counterHit": "",
       "notes": "* Heat Smash\n* Jails\n* Also possible during Right Stance and Left Flamingo\n* Shifts to Right Flamingo",
       "wavuId": "Hwoarang-H.2+3",
-      "tags": { "hs": "" }
+      "tags": { "hs": "" },
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
       "moveNumber": 8,
       "command": "R.df+1+2",
       "name": "Sky Burial",
-      "hitLevel": "m",
-      "damage": "55",
+      "hitLevel": "m,t",
+      "damage": "55+",
       "startup": "i20",
       "block": "-15",
-      "hit": "",
+      "hit": "+0d",
       "counterHit": "",
-      "notes": "* Rage Art\n* Erases opponent's recoverable health on hit\n* Possible during all stances except Backturn Stance\nPower crush",
+      "notes": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Possible during all stances except Backturn Stance\nPower crush 8~",
       "wavuId": "Hwoarang-R.df+1+2",
-      "tags": { "pc": "" }
+      "tags": { "pc": "8~" },
+      "recovery": "r39"
     },
     {
       "moveNumber": 9,
@@ -126,9 +139,9 @@
     {
       "moveNumber": 10,
       "command": "1,1",
-      "hitLevel": "h,h",
-      "damage": "5,8",
-      "startup": "i12",
+      "hitLevel": "h, h",
+      "damage": "5, 8",
+      "startup": "i10, i12",
       "block": "-3",
       "hit": "+8",
       "counterHit": "",
@@ -138,9 +151,9 @@
     {
       "moveNumber": 11,
       "command": "1,1,3",
-      "hitLevel": "h,h,l",
-      "damage": "5,8,10",
-      "startup": "i21",
+      "hitLevel": "h, h, l",
+      "damage": "5, 8, 10",
+      "startup": "i10, ,i21",
       "block": "-12",
       "hit": "-1",
       "counterHit": "",
@@ -151,22 +164,25 @@
       "moveNumber": 12,
       "command": "1,1,3,3",
       "name": "Home Surgery",
-      "hitLevel": "h,h,l,h",
-      "damage": "5,8,10,14",
-      "startup": "i20",
+      "hitLevel": "h, h, l, h",
+      "damage": "5, 8, 10, 14",
+      "startup": "i10, ,i20",
       "block": "-14",
       "hit": "+4",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-1,1,3,3"
+      "wavuId": "Hwoarang-1,1,3,3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-1,1,3,3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 13,
       "command": "1,2",
       "name": "Left Right Combo",
-      "hitLevel": "h,h",
-      "damage": "5,10",
-      "startup": "i10",
+      "hitLevel": "h, h",
+      "damage": "5, 10",
+      "startup": "i10, i10",
       "block": "-3",
       "hit": "+6",
       "counterHit": "",
@@ -177,28 +193,35 @@
       "moveNumber": 14,
       "command": "1,2,f+3",
       "name": "Rejector",
-      "hitLevel": "h,h,m",
-      "damage": "5,10,14",
-      "startup": "i21",
+      "hitLevel": "h, h, m",
+      "damage": "5, 10, 14",
+      "startup": "i10, ,i21",
       "block": "-8",
       "hit": "+9",
       "counterHit": "",
-      "notes": "",
-      "wavuId": "Hwoarang-1,2,f+3"
+      "notes": "Wall Crush +21g on hit",
+      "wavuId": "Hwoarang-1,2,f+3",
+      "tags": { "wc": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-1,2,f+3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 15,
       "command": "1,2,f+4",
       "name": "Rejection",
-      "hitLevel": "h,h,h",
-      "damage": "5,10,20",
-      "startup": "i21",
-      "block": "-8",
-      "hit": "+9",
+      "hitLevel": "h, h, h",
+      "damage": "5, 10, 20",
+      "startup": "i10, ,i24",
+      "block": "-2",
+      "hit": "+35 (KND)",
       "counterHit": "",
       "notes": "* Balcony Break\nLow crush",
       "wavuId": "Hwoarang-1,2,f+4",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-1,2,f+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 16,
@@ -209,36 +232,46 @@
       "startup": "i10",
       "block": "+0",
       "hit": "+8",
-      "counterHit": "",
-      "notes": "* 2,3 to shift to Left Flamingo \n* 2,4 to shift to Right Flamingo",
-      "wavuId": "Hwoarang-2"
+      "counterHit": "+9",
+      "notes": "* 2,3 to shift to Left Flamingo \n* 2,4 to shift to Right Flamingo (+3/+11g/+12)",
+      "wavuId": "Hwoarang-2",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 17,
       "command": "2,f+3",
       "name": "Right Jab Side Kick",
-      "hitLevel": "h,m",
-      "damage": "9,14",
-      "startup": "i21",
+      "hitLevel": "h, m",
+      "damage": "9, 14",
+      "startup": "i10, i21",
       "block": "-8",
       "hit": "+9",
       "counterHit": "",
-      "notes": "",
-      "wavuId": "Hwoarang-2,f+3"
+      "notes": "Wall Crush +21g on hit",
+      "wavuId": "Hwoarang-2,f+3",
+      "tags": { "wc": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-2,f+3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 18,
       "command": "2,f+4",
       "name": "Right Jab > Spinning Back Kick",
-      "hitLevel": "h,h",
-      "damage": "9,20",
-      "startup": "i24~25",
+      "hitLevel": "h, h",
+      "damage": "9, 20",
+      "startup": "i10, i24~25",
       "block": "-2",
       "hit": "+35",
       "counterHit": "",
       "notes": "* Balcony Break\nLow crush",
       "wavuId": "Hwoarang-2,f+4",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-2,f+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 19,
@@ -255,9 +288,9 @@
     {
       "moveNumber": 20,
       "command": "3,3",
-      "hitLevel": "h,m",
-      "damage": "15,12",
-      "startup": "i18",
+      "hitLevel": "h, m",
+      "damage": "15, 12",
+      "startup": "i14, i18",
       "block": "-13",
       "hit": "-7",
       "counterHit": "",
@@ -268,55 +301,68 @@
       "moveNumber": 21,
       "command": "3,3,2",
       "name": "Siege Mortar Combo",
-      "hitLevel": "h,m,m",
-      "damage": "15,12,12",
-      "startup": "i21~22",
+      "hitLevel": "h, m, m",
+      "damage": "15, 12, 12",
+      "startup": "i14, ,i21~22",
       "block": "-11",
       "hit": "+1c",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-3,3,2"
+      "wavuId": "Hwoarang-3,3,2",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-3,3,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 22,
       "command": "3,3,3",
       "name": "Left Kicks",
-      "hitLevel": "h,m,m",
-      "damage": "15,12,15",
-      "startup": "i21",
+      "hitLevel": "h, m, m",
+      "damage": "15, 12, 15",
+      "startup": "i14, ,i21",
       "block": "-14",
       "hit": "+32",
       "counterHit": "",
       "notes": "* Balcony Break\n* 3,3,F to shift to Left Flamingo",
       "wavuId": "Hwoarang-3,3,3",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-3,3,3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 23,
       "command": "3,3,4",
       "name": "Left Kicks > Right Hook Kick",
-      "hitLevel": "h,m,h",
-      "damage": "15,12,15",
-      "startup": "i21~23",
+      "hitLevel": "h, m, h",
+      "damage": "15, 12, 15",
+      "startup": "i14, ,i21~23",
       "block": "+8",
       "hit": "+19",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-3,3,4"
+      "wavuId": "Hwoarang-3,3,4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-3,3,4.mp4",
+      "recovery": "RFS"
     },
     {
       "moveNumber": 24,
       "command": "3,3,f+4",
       "name": "Left Kicks > Backlash",
-      "hitLevel": "h,m,h",
-      "damage": "15,12,20",
-      "startup": "i21~27",
+      "hitLevel": "h, m, h",
+      "damage": "15, 12, 20",
+      "startup": "i14, ,i21~27",
       "block": "-1",
       "hit": "+40 (+14)",
       "counterHit": "",
       "notes": "* Balcony Break",
       "wavuId": "Hwoarang-3,3,f+4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-3,3,f+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 25,
@@ -345,71 +391,100 @@
     },
     {
       "moveNumber": 27,
-      "command": "4,3",
-      "name": "Right Left Kick Combo",
-      "hitLevel": "h,m",
-      "damage": "14,16",
-      "startup": "i22",
-      "block": "-6",
-      "hit": "+5",
+      "command": "4 (after parry)",
+      "name": "Shotgun Shuffle",
+      "hitLevel": "m,h,h",
+      "damage": "10,8,10",
+      "startup": "i15,i8,i9",
+      "block": "",
+      "hit": "+17a",
       "counterHit": "",
-      "notes": "* 3,4,F to cancel and shift to Left Flamingo",
-      "wavuId": "Hwoarang-4,3"
+      "notes": "* Pressing 4 after successful parry",
+      "wavuId": "Hwoarang-Shotgun Shuffle"
     },
     {
       "moveNumber": 28,
+      "command": "4,3",
+      "name": "Right Left Kick Combo",
+      "hitLevel": "h, m",
+      "damage": "14, 16",
+      "startup": "i11~12, i22",
+      "block": "-6",
+      "hit": "+5",
+      "counterHit": "",
+      "notes": "* 4,3F to cancel the second hit and shift to Left Flamingo",
+      "wavuId": "Hwoarang-4,3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-4,3.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 29,
       "command": "4,4",
-      "hitLevel": "h,h",
-      "damage": "14,13",
-      "startup": "i16",
+      "name": "",
+      "hitLevel": "h, h",
+      "damage": "14, 13",
+      "startup": "i11~12, i16",
       "block": "-1",
       "hit": "+10",
       "counterHit": "",
       "notes": "* Jails\n* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-4,4"
+      "wavuId": "Hwoarang-4,4",
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 29,
+      "moveNumber": 30,
       "command": "4,4,3",
       "name": "Right Kicks > Chainsaw Heel",
-      "hitLevel": "h,h,m",
-      "damage": "14,13,20",
-      "startup": "i25~31",
+      "hitLevel": "h, h, m",
+      "damage": "14, 13, 20",
+      "startup": "i11~12, ,i25~31",
       "block": "-14c",
       "hit": "+14",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-4,4,3"
+      "wavuId": "Hwoarang-4,4,3",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-4,4,3.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 30,
+      "moveNumber": 31,
       "command": "4,4,4",
-      "hitLevel": "h,h,h",
-      "damage": "14,13,17",
-      "startup": "i25~26",
+      "name": "",
+      "hitLevel": "h, h, h",
+      "damage": "14, 13, 17",
+      "startup": "i11~12, ,i25~26",
       "block": "-2",
       "hit": "+8",
       "counterHit": "",
       "notes": "* Shifts to Right Stance\n* 4,4,4,F to cancel and shift to Right Flamingo\nLow crush",
       "wavuId": "Hwoarang-4,4,4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 31,
+      "moveNumber": 32,
       "command": "4,4,4,4",
       "name": "Right Kicks > Raptor Combo",
-      "hitLevel": "h,h,h,h",
-      "damage": "14,13,17,20",
-      "startup": "i31~32",
+      "hitLevel": "h, h, h, h",
+      "damage": "14, 13, 17, 20",
+      "startup": "i11~12, ,i31~32",
       "block": "+0",
       "hit": "+36 (-22)",
       "counterHit": "",
       "notes": "* Tornado\n* Deals chip damage on hit\n*Alternate input:(RFS.u+4),4\nLow crush",
       "wavuId": "Hwoarang-4,4,4,4",
-      "tags": { "trn": "", "js": "" }
+      "tags": { "trn": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-4,4,4,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 32,
+      "moveNumber": 33,
       "command": "1+2",
       "name": "Disrespect",
       "hitLevel": "",
@@ -419,10 +494,12 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Backturn Stance",
-      "wavuId": "Hwoarang-1+2"
+      "wavuId": "Hwoarang-1+2",
+      "transitions": ["BT"],
+      "recovery": "BT"
     },
     {
-      "moveNumber": 33,
+      "moveNumber": 34,
       "command": "3+4",
       "name": "Motion Switch",
       "hitLevel": "",
@@ -432,10 +509,12 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-3+4"
+      "wavuId": "Hwoarang-3+4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 34,
+      "moveNumber": 35,
       "command": "f+2",
       "name": "Rusty Knife",
       "hitLevel": "",
@@ -445,10 +524,14 @@
       "hit": "+9",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-f+2"
+      "wavuId": "Hwoarang-f+2",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f+2.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 35,
+      "moveNumber": 36,
       "command": "f+3",
       "name": "Left Flamingo Feint",
       "hitLevel": "",
@@ -458,10 +541,12 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Left Flamingo\n* Sidesteps to the right",
-      "wavuId": "Hwoarang-f+3"
+      "wavuId": "Hwoarang-f+3",
+      "transitions": ["LFS"],
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 36,
+      "moveNumber": 37,
       "command": "f+3~3",
       "name": "Cheap Shot Snap Kick",
       "hitLevel": "m",
@@ -471,10 +556,13 @@
       "hit": "+7 (-2)",
       "counterHit": "",
       "notes": "* Sidesteps to the right",
-      "wavuId": "Hwoarang-f+3~3"
+      "wavuId": "Hwoarang-f+3~3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f+3~3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 37,
+      "moveNumber": 38,
       "command": "f+4",
       "name": "Right Hook Kick",
       "hitLevel": "h",
@@ -484,10 +572,14 @@
       "hit": "+18",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-f+4"
+      "wavuId": "Hwoarang-f+4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f+4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 38,
+      "moveNumber": 39,
       "command": "f+1+2",
       "name": "Push Hands",
       "hitLevel": "m",
@@ -497,10 +589,13 @@
       "hit": "+2",
       "counterHit": "",
       "notes": "* Also possible during Right Stance",
-      "wavuId": "Hwoarang-f+1+2"
+      "wavuId": "Hwoarang-f+1+2",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 39,
+      "moveNumber": 40,
       "command": "df+1",
       "hitLevel": "m",
       "damage": "10",
@@ -512,20 +607,24 @@
       "wavuId": "Hwoarang-df+1"
     },
     {
-      "moveNumber": 40,
+      "moveNumber": 41,
       "command": "df+1,3",
       "name": "Left Uppercut & Middle Kick",
-      "hitLevel": "m,m",
-      "damage": "10,15",
-      "startup": "i22~23",
+      "hitLevel": "m, m",
+      "damage": "10, 15",
+      "startup": "i13~14, i22~23",
       "block": "-2",
       "hit": "+6",
       "counterHit": "",
       "notes": "* Shifts to Left Flamingo",
-      "wavuId": "Hwoarang-df+1,3"
+      "wavuId": "Hwoarang-df+1,3",
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-df+1,3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 41,
+      "moveNumber": 42,
       "command": "df+2",
       "name": "Right Uppercut",
       "hitLevel": "m",
@@ -535,10 +634,13 @@
       "hit": "+34 (+24)",
       "counterHit": "",
       "notes": "* Also possible during Right Stance",
-      "wavuId": "Hwoarang-df+2"
+      "wavuId": "Hwoarang-df+2",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-df+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 42,
+      "moveNumber": 43,
       "command": "df+3",
       "hitLevel": "m",
       "damage": "12",
@@ -551,12 +653,12 @@
       "tags": { "pc": "" }
     },
     {
-      "moveNumber": 43,
+      "moveNumber": 44,
       "command": "df+3,4",
       "name": "Double Claymore",
-      "hitLevel": "m,m",
-      "damage": "12,20",
-      "startup": "i24~25",
+      "hitLevel": "m, m",
+      "damage": "12, 20",
+      "startup": "i22~23, i24~25",
       "block": "-14",
       "hit": "+7",
       "counterHit": "",
@@ -564,7 +666,7 @@
       "wavuId": "Hwoarang-df+3,4"
     },
     {
-      "moveNumber": 44,
+      "moveNumber": 45,
       "command": "df+4",
       "name": "Middle Claymore",
       "hitLevel": "m",
@@ -575,10 +677,14 @@
       "counterHit": "",
       "notes": "* Homing\n* Shift to Right Stance",
       "wavuId": "Hwoarang-df+4",
-      "tags": { "hom": "" }
+      "tags": { "hom": "" },
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-df+4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 45,
+      "moveNumber": 46,
       "command": "df+3+4",
       "name": "Ignition Barrage",
       "hitLevel": "m,h,m",
@@ -589,10 +695,13 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Jails\n* Deals chip damage on block\n* Also possible during Right Stance",
       "wavuId": "Hwoarang-df+3+4",
-      "tags": { "he": "" }
+      "tags": { "he": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-df+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 46,
+      "moveNumber": 47,
       "command": "d+3",
       "hitLevel": "l",
       "damage": "7",
@@ -604,20 +713,24 @@
       "wavuId": "Hwoarang-d+3"
     },
     {
-      "moveNumber": 47,
+      "moveNumber": 48,
       "command": "d+3,4",
       "name": "Smash Low Right",
-      "hitLevel": "l,h",
-      "damage": "7,10",
-      "startup": "i21~23",
+      "hitLevel": "l, h",
+      "damage": "7, 10",
+      "startup": "i17, i21~23",
       "block": "+8",
       "hit": "+14",
       "counterHit": "",
       "notes": "* Shift to Right Flamingo",
-      "wavuId": "Hwoarang-d+3,4"
+      "wavuId": "Hwoarang-d+3,4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-d+3,4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 48,
+      "moveNumber": 49,
       "command": "d+4",
       "hitLevel": "l",
       "damage": "7",
@@ -629,21 +742,24 @@
       "wavuId": "Hwoarang-d+4"
     },
     {
-      "moveNumber": 49,
+      "moveNumber": 50,
       "command": "d+4,4",
       "name": "Firecracker",
-      "hitLevel": "l,h",
-      "damage": "722",
-      "startup": "i20",
+      "hitLevel": "l, h",
+      "damage": "7, 22",
+      "startup": "i19, i20",
       "block": "-13",
       "hit": "+69 (+53)",
       "counterHit": "",
       "notes": "* Tornado\n* Also possible during Right Stance",
       "wavuId": "Hwoarang-d+4,4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-d+4,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 50,
+      "moveNumber": 51,
       "command": "db+3",
       "name": "Sweep Kick",
       "hitLevel": "l",
@@ -651,12 +767,15 @@
       "startup": "i19",
       "block": "-13",
       "hit": "-1",
-      "counterHit": "",
+      "counterHit": "+17g",
       "notes": "* Also possible during Right Stance",
-      "wavuId": "Hwoarang-db+3"
+      "wavuId": "Hwoarang-db+3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-db+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 51,
+      "moveNumber": 52,
       "command": "db+4",
       "hitLevel": "l",
       "damage": "14",
@@ -664,24 +783,27 @@
       "block": "-12",
       "hit": "-8",
       "counterHit": "",
-      "notes": "* db+4,F to shift to Right Flamingo",
+      "notes": "* db+4,F to shift to -1? +3 RFS\n* Also possible during Right Stance",
       "wavuId": "Hwoarang-db+4"
     },
     {
-      "moveNumber": 52,
+      "moveNumber": 53,
       "command": "db+4,4",
       "name": "Ankle Biter > Crescent Kick",
-      "hitLevel": "l,h",
-      "damage": "14,21",
-      "startup": "i17~19",
+      "hitLevel": "l, h",
+      "damage": "14, 21",
+      "startup": "i16, i17~19",
       "block": "0",
       "hit": "+24",
       "counterHit": "",
       "notes": "* Natural on CH",
-      "wavuId": "Hwoarang-db+4,4"
+      "wavuId": "Hwoarang-db+4,4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-db+4,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 53,
+      "moveNumber": 54,
       "command": "db+3+4",
       "name": "Dynamite Heel",
       "hitLevel": "ub(m)",
@@ -691,10 +813,13 @@
       "hit": "+17",
       "counterHit": "",
       "notes": "* Also possible during Right Stance\n* db+3+4,b,b to cancel and shift to Left Flamingo",
-      "wavuId": "Hwoarang-db+3+4"
+      "wavuId": "Hwoarang-db+3+4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-db+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 54,
+      "moveNumber": 55,
       "command": "b+1",
       "name": "Stealth Needle",
       "hitLevel": "m",
@@ -707,7 +832,37 @@
       "wavuId": "Hwoarang-b+1"
     },
     {
-      "moveNumber": 55,
+      "moveNumber": 56,
+      "command": "b+1+3/b+2+4",
+      "name": "Parry",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "i6",
+      "block": "",
+      "hit": "+9",
+      "counterHit": "",
+      "notes": "* Parries high and mid punches. Pressing 4 on successful parry gives Shotgun Shuffle",
+      "wavuId": "Hwoarang-b+1+3 or b+2+4"
+    },
+    {
+      "moveNumber": 57,
+      "command": "b+2",
+      "name": "Knife Hand Strike",
+      "hitLevel": "h",
+      "damage": "18",
+      "startup": "i13~15",
+      "block": "-9",
+      "hit": "+15",
+      "counterHit": "",
+      "notes": "* Homing\n* Also possible during Right Stance\n* Sidesteps to the left",
+      "wavuId": "Hwoarang-b+2",
+      "tags": { "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-b+2.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 58,
       "command": "b+3",
       "name": "Left Plasma Blade",
       "hitLevel": "m",
@@ -721,7 +876,7 @@
       "tags": { "trn": "" }
     },
     {
-      "moveNumber": 56,
+      "moveNumber": 59,
       "command": "b+4",
       "name": "Nose Bleeder",
       "hitLevel": "h",
@@ -731,10 +886,12 @@
       "hit": "+1",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-b+4"
+      "wavuId": "Hwoarang-b+4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 57,
+      "moveNumber": 60,
       "command": "ub+2",
       "name": "Knife Hand Strike",
       "hitLevel": "h",
@@ -748,7 +905,7 @@
       "tags": { "hom": "" }
     },
     {
-      "moveNumber": 58,
+      "moveNumber": 61,
       "command": "ub+4",
       "name": "Fade-Away Kick",
       "hitLevel": "m",
@@ -758,10 +915,13 @@
       "hit": "+10",
       "counterHit": "",
       "notes": "* Also possible during Right Stance",
-      "wavuId": "Hwoarang-ub+4"
+      "wavuId": "Hwoarang-ub+4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-ub+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 59,
+      "moveNumber": 62,
       "command": "u+3",
       "name": "Jump Kick",
       "hitLevel": "h",
@@ -772,10 +932,14 @@
       "counterHit": "",
       "notes": "* Also possible during Right Stance\n* Shifts to Left Flamingo\nLow crush",
       "wavuId": "Hwoarang-u+3",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-u+3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 60,
+      "moveNumber": 63,
       "command": "u+4",
       "name": "Scorpion Side Kick",
       "hitLevel": "m",
@@ -786,10 +950,14 @@
       "counterHit": "",
       "notes": "* Also possible during Right Stance\n* Shifts to Right Flamingo\nLow crush",
       "wavuId": "Hwoarang-u+4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-u+4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 61,
+      "moveNumber": 64,
       "command": "u+3+4",
       "name": "Bloody Guillotine",
       "hitLevel": "m",
@@ -800,10 +968,13 @@
       "counterHit": "",
       "notes": "* Also possible during Right Stance\nLow crush",
       "wavuId": "Hwoarang-u+3+4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-u+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 62,
+      "moveNumber": 65,
       "command": "uf+2",
       "name": "Bone Stinger",
       "hitLevel": "m",
@@ -814,10 +985,13 @@
       "counterHit": "",
       "notes": "* Also possible during Right Stance\nLow crush",
       "wavuId": "Hwoarang-uf+2",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-uf+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 63,
+      "moveNumber": 66,
       "command": "uf+3",
       "hitLevel": "m",
       "damage": "11",
@@ -830,35 +1004,42 @@
       "tags": { "js": "" }
     },
     {
-      "moveNumber": 64,
+      "moveNumber": 67,
       "command": "uf+3,4",
-      "hitLevel": "m,m",
-      "damage": "11,12",
-      "startup": "i20~21",
+      "name": "",
+      "hitLevel": "m, m",
+      "damage": "11, 12",
+      "startup": "i28~29, i20~21",
       "block": "+2",
       "hit": "+13",
       "counterHit": "",
       "notes": "* Also possible during Right Stance\n* Shifts to Right Flamingo\nLow crush",
       "wavuId": "Hwoarang-uf+3,4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 65,
+      "moveNumber": 68,
       "command": "uf+3,4,3",
       "name": "Hunting Hawk",
-      "hitLevel": "m,m,m",
-      "damage": "11,12,20",
-      "startup": "i27~28",
+      "hitLevel": "m, m, m",
+      "damage": "11, 12, 20",
+      "startup": "i28~29, ,i27~28",
       "block": "-14c",
       "hit": "0c",
       "counterHit": "",
       "notes": "* Also possible during Right Stance\nLow crush",
       "wavuId": "Hwoarang-uf+3,4,3",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-uf+3,4,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 66,
+      "moveNumber": 69,
       "command": "uf+4",
+      "name": "",
       "hitLevel": "h",
       "damage": "12",
       "startup": "i22~23",
@@ -867,37 +1048,47 @@
       "counterHit": "",
       "notes": "* Also possible during Right Stance\n* Shifts to Right Flamingo\nLow crush",
       "wavuId": "Hwoarang-uf+4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 67,
+      "moveNumber": 70,
       "command": "uf+4,4",
-      "hitLevel": "h,m",
-      "damage": "12,12",
-      "startup": "i11~12",
+      "name": "",
+      "hitLevel": "h, m",
+      "damage": "12, 12",
+      "startup": "i22~23, i11~12",
       "block": "0",
       "hit": "+6",
       "counterHit": "",
       "notes": "* Also possible during Right Stance\n* Shifts to Right Flamingo\nLow crush",
       "wavuId": "Hwoarang-uf+4,4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 68,
+      "moveNumber": 71,
       "command": "uf+4,4,4",
       "name": "Air Raid",
-      "hitLevel": "h,m,l",
-      "damage": "12,12,12",
-      "startup": "i9~10",
+      "hitLevel": "h, m, l",
+      "damage": "12, 12, 12",
+      "startup": "i22~23, ,i9~10",
       "block": "+1",
       "hit": "+7",
       "counterHit": "",
-      "notes": "* Also possible during Right Stance\n* Shifts to Right Flamingo\n* Third hit is not low parryable (bug?)",
-      "wavuId": "Hwoarang-uf+4,4,4"
+      "notes": "* Also possible during Right Stance\n* Shifts to Right Flamingo\n* Third hit is not low parryable (airborne)",
+      "wavuId": "Hwoarang-uf+4,4,4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-uf+4,4,4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 69,
+      "moveNumber": 72,
       "command": "uf+3+4",
+      "name": "",
       "hitLevel": "m,h",
       "damage": "10,8",
       "startup": "i14,i9",
@@ -906,23 +1097,29 @@
       "counterHit": "",
       "notes": "* Jails\n* Also possible during Right Stance\n* Shifts to Right Stance\n* uf+3+4,F to shift to Left Flamingo\nLow crush",
       "wavuId": "Hwoarang-uf+3+4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 70,
+      "moveNumber": 73,
       "command": "uf+3+4,4",
       "name": "Flashing Trident",
-      "hitLevel": "m,h,m",
-      "damage": "10,8,13",
-      "startup": "i14~15",
+      "hitLevel": "m,h, m",
+      "damage": "10,8, 13",
+      "startup": "i14,i9, i14~15",
       "block": "-10",
       "hit": "+7",
       "counterHit": "",
       "notes": "* Also possible during Right Stance\n* Shifts to Right Stance",
-      "wavuId": "Hwoarang-uf+3+4,4"
+      "wavuId": "Hwoarang-uf+3+4,4",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-uf+3+4,4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 71,
+      "moveNumber": 74,
       "command": "1+2+3+4",
       "name": "Ki Charge",
       "hitLevel": "",
@@ -932,10 +1129,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-1+2+3+4"
+      "wavuId": "Hwoarang-1+2+3+4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-1+2+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 72,
+      "moveNumber": 75,
       "command": "f,F+3",
       "name": "Spinning Axe Kick",
       "hitLevel": "m",
@@ -945,10 +1145,14 @@
       "hit": "+6c",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-f,F+3"
+      "wavuId": "Hwoarang-f,F+3",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f,f+3.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 73,
+      "moveNumber": 76,
       "command": "f,F+4",
       "name": "Peacekeeper",
       "hitLevel": "m",
@@ -959,10 +1163,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Heat Engager\n\n* Also possible during Right Stance\n* Shifts to Right Stance (does not shift when using heat dash)",
       "wavuId": "Hwoarang-f,F+4",
-      "tags": { "bbr": "", "he": "" }
+      "tags": { "bbr": "", "he": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f,f+4.mp4",
+      "recovery": "RFF r28?"
     },
     {
-      "moveNumber": 74,
+      "moveNumber": 77,
       "command": "f,n,4",
       "name": "Right Flamingo Feint",
       "hitLevel": "",
@@ -972,10 +1179,12 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo\n* Sidesteps to the left",
-      "wavuId": "Hwoarang-f,n,4"
+      "wavuId": "Hwoarang-f,n,4",
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 75,
+      "moveNumber": 78,
       "command": "f,n,d,df",
       "name": "Shark Step",
       "hitLevel": "",
@@ -985,10 +1194,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-f,n,d,df"
+      "wavuId": "Hwoarang-f,n,d,df",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f,n,d,df.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 76,
+      "moveNumber": 79,
       "command": "f,n,df:4",
       "name": "Lethal Sky Rocket",
       "hitLevel": "m",
@@ -997,12 +1209,15 @@
       "block": "-8",
       "hit": "+59 (+49)",
       "counterHit": "",
-      "notes": "* Tornado\n* Chip damage on block\n* Also possible during Right Stance",
+      "notes": "* Tornado\n* Chip damage on block\n* Also possible during Right Stance. The 4 input can be delayed up to 10 frames after the df input in RFF.",
       "wavuId": "Hwoarang-f,n,df${justFrame}4",
-      "tags": { "trn": "", "chp": "" }
+      "tags": { "trn": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f,n,dfh4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 77,
+      "moveNumber": 80,
       "command": "uf,n,4",
       "name": "Delayed Rising Toe Kick",
       "hitLevel": "m",
@@ -1013,10 +1228,13 @@
       "counterHit": "",
       "notes": "* Also possible during Right Stance\nLow crush",
       "wavuId": "Hwoarang-uf,n,4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-uf,n,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 78,
+      "moveNumber": 81,
       "command": "f,f,F+3",
       "name": "Flying Nerichagi",
       "hitLevel": "m",
@@ -1027,10 +1245,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Chip damage on block\n* Also possible during Right Stance\nLow crush",
       "wavuId": "Hwoarang-f,f,F+3",
-      "tags": { "bbr": "", "chp": "", "js": "" }
+      "tags": { "bbr": "", "chp": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f,f,f+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 79,
+      "moveNumber": 82,
       "command": "f,f,F+4",
       "name": "Torpedo Kick",
       "hitLevel": "h",
@@ -1041,10 +1262,13 @@
       "counterHit": "",
       "notes": "* Chip damage on block\n* Also possible during Right Stance\n* Sideswaps and leaves opponent backturned on hit\n* Shifts to Backturn Stance on block\nLow crush",
       "wavuId": "Hwoarang-f,f,F+4",
-      "tags": { "chp": "", "js": "" }
+      "tags": { "chp": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f,f,f+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 80,
+      "moveNumber": 83,
       "command": "ws1",
       "hitLevel": "m",
       "damage": "12",
@@ -1056,7 +1280,7 @@
       "wavuId": "Hwoarang-ws1"
     },
     {
-      "moveNumber": 81,
+      "moveNumber": 84,
       "command": "ws2",
       "hitLevel": "m",
       "damage": "8",
@@ -1068,21 +1292,25 @@
       "wavuId": "Hwoarang-ws2"
     },
     {
-      "moveNumber": 82,
+      "moveNumber": 85,
       "command": "ws2,3",
       "name": "Chonsan Spin",
-      "hitLevel": "m,h",
-      "damage": "8,10",
-      "startup": "i23~25",
+      "hitLevel": "m, h",
+      "damage": "8, 10",
+      "startup": "i15~16, i23~25",
       "block": "+3",
       "hit": "+72 (+56)",
       "counterHit": "",
       "notes": "* Tornado\n* Shifts to Left Flamingo\nLow crush",
       "wavuId": "Hwoarang-ws2,3",
-      "tags": { "trn": "", "js": "" }
+      "tags": { "trn": "", "js": "" },
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-ws2,3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 83,
+      "moveNumber": 86,
       "command": "ws3",
       "name": "Iron Heel",
       "hitLevel": "m",
@@ -1092,10 +1320,13 @@
       "hit": "+22",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-ws3"
+      "wavuId": "Hwoarang-ws3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-ws3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 84,
+      "moveNumber": 87,
       "command": "ws4",
       "hitLevel": "m",
       "damage": "12",
@@ -1107,21 +1338,26 @@
       "wavuId": "Hwoarang-ws4"
     },
     {
-      "moveNumber": 85,
+      "moveNumber": 88,
       "command": "ws4,4",
       "name": "Tsunami Kick",
-      "hitLevel": "m,m",
-      "damage": "12,16",
-      "startup": "i15~19",
+      "hitLevel": "m, m",
+      "damage": "12, 16",
+      "startup": "i11~12, i15~19",
       "block": "-5",
       "hit": "+4c",
       "counterHit": "",
-      "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-ws4,4"
+      "notes": "* Shifts to Right Stance\n* Combo from 1st hit",
+      "wavuId": "Hwoarang-ws4,4",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-ws4,4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 86,
+      "moveNumber": 89,
       "command": "ws3+4",
+      "name": "",
       "hitLevel": "m",
       "damage": "16",
       "startup": "i20~21",
@@ -1129,23 +1365,28 @@
       "hit": "+2",
       "counterHit": "",
       "notes": "* Alternate input: f,n,d,df+3+4 (CD.3+4)\n* Shifts to Backturn Stance",
-      "wavuId": "Hwoarang-ws3+4"
+      "wavuId": "Hwoarang-ws3+4",
+      "transitions": ["BT"],
+      "recovery": "BT"
     },
     {
-      "moveNumber": 87,
+      "moveNumber": 90,
       "command": "ws3+4,3",
       "name": "Spinning Scythe > Axe Heel",
-      "hitLevel": "m,m",
-      "damage": "16,20",
-      "startup": "i21~26",
+      "hitLevel": "m, m",
+      "damage": "16, 20",
+      "startup": "i20~21, i21~26",
       "block": "-6",
       "hit": "+5c",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-ws3+4,3"
+      "wavuId": "Hwoarang-ws3+4,3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-ws3+4,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 88,
+      "moveNumber": 91,
       "command": "SS.3",
       "hitLevel": "m",
       "damage": "13",
@@ -1157,20 +1398,24 @@
       "wavuId": "Hwoarang-SS.3"
     },
     {
-      "moveNumber": 89,
+      "moveNumber": 92,
       "command": "SS.3,3",
       "name": "Eruption",
-      "hitLevel": "m,h",
-      "damage": "13,16",
-      "startup": "i9~10",
+      "hitLevel": "m, h",
+      "damage": "13, 16",
+      "startup": "i18~19, i9~10",
       "block": "+3",
       "hit": "+14",
       "counterHit": "Launch",
       "notes": "* Shifts to Left Flamingo",
-      "wavuId": "Hwoarang-SS.3,3"
+      "wavuId": "Hwoarang-SS.3,3",
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-ss.3,3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 90,
+      "moveNumber": 93,
       "command": "SS.4",
       "name": "Spinning Trip Kick",
       "hitLevel": "l",
@@ -1178,12 +1423,16 @@
       "startup": "i19~20",
       "block": "-13",
       "hit": "+5c",
-      "counterHit": "Launch",
+      "counterHit": "+31a",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-SS.4"
+      "wavuId": "Hwoarang-SS.4",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-ss.4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 91,
+      "moveNumber": 94,
       "command": "BT.3",
       "name": "Left Plasma Blade",
       "hitLevel": "m",
@@ -1196,7 +1445,7 @@
       "wavuId": "Hwoarang-BT.3"
     },
     {
-      "moveNumber": 92,
+      "moveNumber": 95,
       "command": "BT.4",
       "name": "Plasma Blade",
       "hitLevel": "",
@@ -1206,10 +1455,12 @@
       "hit": "+40 (+30)",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-BT.4"
+      "wavuId": "Hwoarang-BT.4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 93,
+      "moveNumber": 96,
       "command": "BT.d+3",
       "name": "Spinning Low Kick",
       "hitLevel": "l",
@@ -1220,10 +1471,13 @@
       "counterHit": "",
       "notes": "High crush",
       "wavuId": "Hwoarang-BT.d+3",
-      "tags": { "cs": "" }
+      "tags": { "cs": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-bt.d+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 94,
+      "moveNumber": 97,
       "command": "CD.3",
       "name": "Phalanx",
       "hitLevel": "m",
@@ -1234,10 +1488,14 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Chip damage on block\n* Also possible during Right Stance\n* Shifts to Left Flamingo",
       "wavuId": "Hwoarang-CD.3",
-      "tags": { "bbr": "", "chp": "" }
+      "tags": { "bbr": "", "chp": "" },
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-cd.3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 95,
+      "moveNumber": 98,
       "command": "CD.4",
       "name": "Sky Rocket",
       "hitLevel": "m",
@@ -1248,23 +1506,30 @@
       "counterHit": "",
       "notes": "* Tornado\n* Also possible during Right Stance",
       "wavuId": "Hwoarang-CD.4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-cd.4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 96,
+      "moveNumber": 99,
       "command": "LFS.1",
       "name": "Left Flamingo > Back Hand",
-      "hitLevel": "",
+      "hitLevel": "h",
       "damage": "6",
       "startup": "i13",
       "block": "+5",
       "hit": "+7",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-LFS.1"
+      "wavuId": "Hwoarang-LFS.1",
+      "transitions": ["LFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.1.mp4",
+      "recovery": "r14? LFF"
     },
     {
-      "moveNumber": 97,
+      "moveNumber": 100,
       "command": "LFS.2",
       "name": "Right Backhand",
       "hitLevel": "m",
@@ -1274,76 +1539,98 @@
       "hit": "+9",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-LFS.2"
+      "wavuId": "Hwoarang-LFS.2",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.2.mp4",
+      "recovery": "RFF r21?"
     },
     {
-      "moveNumber": 98,
+      "moveNumber": 101,
       "command": "LFS.3",
+      "name": "",
       "hitLevel": "m",
       "damage": "10",
       "startup": "i14",
       "block": "-13",
       "hit": "-7",
       "counterHit": "",
-      "notes": "* LFS.3,F to remain in Left Flamingo",
-      "wavuId": "Hwoarang-LFS.3"
-    },
-    {
-      "moveNumber": 99,
-      "command": "LFS.3,2",
-      "name": "Flamingo Siege Combo",
-      "hitLevel": "m,m",
-      "damage": "10,20",
-      "startup": "i21~22",
-      "block": "-11",
-      "hit": "+1c",
-      "counterHit": "",
-      "notes": "",
-      "wavuId": "Hwoarang-LFS.3,2"
-    },
-    {
-      "moveNumber": 100,
-      "command": "LFS.3,3",
-      "name": "Flamingo Kick Combo Middle",
-      "hitLevel": "m,m",
-      "damage": "10,15",
-      "startup": "i21",
-      "block": "-14",
-      "hit": "+32 (+24)",
-      "counterHit": "",
-      "notes": "* Balcony Break",
-      "wavuId": "Hwoarang-LFS.3,3",
-      "tags": { "bbr": "" }
-    },
-    {
-      "moveNumber": 101,
-      "command": "LFS.3,4",
-      "name": "Flamingo Side Kick > Right Hook Kick",
-      "hitLevel": "m,h",
-      "damage": "10,15",
-      "startup": "i21~23",
-      "block": "+8",
-      "hit": "+19",
-      "counterHit": "",
-      "notes": "* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-LFS.3,4"
+      "notes": "* LFS.3,F to transition to +2 +8 LFS",
+      "wavuId": "Hwoarang-LFS.3",
+      "transitions": ["LFS", "LFF"],
+      "recovery": "LFF"
     },
     {
       "moveNumber": 102,
-      "command": "LFS.3,f+4",
-      "name": "Flamingo Side Kick > Backlash",
-      "hitLevel": "m,h",
-      "damage": "10,20",
-      "startup": "i21~27",
-      "block": "-1",
-      "hit": "+40 (+14)",
+      "command": "LFS.3,2",
+      "name": "Flamingo Siege Combo",
+      "hitLevel": "m, m",
+      "damage": "10, 20",
+      "startup": "i14, i21~22",
+      "block": "-11",
+      "hit": "+1c",
       "counterHit": "",
-      "notes": "* Balcony Break",
-      "wavuId": "Hwoarang-LFS.3,f+4",
-      "tags": { "bbr": "" }
+      "notes": "* Combo from 1st CH with ?F delay",
+      "wavuId": "Hwoarang-LFS.3,2",
+      "transitions": ["LFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.3,2.mp4",
+      "recovery": "LFF"
     },
     {
       "moveNumber": 103,
+      "command": "LFS.3,3",
+      "name": "Flamingo Kick Combo Middle",
+      "hitLevel": "m, m",
+      "damage": "10, 15",
+      "startup": "i14, i21",
+      "block": "-14",
+      "hit": "+32 (+24)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Combo from 1st CH with ?F delay",
+      "wavuId": "Hwoarang-LFS.3,3",
+      "tags": { "bbr": "" },
+      "transitions": ["LFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.3,3.mp4",
+      "recovery": "LFF"
+    },
+    {
+      "moveNumber": 104,
+      "command": "LFS.3,4",
+      "name": "Flamingo Side Kick > Right Hook Kick",
+      "hitLevel": "m, h",
+      "damage": "10, 15",
+      "startup": "i14, i21~23",
+      "block": "+8",
+      "hit": "+19",
+      "counterHit": "",
+      "notes": "* Shifts to Right Flamingo\n* Combo from 1st CH with ?F delay",
+      "wavuId": "Hwoarang-LFS.3,4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.3,4.mp4",
+      "recovery": "RFS"
+    },
+    {
+      "moveNumber": 105,
+      "command": "LFS.3,f+4",
+      "name": "Flamingo Side Kick > Backlash",
+      "hitLevel": "m, h",
+      "damage": "10, 20",
+      "startup": "i14, i21~27",
+      "block": "-1",
+      "hit": "+40 (+14)",
+      "counterHit": "",
+      "notes": "* Balcony Break\n* Combo from 1st CH with ?F delay",
+      "wavuId": "Hwoarang-LFS.3,f+4",
+      "tags": { "bbr": "" },
+      "transitions": ["LFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.3,f+4.mp4",
+      "recovery": "r23? LFF"
+    },
+    {
+      "moveNumber": 106,
       "command": "LFS.4",
       "name": "Right Step Kick",
       "hitLevel": "h",
@@ -1354,10 +1641,14 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Shifts to Right Flamingo",
       "wavuId": "Hwoarang-LFS.4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 104,
+      "moveNumber": 107,
       "command": "LFS.4~3",
       "name": "Lightning Halberd",
       "hitLevel": "h,h",
@@ -1368,10 +1659,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\nLow crush",
       "wavuId": "Hwoarang-LFS.4~3",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.4~3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 105,
+      "moveNumber": 108,
       "command": "LFS.1+4",
       "name": "Power Blast",
       "hitLevel": "ub(m)",
@@ -1381,10 +1675,13 @@
       "hit": "-1",
       "counterHit": "",
       "notes": "* LFS.1+4,b,b to cancel",
-      "wavuId": "Hwoarang-LFS.1+4"
+      "wavuId": "Hwoarang-LFS.1+4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.1+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 106,
+      "moveNumber": 109,
       "command": "LFS.3+4",
       "name": "Flamingo Switch > Right Flamingo",
       "hitLevel": "",
@@ -1394,10 +1691,14 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-LFS.3+4"
+      "wavuId": "Hwoarang-LFS.3+4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.3+4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 107,
+      "moveNumber": 110,
       "command": "LFS.b+1",
       "name": "Stealth Needle",
       "hitLevel": "m",
@@ -1410,7 +1711,7 @@
       "wavuId": "Hwoarang-LFS.b+1"
     },
     {
-      "moveNumber": 108,
+      "moveNumber": 111,
       "command": "LFS.b+3",
       "name": "Left Thunderbolt",
       "hitLevel": "m",
@@ -1419,13 +1720,25 @@
       "block": "-12",
       "hit": "+14",
       "counterHit": "",
-      "notes": "* Balcony Break\n* Deals chip damage on block if an attack is absorbed\n* Shifts to Right Stance\nPower crush",
+      "notes": "* Balcony Break\n* Deals chip damage on block if an attack is absorbed\n* Shifts to Right Stance\n&lt;div class=&quot;plainlist&quot;&gt;\n* Power crush 8~19\n* Low crush 15~23\n* fs24~26&lt;/div&gt;",
       "wavuId": "Hwoarang-LFS.b+3",
-      "tags": { "bbr": "", "pc": "" }
+      "tags": {
+        "bbr": "",
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "pc": "8~19\n*",
+        "js": "15~23\n*",
+        "fs": "24~26&lt;/div&gt;"
+      },
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.b+3.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 109,
+      "moveNumber": 112,
       "command": "LFS.b+4",
+      "name": "",
       "hitLevel": "m",
       "damage": "15",
       "startup": "i16~17",
@@ -1433,24 +1746,30 @@
       "hit": "0",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-LFS.b+4"
+      "wavuId": "Hwoarang-LFS.b+4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 110,
+      "moveNumber": 113,
       "command": "LFS.b+4,3",
       "name": "Flamingo Screw Kick",
-      "hitLevel": "m,h",
-      "damage": "15,20",
-      "startup": "i16~19",
+      "hitLevel": "m, h",
+      "damage": "15, 20",
+      "startup": "i16~17, i16~19",
       "block": "0",
       "hit": "+20 (+11)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Deals chip damage on block\n* Shifts to Right Stance\nLow crush",
       "wavuId": "Hwoarang-LFS.b+4,3",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.b+4,3.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 111,
+      "moveNumber": 114,
       "command": "LFS.df+3",
       "hitLevel": "m",
       "damage": "12",
@@ -1458,25 +1777,28 @@
       "block": "-14",
       "hit": "-4",
       "counterHit": "",
-      "notes": "* Deals chip damage on block if an attack is absorbed\n* LFS.df+3,F/U/D to cancel and remain in Left Flamingo\nPower crush",
+      "notes": "* Deals chip damage on block if an attack is absorbed\n* LFS.df+3,F/U/D to cancel and remain in Left Flamingo\nPower crush 7~",
       "wavuId": "Hwoarang-LFS.df+3",
-      "tags": { "pc": "" }
+      "tags": { "pc": "7~" }
     },
     {
-      "moveNumber": 112,
+      "moveNumber": 115,
       "command": "LFS.df+3,4",
       "name": "Flamingo Double Claymore",
-      "hitLevel": "m,m",
-      "damage": "12,20",
-      "startup": "i24~25",
-      "block": "-12",
+      "hitLevel": "m, m",
+      "damage": "12, 20",
+      "startup": "i22~23, i24~25",
+      "block": "-14",
       "hit": "+7",
       "counterHit": "",
       "notes": "* Deals chip damage on block if an attack is absorbed",
-      "wavuId": "Hwoarang-LFS.df+3,4"
+      "wavuId": "Hwoarang-LFS.df+3,4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.df+3,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 113,
+      "moveNumber": 116,
       "command": "LFS.d+3",
       "hitLevel": "l",
       "damage": "7",
@@ -1488,20 +1810,24 @@
       "wavuId": "Hwoarang-LFS.d+3"
     },
     {
-      "moveNumber": 114,
+      "moveNumber": 117,
       "command": "LFS.d+3,4",
       "name": "Flamingo Low Right",
-      "hitLevel": "l,h",
-      "damage": "7,10",
-      "startup": "i21~23",
+      "hitLevel": "l, h",
+      "damage": "7, 10",
+      "startup": "i16, i21~23",
       "block": "+8",
       "hit": "+14",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-LFS.d+3,4"
+      "wavuId": "Hwoarang-LFS.d+3,4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.d+3,4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 115,
+      "moveNumber": 118,
       "command": "LFS.d+4",
       "name": "Combat Low",
       "hitLevel": "l",
@@ -1511,10 +1837,14 @@
       "hit": "+4",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-LFS.d+4"
+      "wavuId": "Hwoarang-LFS.d+4",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.d+4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 116,
+      "moveNumber": 119,
       "command": "LFS.f+3",
       "name": "Flamingo Rocket",
       "hitLevel": "m",
@@ -1525,10 +1855,14 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Heat Engager\n\n* Remains in Left Flamingo",
       "wavuId": "Hwoarang-LFS.f+3",
-      "tags": { "bbr": "", "he": "" }
+      "tags": { "bbr": "", "he": "" },
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.f+3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 117,
+      "moveNumber": 120,
       "command": "LFS.f+4",
       "name": "Spinning Hook Kick",
       "hitLevel": "m",
@@ -1536,13 +1870,16 @@
       "startup": "i17~18",
       "block": "-10",
       "hit": "+6",
-      "counterHit": "",
+      "counterHit": "+16a (+7a)",
       "notes": "* Homing",
       "wavuId": "Hwoarang-LFS.f+4",
-      "tags": { "hom": "" }
+      "tags": { "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.f+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 118,
+      "moveNumber": 121,
       "command": "LFS.uf+3",
       "hitLevel": "m",
       "damage": "11",
@@ -1555,34 +1892,40 @@
       "tags": { "js": "" }
     },
     {
-      "moveNumber": 119,
+      "moveNumber": 122,
       "command": "LFS.uf+3,4",
-      "hitLevel": "m,m",
-      "damage": "11,12",
-      "startup": "i20~21",
+      "name": "",
+      "hitLevel": "m, m",
+      "damage": "11, 12",
+      "startup": "i28~29, i20~21",
       "block": "+2",
       "hit": "+13",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo\nLow crush",
       "wavuId": "Hwoarang-LFS.uf+3,4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 120,
+      "moveNumber": 123,
       "command": "LFS.uf+3,4,3",
       "name": "Flamingo Hunting Hawk",
-      "hitLevel": "m,m,m",
-      "damage": "11,12,20",
-      "startup": "i27~28",
+      "hitLevel": "m, m, m",
+      "damage": "11, 12, 20",
+      "startup": "i28~29, ,i27~28",
       "block": "-14",
       "hit": "+0c",
       "counterHit": "",
       "notes": "Low crush",
       "wavuId": "Hwoarang-LFS.uf+3,4,3",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.uf+3,4,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 121,
+      "moveNumber": 124,
       "command": "LFS.uf+4",
       "name": "Switch Plasma Blade",
       "hitLevel": "m",
@@ -1593,10 +1936,13 @@
       "counterHit": "",
       "notes": "* Tornado",
       "wavuId": "Hwoarang-LFS.uf+4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.uf+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 122,
+      "moveNumber": 125,
       "command": "LFS.uf+3+4",
       "hitLevel": "m,h",
       "damage": "10,8",
@@ -1609,21 +1955,26 @@
       "tags": { "js": "" }
     },
     {
-      "moveNumber": 123,
+      "moveNumber": 126,
       "command": "LFS.uf+3+4,4",
       "name": "Flamingo Flashing Trident",
-      "hitLevel": "m,h,m",
-      "damage": "10,8,13",
-      "startup": "i14~15",
+      "hitLevel": "m,h, m",
+      "damage": "10,8, 13",
+      "startup": "i14, i14~15",
       "block": "-10",
       "hit": "+7",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-LFS.uf+3+4,4"
+      "wavuId": "Hwoarang-LFS.uf+3+4,4",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-lfs.uf+3+4,4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 124,
+      "moveNumber": 127,
       "command": "RFF.1",
+      "name": "",
       "hitLevel": "h",
       "damage": "10",
       "startup": "i10",
@@ -1631,113 +1982,138 @@
       "hit": "+6",
       "counterHit": "",
       "notes": "* Remains in Right Stance",
-      "wavuId": "Hwoarang-RFF.1"
+      "wavuId": "Hwoarang-RFF.1",
+      "recovery": "RFF r19?"
     },
     {
-      "moveNumber": 125,
+      "moveNumber": 128,
       "command": "RFF.1,1",
       "name": "Migraine",
-      "hitLevel": "h,m",
-      "damage": "10,12",
-      "startup": "i19",
+      "hitLevel": "h, m",
+      "damage": "10, 12",
+      "startup": "i10, i19",
       "block": "-8",
       "hit": "+3",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-RFF.1,1"
+      "wavuId": "Hwoarang-RFF.1,1",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.1,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 126,
+      "moveNumber": 129,
       "command": "RFF.2",
+      "name": "",
       "hitLevel": "h",
       "damage": "6",
       "startup": "i10",
-      "block": "+1",
+      "block": "+2",
       "hit": "+8",
       "counterHit": "",
       "notes": "* Remains in Right Stance",
-      "wavuId": "Hwoarang-RFF.2"
+      "wavuId": "Hwoarang-RFF.2",
+      "recovery": "RFF r17?"
     },
     {
-      "moveNumber": 127,
+      "moveNumber": 130,
       "command": "RFF.2,1",
-      "hitLevel": "h,h",
-      "damage": "6,10",
-      "startup": "i10",
+      "name": "",
+      "hitLevel": "h, h",
+      "damage": "6, 10",
+      "startup": "i10, i10",
       "block": "+0",
       "hit": "+6",
       "counterHit": "",
       "notes": "* Jails\n* Remains in Right Stance",
-      "wavuId": "Hwoarang-RFF.2,1"
+      "wavuId": "Hwoarang-RFF.2,1",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 128,
+      "moveNumber": 131,
       "command": "RFF.2,1,1",
       "name": "Big Fists",
-      "hitLevel": "h,h,m",
-      "damage": "6,10,12",
-      "startup": "i19",
+      "hitLevel": "h, h, m",
+      "damage": "6, 10, 12",
+      "startup": "i10, ,i19",
       "block": "-8",
       "hit": "+3",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-RFF.2,1,1"
+      "wavuId": "Hwoarang-RFF.2,1,1",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.2,1,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 129,
+      "moveNumber": 132,
       "command": "RFF.2,3",
       "name": "Hawk Strike",
-      "hitLevel": "h,h",
-      "damage": "6,24",
-      "startup": "i19~20",
+      "hitLevel": "h, h",
+      "damage": "6, 24",
+      "startup": "i10, i19~20",
       "block": "-9",
       "hit": "+20",
       "counterHit": "",
       "notes": "* Tornado\nLow crush",
       "wavuId": "Hwoarang-RFF.2,3",
-      "tags": { "trn": "", "js": "" }
+      "tags": { "trn": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.2,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 130,
+      "moveNumber": 133,
       "command": "RFF.2,4",
-      "hitLevel": "h,h",
-      "damage": "6,9",
-      "startup": "i12",
+      "name": "",
+      "hitLevel": "h, h",
+      "damage": "6, 9",
+      "startup": "i10, i12",
       "block": "-8",
       "hit": "+3",
       "counterHit": "",
       "notes": "* Jails\n* Remains in Right Stance\n* Hold any direction to shift to Right Flamingo",
-      "wavuId": "Hwoarang-RFF.2,4"
+      "wavuId": "Hwoarang-RFF.2,4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 131,
+      "moveNumber": 134,
       "command": "RFF.2,4,3",
       "name": "Chainsaw Kick Combo",
-      "hitLevel": "h,h,m",
-      "damage": "6,9,20",
-      "startup": "i25~31",
+      "hitLevel": "h, h, m",
+      "damage": "6, 9, 20",
+      "startup": "i10, ,i25~31",
       "block": "-14c",
       "hit": "+14",
       "counterHit": "",
       "notes": "* Remains in Right Stance",
-      "wavuId": "Hwoarang-RFF.2,4,3"
+      "wavuId": "Hwoarang-RFF.2,4,3",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.2,4,3.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 132,
+      "moveNumber": 135,
       "command": "RFF.2,4,4",
       "name": "Right Reverse Kick Combo",
-      "hitLevel": "h,h,h",
-      "damage": "6,9,23",
-      "startup": "i18~19",
+      "hitLevel": "h, h, h",
+      "damage": "6, 9, 23",
+      "startup": "i10, ,i18~19",
       "block": "-5",
       "hit": "+41",
       "counterHit": "",
       "notes": "* Balcony Break\n* Jails",
       "wavuId": "Hwoarang-RFF.2,4,4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.2,4,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 133,
+      "moveNumber": 136,
       "command": "RFF.3",
       "hitLevel": "m",
       "damage": "13",
@@ -1749,35 +2125,43 @@
       "wavuId": "Hwoarang-RFF.3"
     },
     {
-      "moveNumber": 134,
+      "moveNumber": 137,
       "command": "RFF.3,4",
       "name": "Volcannon",
-      "hitLevel": "m,h",
-      "damage": "13,16",
-      "startup": "i27~28",
+      "hitLevel": "m, h",
+      "damage": "13, 16",
+      "startup": "i16, i27~28",
       "block": "+10",
       "hit": "+21",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo\n* RFF.3,4,F to cancel and shift to Right Flamingo",
-      "wavuId": "Hwoarang-RFF.3,4"
+      "wavuId": "Hwoarang-RFF.3,4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.3,4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 135,
+      "moveNumber": 138,
       "command": "RFF.3~4",
       "name": "Backlash",
       "hitLevel": "h",
       "damage": "27",
       "startup": "i27~30",
-      "block": "+5",
+      "block": "+4-+5",
       "hit": "+47",
       "counterHit": "",
-      "notes": "* Strong Aerial Tailspin\n* Homing\n* Balcony Break\n* Clean hit\n* Chip damage on block\nPower crush",
+      "notes": "* Strong Aerial Tailspin\n* Homing\n* Balcony Break\n* Clean hit\n* Chip damage on block\nPower crush 8~",
       "wavuId": "Hwoarang-RFF.3~4",
-      "tags": { "hom": "", "bbr": "", "chp": "", "pc": "" }
+      "tags": { "hom": "", "bbr": "", "chp": "", "pc": "8~" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.3~4.mp4",
+      "recovery": "r18?"
     },
     {
-      "moveNumber": 136,
+      "moveNumber": 139,
       "command": "RFF.4",
+      "name": "",
       "hitLevel": "h",
       "damage": "9",
       "startup": "i12",
@@ -1785,39 +2169,48 @@
       "hit": "+3",
       "counterHit": "",
       "notes": "* Remains in Right Stance\n* Hold any direction to shift to Right Flamingo",
-      "wavuId": "Hwoarang-RFF.4"
+      "wavuId": "Hwoarang-RFF.4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 137,
+      "moveNumber": 140,
       "command": "RFF.4,3",
       "name": "Chainsaw Kick",
-      "hitLevel": "h,m",
-      "damage": "9,20",
-      "startup": "i25~31",
+      "hitLevel": "h, m",
+      "damage": "9, 20",
+      "startup": "i12, i25~31",
       "block": "-14c",
       "hit": "+14",
       "counterHit": "",
       "notes": "* Remains in Right Stance",
-      "wavuId": "Hwoarang-RFF.4,3"
+      "wavuId": "Hwoarang-RFF.4,3",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.4,3.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 138,
+      "moveNumber": 141,
       "command": "RFF.4,4",
       "name": "Right Reverse Kick",
-      "hitLevel": "h,h",
-      "damage": "9,23",
-      "startup": "i18~19",
+      "hitLevel": "h, h",
+      "damage": "9, 23",
+      "startup": "i12, i18~19",
       "block": "-5",
       "hit": "+41",
       "counterHit": "",
       "notes": "* Jails\n* Balcony Break",
       "wavuId": "Hwoarang-RFF.4,4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.4,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 139,
+      "moveNumber": 142,
       "command": "RFF.3+4",
-      "name": "Motion Switch",
+      "name": "Flamingo Switch > Left Flamingo",
       "hitLevel": "",
       "damage": "",
       "startup": "",
@@ -1825,10 +2218,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Left Stance",
-      "wavuId": "Hwoarang-RFF.3+4"
+      "wavuId": "Hwoarang-RFF.3+4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 140,
+      "moveNumber": 143,
       "command": "RFF.b+2",
       "name": "Blast Fist",
       "hitLevel": "m",
@@ -1838,10 +2234,14 @@
       "hit": "+6c",
       "counterHit": "",
       "notes": "* Remains in Right Stance",
-      "wavuId": "Hwoarang-RFF.b+2"
+      "wavuId": "Hwoarang-RFF.b+2",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.b+2.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 141,
+      "moveNumber": 144,
       "command": "RFF.b+3",
       "name": "Nose Bleeder",
       "hitLevel": "h",
@@ -1854,7 +2254,7 @@
       "wavuId": "Hwoarang-RFF.b+3"
     },
     {
-      "moveNumber": 142,
+      "moveNumber": 145,
       "command": "RFF.b+4",
       "name": "Spin Kick",
       "hitLevel": "h",
@@ -1865,10 +2265,13 @@
       "counterHit": "",
       "notes": "* Balcony Break",
       "wavuId": "Hwoarang-RFF.b+4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.b+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 143,
+      "moveNumber": 146,
       "command": "RFF.df+3",
       "name": "Black Kite",
       "hitLevel": "m",
@@ -1877,12 +2280,15 @@
       "block": "+1",
       "hit": "+6",
       "counterHit": "",
-      "notes": "* Homing\n* Heat Engager\n\n* Deals chip damage on block\n* Remains in Right Stance\nLow crush",
+      "notes": "* Homing\n* Heat Engager\n\n* Deals chip damage on block\n* Remains in Right Stance\nLow crush 9~",
       "wavuId": "Hwoarang-RFF.df+3",
-      "tags": { "hom": "", "he": "", "js": "" }
+      "tags": { "hom": "", "he": "", "js": "9~" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.df+3.mp4",
+      "recovery": "RFF r35?"
     },
     {
-      "moveNumber": 144,
+      "moveNumber": 147,
       "command": "RFF.df+4",
       "name": "Right Sidekick",
       "hitLevel": "m",
@@ -1891,38 +2297,45 @@
       "block": "-7",
       "hit": "+1",
       "counterHit": "",
-      "notes": "* Remains in Right Stance\n* Hold any direction to shift to Right Flamingo",
-      "wavuId": "Hwoarang-RFF.df+4"
+      "notes": "* Remains in Right Stance\n* Hold any direction to shift to +5 +13 RFS",
+      "wavuId": "Hwoarang-RFF.df+4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.df+4.mp4",
+      "recovery": "RFF r26?"
     },
     {
-      "moveNumber": 145,
+      "moveNumber": 148,
       "command": "RFF.df+2+3",
+      "name": "",
       "hitLevel": "m",
       "damage": "12",
       "startup": "i22~23",
       "block": "-14",
       "hit": "-4",
       "counterHit": "",
-      "notes": "* Deals chip damage on block if an attack is absorbed\n* RFF.df+2+3,F/U/D to cancel and shift to Left Flamingo\nPower crush",
+      "notes": "* Deals chip damage on block if an attack is absorbed\n* RFF.df+2+3,F/U/D to cancel and shift to Left Flamingo\nPower crush 7~",
       "wavuId": "Hwoarang-RFF.df+2+3",
-      "tags": { "pc": "" }
+      "tags": { "pc": "7~" },
+      "recovery": "r35?"
     },
     {
-      "moveNumber": 146,
+      "moveNumber": 149,
       "command": "RFF.df+2+3,4",
       "name": "Double Claymore",
-      "hitLevel": "m,m",
-      "damage": "12,20",
-      "startup": "i24~25",
-      "block": "-12",
+      "hitLevel": "m, m",
+      "damage": "12, 20",
+      "startup": "i22~23, i24~25",
+      "block": "-14",
       "hit": "+7",
       "counterHit": "",
       "notes": "* Deals chip damage on block if an attack is absorbed",
-      "wavuId": "Hwoarang-RFF.df+2+3,4"
+      "wavuId": "Hwoarang-RFF.df+2+3,4",
+      "recovery": "r35?"
     },
     {
-      "moveNumber": 147,
+      "moveNumber": 150,
       "command": "RFF.d+3",
+      "name": "",
       "hitLevel": "l",
       "damage": "10",
       "startup": "i18",
@@ -1930,23 +2343,29 @@
       "hit": "0",
       "counterHit": "",
       "notes": "* Shifts to Backturn Stance",
-      "wavuId": "Hwoarang-RFF.d+3"
+      "wavuId": "Hwoarang-RFF.d+3",
+      "transitions": ["BT"],
+      "recovery": "BT"
     },
     {
-      "moveNumber": 148,
+      "moveNumber": 151,
       "command": "RFF.d+3,4",
       "name": "Triumph Low Right",
-      "hitLevel": "l,h",
-      "damage": "10,10",
-      "startup": "i21~23",
+      "hitLevel": "l, h",
+      "damage": "10, 10",
+      "startup": "i18, i21~23",
       "block": "+8",
       "hit": "+14",
       "counterHit": "",
-      "notes": "* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-RFF.d+3,4"
+      "notes": "* Shifts to Right Flamingo\n* Combo from 1st hit",
+      "wavuId": "Hwoarang-RFF.d+3,4",
+      "transitions": ["RFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.d+3,4.mp4",
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 149,
+      "moveNumber": 152,
       "command": "RFF.d+3+4",
       "name": "Heel Screw",
       "hitLevel": "l",
@@ -1956,10 +2375,14 @@
       "hit": "+5",
       "counterHit": "",
       "notes": "* Remains in Right Stance",
-      "wavuId": "Hwoarang-RFF.d+3+4"
+      "wavuId": "Hwoarang-RFF.d+3+4",
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.d+3+4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 150,
+      "moveNumber": 153,
       "command": "RFF.f,F+3",
       "name": "Hunting Heel",
       "hitLevel": "m",
@@ -1970,10 +2393,13 @@
       "counterHit": "",
       "notes": "Low crush",
       "wavuId": "Hwoarang-RFF.f,F+3",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.f,f+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 151,
+      "moveNumber": 154,
       "command": "RFF.f+1",
       "hitLevel": "h",
       "damage": "5",
@@ -1985,12 +2411,12 @@
       "wavuId": "Hwoarang-RFF.f+1"
     },
     {
-      "moveNumber": 152,
+      "moveNumber": 155,
       "command": "RFF.f+1,2",
       "name": "Left Right Combo",
-      "hitLevel": "h,h",
-      "damage": "5,10",
-      "startup": "i10",
+      "hitLevel": "h, h",
+      "damage": "5, 10",
+      "startup": "i10, i10",
       "block": "-3",
       "hit": "+6",
       "counterHit": "",
@@ -1998,20 +2424,24 @@
       "wavuId": "Hwoarang-RFF.f+1,2"
     },
     {
-      "moveNumber": 153,
+      "moveNumber": 156,
       "command": "RFF.f+3",
       "name": "Cheap Shot",
       "hitLevel": "h",
       "damage": "21",
       "startup": "i14~17",
-      "block": "+6",
+      "block": "+12",
       "hit": "+17",
       "counterHit": "",
       "notes": "* Shifts to Left Flamingo\n* RFF.f+3,B to shift to Backturn Stance",
-      "wavuId": "Hwoarang-RFF.f+3"
+      "wavuId": "Hwoarang-RFF.f+3",
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.f+3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 154,
+      "moveNumber": 157,
       "command": "RFF.f+4",
       "name": "Right Flamingo Feint",
       "hitLevel": "",
@@ -2021,10 +2451,12 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Right Flamingo",
-      "wavuId": "Hwoarang-RFF.f+4"
+      "wavuId": "Hwoarang-RFF.f+4",
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 155,
+      "moveNumber": 158,
       "command": "RFF.f+4~4",
       "name": "Plasma Blade",
       "hitLevel": "m",
@@ -2035,10 +2467,12 @@
       "counterHit": "",
       "notes": "* Tornado\n* Remains in Right Stance",
       "wavuId": "Hwoarang-RFF.f+4~4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 156,
+      "moveNumber": 159,
       "command": "RFS.1",
       "name": "Left Punch",
       "hitLevel": "m",
@@ -2048,10 +2482,13 @@
       "hit": "+9",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-RFS.1"
+      "wavuId": "Hwoarang-RFS.1",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.1.mp4",
+      "recovery": "r21?"
     },
     {
-      "moveNumber": 157,
+      "moveNumber": 160,
       "command": "RFS.2",
       "name": "Right Flamingo > Back Hand",
       "hitLevel": "h",
@@ -2060,11 +2497,15 @@
       "block": "+5",
       "hit": "+7",
       "counterHit": "",
-      "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-RFS.2"
+      "notes": "* Shifts to Right Stance\n* Links to RFF.2 extensions",
+      "wavuId": "Hwoarang-RFS.2",
+      "transitions": ["RFF.2 extensions"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.2.mp4",
+      "recovery": "RFF r14?"
     },
     {
-      "moveNumber": 158,
+      "moveNumber": 161,
       "command": "RFS.3",
       "name": "Left Step Kick",
       "hitLevel": "h",
@@ -2075,15 +2516,19 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Shifts to Left Flamingo\n* Sidesteps to the left\nLow crush",
       "wavuId": "Hwoarang-RFS.3",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "transitions": ["LFS"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.3.mp4",
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 159,
+      "moveNumber": 162,
       "command": "RFS.3~4",
       "name": "Flying Eagle",
       "hitLevel": "m,m",
       "damage": "11,21",
-      "startup": "i16",
+      "startup": "i16,i7",
       "block": "-3",
       "hit": "+26 (+16)",
       "counterHit": "",
@@ -2092,7 +2537,7 @@
       "tags": { "bbr": "", "js": "" }
     },
     {
-      "moveNumber": 160,
+      "moveNumber": 163,
       "command": "RFS.4",
       "name": "Right Kick",
       "hitLevel": "m",
@@ -2103,10 +2548,14 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Shifts to Right Stance",
       "wavuId": "Hwoarang-RFS.4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 161,
+      "moveNumber": 164,
       "command": "RFS.3+4",
       "name": "Flamingo Switch > Left Flamingo",
       "hitLevel": "",
@@ -2116,10 +2565,12 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Shifts to Left Flamingo",
-      "wavuId": "Hwoarang-RFS.3+4"
+      "wavuId": "Hwoarang-RFS.3+4",
+      "transitions": ["LFS"],
+      "recovery": "LFS"
     },
     {
-      "moveNumber": 162,
+      "moveNumber": 165,
       "command": "RFS.b+3",
       "name": "Left Heel Lance",
       "hitLevel": "m",
@@ -2130,10 +2581,13 @@
       "counterHit": "",
       "notes": "* Heat Engager",
       "wavuId": "Hwoarang-RFS.b+3",
-      "tags": { "he": "" }
+      "tags": { "he": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.b+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 163,
+      "moveNumber": 166,
       "command": "RFS.b+4",
       "name": "Right Thunderbolt",
       "hitLevel": "m",
@@ -2142,12 +2596,22 @@
       "block": "-12",
       "hit": "+14",
       "counterHit": "",
-      "notes": "* Balcony Break\n* Deals chip damage on block if an attack is absorbed\nPower crush",
+      "notes": "* Balcony Break\n* Deals chip damage on block if an attack is absorbed\n&lt;div class=&quot;plainlist&quot;&gt;\n* Power crush 8~19\n* Low crush 15~23\n* fs24~26&lt;/div&gt;",
       "wavuId": "Hwoarang-RFS.b+4",
-      "tags": { "bbr": "", "pc": "" }
+      "tags": {
+        "bbr": "",
+        "&lt;div": "",
+        "class=&quot;plainlist&quot;&gt;\n*": "",
+        "pc": "8~19\n*",
+        "js": "15~23\n*",
+        "fs": "24~26&lt;/div&gt;"
+      },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.b+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 164,
+      "moveNumber": 167,
       "command": "RFS.df+4",
       "name": "Snap Kick",
       "hitLevel": "m",
@@ -2157,10 +2621,13 @@
       "hit": "+8c",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Hwoarang-RFS.df+4"
+      "wavuId": "Hwoarang-RFS.df+4",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.df+4.mp4",
+      "recovery": "r22?"
     },
     {
-      "moveNumber": 165,
+      "moveNumber": 168,
       "command": "RFS.d+3",
       "hitLevel": "l",
       "damage": "13",
@@ -2172,22 +2639,26 @@
       "wavuId": "Hwoarang-RFS.d+3"
     },
     {
-      "moveNumber": 166,
+      "moveNumber": 169,
       "command": "RFS.d+3,3",
       "name": "Teaser",
-      "hitLevel": "l,h",
-      "damage": "13,28",
-      "startup": "i25~27",
+      "hitLevel": "l, h",
+      "damage": "13, 28",
+      "startup": "i15, i25~27",
       "block": "-2",
       "hit": "+34 (+8)",
       "counterHit": "",
-      "notes": "* Balcony Break\n* Deals chip damage on block",
+      "notes": "* Balcony Break\n* Combo from 1st CH\n* Deals chip damage on block",
       "wavuId": "Hwoarang-RFS.d+3,3",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.d+3,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 167,
+      "moveNumber": 170,
       "command": "RFS.d+4",
+      "name": "",
       "hitLevel": "l",
       "damage": "15",
       "startup": "i20~21",
@@ -2195,14 +2666,16 @@
       "hit": "+7",
       "counterHit": "",
       "notes": "* Shifts to Right Stance",
-      "wavuId": "Hwoarang-RFS.d+4"
+      "wavuId": "Hwoarang-RFS.d+4",
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 168,
+      "moveNumber": 171,
       "command": "RFS.d+4,3",
-      "hitLevel": "l,h",
-      "damage": "15,12",
-      "startup": "i25",
+      "hitLevel": "l, h",
+      "damage": "15, 12",
+      "startup": "i20~21, i25",
       "block": "-9",
       "hit": "-1",
       "counterHit": "",
@@ -2210,21 +2683,24 @@
       "wavuId": "Hwoarang-RFS.d+4,3"
     },
     {
-      "moveNumber": 169,
+      "moveNumber": 172,
       "command": "RFS.d+4,3,4",
       "name": "Predator Bardiche",
-      "hitLevel": "l,h,h",
-      "damage": "15,12,20",
-      "startup": "i27~28",
+      "hitLevel": "l, h, h",
+      "damage": "15, 12, 20",
+      "startup": "i20~21, ,i27~28",
       "block": "-9",
       "hit": "+28 (+2)",
       "counterHit": "",
       "notes": "* Balcony Break\nLow crush",
       "wavuId": "Hwoarang-RFS.d+4,3,4",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.d+4,3,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 170,
+      "moveNumber": 173,
       "command": "RFS.f+3",
       "name": "Screw Kick",
       "hitLevel": "m",
@@ -2232,14 +2708,18 @@
       "startup": "i20~21",
       "block": "-10",
       "hit": "+5",
-      "counterHit": "",
+      "counterHit": "+15a(+6a)",
       "notes": "* Homing",
       "wavuId": "Hwoarang-RFS.f+3",
-      "tags": { "hom": "" }
+      "tags": { "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.f+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 171,
+      "moveNumber": 174,
       "command": "RFS.f+4",
+      "name": "",
       "hitLevel": "h,h",
       "damage": "8,8",
       "startup": "i8",
@@ -2247,24 +2727,28 @@
       "hit": "+2",
       "counterHit": "",
       "notes": "* Remains in Right Flamingo",
-      "wavuId": "Hwoarang-RFS.f+4"
+      "wavuId": "Hwoarang-RFS.f+4",
+      "transitions": ["RFS"],
+      "recovery": "RFS"
     },
     {
-      "moveNumber": 172,
+      "moveNumber": 175,
       "command": "RFS.f+4,4",
       "name": "Right Viper Combo > Right Sword",
-      "hitLevel": "h,h,h",
-      "damage": "8,8,9",
-      "startup": "i23",
+      "hitLevel": "h,h, h",
+      "damage": "8,8, 9",
+      "startup": "i8, i23",
       "block": "-6",
       "hit": "+75 (+59)",
       "counterHit": "",
-      "notes": "* Tornado\n* Shifts to Right Stance",
+      "notes": "* Tornado\n* Combo from 1st or 2nd CH\n* Shifts to Right Stance",
       "wavuId": "Hwoarang-RFS.f+4,4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "transitions": ["RFF"],
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 173,
+      "moveNumber": 176,
       "command": "RFS.uf+3",
       "name": "Flamingo Hunting Heel",
       "hitLevel": "m",
@@ -2275,10 +2759,13 @@
       "counterHit": "",
       "notes": "Low crush",
       "wavuId": "Hwoarang-RFS.uf+3",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.uf+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 174,
+      "moveNumber": 177,
       "command": "RFS.uf+4",
       "name": "Air Blade",
       "hitLevel": "m",
@@ -2289,10 +2776,13 @@
       "counterHit": "",
       "notes": "* Tornado\n* Shifts to Right Stance\nLow crush",
       "wavuId": "Hwoarang-RFS.uf+4",
-      "tags": { "trn": "", "js": "" }
+      "tags": { "trn": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.uf+4.mp4",
+      "recovery": "RFF r33?"
     },
     {
-      "moveNumber": 175,
+      "moveNumber": 178,
       "command": "RFS.u+4",
       "name": "Raptor Claw",
       "hitLevel": "h",
@@ -2303,10 +2793,14 @@
       "counterHit": "",
       "notes": "* Homing\n* Shifts to Right Stance\n* Can link attack to last hit of Right Kicks > Raptor Combo, 4,4,4,4",
       "wavuId": "Hwoarang-RFS.u+4",
-      "tags": { "hom": "" }
+      "tags": { "hom": "" },
+      "transitions": ["RFF"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rfs.u+4.mp4",
+      "recovery": "RFF"
     },
     {
-      "moveNumber": 176,
+      "moveNumber": 179,
       "command": "1+3",
       "name": "Pickpocket",
       "hitLevel": "th(h)",
@@ -2316,10 +2810,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Break: 1 or 2\n* Opponent recovery on hit: FDFT\n* Sideswap on break",
-      "wavuId": "Hwoarang-1+3"
+      "wavuId": "Hwoarang-1+3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-1+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 177,
+      "moveNumber": 180,
       "command": "2+4",
       "name": "Falcon Dice Kick",
       "hitLevel": "th(h)",
@@ -2330,23 +2827,30 @@
       "counterHit": "",
       "notes": "* Spike\n* Break: 1 or 2\n* Opponent recovery on hit: FDFT off-axis to the left, sideswap",
       "wavuId": "Hwoarang-2+4",
-      "tags": { "spk": "" }
+      "tags": { "spk": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-2+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 178,
+      "moveNumber": 181,
       "command": "2+4,B",
       "name": "Roll and Choke",
       "hitLevel": "th(h)",
       "damage": "40",
       "startup": "i12~14",
-      "block": "",
+      "block": "-2",
       "hit": "",
       "counterHit": "",
       "notes": "* Break: 2\n* Opponent recovery on hit: FUFA, sideswap\n* Shifts to Backturn Stance",
-      "wavuId": "Hwoarang-b+2+4"
+      "wavuId": "Hwoarang-b+2+4",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-hwoarang-b+2+4.mp4",
+      "recovery": "BT"
     },
     {
-      "moveNumber": 179,
+      "moveNumber": 182,
       "command": "AIR.ub+3",
       "name": "Overhead Kick",
       "hitLevel": "th(m)",
@@ -2356,10 +2860,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Break: none\n* Opponent recovery on hit: FUFA, sideswap\n* Also possible during Right Stance",
-      "wavuId": "Hwoarang-AIR.ub+3"
+      "wavuId": "Hwoarang-AIR.ub+3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-air.ub+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 180,
+      "moveNumber": 183,
       "command": "Back throw",
       "name": "Slaughterhouse",
       "hitLevel": "th(h)",
@@ -2372,7 +2879,7 @@
       "wavuId": "Hwoarang-Back throw"
     },
     {
-      "moveNumber": 181,
+      "moveNumber": 184,
       "command": "Left throw",
       "name": "Bring It On",
       "hitLevel": "th(h)",
@@ -2385,7 +2892,7 @@
       "wavuId": "Hwoarang-Left throw"
     },
     {
-      "moveNumber": 182,
+      "moveNumber": 185,
       "command": "RFF.1+3",
       "name": "Jackknife",
       "hitLevel": "th(h)",
@@ -2395,10 +2902,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Break: 1+2\n* Opponent recovery on hit: FUFA, sideswap\n* Also possible during Right Stance",
-      "wavuId": "Hwoarang-RFF.1+3"
+      "wavuId": "Hwoarang-RFF.1+3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-rff.1+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 183,
+      "moveNumber": 186,
       "command": "Right throw",
       "name": "Dead-End",
       "hitLevel": "th(h)",
@@ -2411,45 +2921,54 @@
       "wavuId": "Hwoarang-Right throw"
     },
     {
-      "moveNumber": 184,
+      "moveNumber": 187,
       "command": "d,db,b+3",
       "name": "Door Mat",
       "hitLevel": "th(h)",
       "damage": "45",
-      "startup": "i12~14",
+      "startup": "i11",
       "block": "",
       "hit": "",
       "counterHit": "",
       "notes": "* Spike\n* Break: 1\n* Opponent recovery on hit: FUFA, sideswap",
       "wavuId": "Hwoarang-d,db,b+3",
-      "tags": { "spk": "" }
+      "tags": { "spk": "" },
+      "image": "",
+      "video": "File:t8-p2-hwoarang-d,db,b+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 185,
+      "moveNumber": 188,
       "command": "f+2+3",
       "name": "Human Cannonball",
       "hitLevel": "th(h)",
       "damage": "35",
-      "startup": "i12~14",
+      "startup": "i12",
       "block": "",
       "hit": "",
       "counterHit": "",
       "notes": "* Break: 1+2\n* Opponent recovery on hit: FUFA, sideswap\n* Possible in all stances except Backturn Stance",
-      "wavuId": "Hwoarang-f+2+3"
+      "wavuId": "Hwoarang-f+2+3",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-f+2+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 186,
+      "moveNumber": 189,
       "command": "uf+1+2",
       "name": "Leg Hook Throw",
       "hitLevel": "th(h)",
       "damage": "40",
-      "startup": "i12~14",
+      "startup": "i12",
       "block": "",
       "hit": "",
       "counterHit": "",
       "notes": "* Break: 1+2\n* Opponent recovery on hit: FUFA\n* Also possible during Right Stance",
-      "wavuId": "Hwoarang-uf+1+2"
+      "wavuId": "Hwoarang-uf+1+2",
+      "image": "",
+      "video": "File:t8-p2-hwoarang-uf+1+2.mp4",
+      "recovery": ""
     }
   ],
-  "stances": ["H", "SS", "BT", "CD", "LFS", "RFF", "RFS"]
+  "stances": ["H", "4", "ws", "SS", "BT", "CD", "LFS", "RFF", "RFS"]
 }
