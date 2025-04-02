@@ -8,14 +8,15 @@
       "command": "2+3",
       "name": "Heat Burst",
       "hitLevel": "m",
-      "damage": "12",
+      "damage": "[12;12]",
       "startup": "i16",
       "block": "+1",
       "hit": "+2c",
       "counterHit": "",
-      "notes": "Heat Burst\n* Cancel move with b,b\nPower crush 8~",
+      "notes": "* Heat Burst\n* Cancel to r45 with b,b\n* 3 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\nPower crush 7~16",
       "wavuId": "Feng-2+3",
-      "tags": { "hb": "", "pc": "8~" }
+      "tags": { "hb": "", "pc": "7~16" },
+      "recovery": "r30"
     },
     {
       "moveNumber": 2,
@@ -28,7 +29,9 @@
       "hit": "+19d",
       "counterHit": "",
       "notes": "* Partially consumes remaining Heat\n* Creates an unblockable shockwave along the ground that is +7g on hit and forces the opponent to crouch. The shockwave comes out even if the kick itself whiffs, or is parried by certain parries like Jin's or Reina's. It can be absorbed by a Power Crush.",
-      "wavuId": "Feng-H.3+4"
+      "wavuId": "Feng-H.3+4",
+      "transitions": ["BT"],
+      "recovery": "BT"
     },
     {
       "moveNumber": 3,
@@ -68,7 +71,7 @@
       "block": "+12, +24 on STC at Wall, +19 at Wall",
       "hit": "+30d (-6)",
       "counterHit": "",
-      "notes": "Heat Smash\n* Chip damage on block\n* Transitions to STC on block, can cancel with b, change to BKP with b, in STC stance.",
+      "notes": "Heat Smash\n* Chip damage on block\n* Transitions to STC on block, can cancel with b.",
       "wavuId": "Feng-H.2+3",
       "tags": { "hs": "", "chp": "" }
     },
@@ -88,6 +91,21 @@
     },
     {
       "moveNumber": 7,
+      "command": "R.df+1+2",
+      "name": "Enlighted Yellow Dragon Palm",
+      "hitLevel": "m,t",
+      "damage": "55+",
+      "startup": "i20",
+      "block": "-15",
+      "hit": "+0d",
+      "counterHit": "",
+      "notes": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\nPower crush 8~",
+      "wavuId": "Feng-R.df+1+2",
+      "tags": { "pc": "8~" },
+      "recovery": "r39"
+    },
+    {
+      "moveNumber": 8,
       "command": "1",
       "name": "Left Jab",
       "hitLevel": "h",
@@ -101,69 +119,69 @@
       "recovery": "r19"
     },
     {
-      "moveNumber": 8,
+      "moveNumber": 9,
       "command": "1,1",
       "name": "Jab Spear Fist",
-      "hitLevel": "h,m",
-      "damage": "5,21",
-      "startup": "i25~26",
+      "hitLevel": "h, m",
+      "damage": "5, 21",
+      "startup": "i10, i25~26",
       "block": "-11",
       "hit": "+2",
       "counterHit": "+61a",
       "notes": "* Move can be delayed",
-      "wavuId": "Feng-1,1"
+      "wavuId": "Feng-1,1",
+      "image": "",
+      "video": "File:t8-p2-feng-1,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 9,
+      "moveNumber": 10,
       "command": "1,2",
       "name": "Shun Lian Quan",
-      "hitLevel": "h,h",
-      "damage": "5,9",
-      "startup": "i10",
+      "hitLevel": "h, h",
+      "damage": "5, 9",
+      "startup": "i10, i10",
       "block": "-3",
       "hit": "+8",
       "counterHit": "",
       "notes": "* Jail from 1st attack\n* Move can be delayed",
-      "wavuId": "Feng-1,2"
+      "wavuId": "Feng-1,2",
+      "image": "",
+      "video": "File:t8-p2-feng-1,2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 10,
+      "moveNumber": 11,
       "command": "1,2,2",
       "name": "Firestorm",
-      "hitLevel": "h,h,h",
-      "damage": "5,9,12",
-      "startup": "i17",
+      "hitLevel": "h, h, h",
+      "damage": "5, 9, 12",
+      "startup": "i10, ,i17",
       "block": "-13",
       "hit": "+3",
       "counterHit": "",
       "notes": "* Combo from 2nd hit\n* Transition to -11 +5 BT with B",
-      "wavuId": "Feng-1,2,2"
-    },
-    {
-      "moveNumber": 11,
-      "command": "1,3",
-      "name": "Jab Roundhouse Combo",
-      "hitLevel": "h,h",
-      "damage": "5,19",
-      "startup": "i16~17",
-      "block": "-5",
-      "hit": "+8~+9",
-      "counterHit": "",
-      "notes": "* Combo from 1st hit\n* Allow to float Combo in Counterhit",
-      "wavuId": "Feng-1,3"
+      "wavuId": "Feng-1,2,2",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-feng-1,2,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 12,
-      "command": "1+3",
-      "name": "Neck Twister",
-      "hitLevel": "h",
-      "damage": "35",
-      "startup": "",
-      "block": "",
-      "hit": "-3",
+      "command": "1,3",
+      "name": "Jab Roundhouse Combo",
+      "hitLevel": "h, h",
+      "damage": "5, 19",
+      "startup": "i10, i16~17",
+      "block": "-5",
+      "hit": "+8~+9",
       "counterHit": "",
-      "notes": "* Throw break 1 or 2",
-      "wavuId": "Feng-1+3"
+      "notes": "* Combo from 1st hit",
+      "wavuId": "Feng-1,3",
+      "image": "",
+      "video": "File:t8-p2-feng-1,3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 13,
@@ -176,7 +194,10 @@
       "hit": "",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-1+3+4"
+      "wavuId": "Feng-1+3+4",
+      "image": "",
+      "video": "File:t8-p2-feng-1+3+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 14,
@@ -195,9 +216,9 @@
     {
       "moveNumber": 15,
       "command": "2,4",
-      "hitLevel": "h,m",
-      "damage": "8,15",
-      "startup": "i17",
+      "hitLevel": "h, m",
+      "damage": "8, 15",
+      "startup": "i10, i17",
       "block": "-12",
       "hit": "-1",
       "counterHit": "",
@@ -207,32 +228,23 @@
     {
       "moveNumber": 16,
       "command": "2,4,1",
-      "name": "San Liang Heng",
-      "hitLevel": "h,m,m",
-      "damage": "8,15,25",
-      "startup": "i24",
+      "name": "San Lian Heng",
+      "hitLevel": "h, m, m",
+      "damage": "8, 15, 25",
+      "startup": "i10, ,i24",
       "block": "-12",
       "hit": "+24d (+14)",
       "counterHit": "",
       "notes": "Balcony Break\n* Combo from 2nd CH\n* Move can be delayed\n* Cancel to -13 -2 BT with B\nLow crush 12~19",
       "wavuId": "Feng-2,4,1",
-      "tags": { "bbr": "", "js": "12~19" }
+      "tags": { "bbr": "", "js": "12~19" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-feng-2,4,1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 17,
-      "command": "2+4",
-      "name": "Serpent Slayer",
-      "hitLevel": "h",
-      "damage": "35",
-      "startup": "",
-      "block": "",
-      "hit": "0",
-      "counterHit": "",
-      "notes": "* Throw break 1 or 2",
-      "wavuId": "Feng-2+4"
-    },
-    {
-      "moveNumber": 18,
       "command": "3",
       "hitLevel": "m",
       "damage": "15",
@@ -244,11 +256,11 @@
       "wavuId": "Feng-3"
     },
     {
-      "moveNumber": 19,
+      "moveNumber": 18,
       "command": "3,3",
-      "hitLevel": "m,h",
-      "damage": "15,10",
-      "startup": "i17",
+      "hitLevel": "m, h",
+      "damage": "15, 10",
+      "startup": "i16, i17",
       "block": "-9",
       "hit": "+2",
       "counterHit": "",
@@ -256,31 +268,52 @@
       "wavuId": "Feng-3,3"
     },
     {
-      "moveNumber": 20,
+      "moveNumber": 19,
       "command": "3,3,4",
       "name": "Peacock Sweep",
-      "hitLevel": "m,h,l",
-      "damage": "15,10,23",
-      "startup": "i25~26",
+      "hitLevel": "m, h, l",
+      "damage": "15, 10, 23",
+      "startup": "i16, ,i25~26",
       "block": "-12",
       "hit": "+7c",
       "counterHit": "+17d",
       "notes": "* Combo from 2nd CH\n* Move can be delayed\n* Cancel to -13 -2 BT with B",
-      "wavuId": "Feng-3,3,4"
+      "wavuId": "Feng-3,3,4",
+      "transitions": ["BT", "BT"],
+      "image": "",
+      "video": "File:t8-p2-feng-3,3,4.mp4",
+      "recovery": "BT"
     },
     {
-      "moveNumber": 21,
+      "moveNumber": 20,
       "command": "3,1+2",
       "name": "Peacock Strike",
-      "hitLevel": "m,m",
-      "damage": "15,30",
-      "startup": "i28~29",
+      "hitLevel": "m, m",
+      "damage": "15, 30",
+      "startup": "i16, i28~29",
       "block": "-12",
       "hit": "+22d (+17)",
       "counterHit": "",
-      "notes": "Balcony Break\n* Combo from 1st hit\n* Can be charged to power up:\n* At full charge +7 on block, +19 at Wall 14 chip damage",
+      "notes": "Balcony Break\n* Combo from 1st hit",
       "wavuId": "Feng-3,1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-3,1+2.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 21,
+      "command": "3,1+2*",
+      "name": "Peacock Strike (Hold)",
+      "hitLevel": "m, m",
+      "damage": "15, 35",
+      "startup": "i16, i44~45",
+      "block": "+7",
+      "hit": "+23d (+13d)",
+      "counterHit": "",
+      "notes": "Balcony Break\n* Wall Crush +19g on block\n\n\n* 14 Chip Damage on block\n* 16 Chip Damage on block in heat",
+      "wavuId": "Feng-3,1+2*",
+      "tags": { "bbr": "", "wc": "" }
     },
     {
       "moveNumber": 22,
@@ -293,20 +326,26 @@
       "counterHit": "",
       "notes": "* Cancel to -7~-2 -+19~+24 BT with B\nLow crush 20~",
       "wavuId": "Feng-3~4",
-      "tags": { "js": "20~" }
+      "tags": { "js": "20~" },
+      "transitions": ["BT"]
     },
     {
       "moveNumber": 23,
       "command": "3~4,3",
       "name": "Leaping Whirlwind Combo",
-      "hitLevel": "m,l",
-      "damage": "27,11",
-      "startup": "i18~20",
+      "hitLevel": "m, l",
+      "damage": "27, 11",
+      "startup": "i34~36, i18~20",
       "block": "-26",
       "hit": "+19d (+12)",
       "counterHit": "",
-      "notes": "* Combo from 1st hit",
-      "wavuId": "Feng-3~4,3"
+      "notes": "* Combo from 1st hit\nHigh crush 6~",
+      "wavuId": "Feng-3~4,3",
+      "tags": { "cs": "6~" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-3~4,3.mp4",
+      "recovery": "FC"
     },
     {
       "moveNumber": 24,
@@ -330,9 +369,12 @@
       "block": "-7",
       "hit": "+1c",
       "counterHit": "+16a~+22a",
-      "notes": "* Combo at tip range\nLow crush 15",
+      "notes": "* Combo at tip range\nLow crush 15~",
       "wavuId": "Feng-4~3",
-      "tags": { "js": "15" }
+      "tags": { "js": "15~" },
+      "image": "",
+      "video": "File:t8-p2-feng-4~3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 26,
@@ -344,9 +386,12 @@
       "block": "-13 / +20wc",
       "hit": "+8",
       "counterHit": "",
-      "notes": "* Punch sabaki\n* Wall Crush  +20g on hit\nParry state 5~9",
+      "notes": "* Punch sabaki ps5~9\n* Wall Crush  +20g on hit\nParry state 5~9",
       "wavuId": "Feng-1+2",
-      "tags": { "wc": "", "ps": "5~9" }
+      "tags": { "wc": "", "ps": "5~9" },
+      "image": "",
+      "video": "File:t8-p2-feng-1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 27,
@@ -363,9 +408,9 @@
     {
       "moveNumber": 28,
       "command": "f+2,1",
-      "hitLevel": "m,m",
-      "damage": "10,10",
-      "startup": "i19",
+      "hitLevel": "m, m",
+      "damage": "10, 10",
+      "startup": "i15, i19",
       "block": "-8",
       "hit": "+3",
       "counterHit": "",
@@ -376,21 +421,24 @@
       "moveNumber": 29,
       "command": "f+2,1,2",
       "name": "Boar's Tusk",
-      "hitLevel": "m,m,m",
-      "damage": "10,10,28",
-      "startup": "i13~14",
+      "hitLevel": "m, m, m",
+      "damage": "10, 10, 28",
+      "startup": "i15, ,i13~14",
       "block": "-19",
       "hit": "+19d (+14)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combo from 2nd hit\n* Move can be delayed",
       "wavuId": "Feng-f+2,1,2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-f+2,1,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 30,
       "command": "f+3",
       "hitLevel": "m",
-      "damage": ",10",
+      "damage": "10",
       "startup": "i21",
       "block": "-3",
       "hit": "+7",
@@ -402,36 +450,42 @@
       "moveNumber": 31,
       "command": "f+3,2",
       "name": "Piercing Dragon",
-      "hitLevel": "m,h",
-      "damage": ",10,17",
-      "startup": "i21~22",
+      "hitLevel": "m, h",
+      "damage": "10, 17",
+      "startup": "i21, i21~22",
       "block": "-3",
       "hit": "+8",
       "counterHit": "+43d (+35)",
       "notes": "* Combo from 1st hit\n* Move can be delayed",
-      "wavuId": "Feng-f+3,2"
+      "wavuId": "Feng-f+3,2",
+      "image": "",
+      "video": "File:t8-p2-feng-f+3,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 32,
       "command": "f+3,4",
       "name": "Climbing Dragon",
-      "hitLevel": "m,m",
-      "damage": ",10,15",
-      "startup": "i23~24",
+      "hitLevel": "m, m",
+      "damage": "10, 15",
+      "startup": "i21, i23~24",
       "block": "-16",
       "hit": "+33a (+23)",
       "counterHit": "",
       "notes": "* Combo from 1st hit\n* Tornado\nLow crush 21",
       "wavuId": "Feng-f+3,4",
-      "tags": { "trn": "", "js": "21" }
+      "tags": { "trn": "", "js": "21" },
+      "image": "",
+      "video": "File:t8-p2-feng-f+3,4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 33,
       "command": "f+3,4",
       "name": "Climbing Dragon",
-      "hitLevel": "m,m",
-      "damage": ",10,15",
-      "startup": "i23~24",
+      "hitLevel": "m, m",
+      "damage": "10, 15",
+      "startup": "i21, i23~24",
       "block": "-16",
       "hit": "+33a (+23)",
       "counterHit": "",
@@ -449,49 +503,59 @@
       "hit": "+52a",
       "counterHit": "",
       "notes": "* Transition to -5 +56a BT with B",
-      "wavuId": "Feng-f+4"
+      "wavuId": "Feng-f+4",
+      "transitions": ["BT"]
     },
     {
       "moveNumber": 35,
       "command": "f+4,2",
       "name": "Tornado Open Palm",
-      "hitLevel": "h,m",
-      "damage": "19,16",
-      "startup": "i24~25",
+      "hitLevel": "h, m",
+      "damage": "19, 16",
+      "startup": "i18~19, i24~25",
       "block": "-14",
       "hit": "+70a (+54)",
       "counterHit": "",
       "notes": "* Combo from 1st hit\n* Tornado",
       "wavuId": "Feng-f+4,2",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-f+4,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 36,
       "command": "f+4,3",
       "name": "Tornado Stomp",
-      "hitLevel": "h,m",
-      "damage": "19,21",
-      "startup": "i22~24",
+      "hitLevel": "h, m",
+      "damage": "19, 21",
+      "startup": "i18~19, i22~24",
       "block": "-10",
       "hit": "+26d (-9)",
       "counterHit": "",
       "notes": "Spike\n* Combo from 1st hit",
       "wavuId": "Feng-f+4,3",
-      "tags": { "spk": "" }
+      "tags": { "spk": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-f+4,3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 37,
       "command": "f+4,4",
       "name": "Tornado Sweep",
-      "hitLevel": "h,l",
-      "damage": "19,11",
-      "startup": "i33~33",
+      "hitLevel": "h, l",
+      "damage": "19, 11",
+      "startup": "i18~19, i33~33",
       "block": "-31",
       "hit": "+27d",
       "counterHit": "",
       "notes": "* Combo from 1st hit\nHigh crush 10",
       "wavuId": "Feng-f+4,4",
-      "tags": { "cs": "10" }
+      "tags": { "cs": "10" },
+      "image": "",
+      "video": "File:t8-p2-feng-f+4,4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 38,
@@ -505,7 +569,10 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +35d\n\n* Balcony Break\nPower crush 7",
       "wavuId": "Feng-f+1+2",
-      "tags": { "he": "", "bbr": "", "pc": "7" }
+      "tags": { "he": "", "bbr": "", "pc": "7" },
+      "image": "",
+      "video": "File:t8-p2-feng-f+1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 39,
@@ -533,7 +600,10 @@
       "hit": "+6",
       "counterHit": "+36g",
       "notes": "",
-      "wavuId": "Feng-df+1"
+      "wavuId": "Feng-df+1",
+      "image": "",
+      "video": "File:t8-p2-feng-df+1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 41,
@@ -550,16 +620,19 @@
     {
       "moveNumber": 42,
       "command": "df+2,2",
-      "name": "God Fist",
-      "hitLevel": "m,m",
-      "damage": "15,21",
-      "startup": "i13~14",
+      "name": "God Palm",
+      "hitLevel": "m, m",
+      "damage": "15, 21",
+      "startup": "i20~21, i13~14",
       "block": "-6",
       "hit": "+14a (+4)",
       "counterHit": "",
       "notes": "Balcony Break",
       "wavuId": "Feng-df+2,2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-df+2,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 43,
@@ -573,7 +646,10 @@
       "counterHit": "",
       "notes": "* Tornado",
       "wavuId": "Feng-df+3",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-df+3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 44,
@@ -590,9 +666,9 @@
     {
       "moveNumber": 45,
       "command": "df+4,2",
-      "hitLevel": "m,m",
-      "damage": "13,13",
-      "startup": "i20~21",
+      "hitLevel": "m, m",
+      "damage": "13, 13",
+      "startup": "i15, i20~21",
       "block": "-11",
       "hit": "+1",
       "counterHit": "",
@@ -603,29 +679,35 @@
       "moveNumber": 46,
       "command": "df+4,2,1+2",
       "name": "Pau Lau Stinger",
-      "hitLevel": "m,m,m",
-      "damage": "13,13,21",
-      "startup": "i34~35",
+      "hitLevel": "m, m, m",
+      "damage": "13, 13, 21",
+      "startup": "i15, ,i34~35",
       "block": "-19",
       "hit": "+31a (+16)",
       "counterHit": "",
       "notes": "* Tornado\n* Move can be delayed",
       "wavuId": "Feng-df+4,2,1+2",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-df+4,2,1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 47,
       "command": "df+4,3",
       "name": "Twin Dragon",
-      "hitLevel": "m,h",
-      "damage": "13,23",
-      "startup": "i23~24",
+      "hitLevel": "m, h",
+      "damage": "13, 23",
+      "startup": "i15, i23~24",
       "block": "-4",
       "hit": "+15g",
       "counterHit": "+27d",
       "notes": "Balcony Break\n* Combo from 1st hit\n* Move can be delayed",
       "wavuId": "Feng-df+4,3",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-df+4,3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 48,
@@ -639,7 +721,10 @@
       "counterHit": "",
       "notes": "Homing",
       "wavuId": "Feng-df+3+4",
-      "tags": { "hom": "" }
+      "tags": { "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-df+3+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 49,
@@ -653,7 +738,11 @@
       "counterHit": "",
       "notes": "High crush 6~20",
       "wavuId": "Feng-d+2",
-      "tags": { "cs": "6~20" }
+      "tags": { "cs": "6~20" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-d+2.mp4",
+      "recovery": "FC"
     },
     {
       "moveNumber": 50,
@@ -671,15 +760,18 @@
       "moveNumber": 51,
       "command": "d+4,1+2",
       "name": "Parting Heavens",
-      "hitLevel": "l,m",
-      "damage": "7,22",
-      "startup": "i26",
+      "hitLevel": "l, m",
+      "damage": "7, 22",
+      "startup": "i14~15, i26",
       "block": "-10",
       "hit": "+11d (+2)",
       "counterHit": "",
       "notes": "Balcony Break\n* Combo from 1st CH",
       "wavuId": "Feng-d+4,1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-d+4,1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 52,
@@ -697,15 +789,18 @@
       "moveNumber": 53,
       "command": "d+1+2,1",
       "name": "Mad Windmill",
-      "hitLevel": "m,m",
-      "damage": "15,20",
-      "startup": "i22~23",
+      "hitLevel": "m, m",
+      "damage": "15, 20",
+      "startup": "i20~21, i22~23",
       "block": "-12",
       "hit": "+18a (+11)",
       "counterHit": "",
       "notes": "* Tornado\n* Combo from 1st hit\n* Move can be delayed",
       "wavuId": "Feng-d+1+2,1",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-d+1+2,1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 54,
@@ -717,15 +812,16 @@
       "hit": "+4",
       "counterHit": "",
       "notes": "* Transition to -9 +7 KNP with B\n* Transition to -16 +0 STC with F",
-      "wavuId": "Feng-db+1"
+      "wavuId": "Feng-db+1",
+      "transitions": ["KNP", "STC"]
     },
     {
       "moveNumber": 55,
       "command": "db+1,2",
       "name": "Spear of Lu Bu",
-      "hitLevel": "m,m",
-      "damage": "15,18",
-      "startup": "i23~24",
+      "hitLevel": "m, m",
+      "damage": "15, 18",
+      "startup": "i16, i23~24",
       "block": "-11",
       "hit": "+3",
       "counterHit": "",
@@ -735,43 +831,52 @@
     {
       "moveNumber": 56,
       "command": "db+1,2,4",
-      "hitLevel": "m,m,m",
-      "damage": "15,18,30",
-      "startup": "i31",
+      "name": "",
+      "hitLevel": "m, m, m",
+      "damage": "15, 18, 30",
+      "startup": "i16, ,i31",
       "block": "-7",
       "hit": "-3d",
       "counterHit": "",
       "notes": "* Floor Break\n* Combo from 2nd CH\nLow crush",
       "wavuId": "Feng-db+1,2,4",
-      "tags": { "fbr": "", "js": "" }
+      "tags": { "fbr": "", "js": "" },
+      "transitions": ["FC"],
+      "recovery": "FC"
     },
     {
       "moveNumber": 57,
       "command": "db+1,2,4,3+4",
       "name": "Rampaging Lion",
-      "hitLevel": "m,m,mm",
-      "damage": "15,18,3020",
-      "startup": "i39~42",
+      "hitLevel": "m, m, m, m",
+      "damage": "15, 18, 30, 20",
+      "startup": "i16, ,i39~42",
       "block": "-3~0",
       "hit": "+31a (+21)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Same attack as Spring Up (FUFT.b+3+4)\nLow crush",
       "wavuId": "Feng-db+1,2,4,3+4",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-db+1,2,4,3+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 58,
       "command": "db+1,4",
       "name": "Spinning Neck Strike",
-      "hitLevel": "m,h",
-      "damage": "15,23",
-      "startup": "i24~25",
+      "hitLevel": "m, h",
+      "damage": "15, 23",
+      "startup": "i16, i24~25",
       "block": "-2",
       "hit": "+24a (+15)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combo from 1st hit\n* Move can be delayed",
       "wavuId": "Feng-db+1,4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-db+1,4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 59,
@@ -789,9 +894,9 @@
     {
       "moveNumber": 60,
       "command": "db+2,2",
-      "hitLevel": "l,l",
-      "damage": "10,10",
-      "startup": "i28~30",
+      "hitLevel": "l, l",
+      "damage": "10, 10",
+      "startup": "i20~21, i28~30",
       "block": "-17",
       "hit": "+20a",
       "counterHit": "",
@@ -803,15 +908,18 @@
       "moveNumber": 61,
       "command": "db+2,2,2",
       "name": "Hellwinds",
-      "hitLevel": "l,l,m",
-      "damage": "10,10,25",
-      "startup": "i28~29",
+      "hitLevel": "l, l, m",
+      "damage": "10, 10, 25",
+      "startup": "i20~21, ,i28~29",
       "block": "-8",
       "hit": "+13d",
       "counterHit": "",
       "notes": "* Spike\n* Combo from 2nd hit",
       "wavuId": "Feng-db+2,2,2",
-      "tags": { "spk": "" }
+      "tags": { "spk": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-db+2,2,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 62,
@@ -825,7 +933,11 @@
       "counterHit": "",
       "notes": "* Transition to throw when CH from front\nHigh crush 6~17",
       "wavuId": "Feng-db+3",
-      "tags": { "cs": "6~17" }
+      "tags": { "cs": "6~17" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-db+3.mp4",
+      "recovery": "FC"
     },
     {
       "moveNumber": 63,
@@ -837,9 +949,13 @@
       "block": "-26",
       "hit": "+76a (+60)",
       "counterHit": "",
-      "notes": "Tornado\nHoming\nHigh crush 6~31",
+      "notes": "* Tornado\n* Homing\n* Recover in FC on hit\nHigh crush 6~31",
       "wavuId": "Feng-db+4",
-      "tags": { "trn": "", "hom": "", "cs": "6~31" }
+      "tags": { "trn": "", "hom": "", "cs": "6~31" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-db+4.mp4",
+      "recovery": "FC"
     },
     {
       "moveNumber": 64,
@@ -857,15 +973,19 @@
       "moveNumber": 65,
       "command": "db+1+2,2",
       "name": "Dragon Slayer",
-      "hitLevel": "m,l",
-      "damage": "13,10",
-      "startup": "i29~30",
+      "hitLevel": "m, l",
+      "damage": "13, 10",
+      "startup": "i21~22, i29~30",
       "block": "-12",
       "hit": "-1",
       "counterHit": "",
       "notes": "* Combo from 1st CH\n* Move can be delayed\nHigh crush 8",
       "wavuId": "Feng-db+1+2,2",
-      "tags": { "cs": "8" }
+      "tags": { "cs": "8" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-db+1+2,2.mp4",
+      "recovery": "FC"
     },
     {
       "moveNumber": 66,
@@ -878,7 +998,10 @@
       "hit": "+1",
       "counterHit": "+36d (+28)",
       "notes": "",
-      "wavuId": "Feng-b+1"
+      "wavuId": "Feng-b+1",
+      "image": "",
+      "video": "File:t8-p2-feng-b+1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 67,
@@ -896,9 +1019,9 @@
     {
       "moveNumber": 68,
       "command": "b+2,3",
-      "hitLevel": "m,l",
-      "damage": "13,6",
-      "startup": "i22~24",
+      "hitLevel": "m, l",
+      "damage": "13, 6",
+      "startup": "i17, i22~24",
       "block": "-11",
       "hit": "0",
       "counterHit": "",
@@ -908,9 +1031,9 @@
     {
       "moveNumber": 69,
       "command": "b+2,3,4",
-      "hitLevel": "m,l,m",
-      "damage": "13,6,13",
-      "startup": "i24~25",
+      "hitLevel": "m, l, m",
+      "damage": "13, 6, 13",
+      "startup": "i17, ,i24~25",
       "block": "-12",
       "hit": "+19a (+12)",
       "counterHit": "",
@@ -921,15 +1044,18 @@
       "moveNumber": 70,
       "command": "b+2,3,4,2",
       "name": "Hungry Tiger",
-      "hitLevel": "m,l,m,m",
-      "damage": "13,6,13,22",
-      "startup": "i24~25",
+      "hitLevel": "m, l, m, m",
+      "damage": "13, 6, 13, 22",
+      "startup": "i17, ,i24~25",
       "block": "-6",
       "hit": "+4",
       "counterHit": "",
       "notes": "* Combo from 3rd hit\n* Spike",
       "wavuId": "Feng-b+2,3,4,2",
-      "tags": { "spk": "" }
+      "tags": { "spk": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-b+2,3,4,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 71,
@@ -942,7 +1068,10 @@
       "hit": "+10d",
       "counterHit": "+38a",
       "notes": "",
-      "wavuId": "Feng-b+3"
+      "wavuId": "Feng-b+3",
+      "image": "",
+      "video": "File:t8-p2-feng-b+3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 72,
@@ -956,6 +1085,9 @@
       "counterHit": "",
       "notes": "* Transitions to BT\n* Enter STC with F",
       "wavuId": "Feng-b+3~4",
+      "transitions": ["STC", "BT"],
+      "image": "",
+      "video": "File:t8-p2-feng-b+3~4.mp4",
       "recovery": "BT"
     },
     {
@@ -965,11 +1097,14 @@
       "hitLevel": "m",
       "damage": "10",
       "startup": "i12~13",
-      "block": "-9",
+      "block": "-10",
       "hit": "+4",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-b+4"
+      "wavuId": "Feng-b+4",
+      "image": "",
+      "video": "File:t8-p2-feng-b+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 74,
@@ -983,7 +1118,10 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5 +18 at wall, +43d (+35)\n\n* Balcony Break",
       "wavuId": "Feng-b+1+2",
-      "tags": { "he": "", "bbr": "" }
+      "tags": { "he": "", "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-b+1+2.mp4",
+      "recovery": "r38?"
     },
     {
       "moveNumber": 75,
@@ -997,6 +1135,7 @@
       "counterHit": "",
       "notes": "* Enter STC with f \n* Take 15 Frames \n* Autoblock 20 Frames",
       "wavuId": "Feng-KNP",
+      "transitions": ["STC", "KNP"],
       "recovery": "KNP"
     },
     {
@@ -1010,7 +1149,10 @@
       "hit": "+10",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-ub+2"
+      "wavuId": "Feng-ub+2",
+      "image": "",
+      "video": "File:t8-p2-feng-ub+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 77,
@@ -1023,7 +1165,10 @@
       "hit": "+50g (+19)",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-ub+1+2"
+      "wavuId": "Feng-ub+1+2",
+      "image": "",
+      "video": "File:t8-p2-feng-ub+1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 78,
@@ -1035,9 +1180,12 @@
       "block": "+2",
       "hit": "+10",
       "counterHit": "",
-      "notes": "Low crush 9",
+      "notes": "Chip damage on block\nLow crush 9",
       "wavuId": "Feng-u+2",
-      "tags": { "js": "9" }
+      "tags": { "chp": "", "js": "9" },
+      "image": "",
+      "video": "File:t8-p2-feng-u+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 79,
@@ -1051,7 +1199,10 @@
       "counterHit": "",
       "notes": "* +12 on crouching opponent\n* Alternate input with uf or u\nLow crush 6",
       "wavuId": "Feng-uf+1",
-      "tags": { "js": "6" }
+      "tags": { "js": "6" },
+      "image": "",
+      "video": "File:t8-p2-feng-uf+1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 80,
@@ -1064,7 +1215,10 @@
       "hit": "+3",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-uf+2"
+      "wavuId": "Feng-uf+2",
+      "image": "",
+      "video": "File:t8-p2-feng-uf+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 81,
@@ -1078,7 +1232,10 @@
       "counterHit": "",
       "notes": "* Alternate input with uf or u\nLow crush 9",
       "wavuId": "Feng-uf+3",
-      "tags": { "js": "9" }
+      "tags": { "js": "9" },
+      "image": "",
+      "video": "File:t8-p2-feng-uf+3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 82,
@@ -1106,21 +1263,23 @@
       "counterHit": "",
       "notes": "* Alternate input with uf or u\nLow crush 9",
       "wavuId": "Feng-uf+4",
-      "tags": { "js": "9" }
+      "tags": { "js": "9" },
+      "image": "",
+      "video": "File:t8-p2-feng-uf+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 84,
-      "command": "uf+1+2",
-      "name": "Kunlun Avalanche",
-      "hitLevel": "h",
-      "damage": "40",
-      "startup": "",
-      "block": "",
-      "hit": "0",
+      "command": "uf+3+4",
+      "hitLevel": "m,h,h",
+      "damage": "10,10,7",
+      "startup": "i24,4,3",
+      "block": "-14",
+      "hit": "+25a (+18)",
       "counterHit": "",
-      "notes": "* Spike\n* Throw break 1+2",
-      "wavuId": "Feng-uf+1+2",
-      "tags": { "spk": "" }
+      "notes": "High crush 6~24Low crush 25",
+      "wavuId": "Feng-uf+3+4",
+      "tags": { "cs": "6~24js" }
     },
     {
       "moveNumber": 85,
@@ -1137,33 +1296,23 @@
     },
     {
       "moveNumber": 86,
-      "command": "uf+3+4",
-      "hitLevel": "m,h,h",
-      "damage": "10,10,7",
-      "startup": "i24,4,3",
-      "block": "-14",
-      "hit": "+25a (+18)",
-      "counterHit": "",
-      "notes": "High crush 6~24Low crush 25",
-      "wavuId": "Feng-uf+3+4",
-      "tags": { "cs": "6~24js" }
-    },
-    {
-      "moveNumber": 87,
       "command": "uf+3+4,3",
       "name": "Assassin's Bow",
-      "hitLevel": "m,h,h,h",
-      "damage": "10,10,7,11",
-      "startup": ",i17~18",
+      "hitLevel": "m,h,h, h",
+      "damage": "10,10,7, 11",
+      "startup": "i24,4,3, i17~18",
       "block": "-6",
       "hit": "+70a (+54)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Tornado\n* Combo from 1st hit\n* causes 1st hit not to crush",
       "wavuId": "Feng-uf+3+4,3",
-      "tags": { "bbr": "", "trn": "" }
+      "tags": { "bbr": "", "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-uf+3+4,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 88,
+      "moveNumber": 87,
       "command": "1+2+3+4",
       "name": "Ki Charge",
       "hitLevel": "",
@@ -1173,10 +1322,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-1+2+3+4"
+      "wavuId": "Feng-1+2+3+4",
+      "image": "",
+      "video": "File:t8-p2-feng-1+2+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 89,
+      "moveNumber": 88,
       "command": "B,B,U/B",
       "name": "Evading Wall",
       "hitLevel": "m",
@@ -1185,51 +1337,12 @@
       "block": "+4c",
       "hit": "+22",
       "counterHit": "+22",
-      "notes": "* The move only can be do it near the wall with the back at the wall allowing to escape from the corner and on hit starts combo, similar to a launcher and without tornado.",
+      "notes": "* The move only can be do it near the wall with the back at the wall allowing to escape from the corner and on hit starts combo, similar to a launcher and without tornado.\nLow crush 5",
       "wavuId": "Feng-B,B,U/B",
-      "recovery": "js5"
+      "tags": { "js": "5" }
     },
     {
-      "moveNumber": 90,
-      "command": "Back Throw",
-      "name": "Violent Storm",
-      "hitLevel": "h",
-      "damage": "50",
-      "startup": "",
-      "block": "",
-      "hit": "-4",
-      "counterHit": "",
-      "notes": "* Cannot break throw",
-      "wavuId": "Feng-Back Throw"
-    },
-    {
-      "moveNumber": 91,
-      "command": "Left Throw",
-      "name": "Jaws of Death",
-      "hitLevel": "h",
-      "damage": "40",
-      "startup": "",
-      "block": "",
-      "hit": "-6",
-      "counterHit": "",
-      "notes": "* Throw break 1",
-      "wavuId": "Feng-Left Throw"
-    },
-    {
-      "moveNumber": 92,
-      "command": "Right Throw",
-      "name": "Wandering Soul",
-      "hitLevel": "h",
-      "damage": "40",
-      "startup": "",
-      "block": "",
-      "hit": "-4",
-      "counterHit": "",
-      "notes": "* Throw break 2",
-      "wavuId": "Feng-Right Throw"
-    },
-    {
-      "moveNumber": 93,
+      "moveNumber": 89,
       "command": "b,f+1",
       "name": "Falcon's Beak",
       "hitLevel": "m",
@@ -1239,10 +1352,13 @@
       "hit": "+10d (+1)",
       "counterHit": "+44a",
       "notes": "",
-      "wavuId": "Feng-b,f+1"
+      "wavuId": "Feng-b,f+1",
+      "image": "",
+      "video": "File:t8-p2-feng-b,f+1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 94,
+      "moveNumber": 90,
       "command": "b1+3",
       "name": "Attack Reversal",
       "hitLevel": "",
@@ -1256,7 +1372,7 @@
       "tags": { "ps": "" }
     },
     {
-      "moveNumber": 95,
+      "moveNumber": 91,
       "command": "f,F+2",
       "name": "Exploding Dagger",
       "hitLevel": "m",
@@ -1267,10 +1383,13 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break",
       "wavuId": "Feng-f,F+2",
-      "tags": { "he": "", "bbr": "" }
+      "tags": { "he": "", "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-f,f+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 96,
+      "moveNumber": 92,
       "command": "f,F+3",
       "name": "Tremor Stomp",
       "hitLevel": "m",
@@ -1281,10 +1400,11 @@
       "counterHit": "",
       "notes": "* Chip damage on block\n* Transition to +4c +4c STC with f",
       "wavuId": "Feng-f,F+3",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "transitions": ["STC"]
     },
     {
-      "moveNumber": 97,
+      "moveNumber": 93,
       "command": "f,F+4",
       "hitLevel": "m",
       "damage": "15",
@@ -1296,21 +1416,24 @@
       "wavuId": "Feng-f,F+4"
     },
     {
-      "moveNumber": 98,
+      "moveNumber": 94,
       "command": "f,F+4,3",
       "name": "Spreading Wings",
-      "hitLevel": "m,m",
-      "damage": "15,21",
-      "startup": "i20~21",
+      "hitLevel": "m, m",
+      "damage": "15, 21",
+      "startup": "i19~20, i20~21",
       "block": "-14",
       "hit": "+32a (+25)",
       "counterHit": "",
       "notes": "* Move can be powered up by delaying input (25 damage)\nLow crush 20",
       "wavuId": "Feng-f,F+4,3",
-      "tags": { "js": "20" }
+      "tags": { "js": "20" },
+      "image": "",
+      "video": "File:t8-p2-feng-f,f+4,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 99,
+      "moveNumber": 95,
       "command": "f,F+1+2",
       "name": "Nian Zhang Mie Ba",
       "hitLevel": "m",
@@ -1321,10 +1444,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Hold 1+2 to power up and deal more chip damage on block",
       "wavuId": "Feng-f,F+1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-f,f+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 100,
+      "moveNumber": 96,
       "command": "f,F+1+2*",
       "name": "Nian Zhang Mie Ba (charged)",
       "hitLevel": "m",
@@ -1338,7 +1464,7 @@
       "tags": { "bbr": "", "wc": "" }
     },
     {
-      "moveNumber": 101,
+      "moveNumber": 97,
       "command": "qcf",
       "name": "Lingering Shadow",
       "hitLevel": "",
@@ -1349,10 +1475,31 @@
       "counterHit": "",
       "notes": "* D,df to enter crouching state\nHigh crush",
       "wavuId": "Feng-qcf",
-      "tags": { "cs": "" }
+      "tags": { "cs": "" },
+      "transitions": ["crouching"],
+      "image": "",
+      "video": "File:t8-p2-feng-qcf.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 102,
+      "moveNumber": 98,
+      "command": "qcf+1",
+      "name": "Landslide",
+      "hitLevel": "l",
+      "damage": "23",
+      "startup": "i22~23",
+      "block": "-14",
+      "hit": "+2",
+      "counterHit": "+31a",
+      "notes": "Head\nHigh crush 6",
+      "wavuId": "Feng-qcf1",
+      "tags": { "cs": "6" },
+      "image": "",
+      "video": "File:t8-p2-feng-qcf1.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 99,
       "command": "qcf+1",
       "name": "Landslide",
       "hitLevel": "l",
@@ -1366,21 +1513,7 @@
       "tags": { "cs": "6" }
     },
     {
-      "moveNumber": 103,
-      "command": "qcf+1",
-      "name": "Landslide",
-      "hitLevel": "l",
-      "damage": "23",
-      "startup": "i22~23",
-      "block": "-14",
-      "hit": "+2",
-      "counterHit": "+31a",
-      "notes": "Head\nHigh crush 6",
-      "wavuId": "Feng-qcf1",
-      "tags": { "cs": "6" }
-    },
-    {
-      "moveNumber": 104,
+      "moveNumber": 100,
       "command": "qcf+2",
       "name": "Mountain Crusher",
       "hitLevel": "m",
@@ -1391,10 +1524,13 @@
       "counterHit": "",
       "notes": "* Tornado",
       "wavuId": "Feng-qcf2",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-qcf2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 105,
+      "moveNumber": 101,
       "command": "qcf+1+2",
       "name": "Yan Wang's Wrath",
       "hitLevel": "m",
@@ -1404,10 +1540,13 @@
       "hit": "+7c",
       "counterHit": "+13",
       "notes": "Head",
-      "wavuId": "Feng-qcf1+2"
+      "wavuId": "Feng-qcf1+2",
+      "image": "",
+      "video": "File:t8-p2-feng-qcf1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 106,
+      "moveNumber": 102,
       "command": "qcf+3+4",
       "hitLevel": "",
       "damage": "",
@@ -1419,7 +1558,7 @@
       "wavuId": "Feng-qcf3+4"
     },
     {
-      "moveNumber": 107,
+      "moveNumber": 103,
       "command": "uf,n,4",
       "name": "Delayed Rising Toe Kick",
       "hitLevel": "m",
@@ -1430,10 +1569,13 @@
       "counterHit": "",
       "notes": "Low crush 9",
       "wavuId": "Feng-uf,n,4",
-      "tags": { "js": "9" }
+      "tags": { "js": "9" },
+      "image": "",
+      "video": "File:t8-p2-feng-uf,n,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 108,
+      "moveNumber": 104,
       "command": "f,f,F+3",
       "name": "Severing Sword",
       "hitLevel": "m",
@@ -1444,10 +1586,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Chip damage on block\nLow crush 5",
       "wavuId": "Feng-f,f,F+3",
-      "tags": { "bbr": "", "chp": "", "js": "5" }
+      "tags": { "bbr": "", "chp": "", "js": "5" },
+      "image": "",
+      "video": "File:t8-p2-feng-f,f,f+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 109,
+      "moveNumber": 105,
       "command": "ws1",
       "hitLevel": "m",
       "damage": "13",
@@ -1459,11 +1604,11 @@
       "wavuId": "Feng-ws1"
     },
     {
-      "moveNumber": 110,
+      "moveNumber": 106,
       "command": "ws1,2",
-      "hitLevel": "m,m",
-      "damage": "13,16",
-      "startup": ",i9",
+      "hitLevel": "m, m",
+      "damage": "13, 16",
+      "startup": "i13, i9",
       "block": "-12",
       "hit": "-1",
       "counterHit": "",
@@ -1471,34 +1616,40 @@
       "wavuId": "Feng-ws1,2"
     },
     {
-      "moveNumber": 111,
+      "moveNumber": 107,
       "command": "ws1,2,1",
       "name": "Dancing Dragon",
-      "hitLevel": "m,m,m",
-      "damage": "13,16,20",
-      "startup": "i17~18",
+      "hitLevel": "m, m, m",
+      "damage": "13, 16, 20",
+      "startup": "i13, ,i17~18",
       "block": "-14",
       "hit": "+12d (+3)",
       "counterHit": "+32d (+24)",
       "notes": "* Balcony Break\n* Combo from 2nd CH\n* Move can be delayed",
       "wavuId": "Feng-ws1,2,1",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-ws1,2,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 112,
+      "moveNumber": 108,
       "command": "ws1,3",
       "name": "Dancing Scorpion Sting",
-      "hitLevel": "m,h",
-      "damage": "13,20",
-      "startup": "i22~23",
+      "hitLevel": "m, h",
+      "damage": "13, 20",
+      "startup": "i13, i22~23",
       "block": "-6",
       "hit": "+4c",
       "counterHit": "+20d",
       "notes": "* Combo from 1st hit\n* Move can be delayed",
-      "wavuId": "Feng-ws1,3"
+      "wavuId": "Feng-ws1,3",
+      "image": "",
+      "video": "File:t8-p2-feng-ws1,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 113,
+      "moveNumber": 109,
       "command": "ws2",
       "name": "Adamantine Uppercut",
       "hitLevel": "m",
@@ -1509,10 +1660,13 @@
       "counterHit": "+78a (+62)",
       "notes": "* Balcony Break\n* Tornado (CH Only)",
       "wavuId": "Feng-ws2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-ws2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 114,
+      "moveNumber": 110,
       "command": "ws3",
       "name": "Bow Kick",
       "hitLevel": "m",
@@ -1522,10 +1676,13 @@
       "hit": "+33a (+23)",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-ws3"
+      "wavuId": "Feng-ws3",
+      "image": "",
+      "video": "File:t8-p2-feng-ws3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 115,
+      "moveNumber": 111,
       "command": "ws4",
       "name": "Rising Heel Kick",
       "hitLevel": "m",
@@ -1535,10 +1692,13 @@
       "hit": "+7",
       "counterHit": "+29g",
       "notes": "",
-      "wavuId": "Feng-ws4"
+      "wavuId": "Feng-ws4",
+      "image": "",
+      "video": "File:t8-p2-feng-ws4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 116,
+      "moveNumber": 112,
       "command": "ws1+2",
       "name": "Push Hands",
       "hitLevel": "m",
@@ -1549,10 +1709,13 @@
       "counterHit": "",
       "notes": "Parry state 5~8",
       "wavuId": "Feng-ws1+2",
-      "tags": { "ps": "5~8" }
+      "tags": { "ps": "5~8" },
+      "image": "",
+      "video": "File:t8-p2-feng-ws1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 117,
+      "moveNumber": 113,
       "command": "SS.2",
       "name": "Hidden Intentions",
       "hitLevel": "h",
@@ -1564,10 +1727,13 @@
       "notes": "* Homing\n* Recovers in BT",
       "wavuId": "Feng-SS.2",
       "tags": { "hom": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-feng-ss.2.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 118,
+      "moveNumber": 114,
       "command": "SS.4",
       "name": "Swift Sweep Kick",
       "hitLevel": "l",
@@ -1578,10 +1744,13 @@
       "counterHit": "+72a (+56)",
       "notes": "* Has a clean hit effect\nHigh crush 10",
       "wavuId": "Feng-SS.4",
-      "tags": { "cs": "10" }
+      "tags": { "cs": "10" },
+      "image": "",
+      "video": "File:t8-p2-feng-ss.4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 119,
+      "moveNumber": 115,
       "command": "SS.1+2",
       "name": "Enlightened Circle",
       "hitLevel": "m",
@@ -1592,10 +1761,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Chip damage on block",
       "wavuId": "Feng-SS.1+2",
-      "tags": { "bbr": "", "chp": "" }
+      "tags": { "bbr": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-ss.1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 120,
+      "moveNumber": 116,
       "command": "FC.df+1",
       "name": "Silent Arrow",
       "hitLevel": "l",
@@ -1605,10 +1777,14 @@
       "hit": "-2",
       "counterHit": "+13",
       "notes": "",
-      "wavuId": "Feng-FC.df+1"
+      "wavuId": "Feng-FC.df+1",
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-fc.df+1.mp4",
+      "recovery": "FC"
     },
     {
-      "moveNumber": 121,
+      "moveNumber": 117,
       "command": "FC.df+2",
       "name": "Monkey Strike",
       "hitLevel": "m",
@@ -1618,10 +1794,14 @@
       "hit": "+55a",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-FC.df+2"
+      "wavuId": "Feng-FC.df+2",
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-fc.df+2.mp4",
+      "recovery": "FC"
     },
     {
-      "moveNumber": 122,
+      "moveNumber": 118,
       "command": "FC.df+4",
       "name": "",
       "hitLevel": "l",
@@ -1632,23 +1812,27 @@
       "counterHit": "",
       "notes": "* Can be input with D,df+4\n* Recovers in BT",
       "wavuId": "Feng-FC.df+4",
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 123,
+      "moveNumber": 119,
       "command": "FC.df+4,1",
-      "name": "Xuan Jiao Xian Yan Shou",
-      "hitLevel": "l,h",
-      "damage": "13,10",
-      "startup": "i20~21",
+      "name": "Xuan Jiao Xiao Yan Shou",
+      "hitLevel": "l, h",
+      "damage": "13, 10",
+      "startup": "i19~20, i20~21",
       "block": "-2",
       "hit": "+6",
       "counterHit": "",
       "notes": "* Combo from 1st attack",
-      "wavuId": "Feng-FC.df+4,1"
+      "wavuId": "Feng-FC.df+4,1",
+      "image": "",
+      "video": "File:t8-p2-feng-fc.df+4,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 124,
+      "moveNumber": 120,
       "command": "BT.1",
       "name": "Backfist",
       "hitLevel": "h",
@@ -1658,10 +1842,13 @@
       "hit": "+14",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-BT.1"
+      "wavuId": "Feng-BT.1",
+      "image": "",
+      "video": "File:t8-p2-feng-bt.1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 125,
+      "moveNumber": 121,
       "command": "BT.2",
       "name": "Slashing Tiger",
       "hitLevel": "m",
@@ -1672,10 +1859,13 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +43d (+35)\n\n* Absorb an attack to power up and deal more damage on block\nPower crush 8~",
       "wavuId": "Feng-BT.2",
-      "tags": { "he": "", "pc": "8~" }
+      "tags": { "he": "", "pc": "8~" },
+      "image": "",
+      "video": "File:t8-p2-feng-bt.2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 126,
+      "moveNumber": 122,
       "command": "BT.3",
       "name": "Tremor Stomp",
       "hitLevel": "m",
@@ -1686,10 +1876,11 @@
       "counterHit": "",
       "notes": "* Chip damage on block\n* Transition to STC with f",
       "wavuId": "Feng-BT.3",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "transitions": ["STC"]
     },
     {
-      "moveNumber": 127,
+      "moveNumber": 123,
       "command": "BT.1+2",
       "name": "Hustle Elbow",
       "hitLevel": "m",
@@ -1699,23 +1890,13 @@
       "hit": "+8",
       "counterHit": "+41d (+33)",
       "notes": "* Balcony Break (CH only)",
-      "wavuId": "Feng-BT.1+2"
+      "wavuId": "Feng-BT.1+2",
+      "image": "",
+      "video": "File:t8-p2-feng-bt.1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 128,
-      "command": "BT.1+4",
-      "name": "Pao Lau Impaler",
-      "hitLevel": "h",
-      "damage": "45",
-      "startup": "",
-      "block": "",
-      "hit": "-5",
-      "counterHit": "",
-      "notes": "* Throw break 1+2",
-      "wavuId": "Feng-BT.1+4_2+3"
-    },
-    {
-      "moveNumber": 129,
+      "moveNumber": 124,
       "command": "BT.d+1",
       "name": "Reverse Fractured Diamond",
       "hitLevel": "l",
@@ -1724,12 +1905,16 @@
       "block": "-13c",
       "hit": "+4",
       "counterHit": "+16d",
-      "notes": "High crush 15",
+      "notes": "High crush 15~",
       "wavuId": "Feng-BT.d+1",
-      "tags": { "cs": "15" }
+      "tags": { "cs": "15~" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-bt.d+1.mp4",
+      "recovery": "FC"
     },
     {
-      "moveNumber": 130,
+      "moveNumber": 125,
       "command": "BT.d+3",
       "name": "Reverse Mighty Sweep Kick",
       "hitLevel": "l",
@@ -1738,12 +1923,16 @@
       "block": "-26c",
       "hit": "-3",
       "counterHit": "+70a (+54)",
-      "notes": "* Has clean hit effect\nHigh crush",
+      "notes": "* Has clean hit effect\nHigh crush 6~",
       "wavuId": "Feng-BT.d+3",
-      "tags": { "cs": "" }
+      "tags": { "cs": "6~" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-bt.d+3.mp4",
+      "recovery": "FC"
     },
     {
-      "moveNumber": 131,
+      "moveNumber": 126,
       "command": "FUFT.b+3+4",
       "name": "Spring Up",
       "hitLevel": "m",
@@ -1757,7 +1946,7 @@
       "tags": { "bbr": "" }
     },
     {
-      "moveNumber": 132,
+      "moveNumber": 127,
       "command": "KNP.1",
       "name": "Fractured Diamond",
       "hitLevel": "l",
@@ -1768,10 +1957,14 @@
       "counterHit": "+16d",
       "notes": "High crush 15",
       "wavuId": "Feng-KNP.1",
-      "tags": { "cs": "15" }
+      "tags": { "cs": "15" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-feng-knp.1.mp4",
+      "recovery": "FC"
     },
     {
-      "moveNumber": 133,
+      "moveNumber": 128,
       "command": "KNP.2",
       "name": "Fei He Zhang",
       "hitLevel": "h",
@@ -1782,10 +1975,13 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break",
       "wavuId": "Feng-KNP.2",
-      "tags": { "he": "", "bbr": "" }
+      "tags": { "he": "", "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-knp.2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 134,
+      "moveNumber": 129,
       "command": "KNP.3",
       "name": "Rising Swallow Kick",
       "hitLevel": "m",
@@ -1796,10 +1992,13 @@
       "counterHit": "",
       "notes": "* Tornado\nLow crush 15",
       "wavuId": "Feng-KNP.3",
-      "tags": { "trn": "", "js": "15" }
+      "tags": { "trn": "", "js": "15" },
+      "image": "",
+      "video": "File:t8-p2-feng-knp.3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 135,
+      "moveNumber": 130,
       "command": "KNP.4",
       "hitLevel": "l",
       "damage": "10",
@@ -1811,22 +2010,27 @@
       "wavuId": "Feng-KNP.4"
     },
     {
-      "moveNumber": 136,
+      "moveNumber": 131,
       "command": "KNP.4,1+2",
       "name": "Xuan Tui Strike",
-      "hitLevel": "l,h",
-      "damage": "10,24",
-      "startup": "i28",
+      "hitLevel": "l, h",
+      "damage": "10, 24",
+      "startup": "i18, i28",
       "block": "-6",
       "hit": "+30a (+20)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combo from 1st attack",
       "wavuId": "Feng-KNP.4,1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-feng-knp.4,1+2.mp4",
+      "recovery": "BT"
     },
     {
-      "moveNumber": 137,
+      "moveNumber": 132,
       "command": "KNP.3+4",
+      "name": "",
       "hitLevel": "m",
       "damage": "30",
       "startup": "i31~34",
@@ -1835,24 +2039,29 @@
       "counterHit": "",
       "notes": "Low crush 15",
       "wavuId": "Feng-KNP.3+4",
-      "tags": { "js": "15" }
+      "tags": { "js": "15" },
+      "transitions": ["FC"],
+      "recovery": "FC"
     },
     {
-      "moveNumber": 138,
+      "moveNumber": 133,
       "command": "KNP.3+4,3+4",
       "name": "Leaping Lion",
-      "hitLevel": "m,m",
-      "damage": "30,20",
-      "startup": "i39~42",
+      "hitLevel": "m, m",
+      "damage": "30, 20",
+      "startup": "i31~34, i39~42",
       "block": "-3~0",
       "hit": "+31a (+21)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Same attack as Spring Up (FUFT.b+3+4)\nLow crush 38",
       "wavuId": "Feng-KNP.3+4,3+4",
-      "tags": { "bbr": "", "js": "38" }
+      "tags": { "bbr": "", "js": "38" },
+      "image": "",
+      "video": "File:t8-p2-feng-knp.3+4,3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 139,
+      "moveNumber": 134,
       "command": "OTG.d+3+4",
       "name": "Thunder Stomp",
       "hitLevel": "l",
@@ -1865,7 +2074,7 @@
       "wavuId": "Feng-OTG.d+3+4"
     },
     {
-      "moveNumber": 140,
+      "moveNumber": 135,
       "command": "STC.1",
       "name": "Bao Dan Po",
       "hitLevel": "m",
@@ -1876,10 +2085,13 @@
       "counterHit": "",
       "notes": "* Absorb an attack to power up and deal more chip damage on block\nPower crush",
       "wavuId": "Feng-STC.1",
-      "tags": { "pc": "" }
+      "tags": { "pc": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-stc.1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 141,
+      "moveNumber": 136,
       "command": "STC.2",
       "name": "Driller Hook Backhand",
       "hitLevel": "h",
@@ -1889,12 +2101,16 @@
       "hit": "+25g",
       "counterHit": "",
       "notes": "* Enter BT with b",
-      "wavuId": "Feng-STC.2"
+      "wavuId": "Feng-STC.2",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-feng-stc.2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 142,
+      "moveNumber": 137,
       "command": "STC.3",
-      "name": "Scorpion Sting",
+      "name": "Spiraling Tiger Kick",
       "hitLevel": "h",
       "damage": "25",
       "startup": "i22~23",
@@ -1903,10 +2119,13 @@
       "counterHit": "",
       "notes": "* Homing\n* Balcony Break\n* Chip damage on block",
       "wavuId": "Feng-STC.3",
-      "tags": { "hom": "", "bbr": "", "chp": "" }
+      "tags": { "hom": "", "bbr": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-stc.3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 143,
+      "moveNumber": 138,
       "command": "STC.4",
       "name": "Jin Bu Zhen",
       "hitLevel": "l",
@@ -1916,10 +2135,13 @@
       "hit": "+3",
       "counterHit": "+14",
       "notes": "",
-      "wavuId": "Feng-STC.4"
+      "wavuId": "Feng-STC.4",
+      "image": "",
+      "video": "File:t8-p2-feng-stc.4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 144,
+      "moveNumber": 139,
       "command": "STC.1+2",
       "name": "Pummeling Fists",
       "hitLevel": "m",
@@ -1929,10 +2151,13 @@
       "hit": "+17d",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Feng-STC.1+2"
+      "wavuId": "Feng-STC.1+2",
+      "image": "",
+      "video": "File:t8-p2-feng-stc.1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 145,
+      "moveNumber": 140,
       "command": "STC.F+3+4",
       "name": "Falcon Beak's Snare",
       "hitLevel": "m",
@@ -1946,18 +2171,109 @@
       "tags": { "ps": "" }
     },
     {
-      "moveNumber": 146,
-      "command": "R.df+1+2",
-      "name": "Enlighted Yellow Dragon Palm",
+      "moveNumber": 141,
+      "command": "1+3",
+      "name": "Neck Twister",
       "hitLevel": "t",
-      "damage": "55",
-      "startup": "i20",
-      "block": "-15",
-      "hit": "+0d",
+      "damage": "35",
+      "startup": "i12~14",
+      "block": "-6",
+      "hit": "-4",
       "counterHit": "",
-      "notes": "* Rage Art\n* Erases opponent's recoverable health on hit\n* Damage increases with lower health",
-      "wavuId": "Feng-R.df+1+2"
+      "notes": "* Throw break 1 or 2",
+      "wavuId": "Feng-1+3",
+      "image": "",
+      "video": "File:t8-p2-feng-1+3.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 142,
+      "command": "2+4",
+      "name": "Serpent Slayer",
+      "hitLevel": "t",
+      "damage": "35",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "0",
+      "counterHit": "",
+      "notes": "* Throw break 1 or 2",
+      "wavuId": "Feng-2+4",
+      "image": "",
+      "video": "File:t8-p2-feng-2+4.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 143,
+      "command": "BT.1+4",
+      "name": "Pao Lau Impaler",
+      "hitLevel": "t",
+      "damage": "45",
+      "startup": "",
+      "block": "-6",
+      "hit": "-4",
+      "counterHit": "",
+      "notes": "* Throw break 1+2",
+      "wavuId": "Feng-BT.1+4_2+3",
+      "image": "",
+      "video": "File:t8-p2-feng-bt.1+4_2+3.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 144,
+      "command": "Back Throw",
+      "name": "Violent Storm",
+      "hitLevel": "t",
+      "damage": "50",
+      "startup": "",
+      "block": "",
+      "hit": "-4",
+      "counterHit": "",
+      "notes": "* Cannot break throw",
+      "wavuId": "Feng-Back Throw"
+    },
+    {
+      "moveNumber": 145,
+      "command": "Left Throw",
+      "name": "Jaws of Death",
+      "hitLevel": "t",
+      "damage": "40",
+      "startup": "",
+      "block": "-3",
+      "hit": "-6",
+      "counterHit": "",
+      "notes": "* Throw break 1",
+      "wavuId": "Feng-Left Throw"
+    },
+    {
+      "moveNumber": 146,
+      "command": "Right Throw",
+      "name": "Wandering Soul",
+      "hitLevel": "t",
+      "damage": "40",
+      "startup": "",
+      "block": "-3",
+      "hit": "-4",
+      "counterHit": "",
+      "notes": "* Throw break 2",
+      "wavuId": "Feng-Right Throw"
+    },
+    {
+      "moveNumber": 147,
+      "command": "uf+1+2",
+      "name": "Kunlun Avalanche",
+      "hitLevel": "t",
+      "damage": "40",
+      "startup": "",
+      "block": "-6",
+      "hit": "0",
+      "counterHit": "",
+      "notes": "* Spike\n* Throw break 1+2",
+      "wavuId": "Feng-uf+1+2",
+      "tags": { "spk": "" },
+      "image": "",
+      "video": "File:t8-p2-feng-uf+1+2.mp4",
+      "recovery": ""
     }
   ],
-  "stances": ["H", "SS", "FC", "BT", "FUFT", "KNP", "STC"]
+  "stances": ["H", "ws", "SS", "FC", "BT", "FUFT", "KNP", "STC"]
 }
