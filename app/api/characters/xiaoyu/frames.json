@@ -24,12 +24,13 @@
       "hitLevel": "m,t",
       "damage": "51",
       "startup": "i15",
-      "block": "+19",
-      "hit": "+16d",
+      "block": "+18",
+      "hit": "+20",
       "counterHit": "",
-      "notes": "* Heat Smash\n* Recovers in HYP, max level\n* Recover facing forward with F (+4)",
+      "notes": "* Heat Smash\n* Recovers in HYP, max level\n* Recover facing forward with F (+3, +5)\n* 15 chip damage on block",
       "wavuId": "Xiaoyu-H.BT.2+3",
       "tags": { "hs": "" },
+      "transitions": ["HYP"],
       "recovery": "HYP"
     },
     {
@@ -45,6 +46,7 @@
       "notes": "* Balcony Break\n* Partially uses remaining Heat time\n* Combos from 1st hit\n* Recovers in BT\n* Recover facing forward with F (+4, +22d)\nLow crush",
       "wavuId": "Xiaoyu-H.f,F+1,2",
       "tags": { "bbr": "", "js": "" },
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
@@ -56,10 +58,11 @@
       "startup": "i16, i20, i20",
       "block": "+6c",
       "hit": "+23d",
-      "counterHit": "",
-      "notes": "* Balcony Break\n* Partially uses remaining Heat time\n* Combos from 1st hit\n* Recovers in BT\n* Recover facing forward with F (+4, +21d)\nLow crush",
+      "counterHit": "+49a",
+      "notes": "* Balcony Break\n* Partially uses remaining Heat time\n* Combos from 1st hit\n* Recovers in BT\n* Recover facing forward with F (+4, +21d, +47a)\nLow crush",
       "wavuId": "Xiaoyu-H.f+2,1,2",
       "tags": { "bbr": "", "js": "" },
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
@@ -75,6 +78,7 @@
       "notes": "* Heat Smash\n* Balcony Break\n* Recovers in BT\n* Recover facing forward with F (+5)\nLow crush",
       "wavuId": "Xiaoyu-H.2+3",
       "tags": { "hs": "", "bbr": "", "js": "" },
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
@@ -85,11 +89,12 @@
       "damage": "55+",
       "startup": "i20",
       "block": "-15",
-      "hit": "+0",
+      "hit": "+0d",
       "counterHit": "",
-      "notes": "* Rage Art\n* Damage increases with lower health\n* Erases opponent's recoverable health on hit\n* Alternate input AOP.df+1+2\nPower crush 8~",
+      "notes": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\nPower crush 8~",
       "wavuId": "Xiaoyu-R.df+1+2",
-      "tags": { "pc": "8~" }
+      "tags": { "pc": "8~" },
+      "recovery": "r39"
     },
     {
       "moveNumber": 7,
@@ -107,58 +112,86 @@
       "moveNumber": 8,
       "command": "1,2",
       "name": "Bayonet",
-      "hitLevel": "h,h",
-      "damage": "6,9",
-      "startup": "i11",
+      "hitLevel": "h, h",
+      "damage": "6, 9",
+      "startup": "i10, i11",
       "block": "-3",
       "hit": "+7",
       "counterHit": "",
-      "notes": "* Combos from 1st hit",
-      "wavuId": "Xiaoyu-1,2"
+      "notes": "* Combo from 1st hit with 4F delay\n* Jail from 1st block with 4F delay",
+      "wavuId": "Xiaoyu-1,2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 9,
       "command": "1,2,1",
       "name": "Bayonet Thruster",
-      "hitLevel": "h,h,m",
-      "damage": "6,9,24",
-      "startup": "i16",
+      "hitLevel": "h, h, m",
+      "damage": "6, 9, 24",
+      "startup": "i10, ,i16",
       "block": "-9",
       "hit": "+14a (+5)",
       "counterHit": "",
-      "notes": "* Balcony Break\n* Combos from 2nd hit CH",
+      "notes": "* Balcony Break\n* Combos from 2nd CH with 10F delay\n* Jail from 2nd block with 3F delay",
       "wavuId": "Xiaoyu-1,2,1",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1,2,1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 10,
       "command": "1,d+2",
       "name": "Fan Dance",
-      "hitLevel": "h,m",
-      "damage": "6,10",
-      "startup": "i20",
+      "hitLevel": "h, m",
+      "damage": "6, 10",
+      "startup": "i10, i20",
       "block": "-3",
       "hit": "+8",
-      "counterHit": "",
-      "notes": "* Combos from 1st hit\n* Recover facing forward with 1,D+2 (-4, +7)\n* Recover in HYP with 1,d+2~B (-2, +9)",
+      "counterHit": "+10",
+      "notes": "* Combo from 1st hit with 4F delay\n* Move can be delayed by 10F\n* Recover facing forward with 1,D+2 or 1,d+2,F (-4, +7, +9)\n* Recover in HYP with 1,d+2~B (-2, +9, +11)",
       "wavuId": "Xiaoyu-1,d+2",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1,d+2.mp4",
       "recovery": "BT"
     },
     {
       "moveNumber": 11,
       "command": "1,d+2,1+2",
       "name": "Fan Dance > Birds Flock",
-      "hitLevel": "h,m,m",
-      "damage": "6,10,24",
-      "startup": "i29",
+      "hitLevel": "h, m, m",
+      "damage": "6, 10, 24",
+      "startup": "i10, ,i29",
       "block": "-12",
       "hit": "+17a",
       "counterHit": "",
-      "notes": "* Combos from 2nd hit CH",
-      "wavuId": "Xiaoyu-1,d+2,1+2"
+      "notes": "* Combo from 2nd hit CH",
+      "wavuId": "Xiaoyu-1,d+2,1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1,d+2,1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 12,
+      "command": "1+3+4",
+      "name": "False Salute",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Xiaoyu-1+3+4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1+3+4.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 13,
       "command": "2",
       "hitLevel": "h",
       "damage": "8",
@@ -170,21 +203,24 @@
       "wavuId": "Xiaoyu-2"
     },
     {
-      "moveNumber": 13,
+      "moveNumber": 14,
       "command": "2,1",
       "name": "April Showers",
-      "hitLevel": "h,m",
-      "damage": "8,10",
-      "startup": "i19",
+      "hitLevel": "h, m",
+      "damage": "8, 10",
+      "startup": "i10, i19",
       "block": "-4",
       "hit": "+7",
       "counterHit": "",
-      "notes": "* Combos from 1st hit CH\n* Recover facing forward with 2,DF+2 (-4, +7)",
+      "notes": "* Combo from 1st hit CH\n* Jai1 from 1st block\n* Recover facing forward with 2,DF+1 or 2,df+1,f or 2,df+1,b (-4, +7)",
       "wavuId": "Xiaoyu-2,1",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-2,1.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 14,
+      "moveNumber": 15,
       "command": "3",
       "name": "Cloud Kick",
       "hitLevel": "h",
@@ -194,10 +230,13 @@
       "hit": "+22a",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-3"
+      "wavuId": "Xiaoyu-3",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 15,
+      "moveNumber": 16,
       "command": "4",
       "hitLevel": "h",
       "damage": "15",
@@ -209,7 +248,7 @@
       "wavuId": "Xiaoyu-4"
     },
     {
-      "moveNumber": 16,
+      "moveNumber": 17,
       "command": "1+2",
       "name": "Birds Flock",
       "hitLevel": "m",
@@ -219,10 +258,29 @@
       "hit": "+20a",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-1+2"
+      "wavuId": "Xiaoyu-1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 17,
+      "moveNumber": 18,
+      "command": "2+3+4",
+      "name": "Greetings",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Xiaoyu-2+3+4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-2+3+4.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 19,
       "command": "3+4",
       "name": "Crescent Moon Kick",
       "hitLevel": "m",
@@ -231,12 +289,16 @@
       "block": "-1c",
       "hit": "+3c",
       "counterHit": "+19a",
-      "notes": "* Transition to AOP with D (0, +4, +20a)\nLow crush",
+      "notes": "* Transition to AOP with D (0, +4c, +20a)\nLow crush 10~",
       "wavuId": "Xiaoyu-3+4",
-      "tags": { "js": "" }
+      "tags": { "js": "10~" },
+      "transitions": ["AOP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 18,
+      "moveNumber": 20,
       "command": "f+2",
       "hitLevel": "m",
       "damage": "12",
@@ -248,33 +310,37 @@
       "wavuId": "Xiaoyu-f+2"
     },
     {
-      "moveNumber": 19,
+      "moveNumber": 21,
       "command": "f+2,1",
-      "hitLevel": "m,h",
-      "damage": "12,14",
-      "startup": "i20",
+      "hitLevel": "m, h",
+      "damage": "12, 14",
+      "startup": "i16, i20",
       "block": "-6",
       "hit": "+5",
       "counterHit": "+7",
-      "notes": "* Combos from 1st hit\n* Transition to HYP with B (+0, +11)",
-      "wavuId": "Xiaoyu-f+2,1"
+      "notes": "* Combos from 1st hit\n* Jails from 1st block\n* Transition to HYP with B (+0, +11)",
+      "wavuId": "Xiaoyu-f+2,1",
+      "transitions": ["HYP"]
     },
     {
-      "moveNumber": 20,
+      "moveNumber": 22,
       "command": "f+2,1,4",
       "name": "Bai Yang Zhuan Wu",
-      "hitLevel": "m,h,m",
-      "damage": "12,14,20",
-      "startup": "i26",
+      "hitLevel": "m, h, m",
+      "damage": "12, 14, 20",
+      "startup": "i16, ,i26",
       "block": "-13",
       "hit": "+17a (+8)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combos from 2nd hit CH",
       "wavuId": "Xiaoyu-f+2,1,4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f+2,1,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 21,
+      "moveNumber": 23,
       "command": "f+3",
       "hitLevel": "m",
       "damage": "14",
@@ -287,49 +353,56 @@
       "tags": { "kne": "" }
     },
     {
-      "moveNumber": 22,
+      "moveNumber": 24,
       "command": "f+3,1",
       "name": "",
-      "hitLevel": "m,m",
-      "damage": "14,8",
-      "startup": "i22",
+      "hitLevel": "m, m",
+      "damage": "14, 8",
+      "startup": "i16, i22",
       "block": "-3",
       "hit": "+8",
       "counterHit": "",
       "notes": "* Combos from 1st hit",
       "wavuId": "Xiaoyu-f+3,1",
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 23,
+      "moveNumber": 25,
       "command": "f+3,1,4",
       "name": "Talons of Fury",
-      "hitLevel": "m,m,m",
-      "damage": "14,8,20",
-      "startup": "i26",
+      "hitLevel": "m, m, m",
+      "damage": "14, 8, 20",
+      "startup": "i16, ,i26",
       "block": "-22",
       "hit": "+62a (+46)",
       "counterHit": "",
       "notes": "* Tornado\n* Instant Tornado\n* Combos from 2nd hit CH",
       "wavuId": "Xiaoyu-f+3,1,4",
       "tags": { "trn": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f+3,1,4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 24,
+      "moveNumber": 26,
       "command": "f+3,1,1+2",
       "name": "Wings of Fury",
-      "hitLevel": "m,m,m",
-      "damage": "14,8,27",
-      "startup": "i16",
+      "hitLevel": "m, m, m",
+      "damage": "14, 8, 27",
+      "startup": "i16, ,i16",
       "block": "-12",
       "hit": "+7c",
       "counterHit": "",
       "notes": "* Combos from 2nd hit CH",
-      "wavuId": "Xiaoyu-f+3,1,1+2"
+      "wavuId": "Xiaoyu-f+3,1,1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f+3,1,1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 25,
+      "moveNumber": 27,
       "command": "f+4",
       "name": "Swivel Kick",
       "hitLevel": "h",
@@ -340,10 +413,13 @@
       "counterHit": "",
       "notes": "* Homing\n* Chip on block [4]",
       "wavuId": "Xiaoyu-f+4",
-      "tags": { "hom": "", "chp": "" }
+      "tags": { "hom": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 26,
+      "moveNumber": 28,
       "command": "f+1+2",
       "name": "Clouded Peak",
       "hitLevel": "m",
@@ -354,10 +430,13 @@
       "counterHit": "",
       "notes": "* Balcony Break",
       "wavuId": "Xiaoyu-f+1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 27,
+      "moveNumber": 29,
       "command": "f+3+4",
       "name": "Forward Roll",
       "hitLevel": "",
@@ -368,10 +447,11 @@
       "counterHit": "",
       "notes": "* Transition to AOP with D\nLow crush",
       "wavuId": "Xiaoyu-f+3+4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["AOP"]
     },
     {
-      "moveNumber": 28,
+      "moveNumber": 30,
       "command": "f+3+4,3+4",
       "name": "Forward Roll > Phoenix Talon",
       "hitLevel": "m",
@@ -382,10 +462,13 @@
       "counterHit": "",
       "notes": "*\nLow crush",
       "wavuId": "Xiaoyu-f+3+4,3+4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f+3+4,3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 29,
+      "moveNumber": 31,
       "command": "df+1",
       "name": "Belly Chop",
       "hitLevel": "m",
@@ -396,10 +479,13 @@
       "counterHit": "",
       "notes": "* Recover facing forward with F (-4, +7)",
       "wavuId": "Xiaoyu-df+1",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-df+1.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 30,
+      "moveNumber": 32,
       "command": "df+2",
       "hitLevel": "m",
       "damage": "15",
@@ -411,21 +497,24 @@
       "wavuId": "Xiaoyu-df+2"
     },
     {
-      "moveNumber": 31,
+      "moveNumber": 33,
       "command": "df+2,3",
       "name": "Moon Swallow",
-      "hitLevel": "m,h",
-      "damage": "15,23",
-      "startup": "i23",
+      "hitLevel": "m, h",
+      "damage": "15, 23",
+      "startup": "i14, i23",
       "block": "-1",
       "hit": "+35a (+9)",
       "counterHit": "",
       "notes": "* Balcony Break",
       "wavuId": "Xiaoyu-df+2,3",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-df+2,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 32,
+      "moveNumber": 34,
       "command": "df+3",
       "name": "Phoenix Tail",
       "hitLevel": "l",
@@ -434,12 +523,16 @@
       "block": "-23",
       "hit": "+71a (+55)",
       "counterHit": "",
-      "notes": "* Homing\n* Tornado\n* Cancel into BT with B\n* On hit, transition to AOP with D\n* [[Snake_Edge|Snake Edge]]",
+      "notes": "* Homing\n* Tornado\n* Cancel into BT with B\n* On hit, transition to AOP with D\n* Snake Edge",
       "wavuId": "Xiaoyu-df+3",
-      "tags": { "hom": "", "trn": "" }
+      "tags": { "hom": "", "trn": "" },
+      "transitions": ["AOP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-df+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 33,
+      "moveNumber": 35,
       "command": "df+4",
       "hitLevel": "m",
       "damage": "12",
@@ -451,7 +544,7 @@
       "wavuId": "Xiaoyu-df+4"
     },
     {
-      "moveNumber": 34,
+      "moveNumber": 36,
       "command": "d+1",
       "name": "Sunset Fan",
       "hitLevel": "m",
@@ -462,10 +555,13 @@
       "counterHit": "+9c",
       "notes": "* Recover in AOP with D+1 (-10, +4c, +5c)",
       "wavuId": "Xiaoyu-d+1",
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-d+1.mp4",
       "recovery": "FC"
     },
     {
-      "moveNumber": 35,
+      "moveNumber": 37,
       "command": "d+2",
       "name": "",
       "hitLevel": "s",
@@ -476,10 +572,11 @@
       "counterHit": "",
       "notes": "* Alternate input FC.2",
       "wavuId": "Xiaoyu-d+2",
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 36,
+      "moveNumber": 38,
       "command": "d+3",
       "name": "",
       "hitLevel": "l",
@@ -490,24 +587,28 @@
       "counterHit": "",
       "notes": "*",
       "wavuId": "Xiaoyu-d+3",
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 37,
+      "moveNumber": 39,
       "command": "d+3,4",
       "name": "Giant Slayer",
-      "hitLevel": "l,h",
-      "damage": "12,21",
-      "startup": "i25",
+      "hitLevel": "l, h",
+      "damage": "12, 21",
+      "startup": "i14, i25",
       "block": "+0",
       "hit": "+26a (+17)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combos from 1st hit CH",
       "wavuId": "Xiaoyu-d+3,4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-d+3,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 38,
+      "moveNumber": 40,
       "command": "d+4",
       "name": "",
       "hitLevel": "l",
@@ -518,10 +619,11 @@
       "counterHit": "",
       "notes": "* Alternate input FC.4",
       "wavuId": "Xiaoyu-d+4",
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 39,
+      "moveNumber": 41,
       "command": "d+1+2",
       "name": "Phoenix",
       "hitLevel": "",
@@ -530,12 +632,14 @@
       "block": "",
       "hit": "",
       "counterHit": "",
-      "notes": "* Transitions to AOP\n* Alternate input BT.d+1+2\nHigh crush",
+      "notes": "* Transitions to AOP\n* Alternate input BT.d+1+2\nHigh crush 1~",
       "wavuId": "Xiaoyu-d+1+2",
-      "tags": { "cs": "" }
+      "tags": { "cs": "1~" },
+      "transitions": ["AOP"],
+      "recovery": "r20 AOP"
     },
     {
-      "moveNumber": 40,
+      "moveNumber": 42,
       "command": "d+3+4",
       "name": "Spinner",
       "hitLevel": "special",
@@ -545,10 +649,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Alternate input u+3+4",
-      "wavuId": "Xiaoyu-d+3+4"
+      "wavuId": "Xiaoyu-d+3+4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-d+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 41,
+      "moveNumber": 43,
       "command": "db+1",
       "name": "Storming Flower",
       "hitLevel": "m",
@@ -559,10 +666,13 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Has Clean hit effect",
       "wavuId": "Xiaoyu-db+1",
-      "tags": { "he": "", "bbr": "" }
+      "tags": { "he": "", "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-db+1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 42,
+      "moveNumber": 44,
       "command": "db+2",
       "name": "Feathered Fan",
       "hitLevel": "l",
@@ -573,10 +683,13 @@
       "counterHit": "+18g",
       "notes": "*",
       "wavuId": "Xiaoyu-db+2",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-db+2.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 43,
+      "moveNumber": 45,
       "command": "db+3",
       "name": "Knee Cracker",
       "hitLevel": "l",
@@ -586,12 +699,15 @@
       "hit": "+2c",
       "counterHit": "+14",
       "notes": "*",
-      "wavuId": "Xiaoyu-db+3"
+      "wavuId": "Xiaoyu-db+3",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-db+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 44,
+      "moveNumber": 46,
       "command": "db+4",
-      "name": "Nut Cracker",
+      "name": "Nutcracker",
       "hitLevel": "l",
       "damage": "14",
       "startup": "i18",
@@ -599,38 +715,29 @@
       "hit": "+4c",
       "counterHit": "+14",
       "notes": "*",
-      "wavuId": "Xiaoyu-db+4"
-    },
-    {
-      "moveNumber": 45,
-      "command": "db+1+2",
-      "name": "Hypnotist",
-      "hitLevel": "",
-      "damage": "",
-      "startup": "",
-      "block": "",
-      "hit": "",
-      "counterHit": "",
-      "notes": "* Transitions to HYP\n* Punch parry (+9 HYP, opponent BT)\n* Successful parry partially restores remaining Heat time\n* Alternate input ub+1+2\nParry state",
-      "wavuId": "Xiaoyu-db+1+2",
-      "tags": { "ps": "" },
-      "recovery": "HYP"
-    },
-    {
-      "moveNumber": 46,
-      "command": "db+1+2",
-      "name": "Hypnotist",
-      "hitLevel": "",
-      "damage": "",
-      "startup": "",
-      "block": "",
-      "hit": "",
-      "counterHit": "",
-      "notes": "* Transitions to HYP\n* During Heat, taking 3 or more steps partially restores remaining Heat time\n* Alternate input ub+1+2",
-      "wavuId": "Xiaoyu-db+1+2"
+      "wavuId": "Xiaoyu-db+4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-db+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 47,
+      "command": "db+1+2",
+      "name": "Hypnotist",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Transitions to HYP\n* Actionable for 70F\n* Stance move properties change with amount of time spent in stance:\n* 1 step: 20~24F\n* 2 steps: 45~50F\n* 3 steps: 70~90F\n* Can cancel stance after 40F with b, db, u, uf, f, df or 1 jab\n* Punch parry (+9 HYP, opponent BT)\n* During Heat, taking 3 steps (70f in HYP) partially restores remaining Heat time\n* Successful parry partially restores remaining Heat time\n* Alternate input ub+1+2\nParry state 2~10?",
+      "wavuId": "Xiaoyu-db+1+2",
+      "tags": { "ps": "2~10?" },
+      "transitions": ["HYP"],
+      "recovery": "r20 HYP"
+    },
+    {
+      "moveNumber": 48,
       "command": "db+3+4",
       "name": "Low Back Turn",
       "hitLevel": "",
@@ -642,10 +749,13 @@
       "notes": "* Transitions to BT\nHigh crush",
       "wavuId": "Xiaoyu-FC.db+3+4",
       "tags": { "cs": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-fc.db+3+4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 48,
+      "moveNumber": 49,
       "command": "b+1",
       "name": "Great Wall Left",
       "hitLevel": "m",
@@ -655,10 +765,13 @@
       "hit": "+1",
       "counterHit": "",
       "notes": "* Automatically transitions to BT on hit\n* Recover facing forward with B+1 (between -1 and +4)",
-      "wavuId": "Xiaoyu-b+1"
+      "wavuId": "Xiaoyu-b+1",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-b+1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 49,
+      "moveNumber": 50,
       "command": "b+1+3",
       "name": "High Mid Parry",
       "hitLevel": "",
@@ -667,13 +780,14 @@
       "block": "",
       "hit": "+6",
       "counterHit": "",
-      "notes": "* Automatically transitions to BT\n* Alternate input b+2+4\n* Also possible during HYP and BT\nParry state",
+      "notes": "* Automatically transitions to BT\n* Alternate input b+2+4\n* Also possible during HYP and BT\nParry state 5",
       "wavuId": "Xiaoyu-b+1+3",
-      "tags": { "ps": "" },
+      "tags": { "ps": "5" },
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 50,
+      "moveNumber": 51,
       "command": "b+2",
       "name": "",
       "hitLevel": "m",
@@ -685,24 +799,28 @@
       "notes": "* Homing \nAutomatically transitions to BT",
       "wavuId": "Xiaoyu-b+2",
       "tags": { "hom": "" },
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 51,
+      "moveNumber": 52,
       "command": "b+2,2",
       "name": "Seven Star Fist",
-      "hitLevel": "m,l",
-      "damage": "13,15",
-      "startup": "i21",
+      "hitLevel": "m, l",
+      "damage": "13, 15",
+      "startup": "i15, i21",
       "block": "-7",
       "hit": "+4",
       "counterHit": "",
       "notes": "* Automatically transitions to BT",
       "wavuId": "Xiaoyu-b+2,2",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-b+2,2.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 52,
+      "moveNumber": 53,
       "command": "b+3",
       "name": "Peacock Kick",
       "hitLevel": "h",
@@ -714,10 +832,13 @@
       "notes": "* Chip on block [6] \nAutomatically transitions to BT",
       "wavuId": "Xiaoyu-b+3",
       "tags": { "chp": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-b+3.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 53,
+      "moveNumber": 54,
       "command": "b+4",
       "hitLevel": "m",
       "damage": "10",
@@ -729,21 +850,24 @@
       "wavuId": "Xiaoyu-b+4"
     },
     {
-      "moveNumber": 54,
+      "moveNumber": 55,
       "command": "b+4,1",
       "name": "Moonhare Palm",
-      "hitLevel": "m,m",
-      "damage": "10,20",
-      "startup": "i27",
+      "hitLevel": "m, m",
+      "damage": "10, 20",
+      "startup": "i13, i27",
       "block": "-14",
       "hit": "+40d (-18)",
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +43a (+35)\n\n* Combos from 1st hit\n* Balcony Break",
       "wavuId": "Xiaoyu-b+4,1",
-      "tags": { "he": "", "bbr": "" }
+      "tags": { "he": "", "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-b+4,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 55,
+      "moveNumber": 56,
       "command": "b+1+2",
       "name": "Cross Lifting Palms",
       "hitLevel": "m",
@@ -753,10 +877,13 @@
       "hit": "+29a (+19)",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-b+1+2"
+      "wavuId": "Xiaoyu-b+1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-b+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 56,
+      "moveNumber": 57,
       "command": "b+3+4",
       "name": "Rain Dance",
       "hitLevel": "",
@@ -766,10 +893,12 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Transitions to BT\n* Alternate input BT.b+3+4, AOP.b+3+4",
-      "wavuId": "Xiaoyu-b+3+4"
+      "wavuId": "Xiaoyu-b+3+4",
+      "transitions": ["BT"],
+      "recovery": "r21 BT"
     },
     {
-      "moveNumber": 57,
+      "moveNumber": 58,
       "command": "ub+3",
       "name": "From the Ashes",
       "hitLevel": "m",
@@ -780,10 +909,14 @@
       "counterHit": "",
       "notes": "* Tornado\n* Transitions to AOP on hit or block\nLow crush",
       "wavuId": "Xiaoyu-ub+3",
-      "tags": { "trn": "", "js": "" }
+      "tags": { "trn": "", "js": "" },
+      "transitions": ["AOP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ub+3.mp4",
+      "recovery": "AOP"
     },
     {
-      "moveNumber": 58,
+      "moveNumber": 59,
       "command": "ub+4",
       "name": "Born of Fire",
       "hitLevel": "m",
@@ -794,10 +927,13 @@
       "counterHit": "",
       "notes": "* Tornado\n* Balcony Break\nPower crush",
       "wavuId": "Xiaoyu-ub+4",
-      "tags": { "trn": "", "bbr": "", "pc": "" }
+      "tags": { "trn": "", "bbr": "", "pc": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ub+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 59,
+      "moveNumber": 60,
       "command": "u+1+2",
       "hitLevel": "m",
       "damage": "10",
@@ -809,11 +945,11 @@
       "wavuId": "Xiaoyu-u+1+2"
     },
     {
-      "moveNumber": 60,
+      "moveNumber": 61,
       "command": "u+1+2,2",
-      "hitLevel": "m,m",
-      "damage": "10,12",
-      "startup": "i27",
+      "hitLevel": "m, m",
+      "damage": "10, 12",
+      "startup": "i17, i27",
       "block": "-12",
       "hit": "-1",
       "counterHit": "",
@@ -821,21 +957,24 @@
       "wavuId": "Xiaoyu-u+1+2,2"
     },
     {
-      "moveNumber": 61,
+      "moveNumber": 62,
       "command": "u+1+2,2,1",
       "name": "Fortune Cookie",
-      "hitLevel": "m,m,m",
-      "damage": "10,12,20",
-      "startup": "i27",
+      "hitLevel": "m, m, m",
+      "damage": "10, 12, 20",
+      "startup": "i17, ,i27",
       "block": "-12",
       "hit": "+16a (+7)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combos from 2nd hit\n* Cancel into BT with B",
       "wavuId": "Xiaoyu-u+1+2,2,1",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-u+1+2,2,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 62,
+      "moveNumber": 63,
       "command": "uf+1",
       "name": "Silver Needle",
       "hitLevel": "l",
@@ -846,10 +985,12 @@
       "counterHit": "",
       "notes": "* Automatically transitions to AOP on hit or block\n* Cancel into FC with D\n* Alternate input ub+1, u+1\nLow crush",
       "wavuId": "Xiaoyu-uf+1",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["AOP"],
+      "recovery": "AOP"
     },
     {
-      "moveNumber": 63,
+      "moveNumber": 64,
       "command": "uf+2",
       "name": "Phoenix Flight",
       "hitLevel": "m",
@@ -861,10 +1002,13 @@
       "notes": "* Recover facing forward with F (+4c, +5c, +47a)\n* Alternate input u+2\n* Chip on block [6]\nLow crush",
       "wavuId": "Xiaoyu-uf+2",
       "tags": { "chp": "", "js": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-uf+2.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 64,
+      "moveNumber": 65,
       "command": "uf+3",
       "name": "Bolting Rabbit",
       "hitLevel": "m",
@@ -875,10 +1019,13 @@
       "counterHit": "",
       "notes": "* Alternate input u+3\nLow crush",
       "wavuId": "Xiaoyu-uf+3",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-uf+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 65,
+      "moveNumber": 66,
       "command": "uf+4",
       "name": "Flare Kick",
       "hitLevel": "m",
@@ -889,10 +1036,14 @@
       "counterHit": "+24a",
       "notes": "* Transition to FC with D (-7, +4c, +24a)\n* Transition with AOP with d+1+2 (-9, +2, +22)\nLow crush",
       "wavuId": "Xiaoyu-uf+4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-uf+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 66,
+      "moveNumber": 67,
       "command": "uf+3+4",
       "name": "Shooting Star",
       "hitLevel": "m",
@@ -904,10 +1055,29 @@
       "notes": "* Balcony Break\n* Floor Break on airborne opponent\n* Transitions to BT on hit or block\nLow crush",
       "wavuId": "Xiaoyu-uf+3+4",
       "tags": { "bbr": "", "js": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-uf+3+4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 67,
+      "moveNumber": 68,
+      "command": "1+2+3+4",
+      "name": "Ki Charge",
+      "hitLevel": "",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Xiaoyu-1+2+3+4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1+2+3+4.mp4",
+      "recovery": ""
+    },
+    {
+      "moveNumber": 69,
       "command": "While in the air 3",
       "name": "Jumping Pirouette",
       "hitLevel": "m",
@@ -918,10 +1088,14 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Causes Strong Aerial Tailspin\n* Transition to AOP with D (-3, +28)\nLow crush",
       "wavuId": "Xiaoyu-AOP.While in the Air 3",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "transitions": ["AOP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.while in the air 3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 68,
+      "moveNumber": 70,
       "command": "While landing 3",
       "name": "Sky Kick",
       "hitLevel": "l",
@@ -932,10 +1106,13 @@
       "counterHit": "",
       "notes": "*",
       "wavuId": "Xiaoyu-While landing 3",
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-while landing 3.mp4",
       "recovery": "FC"
     },
     {
-      "moveNumber": 69,
+      "moveNumber": 71,
       "command": "While landing 4",
       "name": "Crane Kick",
       "hitLevel": "m",
@@ -946,10 +1123,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\nLow crush",
       "wavuId": "Xiaoyu-While in the air 4",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-while in the air 4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 70,
+      "moveNumber": 72,
       "command": "f,F+1",
       "hitLevel": "m",
       "damage": "13",
@@ -958,37 +1138,44 @@
       "hit": "+7c",
       "counterHit": "",
       "notes": "* Transition to AOP with D (-5, +13)",
-      "wavuId": "Xiaoyu-f,F+1"
+      "wavuId": "Xiaoyu-f,F+1",
+      "transitions": ["AOP"]
     },
     {
-      "moveNumber": 71,
+      "moveNumber": 73,
       "command": "f,F+1,3",
       "name": "Poison Flower",
-      "hitLevel": "m,h",
-      "damage": "13,20",
-      "startup": "i18",
+      "hitLevel": "m, h",
+      "damage": "13, 20",
+      "startup": "i15, i18",
       "block": "-1",
       "hit": "+20a (+11)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combos from 1st hit",
       "wavuId": "Xiaoyu-f,F+1,3",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f+1,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 72,
+      "moveNumber": 74,
       "command": "f,F+1,4",
       "name": "Eclipsing Moon",
-      "hitLevel": "m,m",
-      "damage": "13,20",
-      "startup": "i21",
+      "hitLevel": "m, m",
+      "damage": "13, 20",
+      "startup": "i15, i21",
       "block": "-12",
       "hit": "+22d",
       "counterHit": "",
       "notes": "* Combos from 1st hit CH",
-      "wavuId": "Xiaoyu-f,F+1,4"
+      "wavuId": "Xiaoyu-f,F+1,4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f+1,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 73,
+      "moveNumber": 75,
       "command": "f,F+2",
       "hitLevel": "m",
       "damage": "12",
@@ -1000,21 +1187,24 @@
       "wavuId": "Xiaoyu-f,F+2"
     },
     {
-      "moveNumber": 74,
+      "moveNumber": 76,
       "command": "f,F+2,1",
       "name": "Fortune",
-      "hitLevel": "m,m",
-      "damage": "12,20",
-      "startup": "i27",
+      "hitLevel": "m, m",
+      "damage": "12, 20",
+      "startup": "i15, i27",
       "block": "-12",
       "hit": "+16a (+7)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combos from 1st hit\n* Cancel into BT with B (-8)",
       "wavuId": "Xiaoyu-f,F+2,1",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f+2,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 75,
+      "moveNumber": 77,
       "command": "f,F+3",
       "name": "Raccoon Swing",
       "hitLevel": "m",
@@ -1025,10 +1215,13 @@
       "counterHit": "+12",
       "notes": "*",
       "wavuId": "Xiaoyu-f,F+3",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f+3.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 76,
+      "moveNumber": 78,
       "command": "f,F+4",
       "name": "Soaring Blaze",
       "hitLevel": "h",
@@ -1040,10 +1233,13 @@
       "notes": "* Balcony Break\n* Automatically transitions to HYP on hit or block\n* Chip on block [6]",
       "wavuId": "Xiaoyu-f,F+4",
       "tags": { "bbr": "", "chp": "" },
+      "transitions": ["HYP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f+4.mp4",
       "recovery": "HYP"
     },
     {
-      "moveNumber": 77,
+      "moveNumber": 79,
       "command": "f,F+1+2",
       "hitLevel": "m",
       "damage": "12",
@@ -1055,20 +1251,23 @@
       "wavuId": "Xiaoyu-f,F+1+2"
     },
     {
-      "moveNumber": 78,
+      "moveNumber": 80,
       "command": "f,F+1+2,1+2",
       "name": "X Marks the Spot",
-      "hitLevel": "m,m",
-      "damage": "12,20",
-      "startup": "i19",
+      "hitLevel": "m, m",
+      "damage": "12, 20",
+      "startup": "i14, i19",
       "block": "-8",
       "hit": "+7c",
       "counterHit": "+43a",
       "notes": "* Alternate input ws1+2,1+2",
-      "wavuId": "Xiaoyu-f,F+1+2,1+2"
+      "wavuId": "Xiaoyu-f,F+1+2,1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f+1+2,1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 79,
+      "moveNumber": 81,
       "command": "f,F+3+4",
       "name": "Front Layout",
       "hitLevel": "m",
@@ -1079,10 +1278,13 @@
       "counterHit": "",
       "notes": "* Chip on block [9]\nLow crush",
       "wavuId": "Xiaoyu-f,F+3+4",
-      "tags": { "chp": "", "js": "" }
+      "tags": { "chp": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 80,
+      "moveNumber": 82,
       "command": "uf,n,4",
       "name": "Delayed Rising Toe Kick",
       "hitLevel": "m",
@@ -1093,10 +1295,13 @@
       "counterHit": "",
       "notes": "*\nLow crush",
       "wavuId": "Xiaoyu-uf,n,4",
-      "tags": { "js": "" }
+      "tags": { "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-uf,n,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 81,
+      "moveNumber": 83,
       "command": "f,f,F+3",
       "name": "Diving Falcon",
       "hitLevel": "m",
@@ -1107,10 +1312,13 @@
       "counterHit": "",
       "notes": "* Automatically transitions to AOP on hit or block\n* Chip on block [9]\n* Alternate input wr3\nLow crush",
       "wavuId": "Xiaoyu-f,f,F+3",
-      "tags": { "chp": "", "js": "" }
+      "tags": { "chp": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-f,f,f+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 82,
+      "moveNumber": 84,
       "command": "ws1",
       "hitLevel": "m",
       "damage": "8",
@@ -1122,21 +1330,24 @@
       "wavuId": "Xiaoyu-ws1"
     },
     {
-      "moveNumber": 83,
+      "moveNumber": 85,
       "command": "ws1,4",
       "name": "Whirlwind Cross Kick",
-      "hitLevel": "m,m",
-      "damage": "8,16",
-      "startup": "i22",
+      "hitLevel": "m, m",
+      "damage": "8, 16",
+      "startup": "i12, i22",
       "block": "-10",
       "hit": "+12g",
       "counterHit": "",
       "notes": "*",
       "wavuId": "Xiaoyu-ws1,4",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ws1,4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 84,
+      "moveNumber": 86,
       "command": "ws2",
       "name": "Sunflower",
       "hitLevel": "m",
@@ -1147,10 +1358,13 @@
       "counterHit": "+38a (+28)",
       "notes": "* Recover facing forward with F (-5, +5, +36a (+26))",
       "wavuId": "Xiaoyu-ws2",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ws2.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 85,
+      "moveNumber": 87,
       "command": "ws2*",
       "name": "Jasmine Blossom",
       "hitLevel": "m",
@@ -1161,10 +1375,13 @@
       "counterHit": "",
       "notes": "* Recover facing forward with F (-5, +36a (+26))",
       "wavuId": "Xiaoyu-ws2*",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ws2s.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 86,
+      "moveNumber": 88,
       "command": "ws3",
       "name": "Rising Axe Kick",
       "hitLevel": "m",
@@ -1174,10 +1391,13 @@
       "hit": "+6c",
       "counterHit": "+51a",
       "notes": "*",
-      "wavuId": "Xiaoyu-ws3"
+      "wavuId": "Xiaoyu-ws3",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ws3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 87,
+      "moveNumber": 89,
       "command": "ws4",
       "name": "Skyscraper Kick",
       "hitLevel": "m",
@@ -1187,10 +1407,13 @@
       "hit": "+20a (+13)",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-ws4"
+      "wavuId": "Xiaoyu-ws4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ws4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 88,
+      "moveNumber": 90,
       "command": "ws1+2",
       "hitLevel": "m",
       "damage": "12",
@@ -1202,12 +1425,12 @@
       "wavuId": "Xiaoyu-ws1+2"
     },
     {
-      "moveNumber": 89,
+      "moveNumber": 91,
       "command": "ws1+2,1+2",
       "name": "X Marks the Spot",
-      "hitLevel": "m,m",
-      "damage": "12,20",
-      "startup": "i19~20",
+      "hitLevel": "m, m",
+      "damage": "12, 20",
+      "startup": "i14~16, i19~20",
       "block": "-8",
       "hit": "+7c",
       "counterHit": "+43a",
@@ -1215,7 +1438,7 @@
       "wavuId": "Xiaoyu-ws1+2,1+2"
     },
     {
-      "moveNumber": 90,
+      "moveNumber": 92,
       "command": "ss4",
       "name": "Street Sweeper",
       "hitLevel": "l",
@@ -1224,11 +1447,16 @@
       "block": "-13",
       "hit": "-2",
       "counterHit": "+29a",
-      "notes": "*",
-      "wavuId": "Xiaoyu-ss4"
+      "notes": "*\nHigh crush 6~",
+      "wavuId": "Xiaoyu-ss4",
+      "tags": { "cs": "6~" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-ss4.mp4",
+      "recovery": "FC"
     },
     {
-      "moveNumber": 91,
+      "moveNumber": 93,
       "command": "FC.1",
       "name": "",
       "hitLevel": "s",
@@ -1240,10 +1468,11 @@
       "notes": "High crush",
       "wavuId": "Xiaoyu-FC.1",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 92,
+      "moveNumber": 94,
       "command": "FC.2",
       "name": "",
       "hitLevel": "s",
@@ -1255,10 +1484,11 @@
       "notes": "High crush",
       "wavuId": "Xiaoyu-FC.2",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 93,
+      "moveNumber": 95,
       "command": "FC.3",
       "name": "",
       "hitLevel": "l",
@@ -1270,49 +1500,55 @@
       "notes": "High crush",
       "wavuId": "Xiaoyu-FC.3",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 94,
+      "moveNumber": 96,
       "command": "FC.3,2",
       "name": "",
-      "hitLevel": "l,h",
-      "damage": "11,6",
-      "startup": "i18",
+      "hitLevel": "l, h",
+      "damage": "11, 6",
+      "startup": "i15, i18",
       "block": "+0",
       "hit": "+7",
       "counterHit": "",
       "notes": "* Combos from 1st hit CH",
       "wavuId": "Xiaoyu-FC.3,2",
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 95,
+      "moveNumber": 97,
       "command": "FC.3,2,1",
-      "hitLevel": "l,h,h",
-      "damage": "11,6,6",
-      "startup": "i14",
+      "hitLevel": "l, h, h",
+      "damage": "11, 6, 6",
+      "startup": "i15, ,i14",
       "block": "-1",
       "hit": "+6",
       "counterHit": "+10g",
       "notes": "* Transition to HYP with B (-2, +5)\n* Combos from 2nd hit\n* Jails from 2nd hit",
-      "wavuId": "Xiaoyu-FC.3,2,1"
+      "wavuId": "Xiaoyu-FC.3,2,1",
+      "transitions": ["HYP"]
     },
     {
-      "moveNumber": 96,
+      "moveNumber": 98,
       "command": "FC.3,2,1,4",
       "name": "Fire Dancer",
-      "hitLevel": "l,h,h,m",
-      "damage": "11,6,6,12",
-      "startup": "i18",
+      "hitLevel": "l, h, h, m",
+      "damage": "11, 6, 6, 12",
+      "startup": "i15, ,i18",
       "block": "-18",
       "hit": "+33a (+23)",
       "counterHit": "",
       "notes": "* Combos from 3rd hit CH",
-      "wavuId": "Xiaoyu-FC.3,2,1,4"
+      "wavuId": "Xiaoyu-FC.3,2,1,4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-fc.3,2,1,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 97,
+      "moveNumber": 99,
       "command": "FC.4",
       "name": "",
       "hitLevel": "l",
@@ -1324,10 +1560,11 @@
       "notes": "*\nHigh crush",
       "wavuId": "Xiaoyu-FC.4",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 98,
+      "moveNumber": 100,
       "command": "FC.df+2",
       "name": "",
       "hitLevel": "l",
@@ -1339,25 +1576,29 @@
       "notes": "* Recover in BT with FC.DF+2 (-8, +3)\nHigh crush",
       "wavuId": "Xiaoyu-FC.df+2",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 99,
+      "moveNumber": 101,
       "command": "FC.df+2,1",
       "name": "Lotus Twist",
-      "hitLevel": "l,l",
-      "damage": "10,14",
-      "startup": "i21",
+      "hitLevel": "l, l",
+      "damage": "10, 14",
+      "startup": "i19, i21",
       "block": "-11",
       "hit": "+0",
       "counterHit": "",
       "notes": "* Recover in BT with DF (-, +3)\nHigh crush",
       "wavuId": "Xiaoyu-FC.df+2,1",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-fc.df+2,1.mp4",
       "recovery": "FC"
     },
     {
-      "moveNumber": 100,
+      "moveNumber": 102,
       "command": "FC.df+4",
       "name": "",
       "hitLevel": "l",
@@ -1369,25 +1610,27 @@
       "notes": "* Automatically transitions to AOP on hit or block\n* Alternate input AOP.f+4\nHigh crush",
       "wavuId": "Xiaoyu-FC.df+4",
       "tags": { "cs": "" },
+      "transitions": ["AOP"],
       "recovery": "AOP"
     },
     {
-      "moveNumber": 101,
+      "moveNumber": 103,
       "command": "FC.df+4,4",
       "name": "Flower Garden",
-      "hitLevel": "l,l",
-      "damage": "13,13",
-      "startup": "i28",
+      "hitLevel": "l, l",
+      "damage": "13, 13",
+      "startup": "i18, i28",
       "block": "-6",
       "hit": "+5",
       "counterHit": "",
       "notes": "* Combos from 1st hit CH\n* Alternate input AOP.f+4,4\nHigh crush",
       "wavuId": "Xiaoyu-FC.df+4,4",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 102,
+      "moveNumber": 104,
       "command": "AOP.1",
       "name": "",
       "hitLevel": "m",
@@ -1398,39 +1641,46 @@
       "counterHit": "",
       "notes": "* Transition to HYP with B (-2, +9)",
       "wavuId": "Xiaoyu-AOP.1",
+      "transitions": ["HYP", "FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 103,
+      "moveNumber": 105,
       "command": "AOP.1,2",
       "name": "Double Serving",
-      "hitLevel": "m,h",
-      "damage": "11,15",
-      "startup": "i21",
+      "hitLevel": "m, h",
+      "damage": "11, 15",
+      "startup": "i18, i21",
       "block": "-6",
       "hit": "+30g",
       "counterHit": "",
       "notes": "* Combos from 1st hit",
       "wavuId": "Xiaoyu-AOP.1,2",
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.1,2.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 104,
+      "moveNumber": 106,
       "command": "AOP.1,4",
       "name": "Twin Mandarin Blows",
-      "hitLevel": "m,m",
-      "damage": "11,20",
-      "startup": "i25",
+      "hitLevel": "m, m",
+      "damage": "11, 20",
+      "startup": "i18, i25",
       "block": "-9",
       "hit": "+15d (-2)",
       "counterHit": "",
       "notes": "* Tornado\n* Balcony Break\n* Combos from 1st hit",
       "wavuId": "Xiaoyu-AOP.1,4",
       "tags": { "trn": "", "bbr": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.1,4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 105,
+      "moveNumber": 107,
       "command": "AOP.2",
       "hitLevel": "m",
       "damage": "10",
@@ -1442,21 +1692,24 @@
       "wavuId": "Xiaoyu-AOP.2"
     },
     {
-      "moveNumber": 106,
+      "moveNumber": 108,
       "command": "AOP.2,1",
       "name": "Phoenix Double Palm",
-      "hitLevel": "m,m",
-      "damage": "10,20",
-      "startup": "i21",
+      "hitLevel": "m, m",
+      "damage": "10, 20",
+      "startup": "i13, i21",
       "block": "-12",
       "hit": "+13a (+4)",
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +43d (+35)\n\n* Combos from 1st hit\n* Cancel 2nd hit into BT with B\n** (-14, -3)",
       "wavuId": "Xiaoyu-AOP.2,1",
-      "tags": { "he": "" }
+      "tags": { "he": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.2,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 107,
+      "moveNumber": 109,
       "command": "AOP.3",
       "name": "Piercing Spear Kick",
       "hitLevel": "l",
@@ -1467,10 +1720,13 @@
       "counterHit": "+27a",
       "notes": "*\nHigh crush",
       "wavuId": "Xiaoyu-AOP.3",
-      "tags": { "cs": "" }
+      "tags": { "cs": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 108,
+      "moveNumber": 110,
       "command": "AOP.4",
       "name": "Rising Front Kick",
       "hitLevel": "m",
@@ -1480,10 +1736,13 @@
       "hit": "+8",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-AOP.4"
+      "wavuId": "Xiaoyu-AOP.4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 109,
+      "moveNumber": 111,
       "command": "AOP.1+2",
       "name": "Phoenix Cannon",
       "hitLevel": "m",
@@ -1494,10 +1753,13 @@
       "counterHit": "",
       "notes": "* Tornado\n* Balcony Break",
       "wavuId": "Xiaoyu-AOP.1+2",
-      "tags": { "trn": "", "bbr": "" }
+      "tags": { "trn": "", "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 110,
+      "moveNumber": 112,
       "command": "AOP.3+4",
       "name": "Sliding Firecracker",
       "hitLevel": "l",
@@ -1508,10 +1770,13 @@
       "counterHit": "",
       "notes": "* Recovers in FUFT when blocked",
       "wavuId": "Xiaoyu-AOP.3+4",
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.3+4.mp4",
       "recovery": "FC"
     },
     {
-      "moveNumber": 111,
+      "moveNumber": 113,
       "command": "AOP.d",
       "name": "Butterfly",
       "hitLevel": "",
@@ -1523,10 +1788,13 @@
       "notes": "* Xiaoyu ducks lower\nHigh crush",
       "wavuId": "Xiaoyu-AOP.d",
       "tags": { "cs": "" },
+      "transitions": ["AOP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.d.mp4",
       "recovery": "AOP"
     },
     {
-      "moveNumber": 112,
+      "moveNumber": 114,
       "command": "AOP.d+1",
       "name": "Phoenix Swipe",
       "hitLevel": "l",
@@ -1538,10 +1806,13 @@
       "notes": "*\nHigh crush",
       "wavuId": "Xiaoyu-AOP.d+1",
       "tags": { "cs": "" },
+      "transitions": ["AOP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.d+1.mp4",
       "recovery": "AOP"
     },
     {
-      "moveNumber": 113,
+      "moveNumber": 115,
       "command": "AOP.d+1+2",
       "name": "Wave Crest",
       "hitLevel": "m",
@@ -1551,10 +1822,13 @@
       "hit": "+42a (+32)",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-AOP.d+1+2"
+      "wavuId": "Xiaoyu-AOP.d+1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.d+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 114,
+      "moveNumber": 116,
       "command": "AOP.f+4",
       "name": "",
       "hitLevel": "l",
@@ -1566,25 +1840,27 @@
       "notes": "* Automatically transitions to AOP on hit or block\n* Alternate input FC.df+4\nHigh crush",
       "wavuId": "Xiaoyu-AOP.f+4",
       "tags": { "cs": "" },
+      "transitions": ["AOP"],
       "recovery": "AOP"
     },
     {
-      "moveNumber": 115,
+      "moveNumber": 117,
       "command": "AOP.f+4,4",
       "name": "Flower Garden",
-      "hitLevel": "l,l",
-      "damage": "13,13",
-      "startup": "i28",
+      "hitLevel": "l, l",
+      "damage": "13, 13",
+      "startup": "i18, i28",
       "block": "-6",
       "hit": "+5",
       "counterHit": "",
       "notes": "* Combos from 1st hit CH\n* Alternate input FC.df+4,4\nHigh crush",
       "wavuId": "Xiaoyu-AOP.f+4,4",
       "tags": { "cs": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 116,
+      "moveNumber": 118,
       "command": "AOP.f+3+4",
       "name": "Roll Ball",
       "hitLevel": "",
@@ -1596,10 +1872,13 @@
       "notes": "* Transition to AOP with D\nHigh crush",
       "wavuId": "Xiaoyu-AOP.f+3+4",
       "tags": { "cs": "" },
+      "transitions": ["AOP", "FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.f+3+4.mp4",
       "recovery": "FC"
     },
     {
-      "moveNumber": 117,
+      "moveNumber": 119,
       "command": "AOP.uf",
       "name": "Jumping",
       "hitLevel": "",
@@ -1611,10 +1890,11 @@
       "notes": "* Alternate input AOP.ub AOP.u\nLow crush",
       "wavuId": "Xiaoyu-AOP.uf",
       "tags": { "js": "" },
+      "transitions": ["FC"],
       "recovery": "FC"
     },
     {
-      "moveNumber": 118,
+      "moveNumber": 120,
       "command": "AOP.uf+3",
       "hitLevel": "m",
       "damage": "14",
@@ -1627,34 +1907,40 @@
       "tags": { "js": "" }
     },
     {
-      "moveNumber": 119,
+      "moveNumber": 121,
       "command": "AOP.uf+3,1",
       "name": "Alley-Oop",
-      "hitLevel": "m,m",
-      "damage": "14,22",
-      "startup": "i24",
+      "hitLevel": "m, m",
+      "damage": "14, 22",
+      "startup": "i15, i24",
       "block": "-4",
       "hit": "+8c",
       "counterHit": "",
       "notes": "* Alternate input AOP.ub+3,1 AOP.u+3,1\n* Floor Break on airborne opponent",
       "wavuId": "Xiaoyu-AOP.uf+3,1",
+      "transitions": ["AOP"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.uf+3,1.mp4",
       "recovery": "AOP"
     },
     {
-      "moveNumber": 120,
+      "moveNumber": 122,
       "command": "AOP.uf+3,4",
       "name": "Double Scissor Kick",
-      "hitLevel": "m,m",
-      "damage": "14,17",
-      "startup": "i15",
+      "hitLevel": "m, m",
+      "damage": "14, 17",
+      "startup": "i15, i15",
       "block": "-14",
       "hit": "-3",
       "counterHit": "+22g",
       "notes": "* Alternate input AOP.ub+3,4 AOP.u+3,4",
-      "wavuId": "Xiaoyu-AOP.uf+3,4"
+      "wavuId": "Xiaoyu-AOP.uf+3,4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.uf+3,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 121,
+      "moveNumber": 123,
       "command": "AOP.uf+4",
       "name": "",
       "hitLevel": "m",
@@ -1666,25 +1952,29 @@
       "notes": "* Transition to AOP with D (-12, +0)\n* Transition to BT with B (-15, -3)\n* Alternate input AOP.u+4\nLow crush",
       "wavuId": "Xiaoyu-AOP.uf+4",
       "tags": { "js": "" },
+      "transitions": ["AOP", "BT", "AOP"],
       "recovery": "AOP"
     },
     {
-      "moveNumber": 122,
+      "moveNumber": 124,
       "command": "AOP.uf+4,4",
       "name": "Flower Power",
-      "hitLevel": "m,m",
-      "damage": "12,12",
-      "startup": "i23",
+      "hitLevel": "m, m",
+      "damage": "12, 12",
+      "startup": "i16, i23",
       "block": "-12",
       "hit": "-1",
       "counterHit": "",
       "notes": "* Alternate input AOP.u+4,4\nLow crush",
       "wavuId": "Xiaoyu-AOP.uf+4,4",
       "tags": { "js": "" },
+      "transitions": ["FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.uf+4,4.mp4",
       "recovery": "FC"
     },
     {
-      "moveNumber": 123,
+      "moveNumber": 125,
       "command": "BT.1",
       "name": "",
       "hitLevel": "m",
@@ -1696,24 +1986,28 @@
       "notes": "* Elbow",
       "wavuId": "Xiaoyu-BT.1",
       "tags": { "elb": "" },
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 124,
+      "moveNumber": 126,
       "command": "BT.1,2",
       "name": "Waking Prominence",
-      "hitLevel": "m,m",
-      "damage": "17,20",
-      "startup": "i24",
+      "hitLevel": "m, m",
+      "damage": "17, 20",
+      "startup": "i16, i24",
       "block": "-13",
       "hit": "+17a",
       "counterHit": "",
       "notes": "* Tornado\n* Balcony Break\nLow crush",
       "wavuId": "Xiaoyu-BT.1,2",
-      "tags": { "trn": "", "bbr": "", "js": "" }
+      "tags": { "trn": "", "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.1,2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 125,
+      "moveNumber": 127,
       "command": "BT.2",
       "name": "",
       "hitLevel": "h",
@@ -1724,63 +2018,72 @@
       "counterHit": "",
       "notes": "*",
       "wavuId": "Xiaoyu-BT.2",
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 126,
+      "moveNumber": 128,
       "command": "BT.2,1",
-      "hitLevel": "h,h",
-      "damage": "9,8",
-      "startup": "i14",
+      "hitLevel": "h, h",
+      "damage": "9, 8",
+      "startup": "i12, i14",
       "block": "-1",
       "hit": "+6",
       "counterHit": "+10",
       "notes": "* Transition to HYP with B (-2, +5)\n* Combos from 1st hit",
-      "wavuId": "Xiaoyu-BT.2,1"
+      "wavuId": "Xiaoyu-BT.2,1",
+      "transitions": ["HYP"]
     },
     {
-      "moveNumber": 127,
+      "moveNumber": 129,
       "command": "BT.2,1,4",
       "name": "Dark & Stormy",
-      "hitLevel": "h,h,m",
-      "damage": "9,8,15",
-      "startup": "i18",
+      "hitLevel": "h, h, m",
+      "damage": "9, 8, 15",
+      "startup": "i12, ,i18",
       "block": "-18",
       "hit": "+33a (+23)",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-BT.2,1,4"
+      "wavuId": "Xiaoyu-BT.2,1,4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.2,1,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 128,
+      "moveNumber": 130,
       "command": "BT.2,2",
       "name": "",
-      "hitLevel": "h,m",
-      "damage": "9,12",
-      "startup": "i22",
+      "hitLevel": "h, m",
+      "damage": "9, 12",
+      "startup": "i12, i22",
       "block": "-7",
       "hit": "+5",
       "counterHit": "",
       "notes": "* Combos from 1st hit",
       "wavuId": "Xiaoyu-BT.2,2",
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 129,
+      "moveNumber": 131,
       "command": "BT.2,2,1",
       "name": "Turn of Fortune",
-      "hitLevel": "h,m,m",
-      "damage": "9,12,21",
-      "startup": "i21",
+      "hitLevel": "h, m, m",
+      "damage": "9, 12, 21",
+      "startup": "i12, ,i21",
       "block": "-11",
       "hit": "+5c",
       "counterHit": "",
       "notes": "* Transition to AOP with D (-10, +5)\n* Combos from 2nd hit",
       "wavuId": "Xiaoyu-BT.2,2,1",
+      "transitions": ["AOP", "FC"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.2,2,1.mp4",
       "recovery": "FC"
     },
     {
-      "moveNumber": 130,
+      "moveNumber": 132,
       "command": "BT.3",
       "name": "Peg Leg",
       "hitLevel": "m",
@@ -1792,10 +2095,13 @@
       "notes": "* On CH: \nBalcony Break\nLow crush",
       "wavuId": "Xiaoyu-BT.3",
       "tags": { "bbr": "", "js": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.3.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 131,
+      "moveNumber": 133,
       "command": "BT.4",
       "name": "Mistrust",
       "hitLevel": "m",
@@ -1805,10 +2111,13 @@
       "hit": "+33a (+23)",
       "counterHit": "",
       "notes": "*",
-      "wavuId": "Xiaoyu-BT.4"
+      "wavuId": "Xiaoyu-BT.4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 132,
+      "moveNumber": 134,
       "command": "BT.1+2",
       "hitLevel": "m",
       "damage": "12",
@@ -1820,34 +2129,40 @@
       "wavuId": "Xiaoyu-BT.1+2"
     },
     {
-      "moveNumber": 133,
+      "moveNumber": 135,
       "command": "BT.1+2,4",
       "name": "Battering Storm",
-      "hitLevel": "m,h",
-      "damage": "12,20",
-      "startup": "i23",
+      "hitLevel": "m, h",
+      "damage": "12, 20",
+      "startup": "i16, i23",
       "block": "+3",
       "hit": "+19a (+10)",
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Heat Dash +5, +62a (+42)\n\n* Balcony Break\n* Combos from 1st hit\n* Chip on block",
       "wavuId": "Xiaoyu-BT.1+2,4",
-      "tags": { "he": "", "bbr": "", "chp": "" }
+      "tags": { "he": "", "bbr": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.1+2,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 134,
+      "moveNumber": 136,
       "command": "BT.1+2,1+2",
       "name": "Battering Winds",
-      "hitLevel": "m,m",
-      "damage": "12,12",
-      "startup": "i17",
+      "hitLevel": "m, m",
+      "damage": "12, 12",
+      "startup": "i16, i17",
       "block": "-13",
       "hit": "+8d",
       "counterHit": "",
       "notes": "* Combos from 1st hit",
-      "wavuId": "Xiaoyu-BT.1+2,1+2"
+      "wavuId": "Xiaoyu-BT.1+2,1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.1+2,1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 135,
+      "moveNumber": 137,
       "command": "BT.3+4",
       "name": "Monkey Kick",
       "hitLevel": "m",
@@ -1859,10 +2174,13 @@
       "notes": "* Balcony Break\nLow crush",
       "wavuId": "Xiaoyu-BT.3+4",
       "tags": { "bbr": "", "js": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.3+4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 136,
+      "moveNumber": 138,
       "command": "BT.db+4",
       "name": "Reverse Knee Cracker",
       "hitLevel": "l",
@@ -1872,10 +2190,13 @@
       "hit": "+2",
       "counterHit": "+14",
       "notes": "* Alternate input BT.df+4",
-      "wavuId": "Xiaoyu-BT.db+4"
+      "wavuId": "Xiaoyu-BT.db+4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.db+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 137,
+      "moveNumber": 139,
       "command": "BT.d+1+3",
       "name": "Reverse Low Parry",
       "hitLevel": "",
@@ -1889,7 +2210,7 @@
       "tags": { "ps": "" }
     },
     {
-      "moveNumber": 138,
+      "moveNumber": 140,
       "command": "BT.d+3",
       "hitLevel": "l",
       "damage": "12",
@@ -1901,21 +2222,24 @@
       "wavuId": "Xiaoyu-BT.d+3"
     },
     {
-      "moveNumber": 139,
+      "moveNumber": 141,
       "command": "BT.d+3,4",
       "name": "Spinning Crane",
-      "hitLevel": "l,h",
-      "damage": "12,20",
-      "startup": "i19",
+      "hitLevel": "l, h",
+      "damage": "12, 20",
+      "startup": "i16, i19",
       "block": "-5",
       "hit": "+20a (+11)",
       "counterHit": "+37a",
       "notes": "* Balcony Break\n* Combos from 1st hit CH",
       "wavuId": "Xiaoyu-BT.d+3,4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.d+3,4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 140,
+      "moveNumber": 142,
       "command": "BT.d+4",
       "name": "Hou Sao Tui",
       "hitLevel": "l",
@@ -1926,12 +2250,15 @@
       "counterHit": "+73a (+57)",
       "notes": "* Instant Tornado\n* Has clean hit effect\nHigh crush",
       "wavuId": "Xiaoyu-BT.d+4",
-      "tags": { "cs": "" }
+      "tags": { "cs": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.d+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 141,
+      "moveNumber": 143,
       "command": "BT.d+3+4",
-      "name": "Spin Tornado",
+      "name": "Spin Tornado Up (Down)",
       "hitLevel": "",
       "damage": "",
       "startup": "",
@@ -1939,10 +2266,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Xiaoyu spins and steps to the right\n* Alternate input BT.u+3+4 (steps to the left)",
-      "wavuId": "Xiaoyu-BT.d+3+4"
+      "wavuId": "Xiaoyu-BT.d+3+4",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.d+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 142,
+      "moveNumber": 144,
       "command": "BT.f,F+3+4",
       "name": "Back Layout",
       "hitLevel": "m (t)",
@@ -1954,10 +2284,13 @@
       "notes": "* Unbreakable throw when connecting at close range\n* Chip on block [9]\nLow crush",
       "wavuId": "Xiaoyu-BT.f,F+3+4",
       "tags": { "chp": "", "js": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.f,f+3+4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 143,
+      "moveNumber": 145,
       "command": "BT.f+1+2",
       "name": "Spinning Push Hands",
       "hitLevel": "m",
@@ -1968,10 +2301,13 @@
       "counterHit": "+5",
       "notes": "* Punch parry\n** 50 damage, +20d, transitions to BT\nParry state",
       "wavuId": "Xiaoyu-BT.f+1+2",
-      "tags": { "ps": "" }
+      "tags": { "ps": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.f+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 144,
+      "moveNumber": 146,
       "command": "BT.f+3+4",
       "name": "",
       "hitLevel": "",
@@ -1983,10 +2319,11 @@
       "notes": "* \"Cali Roll\"\nHigh crush",
       "wavuId": "Xiaoyu-BT.f+3+4",
       "tags": { "cs": "" },
+      "transitions": ["BT"],
       "recovery": "BT"
     },
     {
-      "moveNumber": 145,
+      "moveNumber": 147,
       "command": "BT.f+3+4,3+4",
       "name": "Cyclone Left",
       "hitLevel": "m",
@@ -1998,10 +2335,13 @@
       "notes": "* \"Cali Roll\"\nHigh crush",
       "wavuId": "Xiaoyu-BT.f+3+4,3+4",
       "tags": { "cs": "" },
+      "transitions": ["BT"],
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.f+3+4,3+4.mp4",
       "recovery": "BT"
     },
     {
-      "moveNumber": 146,
+      "moveNumber": 148,
       "command": "BT.uf+1",
       "name": "Silver Needle",
       "hitLevel": "l",
@@ -2015,7 +2355,7 @@
       "tags": { "js": "" }
     },
     {
-      "moveNumber": 147,
+      "moveNumber": 149,
       "command": "CH AOP.d+1",
       "name": "Return to the Nest",
       "hitLevel": "l,t",
@@ -2029,7 +2369,7 @@
       "tags": { "fbr": "", "cs": "" }
     },
     {
-      "moveNumber": 148,
+      "moveNumber": 150,
       "command": "HYP.2",
       "name": "Spin Sticker",
       "hitLevel": "m",
@@ -2038,12 +2378,15 @@
       "block": "-4",
       "hit": "+22 (-13)",
       "counterHit": "",
-      "notes": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Powered UpBased on the number of steps taken in HYP:HYP.2 damage increases and becomes plus on block. See the charts in th [[Xiaoyu_movelist#HYP_(Hypnotist)|HYP]] section for more details. up when in Heat or based on the number of steps taken.\n* Partially uses remaining Heat time\n* Chip on block",
+      "notes": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Wall Crush +24g on block (3 step version only\n\n\n* Balcony Break\n* Powered UpBased on the number of steps taken in HYP:HYP.2 damage increases and becomes plus on block. See the charts in th HYP section for more details. up when in Heat or based on the number of steps taken.\n* Partially uses remaining Heat time\n* Chip on block",
       "wavuId": "Xiaoyu-HYP.2",
-      "tags": { "he": "", "bbr": "", "chp": "" }
+      "tags": { "he": "", "wc": "", "bbr": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-hyp.2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 149,
+      "moveNumber": 151,
       "command": "HYP.3",
       "name": "Blue Luan Sweep",
       "hitLevel": "l",
@@ -2052,12 +2395,15 @@
       "block": "-13",
       "hit": "+7c",
       "counterHit": "",
-      "notes": "* Homing\n* Powered UpBased on the number of steps taken in HYP:HYP.3 damage increases and becomes more plus on hit. See the charts in th [[Xiaoyu_movelist#HYP_(Hypnotist)|HYP]] section for more details. up when in Heat or based on the number of steps taken.\n* Partially uses remaining Heat time",
+      "notes": "* Homing\n* Powered UpBased on the number of steps taken in HYP:HYP.3 damage increases and becomes more plus on hit. See the charts in th HYP section for more details. up when in Heat or based on the number of steps taken.\n* Partially uses remaining Heat time\nHigh crush 6~30",
       "wavuId": "Xiaoyu-HYP.3",
-      "tags": { "hom": "" }
+      "tags": { "hom": "", "cs": "6~30" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-hyp.3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 150,
+      "moveNumber": 152,
       "command": "HYP.4",
       "name": "Falling Tiger Kick",
       "hitLevel": "h",
@@ -2065,13 +2411,16 @@
       "startup": "i14",
       "block": "-2",
       "hit": "+26d",
-      "counterHit": "+50cs",
+      "counterHit": "+50a",
       "notes": "* Balcony Break",
       "wavuId": "Xiaoyu-HYP.4",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-hyp.4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 151,
+      "moveNumber": 153,
       "command": "HYP.1+2",
       "name": "Hypnotist",
       "hitLevel": "",
@@ -2080,14 +2429,16 @@
       "block": "",
       "hit": "",
       "counterHit": "",
-      "notes": "* Starts taking steps in the opposite direction\nParry state",
+      "notes": "* Starts taking steps in the opposite direction\n* Can be performed any time in HYP after 25F from manual stance transition, or 20?F after other stance transitions?\nParry state 2?~11?",
       "wavuId": "Xiaoyu-HYP.1+2",
-      "tags": { "ps": "" }
+      "tags": { "ps": "2?~11?" },
+      "transitions": ["HYP"],
+      "recovery": "r20 HYP"
     },
     {
-      "moveNumber": 152,
+      "moveNumber": 154,
       "command": "HYP.2+3",
-      "name": "Deadly Orchid",
+      "name": "Thunder Strike",
       "hitLevel": "!",
       "damage": "40",
       "startup": "i61",
@@ -2095,10 +2446,13 @@
       "hit": "+10d",
       "counterHit": "",
       "notes": "* Unblockable\n* Cancel into BT with BB",
-      "wavuId": "Xiaoyu-HYP.2+3"
+      "wavuId": "Xiaoyu-HYP.2+3",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-hyp.2+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 153,
+      "moveNumber": 155,
       "command": "HYP.3+4",
       "name": "Deadly Orchid",
       "hitLevel": "h",
@@ -2107,12 +2461,15 @@
       "block": "-2",
       "hit": "+30a",
       "counterHit": "",
-      "notes": "* Causes Strong Aerial Tailspin\n* Cancel into BT with B\n* Chip on block [8]\nLow crush",
+      "notes": "* Strong Aerial Tailspin\n* Cancel into BT with B\n* Chip on block [8]\nLow crush 12~",
       "wavuId": "Xiaoyu-HYP.3+4",
-      "tags": { "chp": "", "js": "" }
+      "tags": { "chp": "", "js": "12~" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-hyp.3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 154,
+      "moveNumber": 156,
       "command": "1+3",
       "name": "Jade",
       "hitLevel": "t",
@@ -2121,11 +2478,15 @@
       "block": "-6",
       "hit": "+1d",
       "counterHit": "",
-      "notes": "* Throw break 1 or 2",
-      "wavuId": "Xiaoyu-1+3"
+      "notes": "* Homing\n* Throw break 1 or 2",
+      "wavuId": "Xiaoyu-1+3",
+      "tags": { "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-1+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 155,
+      "moveNumber": 157,
       "command": "2+4",
       "name": "Ruby",
       "hitLevel": "t",
@@ -2134,11 +2495,15 @@
       "block": "-3",
       "hit": "+0d",
       "counterHit": "",
-      "notes": "* Throw break 1 or 2\n* Side swap",
-      "wavuId": "Xiaoyu-2+4"
+      "notes": "* Homing\n* Throw break 1 or 2\n* Side swap",
+      "wavuId": "Xiaoyu-2+4",
+      "tags": { "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-2+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 156,
+      "moveNumber": 158,
       "command": "AOP.1+3",
       "name": "Feng Huang Zhuan Wu",
       "hitLevel": "t",
@@ -2149,10 +2514,13 @@
       "counterHit": "",
       "notes": "* Throw Break 1\n* Alternate input AOP.2+4 (Throw Break 2)\n* Xiaoyu rolls to her left then throws\n* Cancel into FC with D\nHigh crush",
       "wavuId": "Xiaoyu-AOP.1+3",
-      "tags": { "cs": "" }
+      "tags": { "cs": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-aop.1+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 157,
+      "moveNumber": 159,
       "command": "BT.f+1+3",
       "name": "Bei Shen Zhuan Wu",
       "hitLevel": "t",
@@ -2161,12 +2529,15 @@
       "block": "-6",
       "hit": "+1d",
       "counterHit": "",
-      "notes": "* Throw Break 1\n* Alternate input BT.f+2+4 (Throw Break 2)\n* Cancel into FC with D\nLow crush",
+      "notes": "* Homing\n* Throw Break 1\n* Alternate input BT.f+2+4 (Throw Break 2)\n* Cancel into FC with D\nLow crush",
       "wavuId": "Xiaoyu-BT.f+1+3",
-      "tags": { "js": "" }
+      "tags": { "hom": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-bt.f+1+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 158,
+      "moveNumber": 160,
       "command": "BT.f+2+3",
       "name": "Wang's Waning Moon (BT)",
       "hitLevel": "t",
@@ -2175,12 +2546,12 @@
       "block": "-2",
       "hit": "+20cs",
       "counterHit": "",
-      "notes": "* Throw Break 1+2\n* Balcony Break\n* Cancel into FC with D\nLow crush",
+      "notes": "* Homing\n* Balcony Break\n* Throw Break 1+2\n* Cancel into FC with D\nLow crush",
       "wavuId": "Xiaoyu-BT.f+2+3",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "hom": "", "bbr": "", "js": "" }
     },
     {
-      "moveNumber": 159,
+      "moveNumber": 161,
       "command": "Back Throw",
       "name": "Crank up",
       "hitLevel": "t",
@@ -2193,7 +2564,7 @@
       "wavuId": "Xiaoyu-Back Throw"
     },
     {
-      "moveNumber": 160,
+      "moveNumber": 162,
       "command": "Left Throw",
       "name": "Arm Flip",
       "hitLevel": "t",
@@ -2206,7 +2577,7 @@
       "wavuId": "Xiaoyu-Left Throw"
     },
     {
-      "moveNumber": 161,
+      "moveNumber": 163,
       "command": "Right Throw",
       "name": "Dump the Bucket",
       "hitLevel": "t",
@@ -2219,7 +2590,7 @@
       "wavuId": "Xiaoyu-Right Throw"
     },
     {
-      "moveNumber": 162,
+      "moveNumber": 164,
       "command": "df+2+4",
       "name": "Dragon Fall",
       "hitLevel": "t",
@@ -2228,12 +2599,15 @@
       "block": "-2",
       "hit": "+0d",
       "counterHit": "",
-      "notes": "* Throw Break 1\n* Floor Break\n* Side Swap",
+      "notes": "* Throw Break 2\n* Floor Break\n* Side Swap",
       "wavuId": "Xiaoyu-df+2+4",
-      "tags": { "fbr": "" }
+      "tags": { "fbr": "" },
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-df+2+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 163,
+      "moveNumber": 165,
       "command": "f+2+3",
       "name": "Wang's Waning Moon",
       "hitLevel": "t",
@@ -2247,7 +2621,7 @@
       "tags": { "bbr": "" }
     },
     {
-      "moveNumber": 164,
+      "moveNumber": 166,
       "command": "uf+1+2",
       "name": "Dislocator",
       "hitLevel": "t",
@@ -2257,8 +2631,11 @@
       "hit": "+0d",
       "counterHit": "",
       "notes": "* Throw Break 1+2\n* Side swap",
-      "wavuId": "Xiaoyu-uf+1+2"
+      "wavuId": "Xiaoyu-uf+1+2",
+      "image": "",
+      "video": "File:t8-p2-xiaoyu-uf+1+2.mp4",
+      "recovery": ""
     }
   ],
-  "stances": ["H", "While", "FC", "AOP", "BT", "HYP"]
+  "stances": ["H", "While", "ws", "FC", "AOP", "BT", "HYP"]
 }

@@ -100,7 +100,7 @@ export function Hero() {
             <Group asChild gap="sm" className="mb-2 text-xs">
               <Button size="sm" variant="outline">
                 <Map size={18} />
-                View roadmap
+                Announcement
               </Button>
             </Group>
           }

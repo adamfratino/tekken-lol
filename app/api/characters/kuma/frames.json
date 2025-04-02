@@ -55,7 +55,8 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Heat Engager\n\n* Chip damage\n* Transition to HBS with input D or 3+4 (does not shift when using Heat Dash)\nLow crush  21F",
       "wavuId": "Kuma-H.f,f,F+1+2",
-      "tags": { "bbr": "", "he": "", "chp": "", "js": "", "21F": "" }
+      "tags": { "bbr": "", "he": "", "chp": "", "js": "", "21F": "" },
+      "transitions": ["HBS"]
     },
     {
       "moveNumber": 5,
@@ -75,14 +76,16 @@
       "moveNumber": 6,
       "command": "R.df+1+2",
       "name": "Type 38 Eradication Weapon: Aramaki",
-      "hitLevel": "m",
-      "damage": "55",
+      "hitLevel": "m,t",
+      "damage": "55+",
       "startup": "i20",
       "block": "-15",
-      "hit": "0",
+      "hit": "+0d",
       "counterHit": "",
-      "notes": "* Rage Art\n* Erase opponent's recoverable health on hit",
-      "wavuId": "Kuma-R.df+1+2"
+      "notes": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\nPower crush 8~",
+      "wavuId": "Kuma-R.df+1+2",
+      "tags": { "pc": "8~" },
+      "recovery": "r39"
     },
     {
       "moveNumber": 7,
@@ -99,9 +102,9 @@
     {
       "moveNumber": 8,
       "command": "1,1",
-      "hitLevel": "h,m",
-      "damage": "5,8",
-      "startup": ",i22~23",
+      "hitLevel": "h, m",
+      "damage": "5, 8",
+      "startup": "i10, i22~23",
       "block": "-15",
       "hit": "-4c",
       "counterHit": "",
@@ -112,29 +115,35 @@
       "moveNumber": 9,
       "command": "1,1,1",
       "name": "G-Clef Cannon",
-      "hitLevel": "h,m,m",
-      "damage": "5,8,14",
-      "startup": ",i22~23",
+      "hitLevel": "h, m, m",
+      "damage": "5, 8, 14",
+      "startup": "i10, ,i22~23",
       "block": "-16",
       "hit": "+69a (+23)",
       "counterHit": "",
       "notes": "* Tornado\n* Combo from 2nd hit\n* Combo from 1st CH",
       "wavuId": "Kuma-1,1,1",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-1,1,1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 10,
       "command": "1,2",
       "name": "Angry Lumberjack",
-      "hitLevel": "h,h",
-      "damage": "5,25",
-      "startup": ",i22~24",
+      "hitLevel": "h, h",
+      "damage": "5, 25",
+      "startup": "i10, i22~24",
       "block": "-5",
       "hit": "+11 (+2)",
       "counterHit": "",
-      "notes": "* Balcony Break\n* chip damage on block\n* Combo from 1st CH",
+      "notes": "* Balcony Break\n* chip damage on block\n* Jail from 1st hit\n* Combo from 1st CH",
       "wavuId": "Kuma-1,2",
-      "tags": { "bbr": "", "chp": "" }
+      "tags": { "bbr": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-1,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 11,
@@ -147,7 +156,10 @@
       "hit": "",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-1+3+4"
+      "wavuId": "Kuma-1+3+4",
+      "image": "",
+      "video": "File:t8-p2-kuma-1+3+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 12,
@@ -164,9 +176,9 @@
     {
       "moveNumber": 13,
       "command": "2,1",
-      "hitLevel": "h,m",
-      "damage": "10,11",
-      "startup": ",i16",
+      "hitLevel": "h, m",
+      "damage": "10, 11",
+      "startup": "i10, i16",
       "block": "-3",
       "hit": "+2",
       "counterHit": "",
@@ -177,27 +189,33 @@
       "moveNumber": 14,
       "command": "2,1,2",
       "name": "Bear Combo Middle",
-      "hitLevel": "h,m,m",
-      "damage": "10,11,22",
-      "startup": ",i33~34",
+      "hitLevel": "h, m, m",
+      "damage": "10, 11, 22",
+      "startup": "i10, ,i33~34",
       "block": "-14",
       "hit": "+31a (+21)",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-2,1,2"
+      "wavuId": "Kuma-2,1,2",
+      "image": "",
+      "video": "File:t8-p2-kuma-2,1,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 15,
       "command": "2,1,3",
       "name": "Bear Combo Low",
-      "hitLevel": "h,m,l",
-      "damage": "10,11,13",
-      "startup": ",i18",
+      "hitLevel": "h, m, l",
+      "damage": "10, 11, 13",
+      "startup": "i10, ,i18",
       "block": "-13",
       "hit": "-2",
       "counterHit": "",
       "notes": "* Combo from 1st CH",
-      "wavuId": "Kuma-2,1,3"
+      "wavuId": "Kuma-2,1,3",
+      "image": "",
+      "video": "File:t8-p2-kuma-2,1,3.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 16,
@@ -211,7 +229,10 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Heat Engager",
       "wavuId": "Kuma-1+2",
-      "tags": { "bbr": "", "he": "" }
+      "tags": { "bbr": "", "he": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 17,
@@ -224,7 +245,8 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Alternate input: FDFA.3+4\n* Can low parry in HBS with HBS.F\n* Transition to HBS\n* Transition to standing with input ub or u or uf",
-      "wavuId": "Kuma-3+4"
+      "wavuId": "Kuma-3+4",
+      "transitions": ["HBS"]
     },
     {
       "moveNumber": 18,
@@ -237,7 +259,8 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Alternate input: FDFA.3+4\n* Transition to HBS",
-      "wavuId": "Kuma-3+4"
+      "wavuId": "Kuma-3+4",
+      "transitions": ["HBS"]
     },
     {
       "moveNumber": 19,
@@ -255,15 +278,18 @@
       "moveNumber": 20,
       "command": "f+2,1",
       "name": "Wild Lumberjack",
-      "hitLevel": "h,h",
-      "damage": "11,20",
-      "startup": "i20",
+      "hitLevel": "h, h",
+      "damage": "11, 20",
+      "startup": "i12, i20",
       "block": "-5",
       "hit": "+36a (+10)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Combo from 1st hit",
       "wavuId": "Kuma-f+2,1",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-f+2,1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 21,
@@ -281,15 +307,18 @@
       "moveNumber": 22,
       "command": "f+1+2,1+2",
       "name": "Bear Claw Cross",
-      "hitLevel": "m,m",
-      "damage": "16,20",
-      "startup": "i30~31",
+      "hitLevel": "m, m",
+      "damage": "16, 20",
+      "startup": "i18, i30~31",
       "block": "-14",
       "hit": "+65a (+49)",
       "counterHit": "",
       "notes": "* Tornado\n* Combo from 1st hit",
       "wavuId": "Kuma-f+1+2,1+2",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-f+1+2,1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 23,
@@ -303,21 +332,27 @@
       "counterHit": "",
       "notes": "High crush",
       "wavuId": "Kuma-f+3+4",
-      "tags": { "cs": "" }
+      "tags": { "cs": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-f+3+4.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 24,
       "command": "f+3+4,1+2",
       "name": "Shape-Up Hip",
-      "hitLevel": "l,m",
+      "hitLevel": "l, m",
       "damage": "20",
-      "startup": ",i50~i60",
+      "startup": "i28~30, i50~i60",
       "block": "-16",
       "hit": "-13a",
       "counterHit": "",
       "notes": "High crush",
       "wavuId": "Kuma-f+3+4,1+2",
-      "tags": { "cs": "" }
+      "tags": { "cs": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-f+3+4,1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 25,
@@ -334,9 +369,9 @@
     {
       "moveNumber": 26,
       "command": "df+1,2",
-      "hitLevel": "m,m",
-      "damage": "6,9",
-      "startup": ",i22~23",
+      "hitLevel": "m, m",
+      "damage": "6, 9",
+      "startup": "i15~16, i22~23",
       "block": "-11",
       "hit": "-2",
       "counterHit": "",
@@ -347,14 +382,17 @@
       "moveNumber": 27,
       "command": "df+1,2,1+2",
       "name": "Grizzly Rampage",
-      "hitLevel": "m,m,m",
-      "damage": "6,9,20",
-      "startup": ",i25~26",
+      "hitLevel": "m, m, m",
+      "damage": "6, 9, 20",
+      "startup": "i15~16, ,i25~26",
       "block": "-14c",
       "hit": "+17d",
       "counterHit": "",
       "notes": "* Combo from 2nd hit\n* Combo from 1st CH\n* Can be delayed 10F\n* Combo can be delayed 10F from hit",
-      "wavuId": "Kuma-df+1,2,1+2"
+      "wavuId": "Kuma-df+1,2,1+2",
+      "image": "",
+      "video": "File:t8-p2-kuma-df+1,2,1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 28,
@@ -372,14 +410,17 @@
       "moveNumber": 29,
       "command": "df+2,1",
       "name": "Kuma Musou",
-      "hitLevel": "m,m",
-      "damage": "10,12",
-      "startup": ",i20~21",
+      "hitLevel": "m, m",
+      "damage": "10, 12",
+      "startup": "i15~16, i20~21",
       "block": "-16",
       "hit": "+35a (+25)",
       "counterHit": "",
       "notes": "* Combo from 1st hit",
-      "wavuId": "Kuma-df+2,1"
+      "wavuId": "Kuma-df+2,1",
+      "image": "",
+      "video": "File:t8-p2-kuma-df+2,1.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 30,
@@ -397,18 +438,33 @@
       "moveNumber": 31,
       "command": "df+3,2",
       "name": "Honey Trap",
-      "hitLevel": "m,h",
-      "damage": "13,24",
-      "startup": ",i27~28",
+      "hitLevel": "m, h",
+      "damage": "13, 24",
+      "startup": "i16, i27~28",
       "block": "-5",
       "hit": "+22a",
       "counterHit": "",
       "notes": "* Combo from 1st hit\n* chip damage on block",
       "wavuId": "Kuma-df+3,2",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-df+3,2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 32,
+      "command": "df+4",
+      "hitLevel": "m",
+      "damage": "15",
+      "startup": "i12",
+      "block": "-4",
+      "hit": "+7",
+      "counterHit": "",
+      "notes": "",
+      "wavuId": "Kuma-df+4"
+    },
+    {
+      "moveNumber": 33,
       "command": "d+1+2",
       "name": "Hip Smash",
       "hitLevel": "m",
@@ -419,20 +475,10 @@
       "counterHit": "",
       "notes": "* Balcony Break",
       "wavuId": "Kuma-d+1+2",
-      "tags": { "bbr": "" }
-    },
-    {
-      "moveNumber": 33,
-      "command": "d+3+4",
-      "name": "Bear Sit",
-      "hitLevel": "sp",
-      "damage": "",
-      "startup": "",
-      "block": "",
-      "hit": "",
-      "counterHit": "",
-      "notes": "* Alternative input: db+3+4\n* Transition to ROL with input SIT.F\n* Transition to California Roll with input SIT.B",
-      "wavuId": "Kuma-d+3+4"
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-d+1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 34,
@@ -445,10 +491,25 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Transition to SIT\n* Transition to ROL with input f",
-      "wavuId": "Kuma-d+3+4"
+      "wavuId": "Kuma-d+3+4",
+      "transitions": ["SIT", "ROL"]
     },
     {
       "moveNumber": 35,
+      "command": "d+3+4",
+      "name": "Bear Sit",
+      "hitLevel": "sp",
+      "damage": "",
+      "startup": "",
+      "block": "",
+      "hit": "",
+      "counterHit": "",
+      "notes": "* Alternative input: db+3+4\n* Transition to ROL with input SIT.F\n* Transition to California Roll with input SIT.B",
+      "wavuId": "Kuma-d+3+4",
+      "transitions": ["ROL", "California Roll"]
+    },
+    {
+      "moveNumber": 36,
       "command": "db+1",
       "hitLevel": "h",
       "damage": "11",
@@ -460,48 +521,54 @@
       "wavuId": "Kuma-db+1"
     },
     {
-      "moveNumber": 36,
+      "moveNumber": 37,
       "command": "db+1,2",
       "name": "Double Wild Slap",
-      "hitLevel": "h,m",
-      "damage": "1120",
-      "startup": "i17~18",
+      "hitLevel": "h, m",
+      "damage": "11, 20",
+      "startup": "i14~15, i17~18",
       "block": "-13",
       "hit": "+4",
       "counterHit": "+13c",
       "notes": "* Combo from 1st hit\n* Hold 2 to power up, up to 2 charge levels\n* Transition to HBS with input D or 3+4",
-      "wavuId": "Kuma-db+1,2"
+      "wavuId": "Kuma-db+1,2",
+      "transitions": ["HBS"]
     },
     {
-      "moveNumber": 37,
+      "moveNumber": 38,
       "command": "db+1,2*",
       "name": "Double Wild Slap",
-      "hitLevel": "h,m",
-      "damage": "1120",
-      "startup": "i34~35",
+      "hitLevel": "h, m",
+      "damage": "11, 20",
+      "startup": "i14~15, i34~35",
       "block": "-12",
       "hit": "+13c",
       "counterHit": "+42a",
       "notes": "* chip damage on block\n* Heat skips to Level 2 charge\n* Transition to HBS with input D or 3+4",
       "wavuId": "Kuma-db+1,2*",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "transitions": ["HBS"]
     },
     {
-      "moveNumber": 38,
+      "moveNumber": 39,
       "command": "db+1,2**",
       "name": "Fresh Wild Slap",
-      "hitLevel": "h,m",
-      "damage": "1130",
-      "startup": "i47~48",
+      "hitLevel": "h, m",
+      "damage": "11, 30",
+      "startup": "i14~15, i47~48",
       "block": "+3",
       "hit": "+42a",
       "counterHit": "",
       "notes": "* chip damage on block\n* Cannot absorb with power crush\n* Heat reduces charge length (consumes partial Heat time)\n* Transition to HBS with input D or 3+4",
       "wavuId": "Kuma-db+1,2**",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-db+1,2ss.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 39,
+      "moveNumber": 40,
       "command": "db+2",
       "name": "Bear Lariat",
       "hitLevel": "l",
@@ -511,10 +578,14 @@
       "hit": "-1 / -3 HBS",
       "counterHit": "",
       "notes": "* Transition to HBS with input D or 3+4",
-      "wavuId": "Kuma-db+2"
+      "wavuId": "Kuma-db+2",
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-db+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 40,
+      "moveNumber": 41,
       "command": "db+3",
       "name": "Bear Pump in Pedal",
       "hitLevel": "l",
@@ -524,10 +595,13 @@
       "hit": "+1",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-db+3"
+      "wavuId": "Kuma-db+3",
+      "image": "",
+      "video": "File:t8-p2-kuma-db+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 41,
+      "moveNumber": 42,
       "command": "db+4",
       "name": "Spinning Kuma",
       "hitLevel": "l",
@@ -536,12 +610,15 @@
       "block": "-23",
       "hit": "+6",
       "counterHit": "+74a (+38)",
-      "notes": "* Tornado",
+      "notes": "* Tornado\nHigh crush 6~",
       "wavuId": "Kuma-db+4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "", "cs": "6~" },
+      "image": "",
+      "video": "File:t8-p2-kuma-db+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 42,
+      "moveNumber": 43,
       "command": "db+1+2",
       "hitLevel": "mm",
       "damage": "4,4",
@@ -553,11 +630,11 @@
       "wavuId": "Kuma-db+1+2"
     },
     {
-      "moveNumber": 43,
+      "moveNumber": 44,
       "command": "db+1+2,1+2",
-      "hitLevel": "mm,mm",
-      "damage": "4,4,4,4",
-      "startup": ",i15~16",
+      "hitLevel": "mm, mm",
+      "damage": "4,4, 4,4",
+      "startup": "i14~15, i15~16",
       "block": "-11",
       "hit": "0",
       "counterHit": "",
@@ -565,20 +642,23 @@
       "wavuId": "Kuma-db+1+2,1+2"
     },
     {
-      "moveNumber": 44,
+      "moveNumber": 45,
       "command": "db+1+2,1+2,2",
       "name": "Drum Roll",
-      "hitLevel": "mm,mm,m",
-      "damage": "4,4,4,4,18",
-      "startup": ",i20~21",
+      "hitLevel": "mm, mm, m",
+      "damage": "4,4, 4,4, 18",
+      "startup": "i14~15, ,i20~21",
       "block": "-15",
       "hit": "+22a (+12)",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-db+1+2,1+2,2"
+      "wavuId": "Kuma-db+1+2,1+2,2",
+      "image": "",
+      "video": "File:t8-p2-kuma-db+1+2,1+2,2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 45,
+      "moveNumber": 46,
       "command": "db+2+3",
       "name": "Salmon Hunter",
       "hitLevel": "l",
@@ -591,7 +671,7 @@
       "wavuId": "Kuma-db+2+3"
     },
     {
-      "moveNumber": 46,
+      "moveNumber": 47,
       "command": "db+2+3*",
       "name": "Salmon Hunter",
       "hitLevel": "l",
@@ -605,7 +685,7 @@
       "tags": { "chp": "" }
     },
     {
-      "moveNumber": 47,
+      "moveNumber": 48,
       "command": "db+2+3**",
       "name": "Fresh Salmon Hunter",
       "hitLevel": "l",
@@ -616,10 +696,13 @@
       "counterHit": "",
       "notes": "* chip damage on block",
       "wavuId": "Kuma-db+2+3**",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-db+2+3ss.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 48,
+      "moveNumber": 49,
       "command": "b+1",
       "name": "Bear Slash",
       "hitLevel": "m",
@@ -630,10 +713,14 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Heat Engager\n\n* Transition to HBS with input D or 3+4 (does not shift when using Heat Dash)\nPower crush",
       "wavuId": "Kuma-b+1",
-      "tags": { "bbr": "", "he": "", "pc": "" }
+      "tags": { "bbr": "", "he": "", "pc": "" },
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-b+1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 49,
+      "moveNumber": 50,
       "command": "b+2",
       "hitLevel": "m",
       "damage": "12",
@@ -645,37 +732,41 @@
       "wavuId": "Kuma-b+2"
     },
     {
-      "moveNumber": 50,
+      "moveNumber": 51,
       "command": "b+2,1",
-      "hitLevel": "m,h",
-      "damage": "12,14",
-      "startup": ",i23",
+      "hitLevel": "m, h",
+      "damage": "12, 14",
+      "startup": "i15, i23",
       "block": "-3 / - 4 HBS / -14 ROL",
       "hit": "+8 / +7 HBS / -3 ROL",
       "counterHit": "",
       "notes": "* Transition to HBS with input D or 3+4\n* Transition to ROL with input F",
-      "wavuId": "Kuma-b+2,1"
+      "wavuId": "Kuma-b+2,1",
+      "transitions": ["HBS", "ROL"]
     },
     {
-      "moveNumber": 51,
+      "moveNumber": 52,
       "command": "b+2,1,1+2",
       "name": "Howling Bear",
-      "hitLevel": "m,h,m",
-      "damage": "12,14,20",
-      "startup": ",i26",
+      "hitLevel": "m, h, m",
+      "damage": "12, 14, 20",
+      "startup": "i15, ,i26",
       "block": "-11",
       "hit": "+15a (+6)",
       "counterHit": "",
       "notes": "* Balcony Break",
       "wavuId": "Kuma-b+2,1,1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-b+2,1,1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 52,
+      "moveNumber": 53,
       "command": "b+2,2",
-      "hitLevel": "m,m",
-      "damage": "12,15",
-      "startup": ",i25",
+      "hitLevel": "m, m",
+      "damage": "12, 15",
+      "startup": "i15, i25",
       "block": "-10",
       "hit": "+6",
       "counterHit": "",
@@ -683,35 +774,42 @@
       "wavuId": "Kuma-b+2,2"
     },
     {
-      "moveNumber": 53,
+      "moveNumber": 54,
       "command": "b+2,2,1",
       "name": "Salmon Massacre",
-      "hitLevel": "m,m,m",
-      "damage": "12,15,25",
-      "startup": ",i35~39",
+      "hitLevel": "m, m, m",
+      "damage": "12, 15, 25",
+      "startup": "i15, ,i35~39",
       "block": "-15",
       "hit": "+25a (+15)",
       "counterHit": "",
       "notes": "* Tornado\n* Does not tornado on wall hit",
       "wavuId": "Kuma-b+2,2,1",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-b+2,2,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 54,
+      "moveNumber": 55,
       "command": "b+1+2",
       "name": "Bear X",
       "hitLevel": "h,m",
       "damage": "10,20",
-      "startup": "i18~19",
+      "startup": "i18~19 i12~13",
       "block": "-8",
       "hit": "+13d / HE",
       "counterHit": "",
       "notes": "* Balcony Break\n* Heat Engager\n\n* Homing\n* chip damage\n* Transition to HBS with input D or 3+4 (does not shift when using Heat Dash)",
       "wavuId": "Kuma-b+1+2",
-      "tags": { "bbr": "", "he": "", "hom": "", "chp": "" }
+      "tags": { "bbr": "", "he": "", "hom": "", "chp": "" },
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-b+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 55,
+      "moveNumber": 56,
       "command": "b+1+4",
       "name": "Deadly Claw",
       "hitLevel": "ub(m)",
@@ -721,10 +819,14 @@
       "hit": "+16a/+21a HBS",
       "counterHit": "",
       "notes": "* Transition to HBS with input D or 3+4",
-      "wavuId": "Kuma-b+1+4"
+      "wavuId": "Kuma-b+1+4",
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-b+1+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 56,
+      "moveNumber": 57,
       "command": "b+1+4,f,f",
       "name": "Rolling Bear",
       "hitLevel": "sm",
@@ -734,10 +836,13 @@
       "hit": "+42a~+117a",
       "counterHit": "",
       "notes": "* Hold F to extend attack\n* Recovers in FUFT on hit or block\n* If attack is extended to where you roll past the opponent, recovers in FUFA",
-      "wavuId": "Kuma-b+1,f,f"
+      "wavuId": "Kuma-b+1,f,f",
+      "image": "",
+      "video": "File:t8-p2-kuma-b+1,f,f.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 57,
+      "moveNumber": 58,
       "command": "b+3+4",
       "name": "High Jinks",
       "hitLevel": "m",
@@ -748,10 +853,13 @@
       "counterHit": "",
       "notes": "* Alternate input: ws3+4\n* Tornado",
       "wavuId": "Kuma-b+3+4",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-b+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 58,
+      "moveNumber": 59,
       "command": "ub+1+2",
       "name": "Bear Skip",
       "hitLevel": "l",
@@ -761,10 +869,13 @@
       "hit": "+12a",
       "counterHit": "",
       "notes": "* Cancel into HBS with input D or 3+4",
-      "wavuId": "Kuma-ub+1+2"
+      "wavuId": "Kuma-ub+1+2",
+      "image": "",
+      "video": "File:t8-p2-kuma-ub+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 59,
+      "moveNumber": 60,
       "command": "u+1+2",
       "name": "Big Bear Attack",
       "hitLevel": "m",
@@ -774,10 +885,14 @@
       "hit": "+3 / +4 HBS",
       "counterHit": "",
       "notes": "* Transition to HBS with input D or 3+4",
-      "wavuId": "Kuma-u+1+2"
+      "wavuId": "Kuma-u+1+2",
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-u+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 60,
+      "moveNumber": 61,
       "command": "u+3+4",
       "name": "Pancake Press",
       "hitLevel": "m",
@@ -787,10 +902,14 @@
       "hit": "+20",
       "counterHit": "",
       "notes": "* Transition to SIT (cannot cancel)",
-      "wavuId": "Kuma-u+3+4"
+      "wavuId": "Kuma-u+3+4",
+      "transitions": ["SIT"],
+      "image": "",
+      "video": "File:t8-p2-kuma-u+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 61,
+      "moveNumber": 62,
       "command": "uf+1",
       "name": "Hornet Sweep",
       "hitLevel": "m",
@@ -801,10 +920,13 @@
       "counterHit": "",
       "notes": "* Alternate input: ub+1 or u+1\n* chip damage on block",
       "wavuId": "Kuma-uf+1",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-uf+1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 62,
+      "moveNumber": 63,
       "command": "uf+2",
       "name": "Ultra Kuma",
       "hitLevel": "m",
@@ -815,10 +937,13 @@
       "counterHit": "+65a (+45)",
       "notes": "* Balcony Break\n* Homing\n* Tailspin\n* Alternate input: ub+2 or u+2",
       "wavuId": "Kuma-uf+2",
-      "tags": { "bbr": "", "hom": "" }
+      "tags": { "bbr": "", "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-uf+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 63,
+      "moveNumber": 64,
       "command": "uf+3",
       "hitLevel": "m",
       "damage": "13",
@@ -831,11 +956,11 @@
       "tags": { "js": "" }
     },
     {
-      "moveNumber": 64,
+      "moveNumber": 65,
       "command": "uf+3,4",
-      "hitLevel": "m,m",
-      "damage": "13,13",
-      "startup": ",i10~12",
+      "hitLevel": "m, m",
+      "damage": "13, 13",
+      "startup": "i16~17, i10~12",
       "block": "-11",
       "hit": "+30a (+20) / +21a (+14)",
       "counterHit": "",
@@ -844,21 +969,25 @@
       "tags": { "js": "" }
     },
     {
-      "moveNumber": 65,
+      "moveNumber": 66,
       "command": "uf+3,4,1+2",
       "name": "Bear Double Hop Kick Combo",
-      "hitLevel": "m,m,m",
-      "damage": "13,13,22",
-      "startup": ",i18~19",
+      "hitLevel": "m, m, m",
+      "damage": "13, 13, 22",
+      "startup": "i16~17, ,i18~19",
       "block": "-15",
       "hit": "+16a / -2a",
       "counterHit": "",
       "notes": "* Spike\n* Transition to HBS with input D or 3+4\n* Less frame advantage occurs after Combo from last hit",
       "wavuId": "Kuma-uf+3,4,1+2",
-      "tags": { "spk": "" }
+      "tags": { "spk": "" },
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-uf+3,4,1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 66,
+      "moveNumber": 67,
       "command": "uf+4",
       "hitLevel": "m",
       "damage": "20",
@@ -871,21 +1000,24 @@
       "tags": { "bbr": "", "js": "" }
     },
     {
-      "moveNumber": 67,
+      "moveNumber": 68,
       "command": "uf+4,3",
-      "name": "Hell Axle",
-      "hitLevel": "m,m",
-      "damage": "20,25",
-      "startup": ",i20~21",
+      "name": "Kuma Hell Axle",
+      "hitLevel": "m, m",
+      "damage": "20, 25",
+      "startup": "i29~30, i20~21",
       "block": "+7",
       "hit": "+21a (+14)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Only connects on hit or block\n* Recovers in FUFT\nLow crush",
       "wavuId": "Kuma-uf+4,3",
-      "tags": { "bbr": "", "js": "" }
+      "tags": { "bbr": "", "js": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-uf+4,3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 68,
+      "moveNumber": 69,
       "command": "1+2+3+4",
       "name": "Ki Charge",
       "hitLevel": "",
@@ -895,10 +1027,13 @@
       "hit": "",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-1+2+3+4"
+      "wavuId": "Kuma-1+2+3+4",
+      "image": "",
+      "video": "File:t8-p2-kuma-1+2+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 69,
+      "moveNumber": 70,
       "command": "b,f+2",
       "name": "Anger Hook",
       "hitLevel": "h",
@@ -909,10 +1044,13 @@
       "counterHit": "+62a (+42)",
       "notes": "* Balcony Break\nTailspin\n* Chip damage on block",
       "wavuId": "Kuma-b,f+2",
-      "tags": { "bbr": "", "chp": "" }
+      "tags": { "bbr": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-b,f+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 70,
+      "moveNumber": 71,
       "command": "d,df,f+2",
       "hitLevel": "m",
       "damage": "15",
@@ -924,35 +1062,41 @@
       "wavuId": "Kuma-qcf+2"
     },
     {
-      "moveNumber": 71,
+      "moveNumber": 72,
       "command": "d,df,f+2,1",
       "name": "Grizzly Claws",
-      "hitLevel": "m,m",
-      "damage": "15,25",
-      "startup": ",i27",
+      "hitLevel": "m, m",
+      "damage": "15, 25",
+      "startup": "i18~19, i27",
       "block": "-14",
       "hit": "+29a (+3)",
       "counterHit": "",
       "notes": "* Balcony Break",
       "wavuId": "Kuma-qcf+2,1",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-qcf+2,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 72,
+      "moveNumber": 73,
       "command": "d,df,f+2,2",
       "name": "Grizzly Claw Smash",
-      "hitLevel": "m,l",
-      "damage": "15,22",
-      "startup": ",i33~34",
+      "hitLevel": "m, l",
+      "damage": "15, 22",
+      "startup": "i18~19, i33~34",
       "block": "-18",
       "hit": "+40a",
       "counterHit": "",
       "notes": "* Chip damage on block",
       "wavuId": "Kuma-qcf+2,2",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-qcf+2,2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 73,
+      "moveNumber": 74,
       "command": "f,F+2",
       "name": "Demon Uppercut",
       "hitLevel": "m",
@@ -962,10 +1106,13 @@
       "hit": "+45a (+35)",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-f,F+2"
+      "wavuId": "Kuma-f,F+2",
+      "image": "",
+      "video": "File:t8-p2-kuma-f,f+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 74,
+      "moveNumber": 75,
       "command": "f,F+1+2",
       "name": "Falling Bear",
       "hitLevel": "m",
@@ -976,10 +1123,14 @@
       "counterHit": "",
       "notes": "* Chip damage\n* Transition to HBS (cannot cancel into standing)\n* Transition to ROL with input F",
       "wavuId": "Kuma-f,F+1+2",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "transitions": ["HBS", "ROL"],
+      "image": "",
+      "video": "File:t8-p2-kuma-f,f+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 75,
+      "moveNumber": 76,
       "command": "f,f,F+3",
       "name": "Leaping Side Kick",
       "hitLevel": "m",
@@ -990,10 +1141,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Chip damage on block",
       "wavuId": "Kuma-f,f,F+3",
-      "tags": { "bbr": "", "chp": "" }
+      "tags": { "bbr": "", "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-f,f,f+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 76,
+      "moveNumber": 77,
       "command": "f,f,F+1+2",
       "name": "Rabid Bear",
       "hitLevel": "m",
@@ -1004,10 +1158,14 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Heat Engager\n\n* Chip damage\n* Transition to HBS with input D or 3+4 (does not shift when using Heat Dash)\nLow crush  21F",
       "wavuId": "Kuma-f,f,F+1+2",
-      "tags": { "bbr": "", "he": "", "chp": "", "js": "", "21F": "" }
+      "tags": { "bbr": "", "he": "", "chp": "", "js": "", "21F": "" },
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-f,f,f+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 77,
+      "moveNumber": 78,
       "command": "ws1",
       "hitLevel": "m",
       "damage": "13",
@@ -1019,49 +1177,55 @@
       "wavuId": "Kuma-ws1"
     },
     {
-      "moveNumber": 78,
+      "moveNumber": 79,
       "command": "ws1,2",
       "name": "Killing Claws",
-      "hitLevel": "m,m",
-      "damage": "13,20",
-      "startup": ",i18~19",
+      "hitLevel": "m, m",
+      "damage": "13, 20",
+      "startup": "i13~15, i18~19",
       "block": "-13",
       "hit": "+6 (+20g)",
       "counterHit": "+18",
       "notes": "* Hold 2 to power up, up to 2 charge levels\n* Transition to HBS with input D or 3+4\n* Tornado\n* Wall Crush  +20g on hit\n\n\n* Wallsplat on CH",
       "wavuId": "Kuma-ws1,2",
-      "tags": { "trn": "", "wc": "" }
+      "tags": { "trn": "", "wc": "" },
+      "transitions": ["HBS"]
     },
     {
-      "moveNumber": 79,
+      "moveNumber": 80,
       "command": "ws1,2*",
       "name": "Killing Claws",
-      "hitLevel": "m,m",
-      "damage": "13,28",
-      "startup": ",i35",
+      "hitLevel": "m, m",
+      "damage": "13, 28",
+      "startup": "i13~15, i35",
       "block": "-12",
       "hit": "+18c",
       "counterHit": "+33a (-2)",
       "notes": "* Heat skips to Level 2 charge\n* Transition to HBS with input D or 3+4\n* Balcony Break\n* Tornado",
       "wavuId": "Kuma-ws1,2*",
-      "tags": { "bbr": "", "trn": "" }
+      "tags": { "bbr": "", "trn": "" },
+      "transitions": ["HBS"]
     },
     {
-      "moveNumber": 80,
+      "moveNumber": 81,
       "command": "ws1,2**",
       "name": "Fresh Killing Claws",
-      "hitLevel": "m,m",
-      "damage": "13,38",
-      "startup": ",i44",
+      "hitLevel": "m, m",
+      "damage": "13, 38",
+      "startup": "i13~15, i44",
       "block": "+3",
       "hit": "+27a (-9)",
       "counterHit": "",
       "notes": "* Transition to HBS with input D or 3+4\n* Balcony Break\n* Tornado\n* chip damage on block\n* Cannot absorb with power crush\n* Heat reduces charge length (consumes partial Heat time)",
       "wavuId": "Kuma-ws1,2**",
-      "tags": { "bbr": "", "trn": "", "chp": "" }
+      "tags": { "bbr": "", "trn": "", "chp": "" },
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-ws1,2ss.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 81,
+      "moveNumber": 82,
       "command": "ws2",
       "name": "Mad Angler",
       "hitLevel": "m",
@@ -1071,10 +1235,13 @@
       "hit": "+29a (+19)",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-ws2"
+      "wavuId": "Kuma-ws2",
+      "image": "",
+      "video": "File:t8-p2-kuma-ws2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 82,
+      "moveNumber": 83,
       "command": "ws3",
       "name": "Spinning Bear Kick",
       "hitLevel": "m",
@@ -1085,10 +1252,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Homing",
       "wavuId": "Kuma-ws3",
-      "tags": { "bbr": "", "hom": "" }
+      "tags": { "bbr": "", "hom": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-ws3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 83,
+      "moveNumber": 84,
       "command": "ws4",
       "name": "Paw Smash",
       "hitLevel": "m",
@@ -1098,10 +1268,13 @@
       "hit": "+5",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-ws4"
+      "wavuId": "Kuma-ws4",
+      "image": "",
+      "video": "File:t8-p2-kuma-ws4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 84,
+      "moveNumber": 85,
       "command": "SS.1+2",
       "name": "Salmon Swipe",
       "hitLevel": "m",
@@ -1111,10 +1284,13 @@
       "hit": "+11d",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-SS.1+2"
+      "wavuId": "Kuma-SS.1+2",
+      "image": "",
+      "video": "File:t8-p2-kuma-ss.1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 85,
+      "moveNumber": 86,
       "command": "FC.1",
       "name": "Watch Your Feet",
       "hitLevel": "l",
@@ -1124,10 +1300,13 @@
       "hit": "+2",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-FC.1"
+      "wavuId": "Kuma-FC.1",
+      "image": "",
+      "video": "File:t8-p2-kuma-fc.1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 86,
+      "moveNumber": 87,
       "command": "FC.1+2",
       "name": "Bear Roll",
       "hitLevel": "sp",
@@ -1137,10 +1316,11 @@
       "hit": "+7~+12 / 0~+5 HBS",
       "counterHit": "",
       "notes": "* Transition to ROL\n* becomes special mid attack during Heat (partially uses remaining Heat time)",
-      "wavuId": "Kuma-FC.1+2"
+      "wavuId": "Kuma-FC.1+2",
+      "transitions": ["ROL"]
     },
     {
-      "moveNumber": 87,
+      "moveNumber": 88,
       "command": "FDFA.1+2",
       "name": "Bear Butterfly",
       "hitLevel": "l",
@@ -1150,10 +1330,11 @@
       "hit": "+6",
       "counterHit": "+6",
       "notes": "* Transition to HBS",
-      "wavuId": "Kuma-FDFA.1+2"
+      "wavuId": "Kuma-FDFA.1+2",
+      "transitions": ["HBS"]
     },
     {
-      "moveNumber": 88,
+      "moveNumber": 89,
       "command": "FUFA.1+2",
       "name": "Bear Backstroke",
       "hitLevel": "m",
@@ -1163,10 +1344,11 @@
       "hit": "+6 (+6)",
       "counterHit": "+6 (+6)",
       "notes": "* Transition to HBS (Cannot cancel)",
-      "wavuId": "Kuma-FUFA.1+2"
+      "wavuId": "Kuma-FUFA.1+2",
+      "transitions": ["HBS"]
     },
     {
-      "moveNumber": 89,
+      "moveNumber": 90,
       "command": "FUFT.d+1+2",
       "name": "Get Up Punch",
       "hitLevel": "m",
@@ -1176,10 +1358,11 @@
       "hit": "+37a",
       "counterHit": "+37a",
       "notes": "* Transition to SIT (Cannot cancel)",
-      "wavuId": "Kuma-FUFT.d+1+2"
+      "wavuId": "Kuma-FUFT.d+1+2",
+      "transitions": ["SIT"]
     },
     {
-      "moveNumber": 90,
+      "moveNumber": 91,
       "command": "HBS.1",
       "hitLevel": "m",
       "damage": "10",
@@ -1191,12 +1374,12 @@
       "wavuId": "Kuma-HBS.1"
     },
     {
-      "moveNumber": 91,
+      "moveNumber": 92,
       "command": "HBS.1,2",
       "name": "Honeycomb Spike",
-      "hitLevel": "m,m",
-      "damage": "10,20",
-      "startup": ",i24~25",
+      "hitLevel": "m, m",
+      "damage": "10, 20",
+      "startup": "i12~13, i24~25",
       "block": "-13",
       "hit": "+4",
       "counterHit": "+13c",
@@ -1204,12 +1387,12 @@
       "wavuId": "Kuma-HBS.1,2"
     },
     {
-      "moveNumber": 92,
+      "moveNumber": 93,
       "command": "HBS.1,2*",
       "name": "Honeycomb Spike",
-      "hitLevel": "m,m",
-      "damage": "10,20",
-      "startup": ",i33~34",
+      "hitLevel": "m, m",
+      "damage": "10, 20",
+      "startup": "i12~13, i33~34",
       "block": "-12",
       "hit": "+13c",
       "counterHit": "+49a",
@@ -1218,21 +1401,24 @@
       "tags": { "chp": "" }
     },
     {
-      "moveNumber": 93,
+      "moveNumber": 94,
       "command": "HBS.1,2**",
       "name": "Fresh Honeycomb Spike",
-      "hitLevel": "m,m",
-      "damage": "10,30",
-      "startup": ",i44~45",
+      "hitLevel": "m, m",
+      "damage": "10, 30",
+      "startup": "i12~13, i44~45",
       "block": "+3",
       "hit": "+49a",
       "counterHit": "",
       "notes": "* chip damage on block\n* Cannot absorb with power crush\n* Heat reduces charge length (consumes partial Heat time)",
       "wavuId": "Kuma-HBS.1,2**",
-      "tags": { "chp": "" }
+      "tags": { "chp": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.1,2ss.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 94,
+      "moveNumber": 95,
       "command": "HBS.2",
       "name": "Bear Claw",
       "hitLevel": "l",
@@ -1242,10 +1428,14 @@
       "hit": "+21g",
       "counterHit": "",
       "notes": "* Transition to HBS",
-      "wavuId": "Kuma-HBS.2"
+      "wavuId": "Kuma-HBS.2",
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 95,
+      "moveNumber": 96,
       "command": "HBS.3",
       "name": "Hunting to Roll Over",
       "hitLevel": "sp",
@@ -1255,10 +1445,14 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Transition to FUFA\n* Alternative input: HBS.4 (HBS.3 is into background, HBS.4 is into foreground)",
-      "wavuId": "Kuma-HBS.3"
+      "wavuId": "Kuma-HBS.3",
+      "transitions": ["FUFA"],
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 96,
+      "moveNumber": 97,
       "command": "HBS.1+2",
       "name": "Bear Fling",
       "hitLevel": "m",
@@ -1269,10 +1463,13 @@
       "counterHit": "",
       "notes": "* Tornado",
       "wavuId": "Kuma-HBS.1+2",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 97,
+      "moveNumber": 98,
       "command": "HBS.3+4",
       "name": "Bear Tackle",
       "hitLevel": "m",
@@ -1281,12 +1478,15 @@
       "block": "-12",
       "hit": "-2a (-11)",
       "counterHit": "",
-      "notes": "* Balcony Break\nPower crush",
+      "notes": "* Balcony Break\nPower crush 8~",
       "wavuId": "Kuma-HBS.3+4",
-      "tags": { "bbr": "", "pc": "" }
+      "tags": { "bbr": "", "pc": "8~" },
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 98,
+      "moveNumber": 99,
       "command": "HBS.b,b",
       "name": "Backward Roll",
       "hitLevel": "sp",
@@ -1296,10 +1496,14 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Alternate input: SIT.B\n* Transition to HBS with input D or 3+4",
-      "wavuId": "Kuma-HBS.b,b"
+      "wavuId": "Kuma-HBS.b,b",
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.b,b.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 99,
+      "moveNumber": 100,
       "command": "HBS.b+1+2",
       "hitLevel": "l",
       "damage": "16",
@@ -1308,24 +1512,28 @@
       "hit": "+14a",
       "counterHit": "",
       "notes": "* Transition to HBS with input D or 3+4",
-      "wavuId": "Kuma-HBS.b+1+2"
+      "wavuId": "Kuma-HBS.b+1+2",
+      "transitions": ["HBS"]
     },
     {
-      "moveNumber": 100,
+      "moveNumber": 101,
       "command": "HBS.b+1+2,1+2",
       "name": "Break'n",
-      "hitLevel": "l,l",
-      "damage": "16,33",
-      "startup": "i22~24",
+      "hitLevel": "l, l",
+      "damage": "16, 33",
+      "startup": "i26~29, i22~24",
       "block": "-29c",
       "hit": "+8a / -3a (-10)",
       "counterHit": "",
       "notes": "* Balcony Break\n* Less frame advantage occurs after Combo from last hit",
       "wavuId": "Kuma-HBS.b+1+2,1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.b+1+2,1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 101,
+      "moveNumber": 102,
       "command": "HBS.df+2",
       "name": "Big Tree",
       "hitLevel": "m",
@@ -1336,10 +1544,13 @@
       "counterHit": "",
       "notes": "* Tornado",
       "wavuId": "Kuma-HBS.df+2",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.df+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 102,
+      "moveNumber": 103,
       "command": "HBS.d+1+2",
       "name": "Frolicking Bear",
       "hitLevel": "m",
@@ -1350,10 +1561,14 @@
       "counterHit": "",
       "notes": "* Heat Engager\n\n* Transition to HBS (does not shift when using Heat Dash)",
       "wavuId": "Kuma-HBS.d+1+2",
-      "tags": { "he": "" }
+      "tags": { "he": "" },
+      "transitions": ["HBS"],
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.d+1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 103,
+      "moveNumber": 104,
       "command": "HBS.d+3+4",
       "name": "Hunting to Play Dead",
       "hitLevel": "sp",
@@ -1363,10 +1578,14 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Transition to FDFA",
-      "wavuId": "Kuma-HBS.d+3+4"
+      "wavuId": "Kuma-HBS.d+3+4",
+      "transitions": ["FDFA"],
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.d+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 104,
+      "moveNumber": 105,
       "command": "HBS.f,f",
       "name": "Bear Roll",
       "hitLevel": "sp",
@@ -1376,10 +1595,11 @@
       "hit": "+7~+12 / 0~+5 HBS",
       "counterHit": "",
       "notes": "* Transition to ROL\n* Becomes Special Mid attack during Heat (partially uses remaining Heat time)",
-      "wavuId": "Kuma-HBS.f,f"
+      "wavuId": "Kuma-HBS.f,f",
+      "transitions": ["ROL"]
     },
     {
-      "moveNumber": 105,
+      "moveNumber": 106,
       "command": "HBS.f+3+4",
       "name": "Hunting Hip Smash",
       "hitLevel": "",
@@ -1389,10 +1609,14 @@
       "hit": "",
       "counterHit": "",
       "notes": "* Alternate input: HBS.b+3+4\n* Transition to SIT",
-      "wavuId": "Kuma-HBS.f+3+4"
+      "wavuId": "Kuma-HBS.f+3+4",
+      "transitions": ["SIT"],
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.f+3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 106,
+      "moveNumber": 107,
       "command": "OTG.d+1+4",
       "name": "Dance With Me",
       "hitLevel": "l,ub(l)",
@@ -1405,7 +1629,7 @@
       "wavuId": "Kuma-OTG.d+1+4"
     },
     {
-      "moveNumber": 107,
+      "moveNumber": 108,
       "command": "ROL.1",
       "name": "Bear Shove",
       "hitLevel": "h",
@@ -1416,10 +1640,13 @@
       "counterHit": "",
       "notes": "* Balcony Break\n* Tornado\n* Power up during Heat (partially uses remaining Heat time)",
       "wavuId": "Kuma-ROL.1",
-      "tags": { "bbr": "", "trn": "" }
+      "tags": { "bbr": "", "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-rol.1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 108,
+      "moveNumber": 109,
       "command": "ROL.2",
       "name": "Bear Backhand",
       "hitLevel": "m",
@@ -1429,10 +1656,13 @@
       "hit": "+28a (+18)",
       "counterHit": "",
       "notes": "",
-      "wavuId": "Kuma-ROL.2"
+      "wavuId": "Kuma-ROL.2",
+      "image": "",
+      "video": "File:t8-p2-kuma-rol.2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 109,
+      "moveNumber": 110,
       "command": "ROL.3",
       "name": "Bear Slide",
       "hitLevel": "l",
@@ -1442,10 +1672,13 @@
       "hit": "+33a",
       "counterHit": "",
       "notes": "Recovers in FUFT",
-      "wavuId": "Kuma-ROL.3"
+      "wavuId": "Kuma-ROL.3",
+      "image": "",
+      "video": "File:t8-p2-kuma-rol.3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 110,
+      "moveNumber": 111,
       "command": "ROL.4",
       "name": "Bear Rolling Kick",
       "hitLevel": "m",
@@ -1455,10 +1688,13 @@
       "hit": "+26a",
       "counterHit": "",
       "notes": "Recovers in FUFT",
-      "wavuId": "Kuma-ROL.4"
+      "wavuId": "Kuma-ROL.4",
+      "image": "",
+      "video": "File:t8-p2-kuma-rol.4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 111,
+      "moveNumber": 112,
       "command": "ROL.1+2",
       "name": "Giant Roll",
       "hitLevel": "sm",
@@ -1468,13 +1704,16 @@
       "hit": "+45a",
       "counterHit": "",
       "notes": "* Recovers in FUFT on hit\n* Recovers in off axis FUFT on block",
-      "wavuId": "Kuma-ROL.1+2"
+      "wavuId": "Kuma-ROL.1+2",
+      "image": "",
+      "video": "File:t8-p2-kuma-rol.1+2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 112,
+      "moveNumber": 113,
       "command": "SIT.1",
       "hitLevel": "l",
-      "damage": "10",
+      "damage": "15",
       "startup": "i21~22",
       "block": "-12",
       "hit": "+4",
@@ -1483,20 +1722,23 @@
       "wavuId": "Kuma-SIT.1"
     },
     {
-      "moveNumber": 113,
+      "moveNumber": 114,
       "command": "SIT.1,1",
       "name": "Double Trout Sweep",
-      "hitLevel": "l,l",
-      "damage": "10,13",
-      "startup": ",i25~26",
+      "hitLevel": "l, l",
+      "damage": "15, 13",
+      "startup": "i21~22, i25~26",
       "block": "-12",
       "hit": "+6",
       "counterHit": "",
-      "notes": "",
-      "wavuId": "Kuma-SIT.1,1"
+      "notes": "Combo from 1st CH",
+      "wavuId": "Kuma-SIT.1,1",
+      "image": "",
+      "video": "File:t8-p2-kuma-sit.1,1.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 114,
+      "moveNumber": 115,
       "command": "SIT.2",
       "name": "Trout Smash",
       "hitLevel": "m",
@@ -1507,10 +1749,13 @@
       "counterHit": "",
       "notes": "* Tornado",
       "wavuId": "Kuma-SIT.2",
-      "tags": { "trn": "" }
+      "tags": { "trn": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-sit.2.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 115,
+      "moveNumber": 116,
       "command": "SIT.3+4",
       "name": "Rebound",
       "hitLevel": "m",
@@ -1520,10 +1765,14 @@
       "hit": "-4a / -2a ROL",
       "counterHit": "",
       "notes": "* Transition to ROL with input SIT.F",
-      "wavuId": "Kuma-SIT.3+4"
+      "wavuId": "Kuma-SIT.3+4",
+      "transitions": ["ROL"],
+      "image": "",
+      "video": "File:t8-p2-kuma-sit.3+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 116,
+      "moveNumber": 117,
       "command": "SIT.f",
       "name": "Bear Roll",
       "hitLevel": "sp",
@@ -1533,10 +1782,11 @@
       "hit": "+7~+12 / 0~+5 HBS",
       "counterHit": "",
       "notes": "* Alternative input: FC.3+4 or FDFA.f\n* Transition to ROL\n* Transition to HBS with input ROL.D or ROL.3+4\n* Becomes special mid attack during Heat (partially uses remaining Heat time)",
-      "wavuId": "Kuma-SIT.f"
+      "wavuId": "Kuma-SIT.f",
+      "transitions": ["ROL", "HBS"]
     },
     {
-      "moveNumber": 117,
+      "moveNumber": 118,
       "command": "1+3",
       "name": "Bear's Bite",
       "hitLevel": "th(h)",
@@ -1546,10 +1796,13 @@
       "hit": "+1",
       "counterHit": "",
       "notes": "* Throw break: 1 or 2\n* Opponent status on hit: FUFT",
-      "wavuId": "Kuma-1+3"
+      "wavuId": "Kuma-1+3",
+      "image": "",
+      "video": "File:t8-p2-kuma-1+3.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 118,
+      "moveNumber": 119,
       "command": "2+4",
       "name": "Bear Hug",
       "hitLevel": "th(h)",
@@ -1559,10 +1812,13 @@
       "hit": "+1",
       "counterHit": "",
       "notes": "* Throw break: 1 or 2\n* Opponent status on hit: FUFT\n* Side switch on hit",
-      "wavuId": "Kuma-2+4"
+      "wavuId": "Kuma-2+4",
+      "image": "",
+      "video": "File:t8-p2-kuma-2+4.mp4",
+      "recovery": ""
     },
     {
-      "moveNumber": 119,
+      "moveNumber": 120,
       "command": "Back throw",
       "name": "Swing Swung",
       "hitLevel": "th(h)",
@@ -1575,20 +1831,6 @@
       "wavuId": "Kuma-Back throw"
     },
     {
-      "moveNumber": 120,
-      "command": "HBS.f+1+2",
-      "name": "Bear Toss",
-      "hitLevel": "th(h)",
-      "damage": "35",
-      "startup": "i26~27",
-      "block": "",
-      "hit": "+1",
-      "counterHit": "",
-      "notes": "* Throw break: none\n* Spike\n* Opponent status on hit: FUFA",
-      "wavuId": "Kuma-HBS.f+1+2",
-      "tags": { "spk": "" }
-    },
-    {
       "moveNumber": 121,
       "command": "HBS.f+1+2",
       "name": "Bear Toss",
@@ -1598,9 +1840,12 @@
       "block": "",
       "hit": "+1",
       "counterHit": "",
-      "notes": "* Throw break: none\n* Spike\n* Opponent status on hit: FUFA",
+      "notes": "* Removes Recoverable Health\n* Spike\n* Throw break: none\n* Opponent status on hit: FUFA",
       "wavuId": "Kuma-HBS.f+1+2",
-      "tags": { "spk": "" }
+      "tags": { "spk": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-hbs.f+1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 122,
@@ -1640,7 +1885,10 @@
       "hit": "+5",
       "counterHit": "",
       "notes": "* Throw break: 1+2\n* Opponent status on hit: FUFA\n* Side switch on hit",
-      "wavuId": "Kuma-hcb,f+1+2"
+      "wavuId": "Kuma-hcb,f+1+2",
+      "image": "",
+      "video": "File:t8-p2-kuma-hcb,f+1+2.mp4",
+      "recovery": ""
     },
     {
       "moveNumber": 125,
@@ -1654,8 +1902,22 @@
       "counterHit": "",
       "notes": "* Throw break: 1+2\n* Balcony Break\n* Opponent status on hit: FUFT",
       "wavuId": "Kuma-uf+1+2",
-      "tags": { "bbr": "" }
+      "tags": { "bbr": "" },
+      "image": "",
+      "video": "File:t8-p2-kuma-uf+1+2.mp4",
+      "recovery": ""
     }
   ],
-  "stances": ["H", "SS", "FC", "FDFA", "FUFA", "FUFT", "HBS", "ROL", "SIT"]
+  "stances": [
+    "H",
+    "ws",
+    "SS",
+    "FC",
+    "FDFA",
+    "FUFA",
+    "FUFT",
+    "HBS",
+    "ROL",
+    "SIT"
+  ]
 }
