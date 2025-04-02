@@ -9,7 +9,7 @@ type RoadmapModalProps = {
 export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
   <Modal
     size="small"
-    title=""
+    title="02 Apr 2025 announcement"
     trigger={
       trigger ?? (
         <Group asChild gap="sm" className="absolute bottom-8 text-xs">
@@ -26,7 +26,24 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
       gap={{ base: "md", md: "xl" }}
       className="ml-5 list-decimal text-sm"
     >
-      <li>
+      <p>
+        While I'll still be making patch updates and responding to issue
+        tickets, I don't have a ton of time to work on features anymore. When I
+        do find the time to revisit, I'm planning to rebuild from scratch again.
+      </p>
+      <p>
+        In the meantime, I've open-sourced the app at{" "}
+        <a
+          href="https://github.com/adamfratino/tekken-lol"
+          target="_blank"
+          className="font-bold underline hover:no-underline"
+        >
+          https://github.com/adamfratino/tekken-lol
+        </a>
+        .
+      </p>
+      <p>Issues, pull requests, and forks are much appreciated!</p>
+      {/* <li>
         <div className="line-through">
           <Title size="md">Full-featured search &mdash; Sep. 2024</Title>
           <p className="mt-1 max-w-[460px] text-xs text-muted-foreground">
@@ -101,7 +118,7 @@ export const RoadmapModal = ({ trigger }: RoadmapModalProps) => (
             </span>
           </p>
         </div>
-      </li>
+      </li> */}
 
       {/* <li>
         <div>
