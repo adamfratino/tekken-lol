@@ -13,6 +13,63 @@ type Fix = {
   fix: Partial<Move>
 }
 
+/**
+ * Fetches frame data from the TekkenDocs API
+ */
+async function fetchFrameDataFromApi(
+  character: Characters
+): Promise<FrameData> {
+  // Use exact URL structure confirmed by curl test
+  const url = `https://tekkendocs.com/api/t8/${character}/framedata`
+  console.log(`Fetching from API URL: ${url}`)
+
+  try {
+    // Make the API request
+    const response = await fetch(url, {
+      next: { revalidate: 3600 }, // Revalidate every hour
+    })
+
+    // Log the response status for debugging
+    console.log(`API response status: ${response.status}`)
+
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch API data for ${character}: ${response.status}`
+      )
+    }
+
+    // Parse response to JSON with proper typing
+    const data = (await response.json()) as {
+      framesNormal?: Move[]
+      stances?: string[]
+    }
+    console.log(
+      `API data received, found ${data.framesNormal?.length || 0} moves`
+    )
+
+    // Ensure data has expected structure
+    if (!data.framesNormal || !Array.isArray(data.framesNormal)) {
+      console.error("API response missing framesNormal array:", data)
+      throw new Error("Invalid API response format: missing framesNormal array")
+    }
+
+    // Remove duplicate moves if any
+    const processedMoves = removeDuplicateMoves(data.framesNormal)
+
+    // Return the complete data structure
+    return {
+      framesNormal: processedMoves,
+      stances: data.stances || [],
+    }
+  } catch (error) {
+    console.error(`Error in fetchFrameDataFromApi:`, error)
+    throw error // Re-throw to allow fallback
+  }
+}
+
+/**
+ * Fetches and fixes frame data from local files (fallback)
+ */
 async function fetchAndFixFrameData(character: Characters): Promise<FrameData> {
   const framesFilePath = path.join(
     process.cwd(),
@@ -138,8 +195,19 @@ function isMatch(move: Move, identifier: Partial<Move>): boolean {
 export async function fetchCharacterFrames(
   character: Characters
 ): Promise<Move[]> {
-  const data = await fetchAndFixFrameData(character)
-  return data.framesNormal
+  try {
+    // Try to fetch from API first
+    const apiData = await fetchFrameDataFromApi(character)
+    return apiData.framesNormal
+  } catch (error) {
+    console.warn(
+      `Failed to fetch frames from API for ${character}, falling back to local data:`,
+      error
+    )
+    // Fall back to local data if API fails
+    const data = await fetchAndFixFrameData(character)
+    return data.framesNormal
+  }
 }
 
 export async function fetchCharacterStances(
